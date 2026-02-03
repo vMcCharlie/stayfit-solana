@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Expo / React Native
+.expo/
+dist/
+build/
+*.apk
+*.aab
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
