@@ -1,0 +1,763 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 900 600" style="enable-background:new 0 0 900 600;" xml:space="preserve">
+<style type="text/css">
+	.class-3d3f58ad64-st0{display:none;}
+	.class-3d3f58ad64-st1{display:inline;}
+	.class-3d3f58ad64-st2{display:inline;fill:#040302;}
+	.class-3d3f58ad64-st3{display:inline;fill:#090807;}
+	.class-3d3f58ad64-st4{display:inline;fill:#070605;}
+	.class-3d3f58ad64-st5{display:inline;fill:#0E0D0C;}
+	.class-3d3f58ad64-st6{display:inline;fill:#0A0A09;}
+	.class-3d3f58ad64-st7{display:inline;fill:#0B0C0A;}
+	.class-3d3f58ad64-st8{display:inline;fill:#28211F;}
+	.class-3d3f58ad64-st9{display:inline;fill:#ADB9B9;}
+	.class-3d3f58ad64-class-3d3f58ad64-st10{display:inline;fill:#959898;}
+	.class-3d3f58ad64-class-3d3f58ad64-st11{display:inline;fill:#5F6C6C;}
+	.class-3d3f58ad64-class-3d3f58ad64-st12{display:inline;fill:#F6D9C7;}
+	.class-3d3f58ad64-class-3d3f58ad64-st13{display:inline;fill:#52463B;}
+	.class-3d3f58ad64-class-3d3f58ad64-st14{display:inline;fill:#FF9A77;}
+	.class-3d3f58ad64-class-3d3f58ad64-st15{display:inline;fill:#FFF0A7;}
+	.class-3d3f58ad64-class-3d3f58ad64-st16{display:inline;fill:#F7EFD0;}
+	.class-3d3f58ad64-class-3d3f58ad64-st17{display:inline;fill:#E1C7B6;}
+	.class-3d3f58ad64-class-3d3f58ad64-st18{display:inline;fill:#EF8A6A;}
+	.class-3d3f58ad64-class-3d3f58ad64-st19{display:inline;fill:#F5D9C7;}
+	.class-3d3f58ad64-class-3d3f58ad64-st20{display:inline;fill:#EBDA8F;}
+	.class-3d3f58ad64-class-3d3f58ad64-st21{display:inline;fill:#EBDCB7;}
+	.class-3d3f58ad64-class-3d3f58ad64-st22{display:inline;fill:#F6EFD0;}
+	.class-3d3f58ad64-class-3d3f58ad64-st23{display:inline;fill:#FC9876;}
+	.class-3d3f58ad64-class-3d3f58ad64-st24{display:inline;fill:#D7C0A0;}
+	.class-3d3f58ad64-class-3d3f58ad64-st25{display:inline;fill:#D1BB9C;}
+	.class-3d3f58ad64-class-3d3f58ad64-st26{display:inline;fill:#D6BFA0;}
+	.class-3d3f58ad64-class-3d3f58ad64-st27{display:inline;fill:#E9D1BF;}
+	.class-3d3f58ad64-class-3d3f58ad64-st28{display:inline;fill:#EDD8B9;}
+	.class-3d3f58ad64-class-3d3f58ad64-st29{display:inline;fill:#C8B396;}
+	.class-3d3f58ad64-class-3d3f58ad64-st30{display:inline;fill:#1D1915;}
+	.class-3d3f58ad64-class-3d3f58ad64-st31{display:inline;fill:#DFC3B2;}
+	.class-3d3f58ad64-class-3d3f58ad64-st32{display:inline;fill:#E6DBB7;}
+	.class-3d3f58ad64-class-3d3f58ad64-st33{display:inline;fill:#ECD8B9;}
+	.class-3d3f58ad64-class-3d3f58ad64-st34{display:inline;fill:#E2C8B7;}
+	.class-3d3f58ad64-class-3d3f58ad64-st35{display:inline;fill:#CCB698;}
+	.class-3d3f58ad64-class-3d3f58ad64-st36{display:inline;fill:#E2CEB0;}
+	.class-3d3f58ad64-class-3d3f58ad64-st37{display:inline;fill:#3F362D;}
+	.class-3d3f58ad64-class-3d3f58ad64-st38{display:inline;fill:#28231E;}
+	.class-3d3f58ad64-class-3d3f58ad64-st39{display:inline;fill:#3C3D38;}
+	.class-3d3f58ad64-class-3d3f58ad64-st40{display:inline;fill:#E8D7B8;}
+	.class-3d3f58ad64-class-3d3f58ad64-st41{display:inline;fill:#302923;}
+	.class-3d3f58ad64-class-3d3f58ad64-st42{display:inline;fill:#6B4132;}
+	.class-3d3f58ad64-class-3d3f58ad64-st43{display:inline;fill:#281F1D;}
+	.class-3d3f58ad64-class-3d3f58ad64-st44{display:inline;fill:#CCB79A;}
+	.class-3d3f58ad64-class-3d3f58ad64-st45{display:inline;fill:#BAAD94;}
+	.class-3d3f58ad64-class-3d3f58ad64-st46{display:inline;fill:#D4C2A6;}
+	.class-3d3f58ad64-class-3d3f58ad64-st47{display:inline;fill:#C2AE92;}
+	.class-3d3f58ad64-class-3d3f58ad64-st48{display:inline;fill:#AF9F88;}
+	.class-3d3f58ad64-class-3d3f58ad64-st49{display:inline;fill:#ACAEA0;}
+	.class-3d3f58ad64-class-3d3f58ad64-st50{display:inline;fill:#3F342C;}
+	.class-3d3f58ad64-class-3d3f58ad64-st51{display:inline;fill:#8B857A;}
+	.class-3d3f58ad64-class-3d3f58ad64-st52{display:inline;fill:#C2B399;}
+	.class-3d3f58ad64-class-3d3f58ad64-st53{display:inline;fill:#BEA68F;}
+	.class-3d3f58ad64-class-3d3f58ad64-st54{display:inline;fill:#32302C;}
+	.class-3d3f58ad64-class-3d3f58ad64-st55{display:inline;fill:#7D6957;}
+	.class-3d3f58ad64-class-3d3f58ad64-st56{display:inline;fill:#DDC9AC;}
+	.class-3d3f58ad64-class-3d3f58ad64-st57{display:inline;fill:#BD6C53;}
+	.class-3d3f58ad64-class-3d3f58ad64-st58{display:inline;fill:#87806B;}
+	.class-3d3f58ad64-class-3d3f58ad64-st59{display:inline;fill:#1E1612;}
+	.class-3d3f58ad64-class-3d3f58ad64-st60{display:inline;fill:#968771;}
+	.class-3d3f58ad64-class-3d3f58ad64-st61{display:inline;fill:#4F3E38;}
+	.class-3d3f58ad64-class-3d3f58ad64-st62{display:inline;fill:#3A2623;}
+	.class-3d3f58ad64-class-3d3f58ad64-st63{display:inline;fill:#9C7B71;}
+	.class-3d3f58ad64-class-3d3f58ad64-st64{display:inline;fill:#403531;}
+	.class-3d3f58ad64-class-3d3f58ad64-st65{display:inline;fill:#B7A187;}
+	.class-3d3f58ad64-class-3d3f58ad64-st66{display:inline;fill:#CFBEAE;}
+	.class-3d3f58ad64-class-3d3f58ad64-st67{display:inline;fill:#87AA9C;}
+	.class-3d3f58ad64-class-3d3f58ad64-st68{display:inline;fill:#88826D;}
+	.class-3d3f58ad64-class-3d3f58ad64-st69{display:inline;fill:#4D3733;}
+	.class-3d3f58ad64-class-3d3f58ad64-st70{display:inline;fill:#B29C86;}
+	.class-3d3f58ad64-class-3d3f58ad64-st71{display:inline;fill:#211D18;}
+	.class-3d3f58ad64-class-3d3f58ad64-st72{display:inline;fill:#A59B8E;}
+	.class-3d3f58ad64-class-3d3f58ad64-st73{display:inline;fill:#6B6052;}
+	.class-3d3f58ad64-class-3d3f58ad64-st74{display:inline;fill:#C3775C;}
+	.class-3d3f58ad64-class-3d3f58ad64-st75{display:inline;fill:#AF9E84;}
+	.class-3d3f58ad64-class-3d3f58ad64-st76{display:inline;fill:#28231D;}
+	.class-3d3f58ad64-class-3d3f58ad64-st77{display:inline;fill:#705E4E;}
+	.class-3d3f58ad64-class-3d3f58ad64-st78{display:inline;fill:#5A6F66;}
+	.class-3d3f58ad64-class-3d3f58ad64-st79{display:inline;fill:#B6A89A;}
+	.class-3d3f58ad64-class-3d3f58ad64-st80{display:inline;fill:#D1B0A1;}
+	.class-3d3f58ad64-class-3d3f58ad64-st81{display:inline;fill:#342320;}
+	.class-3d3f58ad64-class-3d3f58ad64-st82{display:inline;fill:#F5E0C0;}
+	.class-3d3f58ad64-class-3d3f58ad64-st83{display:inline;fill:#747261;}
+	.class-3d3f58ad64-class-3d3f58ad64-st84{display:inline;fill:#A59F88;}
+	.class-3d3f58ad64-class-3d3f58ad64-st85{display:inline;fill:#141210;}
+	.class-3d3f58ad64-class-3d3f58ad64-st86{display:inline;fill:#D7C1A1;}
+	.class-3d3f58ad64-class-3d3f58ad64-st87{display:inline;fill:#F9E3C2;}
+	.class-3d3f58ad64-class-3d3f58ad64-st88{display:inline;fill:#CDB799;}
+	.class-3d3f58ad64-class-3d3f58ad64-st89{display:inline;fill:#2B201C;}
+	.class-3d3f58ad64-class-3d3f58ad64-st90{display:inline;fill:#E0C6B5;}
+	.class-3d3f58ad64-class-3d3f58ad64-st91{display:inline;fill:#241110;}
+	.class-3d3f58ad64-class-3d3f58ad64-st92{display:inline;fill:#99847A;}
+	.class-3d3f58ad64-class-3d3f58ad64-st93{display:inline;fill:#4C3D38;}
+	.class-3d3f58ad64-class-3d3f58ad64-st94{display:inline;fill:#6B5F58;}
+	.class-3d3f58ad64-class-3d3f58ad64-st95{display:inline;fill:#BD978A;}
+	.class-3d3f58ad64-class-3d3f58ad64-st96{display:inline;fill:#65514A;}
+	.class-3d3f58ad64-class-3d3f58ad64-st97{display:inline;fill:#775E56;}
+	.class-3d3f58ad64-class-3d3f58ad64-st98{display:inline;fill:#794D47;}
+	.class-3d3f58ad64-class-3d3f58ad64-st99{display:inline;fill:#371816;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st100{display:inline;fill:#928177;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st101{display:inline;fill:#351817;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st102{display:inline;fill:#DAC2B1;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st103{display:inline;fill:#844A44;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st104{display:inline;fill:#4D3C38;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st105{display:inline;fill:#C0A99B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st106{display:inline;fill:#8F7B72;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st107{display:inline;fill:#AB9286;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st108{display:inline;fill:#A1796F;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st109{display:inline;fill:#8F5D4D;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st110{display:inline;fill:#9C6754;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st111{display:inline;fill:#261A18;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st112{display:inline;fill:#AB9186;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st113{display:inline;fill:#522F2C;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st114{display:inline;fill:#612D2B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st115{display:inline;fill:#1C1714;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st116{display:inline;fill:#120E0D;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st117{display:inline;fill:#2B2522;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st118{display:inline;fill:#D6BEAD;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st119{display:inline;fill:#16100E;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st120{display:inline;fill:#2D2522;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st121{display:inline;fill:#D9BCAC;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st122{display:inline;fill:#978A7E;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st123{display:inline;fill:#EFD7B8;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st124{display:inline;fill:#231D1B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st125{display:inline;fill:#292721;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st126{display:inline;fill:#615649;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st127{display:inline;fill:#372E28;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st128{display:inline;fill:#433831;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st129{display:inline;fill:#1C1613;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st130{display:inline;fill:#4D3B32;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st131{display:inline;fill:#96846E;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st132{display:inline;fill:#53443E;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st133{display:inline;fill:#BBAB93;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st134{display:inline;fill:#C7AD9F;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st135{display:inline;fill:#342624;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st136{display:inline;fill:#3B2C29;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st137{display:inline;fill:#4D2B28;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st138{display:inline;fill:#554A45;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st139{display:inline;fill:#413B36;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st140{display:inline;fill:#322320;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st141{display:inline;fill:#AF9F91;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st142{display:inline;fill:#423A35;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st143{display:inline;fill:#511F1D;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st144{display:inline;fill:#322723;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st145{display:inline;fill:#82504A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st146{display:inline;fill:#4E3D38;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st147{display:inline;fill:#2D1C1A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st148{display:inline;fill:#988379;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st149{display:inline;fill:#8A7A70;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st150{display:inline;fill:#5C4540;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st151{display:inline;fill:#A38A7E;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st152{display:inline;fill:#352F1F;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st153{display:inline;fill:#716444;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st154{display:inline;fill:#AF9C8F;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st155{display:inline;fill:#2D2724;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st156{display:inline;fill:#6D5D55;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st157{display:inline;fill:#5F5049;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st158{display:inline;fill:#0D0B09;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st159{display:inline;fill:#F6DFBE;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st160{display:inline;fill:#544A3E;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st161{display:inline;fill:#F8E1C1;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st162{display:inline;fill:#4F3F34;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st163{display:inline;fill:#827360;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st164{display:inline;fill:#39322A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st165{display:inline;fill:#50463A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st166{display:inline;fill:#B2A186;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st167{display:inline;fill:#2F2822;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st168{display:inline;fill:#9A8972;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st169{display:inline;fill:#E7D4B5;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st170{display:inline;fill:#2D2923;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st171{display:inline;fill:#4E372F;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st172{display:inline;fill:#726556;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st173{display:inline;fill:#A18F7A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st174{display:inline;fill:#F5E0BF;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st175{display:inline;fill:#B7A28B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st176{display:inline;fill:#3E332C;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st177{display:inline;fill:#978875;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st178{display:inline;fill:#544238;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st179{display:inline;fill:#97806D;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st180{display:inline;fill:#C7B395;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st181{display:inline;fill:#2A221C;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st182{display:inline;fill:#F2DBBB;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st183{display:inline;fill:#6F5648;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st184{display:inline;fill:#271F1A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st185{display:inline;fill:#2E2720;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st186{display:inline;fill:#F2DCBB;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st187{display:inline;fill:#8D7765;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st188{display:inline;fill:#4F4136;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st189{display:inline;fill:#705B4C;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st190{display:inline;fill:#282620;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st191{display:inline;fill:#AE9A81;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st192{display:inline;fill:#695A4B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st193{display:inline;fill:#A5927B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st194{display:inline;fill:#9F8E76;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st195{display:inline;fill:#5C5446;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st196{display:inline;fill:#A99980;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st197{display:inline;fill:#A38F77;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st198{display:inline;fill:#7A715F;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st199{display:inline;fill:#45332B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st200{display:inline;fill:#5E4E43;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st201{display:inline;fill:#CCB89D;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st202{display:inline;fill:#AF9C85;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st203{display:inline;fill:#6D5D50;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st204{display:inline;fill:#5F5447;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st205{display:inline;fill:#CEBA9F;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st206{display:inline;fill:#B7A189;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st207{display:inline;fill:#C3AF95;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st208{display:inline;fill:#897262;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st209{display:inline;fill:#9E8874;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st210{display:inline;fill:#1A1715;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st211{display:inline;fill:#DCC5B4;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st212{display:inline;fill:#B3A295;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st213{display:inline;fill:#DECBAD;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st214{display:inline;fill:#BCAA8E;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st215{display:inline;fill:#D1BCA0;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st216{display:inline;fill:#AEC3A7;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st217{display:inline;fill:#24201B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st218{display:inline;fill:#EEDEBE;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st219{display:inline;fill:#896453;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st220{display:inline;fill:#462C26;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st221{display:inline;fill:#282520;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st222{fill:#020201;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st223{fill:#0A0808;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st224{fill:#0D0908;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st225{fill:#060505;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st226{fill:#0E0C0B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st227{fill:#2F2A28;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st228{fill:#2B2620;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st229{fill:#717474;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st230{fill:#414141;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st231{fill:#F6D9C7;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st232{fill:#FF9A77;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st233{fill:#FFF0A7;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st234{fill:#E1C7B6;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st235{fill:#F7EFD0;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st236{fill:#EF8A6A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st237{fill:#EBDA8F;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st238{fill:#EBDCB8;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st239{fill:#F6EED0;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st240{fill:#DFC5B5;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st241{fill:#D2BC9D;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st242{fill:#D5BF9F;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st243{fill:#E9DCB7;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st244{fill:#EBD2C1;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st245{fill:#F3DDBD;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st246{fill:#DDC5B3;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st247{fill:#EAD7B7;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st248{fill:#CBB799;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st249{fill:#D4C1A1;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st250{fill:#CDBA9C;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st251{fill:#CFB99B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st252{fill:#C5B294;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st253{fill:#DBC2B2;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st254{fill:#261D19;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st255{fill:#1A1411;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st256{fill:#E5CCBB;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st257{fill:#C9B699;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st258{fill:#E4CFBE;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st259{fill:#C7B397;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st260{fill:#2C2620;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st261{fill:#C4B59D;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st262{fill:#D2B0A1;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st263{fill:#241D1B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st264{fill:#B7A489;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st265{fill:#3A322A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st266{fill:#9B8E76;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st267{fill:#38312E;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st268{fill:#B0A99B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st269{fill:#3F403A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st270{fill:#685F4F;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st271{fill:#615446;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st272{fill:#8C8670;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st273{fill:#998E7A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st274{fill:#AC9E84;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st275{fill:#978B74;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st276{fill:#B6AD9E;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st277{fill:#B6A78B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st278{fill:#322925;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st279{fill:#AFA187;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st280{fill:#373F39;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st281{fill:#79635A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st282{fill:#69392F;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st283{fill:#848B74;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st284{fill:#A2927D;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st285{fill:#9A937B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st286{fill:#7D6B59;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st287{fill:#8A816C;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st288{fill:#5A4C45;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st289{fill:#4A403D;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st290{fill:#D3BBA0;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st291{fill:#0E0C0A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st292{fill:#8CB0A5;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st293{fill:#E0C5B4;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st294{fill:#A2AD9F;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st295{fill:#9C8B80;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st296{fill:#DCC7B7;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st297{fill:#958C80;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st298{fill:#100E0C;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st299{fill:#D1A798;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st300{fill:#CEBBA0;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st301{fill:#8D7967;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st302{fill:#B99D91;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st303{fill:#F0DBBB;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st304{fill:#9E9B84;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st305{fill:#C6BA9F;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st306{fill:#E0C6B5;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st307{fill:#48675E;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st308{fill:#46302C;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st309{fill:#3B1F1C;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st310{fill:#755650;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st311{fill:#80433D;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st312{fill:#201A18;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st313{fill:#A38077;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st314{fill:#AA7A70;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st315{fill:#3C4D46;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st316{fill:#DEC6B5;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st317{fill:#0C0909;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st318{fill:#AB857A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st319{fill:#4E453F;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st320{fill:#755E56;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st321{fill:#281F1D;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st322{fill:#C1A89A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st323{fill:#BEA496;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st324{fill:#5E433E;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st325{fill:#814641;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st326{fill:#85726A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st327{fill:#E2C8B7;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st328{fill:#412926;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st329{fill:#7E7970;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st330{fill:#6F504A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st331{fill:#323734;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st332{fill:#CFB2A3;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st333{fill:#C8AEA0;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st334{fill:#7D615A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st335{fill:#473F3A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st336{fill:#98968C;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st337{fill:#331D1B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st338{fill:#F9E3C2;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st339{fill:#D5BE9F;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st340{fill:#D8C1A1;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st341{fill:#1C1613;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st342{fill:#261F1D;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st343{fill:#12100F;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st344{fill:#C6B194;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st345{fill:#181412;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st346{fill:#211D1B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st347{fill:#B7A388;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st348{fill:#D0BB9C;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st349{fill:#443930;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st350{fill:#DDCFB1;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st351{fill:#2E2722;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st352{fill:#B29D83;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st353{fill:#231F1B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st354{fill:#332C26;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st355{fill:#312E29;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st356{fill:#594F43;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st357{fill:#3C362D;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st358{fill:#C2B0A1;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st359{fill:#534B3F;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st360{fill:#817968;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st361{fill:#5E4C41;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st362{fill:#504641;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st363{fill:#A5A099;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st364{fill:#C6BBA3;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st365{fill:#B19D8F;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st366{fill:#A99185;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st367{fill:#A89F88;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st368{fill:#362F2A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st369{fill:#1B1312;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st370{fill:#753B36;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st371{fill:#221816;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st372{fill:#594842;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st373{fill:#7D6D64;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st374{fill:#342825;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st375{fill:#2F1D1B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st376{fill:#361D1B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st377{fill:#3E3531;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st378{fill:#4F403B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st379{fill:#6E5D55;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st380{fill:#8D7B71;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st381{fill:#6F5F57;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st382{fill:#481614;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st383{fill:#705650;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st384{fill:#604D47;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st385{fill:#60524B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st386{fill:#302A23;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st387{fill:#292620;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st388{fill:#BCA78B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st389{fill:#594D40;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st390{fill:#887864;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st391{fill:#332E26;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st392{fill:#695D4E;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st393{fill:#0D0A08;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st394{fill:#241C17;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st395{fill:#38231D;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st396{fill:#56352D;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st397{fill:#F2DDBC;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st398{fill:#584D40;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st399{fill:#8E806C;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st400{fill:#F5DEBE;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st401{fill:#393028;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st402{fill:#7D6B5A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st403{fill:#BAAB8F;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st404{fill:#F6DCBC;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st405{fill:#221E1A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st406{fill:#B8A88F;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st407{fill:#37332A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st408{fill:#796D5D;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st409{fill:#EFD9BA;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st410{fill:#37201D;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st411{fill:#3A3029;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st412{fill:#5D5044;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st413{fill:#B6A18A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st414{fill:#7C6D5D;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st415{fill:#8E7C6A;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st416{fill:#6E6052;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st417{fill:#B6A48C;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st418{fill:#4A4035;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st419{fill:#8C7D6B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st420{fill:#5F5347;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st421{fill:#302721;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st422{fill:#998B74;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st423{fill:#584D41;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st424{fill:#6D6353;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st425{fill:#827C68;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st426{fill:#8F7E69;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st427{fill:#292722;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st428{fill:#5B4F43;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st429{fill:#6B7A67;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st430{fill:#B6A193;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st431{fill:#CDB8A9;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st432{fill:#F7E0C0;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st433{fill:#D6C4A7;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st434{fill:#A19D86;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st435{fill:#1F1916;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st436{fill:#5B4A3F;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st437{fill:#C4B295;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st438{fill:#A5967F;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st439{fill:#D7C1A1;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st440{fill:#847664;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st441{fill:#A0917B;}
+	.class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st442{fill:#5B5145;}
+</style>
+<g id="b">
+	<path class="class-3d3f58ad64-st1" d="M345.1,384.6c-31.3-8.3-64.2-14.7-93.8-27.8c-12.5-7.1-27.8-7-39.4-16.2c-9.5-6.9-23.1-6.1-33.5-12   c-33.1-11.1-61.5-31.7-98.2-26c0.8,1.4,1.7,2.7,2.5,4c-1.6,3.5-3.8-0.1-6-0.6c-10-3.3-21.5-0.9-31.1-5.9c-4.8-3-10.9-1.3-15.7-4.5   c-9.2-1.8-22.8,3.6-26.7-8.7c8.4-22.8,35.8-30.7,58-29.3c7.4-13.7,22.8-16.3,36.5-20.5c3.4,11.3,7.7,22.3,8.6,34.3   c4.4-0.2,8.4-1,11.7-3.7c1.3,0.6,0.6,2.1,0.8,3.3c37.9,5.8,79.5-1.1,114.5,18.2c32.1,23.8,74.2,14.9,111.6,18.2   c36.3-28.5,62.8-23.2,96.4,4.6c25.4,7.3,66.9-2,86.9-19.5c17.8-11,39.3-18.7,60.3-16.6c14.3-9.2-5.1-20.5-4.1-32.1   c-0.8-14.3-3.3-30,6.9-41.8c7-9.8,17.3-10.9,25.5-1.9c0.1,1.8-1.7,1.6-3,1.6c-3.2-4.5-8.9-3.3-13.5-4.3   c-16.5,11.7-20.4,51.2-3.3,63.1c0.2-1.9,0-6.6-2.2-6.8c0-0.2,0-0.4,0.1-0.6c0.4-0.1,0.9-0.1,1.3-0.1c5.2,2.3,0.6,10.2,5.6,12.8   c1.6-2.2,0.2-4.9,1.8-6.9c2.4,5,0.3,10.6-2.1,15.1c1.4,3.7,5.9-2,7.8-3.4c0.3,0.5,0.5,1,0.9,1.6c6.4-5.3,9.2-10.2,4.9-17.9   c-1.4-1.3-1.4-2.9-3.2-3.2c-0.8,0.8-1.2-0.2-1.7-0.3c-7.1-8.9-13.4-19.1-6.7-30.3c-0.2-0.6-0.4-1.1-0.6-1.6c5-4.4,5-4.4,8.6-5.6   c2.1,2.7-2.1,12.3-2.8,16.2c-1.3,0.8-0.7,2-0.7,3c0.5,3.7-2.3,9.9,2.1,11.7l0,0c0,0.6,0.2,0.8,0.8,0.8l-0.1-0.1   c5.1,6.3,12,14.1,7.4,23.1c-6.4,5.6-15.5,14.9-24.2,12.9c0.3-0.2,0.5-0.5,0.8-0.7c0.5,0.2,1.1,0.5,1.8,0.8c0.8-0.9,1.6-1.7,2.4-2.5   c-0.6-0.6-1-1-1.4-1.5c0.2-0.6,0.4-1.2,0.7-1.8c-3.3-0.2-3.4,2.5-5.1,4.1c-0.2-0.2-0.4-0.4-0.7-0.6c0.2-0.5,0.3-1.1,0.6-2   c-1.9,0.8-3.6,1.5-5.3,2.1c-0.6-0.2-1.2-0.4-1.9-0.6c-0.7,0.6-1.4,1.1-2.1,1.7c7.8,8.4,21.1,7,29.1,15.6c4.3,5,5.9,7.4,13,7.3   c1.5-2.4,3.8-3.7,6.1-5.1c0.3,0.3,0.6,0.6,0.9,0.8c-1.6,1.6-3.2,3.2-4.8,4.7c5.8,1.8,9.6,6.5,14.3,10.1c-0.2,0.2-0.5,0.4-0.7,0.6   c-11-8.7-21.4-9.2-34.5-11.1c0.3-1.3,3.5,0.1,2.3-1.4c-9.6-8.5-23.6-7.8-35.4-4.7c-19.6,7.8-17.7,38.1-7.1,52.6   c9.1,9.8,29,8.8,35.2-3.9c-3.5,0.1-6.7,0.1-10.3-0.2c16.2-8.3,31.2,5.5,47.5,7.5c30.6,7.7,62.4,9.4,93.3,12.9   c28.2-3.1,55.2-12.4,83.6-14.4c8.8-2.8,16.1,2.6,24.8,1.3c8.9-2,17.9-4,26.8-5.5c5.9-1.1,13.6,1.3,18.5-2.2   c-8.3-3.6-19,2.4-26.1-3.7c11.9,0.7,24,2.5,35.4-1.1c-11.4-4.8-25.3,0.3-37.3-2.3c-0.1-1.2,0.8-0.9,1.3-1.2c6.7,1,14-0.3,21-0.1   c0-0.2,0-0.3,0-0.5c-42.3-4.8-85.4,2.6-128.7-0.4c-15.6-4.2-30.9,2.4-46.5,1.4c-18.5-1-36.4-8.7-53.6-15.1c8-1.6,16.5,5.1,24.6,6.6   c27.2-2.1,52.4-13.4,78.9-18.9c12.1,4.7,15,2.7,27.1,0.1c5.4-0.7,12.1,1.3,16.2-3c-5.9-5-14.5,0.8-20.8-3.6   c3.4,0.1,5.1-1.9,8.1-1.6c0.4,0.4,0.7,0.8,1.1,1.2c4.7-1.8,8.7,1,12.9,1.9c0.3,0.6,0.6,1.1,0.8,1.5c-4,9.7-16.1,3.2-23.6,7   c-9.8,4.5-19.6-1.7-29.5,1c-21.8,4.5-42.1,14.1-64.6,16.2c0,0.1,0,0.3,0,0.4c25,9.7,50.8-3.1,76.3,3.2c46.4,2.1,93.8-7.9,138.5,4.8   c-0.3,0.8-0.6,1.8-1,2.9c-2.1,0.6-4.2,1.1-6.2,1.7c0.1,0.6,0.1,1.1,0.2,1.5c-7.4,6.5-18.1,3.5-27.1,5.2   c-12.9,2.6-25.2,7.5-38.2,2.9c-37.1-0.3-72.5,19.7-109.4,13.4c-35.1-3.6-71.2-4.2-103.5-20c-6.3,9.2-6,22.1-15.1,29.5   c-8.3,7.2-20.7,12.7-31.7,10.1c-18.9-6.1-38.4-2.1-57.7-0.5c-26.1,0.2-52.3,1.6-78.2,1.7C402.6,392.4,371.6,393.6,345.1,384.6z    M595.7,269.2c0,0.4,0.1,0.8,0.1,1.3c0.1,0,0.3,0,0.4,0c-0.1-1.4,0.9-2.7,0.3-4c1.7-1.2,0.5-3.4-1.4-3.5   C595.6,265.3,595.8,267,595.7,269.2z M242.1,309.9c-14.3-3.8-25-15.2-37.9-21.6c-32.2-13-67.3-2-100.3-12.1   c-18.8,2.7-24.2-2.9-27.3,20.6c0.7,1,1.6,2.2,2.2,3.3c49.6-9.1,89,30.1,136.2,37.6l0.1-0.2c-0.3,0.7-0.3,1.4-0.6,2.4   c42.5,19.4,89.3,31.9,134.9,41.9c4.6-20.8,11.6-44.6,2.9-65c-20.9,3-42.3,1.7-63.2,0C273.4,314.4,256.6,316.3,242.1,309.9z    M187.2,280.2c18.1,2.9,31.9,14.5,47,23.8c17.9,10.1,39.7,9,59.7,10c18.4,0.7,37.1,2.5,55.2,0.6c-1.2-1.9-2.5-3.5-4-4.6   c-23.5,0.9-46.4-1.7-69.9-0.2c-17.3-0.8-31.6-11.7-46.2-19.8c-34.9-16.7-74.2-10.2-111-16.6c-4.2-0.4-8.2-1.5-12.3,0.9   C132.8,280.2,160.1,277,187.2,280.2z M355.3,317.8c0.4,1.3,0.5,2.7,1.5,3.8c0,0.2,0.1,0.4,0.2,0.6c4.1,20.2-0.2,40.9-5.3,60.5   c26.1,9,55,3.4,81.9,1.9c8.5-21.6,11.7-46.5,3.5-68.6c-7.8-3.2-11.6-11.3-18.5-15.7c-22.5-14.6-49.8-6.2-70.1,8.1   c1.3,2,1.5,3.6,2.2,5.9c17.9-21.3,51.1-24.1,73.1-7.6c-23.6-8.7-52.7-14.3-69.7,9.2C354.4,316.4,354.8,317.1,355.3,317.8z    M7.9,285.4c-1.1,0.8-0.7,2.2-1.3,3.3c5.5,7,16.2,2.5,24,4.3c2.1,0.1,4.1,0.1,5.8,1.7c2.8,0.7,6.1,0.5,8.6,2   c1.1-0.7,1.6-2.4,3.3-1.1c0.2,0.9,0.4,1.9,0.6,2.9c3.5,1.7,3.5,1.7,5.9,1.4c0.2-1.9-1-4.3,2.1-5.2c2.1,1.2,1.6,3.5,1,5.3   c1,0.9,1.8,1,2.8,0.4c0.6-1.4,0-3.2,1.2-4.4c3.6-1,2.4,2.9,2.8,4.9c3.2,0.8,6.2,1,9.3,1.3c-2.4-7.9,2.8-15.7,5.7-22.9   c4.6-9.6,16.8-2.4,24.6-6c-3.1-11-3.2-22.4-8.3-32.7c-10.4,4.4-25.6,5.3-30.8,16.3c-1.1,2.2-2.6,3.8-5.4,3.7   C39.9,258.2,18.9,269,7.9,285.4z M453.7,380.1c0.3,0.3,0.6,0.5,0.8,0.8c-1.4,1.4-2.3,2.1-3.6,3.9c27.4-2.8,55,0.4,82-4.1   c3.8-22-1.9-58.8-14-77.7c-20.5,15.2-53.4,15.4-78.2,15c6.3,22.2,3.7,45-3.8,66.5C443.3,385.8,448.9,384.2,453.7,380.1z    M536.7,371.3c-0.6,2.3-1,7.2-0.7,8.9c22.2-1.5,40.4,11.6,60.3-6.7c0-1,0-2,0-2.9c8.3-6.4,7.9-16.7,13.7-24.8c-1.7,0-3.2,0-4.8,0   c-2.4,8.4-12.8,13.5-21,13c-26.9,3-36-35.3-23.9-54.3c-0.2-0.5-0.4-0.8-0.6-1.2c13.8-15.2,39.4-15.3,53.9-1.1   c0.7-0.4,1.7,0.3,2.3-0.8c-8.5-12.8-38-13-33.9-23.2c-22.5-0.3-42.3,10.8-60.2,23.4C534,322.5,536.1,347.4,536.7,371.3z    M604.7,224.7c-0.7,3.1-3.5,10.3-0.5,12.1C604.2,232.6,606.6,228.6,604.7,224.7z M609.8,216.9c-3.3,1.1-4,3.9-4.5,6.9   C607.8,222.1,608.8,219.9,609.8,216.9z M597.2,272.2c2.6-0.6,2.6-0.6,1.6-4.4C598.2,269.4,597.8,270.6,597.2,272.2z M595.3,271.8   c-1.2,0.4-1.2,1.5-1.8,2.5C595.3,273.7,595.3,273.7,595.3,271.8z" />
+	<path class="class-3d3f58ad64-st2" d="M799.8,308.5c0.4-0.7,0.7-1.5,1.1-2.2c-0.2-0.4-0.5-0.8-0.8-1.5c-1.1-0.1-2.6,0-3.3-1.2   c5.4-0.7,12.3,2,16.9-1.1c-10.9-3-23.1-5.5-34.2-6.3c-13.2,5.7-28.3,4.9-42.5,5.6c-19.4,0.6-39-3-57.9,2.4c-15.2,3.7-30-4.7-44-9.2   c1-1,2-2,2.9-3c0.2,0.2,0.5,0.4,0.7,0.7c-0.2,0.4-0.4,0.8-0.5,1.1c41.3,18.2,40.1,1.5,79.2,5.3c20.5-0.5,42.4,2.2,61.8-5.3   c1.8-0.6,3.6-0.7,5.3,0.4c10.9,4.4,23.4,2.8,34.6,6.4c-0.1,1.1-0.3,2.1-0.4,3.3c-5.4,1.9-10.8,1.7-16.2,1.4   C801.9,306.6,801.5,308.1,799.8,308.5z M816.8,303.1c2.5,0.4,1.6-3.2,0-1.8C816.8,301.8,816.8,302.3,816.8,303.1z" />
+	<path class="class-3d3f58ad64-st3" d="M638.9,292.8c-0.2-0.2-0.5-0.4-0.7-0.7c1.2-1.4,2.4-2.8,3.7-4.3c-0.3-0.5-0.6-1-0.9-1.5c1-1.8,3.4-0.6,4.9-0.6   c3.2,3.1,6.7,5.1,11.2,5.1c2.6,1.8,5.6-1.5,5.4-4.1c-0.8-2.7,1.1-4,3.5-4.6c0.5-1.6-0.3-2.7-1-3.7c-4.2-1-4.2-1-5.9-3.6   c0.6-0.1,1.2-0.2,1.7-0.4c2.5,1.5,5.9,3.9,8.5,1.1c-1.2-2.1,0.3-3.7,0.3-5.7c-0.9-0.3-1.5-0.5-2.4-0.8c2.4-2.6,3.8-1.8,5.3,0.4   c1.1-0.1,2.2-0.2,3.1-0.3c1.6-6.3-4.8-20.2,5.6-21.1c0.3,0.3,0.6,0.6,0.9,0.9c0,0.2,0,0.4,0,0.5c-1.1,0.6-2.2,1.3-3.6,2   c0.8,0.4,1.4,0.7,2,1c-0.5,1.4-2.5,0.2-2.7,1.5c-0.8,4.3-0.4,8.5,1,12.6c-1.1,4.4-2.9,4.5-6.6,5c-1.6,1.6-1,3.9-1.7,6   c-0.9,0.5-1.8,1.1-2.8,1.6c0.1,2.5-0.2,4.9-2.9,5.8c0.9,12.6-13.5,8.6-20.1,3.9C642.7,290.3,640.8,291.5,638.9,292.8z" />
+	<path class="class-3d3f58ad64-st4" d="M621.9,200.8c12.1-9.2,38.1-6.5,49.5,2.2c-0.3,1.2-1.4,0.9-2.3,0.9c-13.5-5.7-30-8-44-2.8   c-1-0.2-2.1,0.4-3.1,0.6C621.9,201.4,621.9,201.1,621.9,200.8z" />
+	<path class="class-3d3f58ad64-st5" d="M99.1,242.1c-1.1-1-0.7-2.4-0.7-3.8c3.7-3.1,8.3-1.9,12.8-2.1c3.3,4.7,10.9,28.4,7.7,32.9c0-0.6,0-1.2-0.8-1.4   c0.3-8.6-5-15.7-5.8-24.3c-0.3-2-0.9-4-2.4-5.6c-3.7,0.4-7.3,0.9-10.9,1.3C99.1,240.5,99.1,241.3,99.1,242.1z" />
+	<path class="class-3d3f58ad64-st6" d="M682.3,248.9c-0.3-0.3-0.6-0.6-0.9-0.9c2,0.2,3.5-24.5,1.6-24.9c0.3-1.6-0.6-2.9-0.8-4.4   c-1.1-0.8-0.2-2.2-1.3-3c-0.5-0.7,0.3-1.5,0.5-2.2c0.2,0.1,0.3,0.3,0.2,0.5c0.8,0.7,0.2,2.1,1.4,2.4c4.5,5.9,5,27,0,32.5   C682.7,248.9,682.5,248.9,682.3,248.9z" />
+	<path class="class-3d3f58ad64-st7" d="M621.9,201.7c0.8-0.2,1.6-0.4,2.4-0.7c0.2,0.2,0.5,0.4,0.7,0.6c0.5,0.1,0.9,0.2,1.4,0.2c0,0.1,0,0.3,0,0.4   c-1.1,0.8-2.3,1-3.6,1.1c0-1.7-3.4,2.2-4.7,2.1c-2,1.6-2,3-4.4,0.8l0.1-0.1l-0.1,0.2c-0.1-1.1-1.6-0.7-2.2-1.6   c-0.2,0-0.4,0-0.6-0.2c0.6-0.3,1.2-0.6,1.9-0.8l0.2,0.1c0.2,0.3,0.4,0.5,0.6,0.8c1.2-0.4,2.5-0.3,3.1-1.6c-0.5-0.4-1-0.8-1.5-1.2   c1,0,1.7-0.5,1.6-1.6c0.5,1.3,3.8,3.3,4.2,1.4C621.4,201.6,621.7,201.7,621.9,201.7z" />
+	<path class="class-3d3f58ad64-st8" d="M681.4,213.5c-0.2,0.5-0.4,1-0.7,1.5c-2.4-4.7-5.7-8.7-10.9-10.4l0,0c0.1-0.2,0-0.5,0-0.7   c0.7,0,1.4-0.1,1.6-0.9C675,206.3,679.6,208.7,681.4,213.5z" />
+	<path class="class-3d3f58ad64-st9" d="M345.1,384.6c1.8,0.1,2.8,1.7,4.5,2.1C347.8,387.3,345.4,386.7,345.1,384.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st10" d="M678,254c0.2-1.4,2.2-0.1,2.7-1.5c0.3,0.2,0.6,0.3,1.3,0.7C680.4,254.1,679.2,254,678,254z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st11" d="M685.2,331c-0.7-0.1-1.3-0.1-2-0.2c0-0.1,0-0.3,0-0.4c0.7,0,1.4-0.1,2-0.1C685.1,330.5,685.1,330.7,685.2,331   z" />
+	<path class="class-3d3f58ad64-st8" d="M683,216.4c-0.7-0.2-0.8-0.8-0.8-1.4C682.5,215.5,682.7,216,683,216.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st12" d="M683.2,248.7c0.2-0.2,0.3-0.4,0.5-0.6C683.5,248.3,683.3,248.5,683.2,248.7z" />
+	<path class="class-3d3f58ad64-st8" d="M682.2,215c-0.2-0.3-0.4-0.7-0.6-1C681.8,214.3,682,214.7,682.2,215z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st13" d="M621.1,201.6c0,0.6-0.2,0.8-0.8,0.7C620.6,202.1,620.9,201.9,621.1,201.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st13" d="M621.9,201.7c-0.3,0-0.5-0.1-0.8-0.1c0.2-0.3,0.5-0.5,0.7-0.8C621.9,201.1,621.9,201.4,621.9,201.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st12" d="M682.3,248.9c0.2,0,0.4,0,0.6,0c-0.2,0.2-0.4,0.3-0.6,0.5C682.3,249.2,682.3,249.1,682.3,248.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st12" d="M245.2,311.1c34.7,7.1,71.7,9.3,107,5.8c7.3,14.8,3.2,32.3,1,47.9c-0.5,0.5-1,1-1.6,1.5   c-32.2-1.8-64.5-10.2-95.4-18.9c-5.5-3.6-11.1-6.6-17.5-7.5c-1.9-1-4.1-1.7-4.5,1.5l0,0c-6.4-1.2-12.8-3-19.4-3.6l0.1-0.2l-0.1,0.2   c7-2.8,14.2,4.1,21.5-2.7c-19.3-6.7-40.3-7.9-59.9-13.8c-23.3-12.3-74.7-36.9-98.7-22.6c-0.5-0.7-0.9-1.3-1.3-1.9   c1.2-4.6,1-16.5,7.4-14.8c3.6,0.9,21.6,1.4,22.9-1.3c-6.7-1.4-14,0-20.2-3.2c5.6-0.6,11.9,0.5,17.2-1.2   c63.4,13.7,73-9.9,134.8,32.7c0,0.3,0,0.5,0,0.8c-1.3,0-2.6,0-4.2,0C237.4,311.4,242.3,313.1,245.2,311.1z M191.7,306   c3.4-0.1,6,1.2,9.3-0.1c-10.5-6.6-22.9-6.7-33.8-12.3c-1.6-0.8-3.2-0.9-4.8-0.4C159.6,299.7,186.8,304,191.7,306z M227.6,309   c1.1,0.4,2.2,1.5,3.6,0.2c-1.2-0.5-2.3-1.2-3.6-0.8c-1.4,0-2.6-1.5-4.1-0.5C224.7,309,226.1,309.1,227.6,309z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st12" d="M652.2,322.1c22.3,8.3,46.2,18.8,70.3,14.2c14.2-4.5,28.4,0.8,42.6,0.3c25.2-0.6,50.5-0.1,75.6-2.8   c7.8,0.5,12.1-2.3,19.2,2.4c0,0.2,0,0.4,0.1,0.6c-0.5,0.2-1.3-0.1-1.3,1.2c12,2.6,25.9-2.5,37.3,2.3c-11.4,3.6-23.5,1.8-35.4,1.1   c7.1,6,17.8,0,26.1,3.7c-8.9,4-20.8,1.3-30.6,2.1c-9.9,2.4-20.3,3-28.8-3.7c-0.8,0-2,0.1-3,0.2c-0.7,0.8-1.3,1.5-1.8,2.1   c-30.7-2.4-59.4,10.3-89.2,14.2c-6.2,1.2-13.2-0.1-19.4-1.2c-16.1-3.3-32.2-1.4-48.1-6.8c6.9-1,9.5-2.2,11.6-5.3   c-6.5-2.7-14.3,1.7-21.4-0.7c-9.2,0.6-17.2-2-25.9-4.9c4.9-2,10-2.9,12-8.4c-9.9-0.5-19.4,3.7-29.2,2.4   c-4.4-1.3-34.6,4.6-27.1,11.9c-3.2,1.3-6.4,1.8-9.8,1.7c-0.9,1.1-1.8,2.2-2.8,3.5c-14.2-1.2-15.3-28.9-12.1-39.9   c4.1-20.6,34.8-21.9,48.5-10.6c-1.2,0-2.5,0-3.7,0.1c1.7,3.1,9.4,2.5,13,2.9C633.1,303.8,640.9,317.1,652.2,322.1z M727,342.8   c-3.6,1.7-10.1,0.4-11.7,4.7c0.6,0.6,1.2,1.3,2,2c5.4-1,10.7-1.8,14.8-6.1C730.6,341.6,729.1,342.1,727,342.8z M853.4,340.7   c4.3,1.7,4.3,1.7,5.7,0.3C857.4,340.3,855.7,340.5,853.4,340.7z M845.2,340.3c0.9,1.2,1.7,1.2,2.7,0.7   C847.5,339.8,846.7,339.6,845.2,340.3z M736,340.3c-1.1-0.6-1.8-0.5-2.2,0.4C734.1,342,735.3,341,736,340.3z M842.1,340.3   c-0.2-0.5-0.5-0.4-0.9-0.2C841.4,340.6,841.7,340.5,842.1,340.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st14" d="M429,310.3c2.7,1.8,4.8,4.5,8.1,5.6c6.1,16.9,6.2,36.1,1.3,53.2c-0.5,0.2-1.1,0.5-1.6,0.7   c-16.5-8.8-59.9-2.9-80.5-1.8c0.5-16.2,4.3-32.6,0.6-48.3c2,1.4,4.6,9.6,6.4,8.5c-2.7-4.9-5.2-10.3-6.4-15.7   c18-20.2,47.8-15.1,69.1-3.6l-0.1-0.1c0.3,0.3,0.5,0.5,0.8,0.8l-0.1-0.1c0.2,0.1,0.3,0.3,0.1,0.5   C426.8,311.7,428.3,310.7,429,310.3z M397.4,321.5c-4.7,2.6-9.8,4.9-13.3,9c0,1.2,0,2,0,2.8c5.8,5.2,14.7,3.9,21.9,4.2   c2.8-1.5,6.6,0.5,8.8-2.5c0-1.5,0-2.9,0-4.3C410,326,405,319.9,397.4,321.5z M365.8,343c-1.5-5-2.8-8.8-5-12.8   C360.7,333.2,362.5,338,365.8,343z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st12" d="M534,370.9c-0.5,2.1-1.2,3.7-1,6.2c-24.3-6.6-35.2-20.4-61.4-13.1c-0.3-3,4.8-6,2.9-8.5   C461.2,362,455,377.8,439,381c-0.3-0.4-0.5-0.6-0.7-0.9c7-20.1,8.1-41.5,2.5-62.1c24.7,0.4,57.7,0.2,78.2-15   c9.6,13.8,13.8,38.4,14.1,55.2c-2.2-2.1-6.1-6.2-7.3-1.5c1.9,2.9,4.3,4.7,8,4.6C533.8,364.6,533.9,367.8,534,370.9z M474.4,320.8   c-0.4,0.1-0.9,0.1-1.3,0.2c0,0.1,0,0.3,0,0.4c7.4,0.9,14.9-1.7,21.9-3.8C493,314.9,478.8,320.7,474.4,320.8z M518.7,358.8   c2.7-4.5-6.1-10.5-5.4-2.9c1,1.2,1.7,2.2,2.3,2.9C516.9,358.8,517.8,358.8,518.7,358.8z M456.3,321.1c-1.2-0.4-2.2-1.5-3.8-0.9   C453.6,321.9,455,321.6,456.3,321.1z M461.9,320.8c1.1,0.7,1.9,1,3.1,0C463.8,320.8,463,320.8,461.9,320.8z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st15" d="M536.7,371.3c-0.6-23.8-2.7-48.7-14.8-69.6c17.9-12.6,37.7-23.7,60.2-23.4c-4.2,10.2,25.4,10.4,33.9,23.2   c-0.6,1.1-1.6,0.4-2.3,0.8c-14.5-14.2-40.1-14.1-53.9,1.1c0.2,0.4,0.4,0.7,0.6,1.2c-12.1,18.9-3,57.3,23.9,54.3   c8.2,0.5,18.6-4.6,21-13c1.6,0,3.1,0,4.8,0c-5.9,7-4.5,17.2-12.1,22.8c-15.2,4.9-32.8,12.7-47.8,3.3c-0.4-3.8,0.5-7.7-1.4-11.5   c-5,3-6.2,8-7.9,13.1c-1.1,0.4-2.4,0.8-3.8,1.3C536.9,373.4,536.8,372.3,536.7,371.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st12" d="M683.7,228.1c1,5.4-1.6,10.9-0.8,16.4c0.2,1.5-0.5,2.5-1.5,3.4c-10.4,0.9-4,14.8-5.6,21.1   c-0.9,0.1-1.9,0.2-3.1,0.3c-1.5-2.2-2.9-3-5.3-0.4c0.9,0.4,1.5,0.6,2.4,0.8c0,2-1.5,3.6-0.3,5.7c-2.6,2.8-6,0.4-8.5-1.1   c-0.6-1-1.3-0.9-2.2-0.1c-0.5,3.7,4.2,5.3,4.4,8.9c-0.9,1-0.7,2.3-0.6,3.5c0.3,2.6-2.7,5.9-5.4,4.1c-7.1-5-14.9-9-20.6-16.1   c-1-3.9-2.5-8.5-5.8-11.2c0.1-1.6,0.2-3.2,0.3-5c-2,1.2-1.7,3.4-2.6,5c-1,0.7-1.3,1.7-1.5,2.9c0.4,0.6,0.8,1.3,1.2,1.9   c-3.9,8.2-0.3,17.1-0.5,25.7c-3,2.2-5.8,4.2-7.2,7.7c-0.8,0-1.6,0-2.3,0c-6.5-10.9-18.8-12.2-28.7-17.6c0.1-1.2,0.1-1.2,1.5-0.7   c2.2,0.1,3.4-1.5,5.6,0c11.4-8.3,30.5-13.3,20-31.5c0.7-1.6,2.5-0.3,3.6-1.3c0.1-0.4,0.2-1,0.3-1.6c1.8,2-1.1,6.7,2.6,7.1   c3,0.3,6.4-0.7,6.1-4.4c-0.9,0.4-1.5,0.6-2,0.9c-0.3-0.3-0.7-0.7-1-1c0-1.4,0-2.7,0-4.1c0.3-0.3,0.6-0.5,0.8-0.8   c0.4,1,0.7,2,1.1,3.1c1.8-1,4.5-0.8,3.3-3.9c0.7-0.5,1.2-1,1.7-1.4c0.6,0.2,1.2-0.9,1-1.5c0.2-0.6,0-1.4,0.9-1.6   c0.8,0.8,1.6,1.7,2.4,2.5c1.3-0.6,1.7-0.7,2.8-1.6c-0.6-0.4-1.1-0.7-1.5-0.9c0.2-0.2,0.4-0.4,0.7-0.7c1.6,0.3,7.5-0.2,5.4-2.7   c-0.6-0.5-1-1-1-1.7c3.5-4.5,9.5-4.1,13.8-7c-0.9-0.2-1.6-0.3-2.5-0.5c0.5-0.7,0.8-1.3,1.2-1.9c1.2-0.2,2.3,0.2,2.2-1.5   c2.6-0.7,3.4-2.7,3.6-5c1.1,0.9,2.3,1.8,3.7,3c0.1-0.8,0.1-1.2,0.1-1.6c1.3,0.4,2.6,0.8,4.2,1.2c0-0.8,0-1.3,0-1.9   c0.5,0.7,1,1.4,1.5,2.2c0.6-0.9,1-1.5,1.4-2.1c1.1,2.7,3.9,2.4,6.1,3.4c0.7,0,1.6-0.8,2,0.1C681.6,226.1,682.7,227,683.7,228.1z    M672.8,249c-4.3-2.8-7.7-2-12.3-0.9c0.9,2,2.8,1.2,4,2.5c-0.2,0.4-0.3,0.9-0.5,1.3c0.9,1.1,1.7,2.2,3.3,2.1   C667.8,250.7,669.5,250.1,672.8,249z M675.6,247.5c-2.5-5.6-9.9-9.9-15.5-5.4C671.5,240.7,671.8,250,675.6,247.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st16" d="M78.5,246.6c5.7-2.5,11.4-4,17.5-6c5.2,10.3,5.3,21.8,8.3,32.7c-23.7,3-23-4.3-30.9,23.2   c-12.7-3.7-25.7-8.2-38.9-8.8c-6.3-0.4-12.8,1-18.8-1.5c-2.2-0.9-4.4-1.2-6.7-0.2c-0.2,0.1-0.8-0.4-1.1-0.6   c11.4-16.9,35.7-30,56.2-23C71.7,260.5,69.9,251.9,78.5,246.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st12" d="M636.1,295.9c14.3,3.2,28,12.5,43.1,8.4c18.9-5.4,38.6-1.8,57.9-2.4c14.2-0.8,29.3,0.1,42.5-5.6   c11,0.7,23.3,3.2,34.2,6.3c-7.7,4.2-18.2-1.4-26.5,0.4c-0.4-0.4-0.7-0.7-1.1-1.2c-2.9-0.3-4.7,1.7-8.1,1.6   c6.3,4.4,14.9-1.4,20.8,3.6c-4,3.5-12.2,0.8-17.2,0.7c-7.3,1.5-14.3,3.9-21.7,2.2c-1-1.8-2.6-1.5-4.4-1.5   c-4.3,0.4-12.7-3.6-13.8,2.3c-21.7,1.8-43.5,8.6-64.5,12.8c0.6-0.7,1.2-1.5,1.7-2.2c-2-2.6-4.6-2.8-7.3-2.3l0,0   c-0.2-0.3-0.4-0.6-0.7-0.9c-0.7-0.3-1.3-1.2-2.2-0.4c0,0.2-0.1,0.4-0.1,0.8c0.5,0.4,1.1,0.9,1.6,1.3c-2.1,1.6-3.9,3.6-6.1,5.1   c-17-3-22-14.2-36.1-21.1C630.8,300.9,633.4,298.3,636.1,295.9z M666.6,313.5c0.5,0.2,1.1,1,1.5,0.2c-1.1-1.8-5.5-5.1-6.3-1.5   C663.3,313.1,664.9,313.5,666.6,313.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st17" d="M676.4,346.4c0.3,0.1,0.7,0.1,1.1,0.2c-2.1,3.1-4.7,4.4-11.6,5.3c15.9,5.4,32,3.5,48.1,6.8   c6.2,1,13.2,2.4,19.4,1.2c29.8-3.8,58.5-16.6,89.2-14.2c0.5-0.6,1.1-1.2,1.8-2.1c1-0.1,2.2-0.1,3-0.2c12.1,10,26.9,2.3,40.9,3.8   c-9,1.5-17.9,3.5-26.8,5.5c-8.7,1.3-16-4.1-24.8-1.3c-31.7,1.1-62.2,16-93.8,13.9c-27.5-5.3-56-4.2-83.2-12.3   c-16.3-2-31.2-15.8-47.5-7.5c3.5,0.3,6.7,0.2,10.3,0.2c-5.6,11.5-21.8,13.3-31.9,6.7c1-0.1,1.9-0.2,2.7-0.2c1-1.3,1.9-2.4,2.8-3.5   c3.5,0,6.7-0.4,9.8-1.7c-5.8-8.2,15.2-9.6,19.9-11.9c4.4-1.3,8.7,1.3,12.9-0.1c8,0.2,15.5-2.9,23.5-2.4c-2,5.5-7.1,6.5-12,8.4   c14.4,5.7,29.5,6,44.7,4.7c-0.2,0.4-0.3,0.8-0.6,1.6C675.2,346.9,675.8,346.7,676.4,346.4z M818.3,348c-1.7,0-2.6-0.4-3.8,1.4   c3.6-0.3,7.1,0.6,10-0.4C824.5,346.7,819.9,348.4,818.3,348z M652.6,350.2c3.5,1.6,3.6,1.6,6.7,0.2   C655.8,349.2,655.1,349.2,652.6,350.2z M721.4,362.9c1.8,1.1,3.6,0.3,5.5,0.3C725.9,361,721.8,359.9,721.4,362.9z M665.9,348.8   c-1.4-0.4-2.5-0.6-3.5,0.7C663.9,350.5,664.9,350.1,665.9,348.8z M668.2,347.7c1.4,0.4,2.2,0.3,3.4-0.5   C670,346.5,669.3,347,668.2,347.7z M804.6,348.1c0.9,0.6,1.8,1,3.2,0C806.4,348.1,805.5,348.1,804.6,348.1z M586.9,346.5   c1.6,0.5,1.6,0.5,1.8-1C588,345.9,587.4,346.2,586.9,346.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st18" d="M356.1,366.1c0.1,0.6,0.1,1.2,0.2,2c11.1-1.9,22.8-1.1,33.6-2.5c15.5,1.9,32.8-4.1,46.9,4.3   c0.5-0.2,1-0.5,1.6-0.7c-1,5.2-2.8,10.4-4.8,15.4c-27,1.5-55.8,7.1-81.9-1.9C353,377,354.5,371.6,356.1,366.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st17" d="M226.1,339.9c0.8,0,1.6,0,2.4,0c0,0.3,0,0.7,0,1.3c1.4,0.2,3.1,1.5,4.2,0.1c0.6,0,1.1,0.1,1.7,0.1   c0,0.4-0.1,0.7-0.1,1.1c1.3,0.7,2.6,1.7,4.3,1.5c-0.9-1.9-2.7-2-4.3-2.6c0.4-3.2,2.6-2.5,4.5-1.5c6.4,0.9,12,3.9,17.5,7.5   c30.9,8.7,63.2,17.1,95.4,18.9c0.5-0.5,1.1-1,1.6-1.5c-0.5,5.8-2.6,11.4-3.9,17.1c-45.6-9.9-92.5-22.5-134.9-41.9   c0.2-0.9,0.4-1.6,0.5-2.3c2.2,0,4.9,0.3,6.8,1.2c-1.2,0.3-4-0.8-4.1,1C219.2,340.7,224.9,341.2,226.1,339.9z M243.5,346.6   c-0.6,0.6-0.2,0.8,0.3,1.2C244.5,347.5,243.9,347,243.5,346.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st17" d="M438.3,380c0.2,0.3,0.4,0.6,0.7,0.9c16-3.2,22.2-18.9,35.5-25.5c1.9,2.6-3.2,5.5-2.9,8.5   c12.2-2.4,25-4.4,35.6,3.7c8.4,3.9,17.1,6.1,25.8,9.5c0.2-1.9-0.3-3.5,0.9-4.9c0.3,2.8-0.2,5.6-0.9,8.5c-27.1,4.5-54.7,1.3-82,4.1   c2.3-3.2,5.4-5.1,6.9-8.7c-1.3-0.2-2.1,0.4-2.6,1.2c-3.3,6.6-11.3,8.6-18.3,7.1C437,382.8,437.6,381.4,438.3,380z M462.8,370.3   c-1.2,1-1.8,1.4-2.7,2.1C461.8,372.9,462.3,372.2,462.8,370.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st19" d="M193.2,280.2c25.9,0.5,45.6,17.9,68.5,26.8c12.6,5.2,26.7,1.6,39.9,2.2c14.6,0.8,28.7,1.4,43.5,0.8   c1.5,1,2.8,2.6,4,4.6c-33,1.4-67.4,0.5-100.4-4.7c-21.4-5.4-35.8-24.6-57.9-29C191.4,280,192.5,280.6,193.2,280.2z M252.7,305.9   c-1.6-0.8-3.1-1.7-5.1-1.1c3.9,2.2,7.6,3.7,12.5,3.1C257.4,306.4,254.9,306.5,252.7,305.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st17" d="M77.8,298.7c23.9-14.3,75.3,10.2,98.7,22.6c19.6,5.9,40.6,7.1,59.9,13.8c-7.4,6.9-14.5-0.1-21.5,2.7   c-47.2-7.5-86.6-46.7-136.2-37.6C78.4,299.6,78.1,299.1,77.8,298.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st17" d="M664.3,324.5c2.2-1.5,4.1-3.4,6.1-5.1c0.6,0.1,1.5,0.6,1.3-0.7c2.8-0.5,5.3-0.3,7.3,2.3   c-0.6,0.7-1.1,1.5-1.7,2.2c21-4.2,42.8-11,64.5-12.8c1.2-5.9,9.5-1.8,13.8-2.3c0,0.5,0,1,0,1.6   C726.1,313.8,693.7,335.9,664.3,324.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st20" d="M536.7,371.3c0.1,1.1,0.1,2.2,0.2,3.6c1.5-0.5,2.8-1,3.8-1.3c1.7-5.1,2.9-10.1,7.9-13.1   c2,3.7,1.1,7.7,1.4,11.5c15,9.4,32.6,1.6,47.8-3.3c-0.5,0.7-1.1,1.3-1.6,2c0,0.9,0,1.9,0,2.9c-19.6,18.1-38.3,5.2-60.3,6.7   C535.8,378.4,536.2,373.5,536.7,371.3z M547.1,374.3c-0.1-0.7-0.1-1.3-0.2-2c-0.1,0-0.3,0-0.4,0c0.2,2-1.4,4.3,0.8,5.9   C548.3,376.7,547.6,375.5,547.1,374.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st21" d="M7.9,285.4c0.4,0.2,0.9,0.7,1.1,0.6c2.3-1,4.5-0.7,6.7,0.2c6,2.5,12.5,1.1,18.8,1.5   c13.3,0.6,26.2,5.1,38.9,8.8c0,2-0.3,3.7,0.6,5.6c-3.1-0.3-6.1-0.5-9.3-1.3c-0.4-2.1,0.9-5.9-2.8-4.9c-1.3,1.2-0.6,3-1.2,4.4   c-1,0.6-1.9,0.5-2.8-0.4c0.7-1.8,1.1-4.1-1-5.3c-3.1,0.9-2,3.3-2.1,5.2c-2.4,0.3-2.4,0.3-5.9-1.4c-0.2-0.9-0.4-2-0.6-2.9   c-1.7-1.3-2.2,0.4-3.3,1.1c-2.6-1.5-5.8-1.3-8.6-2c-1.7-1.6-3.8-1.6-5.8-1.7c-7.8-1.7-18.5,2.7-24-4.3   C7.2,287.6,6.8,286.2,7.9,285.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st22" d="M99.1,242.1c0-0.8,0-1.7,0-2.8c3.6-0.4,7.2-0.9,10.9-1.3c1.5,1.6,2.1,3.5,2.4,5.6c0.7,8.5,6.1,15.6,5.8,24.3   c-3.4,2.7-7.3,3.5-11.7,3.7C105.1,261.3,103.4,251.6,99.1,242.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st17" d="M638,276c5.1,6.8,12.8,9.9,19.2,14.8c-4.5,0-8.1-2-11.2-5.1c-3.4,0.5-5.9-2.8-8.9-2.8   c1.2,2.1,3.9,2.6,4.8,4.9c-4.3,6.3-10.8,9.8-15.8,15.2c-2.5-0.6-5.8,0-7.7-1.4c0.7,0,1.5,0,2.3,0c1.4-3.4,4.2-5.5,7.2-7.7   c0.1-8.7-3.4-17.5,0.5-25.7c-0.4-0.6-0.8-1.3-1.2-1.9c0.2-1.2,0.5-2.2,1.5-2.9c0.1,2.5,0.7,4.9,1.6,7.2c-3.1,3.5,0.4,7.6,0,11.7   c0.2,0,0.3,0,0.5,0c0.2-3.3-0.6-6.9,0.6-10c3.8,4.2,4.8,4.9,6.8,4.7C638.1,276.7,638.1,276.4,638,276z M630.7,285.7   c-0.5,0.6-1,1.1,0.2,1.9C630.8,286.7,630.8,286.2,630.7,285.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st23" d="M425.2,309c-1.3-0.3-2.4-1.5-3.7-2.2c0.7,0,1.4-0.1,2.2-0.1c-19.8-14.6-53.3-15.6-69.9,5.2   c-1.6,0.2-2.1-1.4-3.2-1.9c-0.4,0.1-0.7,0.3-1,0.4c-0.3-0.6-0.7-1.2-1.1-2c23.9-17.5,60.1-24.7,80.5,2c-0.8,0.4-2.2,1.4-2.3-0.1   c0.1-0.1,0.1-0.1,0.2-0.2c-0.1-0.1-0.2-0.3-0.4-0.4l0.1,0.1c-0.3-0.3-0.5-0.5-0.8-0.8l0.1,0.1c-0.3-0.2-0.5-0.5-0.8-0.7   c-0.1-0.3,0-0.9-0.5-0.3c0.2,0.1,0.4,0.2,0.6,0.3C425.2,308.5,425.2,308.7,425.2,309z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st24" d="M604.2,268.4c1.4-10.4-2.9-21.1-10.9-27.9c-3.2-10-7.5-40.2,10.3-36.5c-0.3,0.5-0.5,1-0.8,1.5   c-0.5-0.3-1.1-0.5-1.6-0.8c-2,1.6-3.6,3.3-4.6,5.6c0.5,0.2,1,0.4,1.6,0.7c-0.7,1.4-1.3,2.7-1.9,4.1c0.3,0.3,0.6,0.5,0.8,0.7   c-11.4,25.3,7.9,24.8,10.1,41.1c-0.8,1.4-0.9,5.9,0.1,7.3c-0.2,2.1-1.3,4-2.3,5.8C604.8,269.5,604.5,268.9,604.2,268.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st25" d="M620.6,248.9c-0.1,0.6-0.2,1.1-0.3,1.6c-1.1,1-2.9-0.3-3.6,1.3c-1.4-1.7-1-4.2-1.7-6.3   c-5.2-0.1-4.3-13.6-5.7-17.5c2-5.6,1.3-12.3,5.8-16.7c-0.3,7-1.4,14.1,3.7,19.9l0,0c-0.1,1.7,0.5,3.6-0.6,5   c-0.1-0.8-0.1-1.6-0.2-2.8c-0.6,0.4-0.9,0.7-1.4,1c0.8,2.8,1.7,5.4,3.6,7.7c-0.1,1.4-0.3,2.8-0.4,4.3c0.4,0,0.8,0,1.1,0.1   C621.1,247.3,620.9,248.1,620.6,248.9z M618.3,249.5c-0.7-5.9-2.8-11.3-3.1-17.4c-0.3,1-0.5,1.6-0.8,2.6c-1.2-3.1-1.4-5.5-3.1-8.1   C611.4,234.1,615.4,242.7,618.3,249.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st26" d="M594.8,253.9c0.1,0.1,0.3,0.2,0.5,0.1c1.5,1.8,2.1,4.3,1.7,6.6c-6.9-3.3-10.8-14.3-9.4-22.1   c3.6,2.2,7.5,4.4,9.3,8c-0.6,0-1.3,0-1.5,0.8c-0.8-0.8-1.4-3.8-2.8-2.4c1.2,2.4,3.2,4.5,2.8,7.5c-0.6-0.2-1,0.3-1.5,0.6   C594,253.7,594.3,254,594.8,253.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st27" d="M151.1,278.8c-14.5,0.4-28.9-2-43.1-4.4c1.3-1.6,3.6,0.3,5-1.2c16.3,2.6,33.1,2.9,49.5,4.5   C159,279.1,154.8,277.3,151.1,278.8z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st28" d="M611.7,213.5c-3.6,1.3-3.6,1.3-8.6,5.6c0.2,0.4,0.3,1,0.6,1.6c-2.4,4.8-3.5,10-2.8,15.4   c-0.3,0.5-0.5,1.1-0.8,1.6c-5.1-11,3.4-23.9,12.6-30.1c-1.9-0.3-2.5,0.5-3.8,1.4c-1.1-0.8-2-1.9-2.9-2.9c1.7-3.3,5.1,1,7.8,0.2   l0.1-0.2l-0.1,0.1c0,0.9,0.7,1.5,1.6,1.3l0,0C614,209.5,612.9,211.5,611.7,213.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st29" d="M592.5,241.4c-1.5-0.9-3-1.8-4.8-2.9c-0.1,1.2-0.2,2.1-0.3,3c-2-8.9-1.4-18,1.6-26.6c0.1,0,0.4,0,0.6,0   c-0.6,4.2-1.1,8.5-0.2,12.7c0.7-2.5-0.4-5.5,0.9-7.7c-0.9,7.2,1.8,13.7,3,20.5C593.1,240.8,592.8,241.1,592.5,241.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st30" d="M607.2,256.9c0.3-9-9.3-12-11.7-19.9c0.3-0.3,0.5-0.5,0.8-0.8c0.2,0,0.4,0,0.6,0c0.4,3.6,3.4,5.4,5.5,7.8   c0.5-0.4,0.8-0.7,1.1-1c1.9,4.5,5.8,7.7,7.5,12.2c-0.1,0.4-0.2,0.8-0.3,1.2c-0.5-0.3-0.8-0.6-1.2-0.9c-0.3,5.1,1.2,10.6-2.7,14.5   c-0.7,1-2.8,3.4-1.8,4.3c-0.7,1.3-2,0.5-3,0.7C605.1,269.6,609.7,263.4,607.2,256.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st31" d="M755.7,309.8c0-0.3,0-0.6,0-0.9c0.8,0.1,1.8,0.7,2.1-0.7c1.1-0.3,1.5,0.8,2.3,1.4c12.2,1.6,23.8-3.5,36.3-1.3   c-3.9,2.7-9.1,0.7-13.6,1.5C770.6,312.5,767.7,314.5,755.7,309.8z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st17" d="M86.6,277.5c6.2,3.2,13.5,1.8,20.2,3.2c0.5,1.7-8.2,1.7-9.8,1.9c-4.3-0.6-8.9,0.8-13-0.6   c-1.2-0.7-2.3,0.2-3.5,0.5C82,280.2,83.7,278.1,86.6,277.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st32" d="M78.5,246.6c-8.6,5.3-6.7,13.9-14.4,15.8c-3-2.4-7.5,0-10.5-1.9C70.9,262,59.7,252.6,78.5,246.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st33" d="M603.7,204c-0.5,0-1.1,0-1.6-0.1c-0.1-1.3,1.4-1.9,0.5-3.4c-1.4-0.5-2.6-0.4-3.3,1.3c-0.2,0-0.4,0-0.7,0   c-0.2-0.2-0.3-0.3-0.5-0.5c3.8-5,12.2-4.1,15.8,0.5l0.1-0.1c-0.4,0-0.9,0-1.4,0c0.2,0.9,0.4,1.5,0.6,2.1l-0.2-0.1l-0.2,0.1   C609.9,202.2,606.5,203.4,603.7,204z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st34" d="M534,370.9c-0.1-3.1-0.2-6.3-0.2-9.6c-3.6,0.1-6-1.7-8-4.6c1.1-4.8,5.1-0.6,7.3,1.5c0.1-2.8,0.2-5.2,0.2-7.6   C534.3,357,535.2,364.3,534,370.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st35" d="M602.2,264.9c-0.1,0.3-0.2,0.7-0.4,1c-2.1-1.5-2.4-1.9-2.5-4.3c0.1-3.8-1.5-7.1-2.5-10.6c1.6,0,2.2,4,3.9,2.8   C601.4,257.3,602.5,261,602.2,264.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st36" d="M615.4,255.4c2.7,4.7,3.3,9.6-1.4,13.2c-0.3-0.3-0.6-0.6-1-0.9C615.1,263.9,614.2,259.2,615.4,255.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st37" d="M610.2,234.2c0.7,3.1,0.9,11.5,4.9,11.3c0.3,1.9,0.7,3.6,1,5.5c-0.7-0.7-1.4-1.5-2.2-2.2   c0.8-1.1,0.8-1.1-0.3-2.1c-0.1,0.5-0.2,0.9-0.3,1.3c-1-0.4-1.8-1.1-2.2-2.2c0.7-0.3,0.5-0.5-0.1-0.7l0.1,0.1c0-0.5-0.2-0.8-0.8-0.8   l0,0c2-4.7-4-11.6-1.4-14.7C609.5,231.1,609.1,232.9,610.2,234.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st38" d="M615.4,255.4c-1.2,3.8-0.3,8.4-2.3,12.3c-0.4,1-2.1,2.2-1.3,3.2c-0.4,0.5-0.9,0.9-1.4,1.4   c-0.4-0.7-0.6-1.2-0.9-1.6c3.3-5.7,4.9-12.3,3.7-19c1.3,0.8,0.7,1.5,2.1,2.7C615.4,254.6,615.3,255.1,615.4,255.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st39" d="M151.1,278.8c3.7-1.4,7.8,0.3,11.4-1.1c-1.4-0.3-2.8-0.6-4.1-0.9c6.1,0.1,12.6,0.2,18.5,1.3   c-0.2,0.2-0.4,0.4-0.6,0.6C167.9,277.8,159.6,279.4,151.1,278.8z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st40" d="M586.7,282.6c-1.6-0.9-1.6-0.9-2.7-2.5c0.7-0.6,1.4-1.2,2.1-1.7c0.7,0.2,1.3,0.4,1.9,0.6   c1.6-0.7,3.3-1.4,5.3-2.1c-0.4,1.8-1.1,2.8-2,4.2C589.7,281.7,588.4,282.7,586.7,282.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st41" d="M602.2,264.9c0.2-3.9-0.9-7.6-1.5-11.1c-0.6-2.6-2.5-4.9-3.8-7.3c0-0.2,0-0.4,0-0.6c0.3-0.3,0.6-0.6,0.8-0.9   c3.5,4,5.2,8.8,5.9,14C602,260.6,603.8,263.2,602.2,264.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st42" d="M361.3,326.6c-1.4-2.3-2.7-4.7-4.4-6.8c-0.1-1-0.6-1.7-1.6-2c-0.5-0.7-0.9-1.4-1.3-1.9c0-2.1,1.9-2.2,2.8-3.3   c0.8,4.9,3.8,9.2,5.3,14C361.8,326.6,361.6,326.6,361.3,326.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st43" d="M642.5,313.5c4.3,2.8,6.9,7.6,12.6,7.9c-1.1,0-2.1,0-3,0.7c-4.7-0.8-7.6-4.4-10.3-8   C642.1,313.9,642.3,313.7,642.5,313.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st44" d="M611.7,266.3c-1.3,3.5-3.6,5.9-6.5,8.1c-0.8-3.5,5.3-6,4.5-11.8C610.5,263.9,610,265.8,611.7,266.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st45" d="M609.4,251.9c-4.1-3.9-5.2-9.8-9.4-13.4l0,0c0-0.9,0.5-1.6,0.9-2.4c2.9,5.1,5.8,10.3,9.4,14.9   C610,251.3,609.7,251.6,609.4,251.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st46" d="M609.4,251.9c0.3-0.3,0.6-0.6,0.9-0.9c0.6,0.1,0.9,1.1,1.7,0.3c0.1-0.1,0.7,0.3,1.1,0.5   c0.5,3.2,0.8,6.3-0.1,9.4C611.9,258.1,611.2,254.8,609.4,251.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st47" d="M608.1,232.7c1.5,3.2,2.9,8,2.1,11.7C605.8,242.6,608.7,236.4,608.1,232.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st48" d="M604.7,224.7c1.9,4-0.5,7.9-0.5,12.1C601.2,235,604,227.8,604.7,224.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st49" d="M878.3,336.8c-4.7,0.1-9.3,0.2-14,0.2c0-0.3,0-0.6,0-0.8c4.6-1.4,9.2-0.3,13.9,0   C878.3,336.4,878.3,336.6,878.3,336.8z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st24" d="M602.9,198.2c-1.7,1-3.8,1.3-4.8,3.1c0.2,0.2,0.3,0.4,0.5,0.5c-1.6,0.7-3,1.9-4.5,2.9c0.1-0.2,0.1-0.5,0-0.7   c1.7-2.6,3.8-4.7,6.3-6.5C601.3,197.7,602.1,198,602.9,198.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st50" d="M611.7,213.5c0.8-1.2,1.5-2.5,2.3-3.7c1.7,0.3,2.7,1.3,2.9,3c-0.5,0.5-0.9,1-1.4,1.4c0-0.8-0.1-1.7-0.2-2.9   c-1.5,1.2-1.9,2.3-2.7,3.8C612.4,214.4,612.5,213.7,611.7,213.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st51" d="M176.3,278.7c0.2-0.2,0.4-0.4,0.6-0.6c4-0.2,8,0.3,11.9,1.4c-0.5,0.3-1.1,0.5-1.6,0.8   C183.6,279.7,180,279.2,176.3,278.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st52" d="M609.8,216.9c-1,3-2.1,5.2-4.5,6.9C605.8,220.8,606.5,218,609.8,216.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st53" d="M586.7,282.6c1.7,0.1,3.1-0.9,4.5-1.5c1.3,0.9,1.7-1.8,2.8-2.3c0.3,0.3,0.6,0.6,1,0.9c0,0.2-0.1,0.4-0.1,0.7   c-1.1,1.1-2.4,1.9-3.7,2.9c-1.4-0.5-1.4-0.5-1.5,0.7C588.7,283.5,587.7,283.1,586.7,282.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st54" d="M245.2,311.1c-2.2,2.1-5.5,0.1-8.1-0.1c1.6-1.4,3.4,0.2,4.9-1.2C243.1,310.2,244.4,310.1,245.2,311.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st55" d="M595.6,252.6c0.4-3-1.6-5.2-2.8-7.5c2.3-1.1,3.3,4.4,4.5,6c-0.1,0-0.3,0-0.4,0c-0.9,0.5-0.4,1.4-0.6,2.1   c-0.2,0-0.5,0-0.7,0C595.5,253,595.5,252.8,595.6,252.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st56" d="M595,279.7c-0.3-0.3-0.6-0.6-1-0.9c0.7-1.9,1.7-3.5,4.3-3.4C597.9,277.3,596.3,278.3,595,279.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st57" d="M349.6,310.4c0.3-0.1,0.7-0.2,1-0.4c1.1,0.5,1.7,2.1,3.2,1.9c-0.7,1-2,1.4-3.2,2.4   C350.3,312.8,350,311.6,349.6,310.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st58" d="M594.1,204c-0.3,2.8-2.3,5.5-3.6,8.1c-0.2,0-0.4,0-0.6,0C590.9,209.2,591.8,206.2,594.1,204z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st59" d="M595,279.7c0.9-0.8,1.8-1.7,2.7-2.5c0.4,0.4,0.8,0.9,1.4,1.5c-0.7,0.8-1.5,1.6-2.4,2.5   c-0.7-0.3-1.2-0.5-1.8-0.8C594.9,280.1,594.9,279.9,595,279.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st60" d="M605,270c-1,1.7-1.9,3.5-2.9,5.2c-1.7-1.5,1.7-4.8,2.1-6.8C604.5,268.9,604.8,269.5,605,270z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st61" d="M453.7,380.1c1.1-1.6,1.6-4.3,4.2-4c-0.7,1.9-2.3,3.1-3.4,4.8C454.2,380.6,454,380.3,453.7,380.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st62" d="M591.2,283.2c1-0.7,1.9-1.5,2.9-2.2c1,0.9,2.4,0.7,3.7,0.8c-0.3,0.5-0.7,1-1,1.4   C594.6,281.8,593.4,283.3,591.2,283.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st63" d="M113,273.1c-1.4,1.5-3.7-0.4-5,1.2c-0.6,0-1.2,0-2.2,0C108.3,272.4,110.7,273.1,113,273.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st64" d="M632.2,297.9c1-0.9,2.1-1.8,3.1-2.8c0.3,0.3,0.6,0.5,0.8,0.8c-1,0.9-2,1.9-3.1,2.8   C632.7,298.4,632.5,298.1,632.2,297.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st65" d="M597.2,272.2c0.6-1.6,1-2.8,1.6-4.4C599.8,271.6,599.8,271.6,597.2,272.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st66" d="M187.2,280.2c0.5-0.3,1.1-0.5,1.6-0.8c1.5,0.3,2.9,0.5,4.4,0.8c-0.7,0.3-1.8-0.3-2.3,0.7   C189.7,280.7,188.5,280.5,187.2,280.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st67" d="M864.4,336.2c0,0.3,0,0.6,0,0.8c-1.5,0.7-2.9,0.1-4.4-0.2c-0.1-0.2-0.1-0.4-0.1-0.6   C861.4,336.2,862.9,336.2,864.4,336.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st68" d="M595.7,266.3c-0.2-1-0.5-2-0.7-3.4c1.9,0,3.1,2.3,1.4,3.5C596.2,266.4,596,266.3,595.7,266.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st47" d="M610.2,234.2c-1.1-1.3-0.7-3.1-1.4-4.5c0.2-0.6,0.4-1.1,0.6-1.7C609.6,230.1,610.7,232,610.2,234.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st69" d="M607.3,303c-0.8,0.1-1.4-0.1-1.4-1.3c1.2,0,2.5,0,3.7-0.1C610.9,303.1,607.6,301.8,607.3,303z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st70" d="M611.8,270.9c-0.8-1,0.9-2.2,1.3-3.2c0.3,0.3,0.6,0.6,1,0.9C613.3,269.4,612.5,270.2,611.8,270.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st71" d="M595.3,271.8c0,1.8,0,1.8-1.8,2.5C594.1,273.3,594.1,272.2,595.3,271.8z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st72" d="M242.1,309.9c-1,1.1-2.2,0.4-3.3,0.4c-0.3-0.4-0.1-0.9-0.2-1.3C239.8,309.3,240.9,309.6,242.1,309.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st73" d="M593.3,279.5c-0.7,0.6-1,2.4-2.1,1.6c0.5-0.7,1-1.5,1.4-2.2C592.8,279.1,593,279.3,593.3,279.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st74" d="M355.3,317.8c1.9,0.4,1.6,2.4,1.5,3.8C355.8,320.5,355.7,319.1,355.3,317.8z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st33" d="M615.3,201.8c0.5,0.4,1,0.8,1.5,1.2c-0.3,0.1-0.7,0.2-1.2,0.4c-0.5-0.5-1.1-1.1-1.7-1.7l-0.1,0.1   C614.3,201.8,614.8,201.8,615.3,201.8z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st75" d="M589.9,212.1c0.2,0,0.4,0,0.6,0c0,1.1-0.1,2.1-0.8,3c-0.1,0-0.4,0-0.6,0C589.3,214,589.6,213.1,589.9,212.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st25" d="M613.3,248c0.1-0.4,0.2-0.8,0.3-1.3c1.1,0.9,1.1,0.9,0.3,2.1C613.7,248.5,613.5,248.2,613.3,248z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st76" d="M596.3,253.1c0.2-0.7-0.3-1.6,0.6-2.1c0.3,1,0.6,1.9,0.9,2.9C597.3,253.6,596.8,253.4,596.3,253.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st77" d="M595.7,266.3c0.2,0,0.5,0.1,0.7,0.1c0.5,1,0,1.9-0.2,2.8c-0.2,0-0.4,0-0.6,0   C595.7,268.2,595.7,267.3,595.7,266.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st78" d="M878.3,336.8c0-0.2,0-0.4-0.1-0.6c0.9,0,1.8,0,2.7,0c0,0.2,0,0.3,0,0.5C880.1,336.8,879.2,336.8,878.3,336.8z   " />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st74" d="M357,322.2c1,0.6,0.6,1.5,0.5,2.3C357.4,323.7,357.2,322.9,357,322.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st71" d="M595.7,269.2c0.2,0.1,0.4,0.1,0.6,0c0,0.4-0.1,0.8-0.1,1.2c-0.1,0-0.3,0-0.4,0   C595.7,270,595.7,269.6,595.7,269.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st76" d="M596.3,255.3c-0.3-0.4-0.7-0.9-1-1.3C596.3,254,596.3,254.6,596.3,255.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st47" d="M610.9,245.1c0.5,0.2,0.8,0.4,0.1,0.7C610.9,245.5,610.8,245.3,610.9,245.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st47" d="M610.2,244.4c0.6-0.1,0.8,0.3,0.8,0.8C610.4,245.2,610.2,244.9,610.2,244.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st76" d="M595.6,252.6c0,0.2,0,0.4,0,0.6c-0.2,0-0.4,0.1-0.6,0.1l-0.2-0.2c0.1-0.2,0.1-0.4,0.1-0.5   C595.1,252.5,595.3,252.5,595.6,252.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st76" d="M594.8,253.9c-0.6,0.1-0.8-0.2-0.7-0.7c0.2,0,0.5,0,0.7-0.1l0.2,0.2C594.9,253.5,594.8,253.7,594.8,253.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st21" d="M8.6,284.5c0.1,0.5-0.2,0.8-0.7,0.9C8.1,285.1,8.4,284.8,8.6,284.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st79" d="M816.8,303.1c0-0.8,0-1.3,0-1.8C818.4,299.9,819.3,303.5,816.8,303.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st80" d="M663.1,283.2c-0.2-3.5-4.8-5.2-4.4-8.9c0.9-0.7,1.6-0.9,2.2,0.1c-0.5,0.1-1.1,0.2-1.7,0.4   c1.6,2.6,1.6,2.6,5.9,3.6c0.7,1,1.4,2.1,1,3.7C665.1,282.4,664.1,282.8,663.1,283.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st81" d="M641,286.3c-1.5-1-3-1.9-4-3.4c2-0.3,3.8,1.8,5.8,2.5C642.1,285.5,641.3,285.4,641,286.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st82" d="M627.3,200.4c13.5-4.1,30.1-2.2,42.6,4.2l0,0c1.9,2.2,4.3,4.1,5.8,6.7c-0.2,0.2-0.4,0.4-0.6,0.6   c-11.7-12.7-31.2-10.3-47-10.9C627.7,200.9,627.5,200.6,627.3,200.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st83" d="M627.3,200.4c0.2,0.2,0.4,0.5,0.6,0.7c0,0.2,0,0.4-0.1,0.6c-1,0.2-1.9,0.2-2.8,0c0-0.2,0-0.4,0-0.6   C625.8,200.9,626.5,200.6,627.3,200.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st13" d="M625,201.1c0,0.2,0,0.4,0,0.6c-0.2-0.2-0.5-0.4-0.7-0.6C624.5,201.1,624.8,201.1,625,201.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st84" d="M669.8,204.6c-0.3-0.2-0.5-0.5-0.8-0.7c0.3,0,0.5,0,0.8,0C669.9,204.2,669.9,204.4,669.8,204.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st84" d="M674.1,209.1c-1.3-1.6-3-2.9-4.3-4.5c5.3,1.8,9.1,6,11.1,11.1c-0.2,0.5,0.1,1.3-0.8,1.3   c-1.4-3.1-2.9-6.2-5.5-8.5C674.4,208.8,674.2,209,674.1,209.1z" />
+	<path class="class-3d3f58ad64-st8" d="M680.1,217c0.9-0.1,0.6-0.8,0.8-1.3c1.1,0.8,0.2,2.2,1.3,3c0.2,1.5,1,2.8,0.8,4.4c0,0.6,0,1.2,0.7,1.5   c0,1.2,0,2.4,0,3.6c-1-1.1-2.1-2-2.2-3.6C683.6,222.4,680.5,219.4,680.1,217z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st85" d="M683.7,224.5c-0.7-0.3-0.7-0.9-0.7-1.5C683.7,223.3,683.7,223.9,683.7,224.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st85" d="M682.2,218.7c-0.2-0.3-0.4-0.5-0.6-0.8C681.8,218.2,682,218.4,682.2,218.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st86" d="M616.8,212.8c-0.1-1.8-1.1-2.8-2.9-3c0.5-0.7,1-1.4,1.5-2.1c1.4-0.1,1.6-1.6,2.7-2.1c1.1-0.5,2.1-1.1,3.1-1.7   c0.3,0.1,0.5,0.1,0.8,0.2c-0.4,1.3,1.2,1.2,1.5,2c-0.6,0.1-1.3,0.2-2.4,0.4c2.5,1,12.1,4.9,13.3,3.4c2.7,0.3,2.7,0.3,3.5,3.4   c-0.5,0.4-1.1,0.9-1.8,1.5c0.8,0.6,1.4,1.1,2,1.6c-0.2,0.1-0.3,0.3-0.8,0.7c4.2,3.4,8.5,6.5,12.3,10.1c-8.9,4.4-17.3-1.2-23.4-7.8   c0.5-3.1-3.4-9-7.7-8c5.5,8,12.4,15.7,21.6,19.9c1.2,2.8,6.3,0.5,8.9,1.1v0.3c-1,0.7-2.5,0.3-3.1,1.5c-3.5-0.3-6.8,1.2-10.5,0.7   c2.2,2.5,5.6,1.1,8.4,1.3c-0.2,1.5,3.1,2.5,0.7,3.7c0-0.4,0-0.9,0-1.3c-3.8,0.1-7.2,0.1-10.3-2.2l0,0c-0.5-0.7-1.2-1.8-1.6-2.3   c-2,0.6-3.4,1.1-4.8,1.6c-1.4-0.4-2.9-0.7-4.3-0.1c-2.3-3.1-4.6-5.9-5.3-9.9c3.3,2.1,6.1,6.8,9.6,7c-3-2.6-5.3-5.3-7.3-8.8   c0.1-0.6,0-1.3,0.8-1.5c3.2,3.4,6.3,7.8,10.3,10c-4.7-5.5-9.3-10.5-13.3-16.6l0,0C617.9,214.7,617.4,213.7,616.8,212.8z    M635.2,220.1c0.2,0.5,0.4,0.8,0.7,0.1c3.8,2.2,5.9,6.3,10.6,6.6c-4.9-3.1-7.7-7-12.9-8.8c-1.2-1.5-2.4-2.9-3.5-4.3   c-1,0-1.9-0.4-2.2,1C629.9,216.8,632.4,219.3,635.2,220.1L635.2,220.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st87" d="M638.2,216.4c-0.6-0.5-1.2-1-2-1.6c0.7-0.5,1.2-1,1.8-1.5c-0.8-3.2-0.8-3.2-3.5-3.4   c-3.6-1.3-7.3-2.6-10.9-3.8c-0.3-0.8-1.8-0.8-1.5-2c1.8-1.8,4.7,0.1,6.7-1.5c16.7,0.1,45-1.8,48.6,18.9c-4-2.4-6.8-6.2-11.2-7.6   c-0.2,0.4-0.5,0.8-0.7,1.2c-2.4-1.1-3.5-3.3-6.7-3.6c3.2,3.7,8,4.7,9.6,9.5c0.5,0.8,1,0.8,1.5-0.1l0,0c0.2,0,0.5,0,0.7,0l0,0   c0,0.6,0,1.1,0,1.9c-8.2-1.6-12.2-11.6-20.4-13.4c4.3,3.5,8.6,6.6,12.3,10.8c0.1,3.8-4,6.7-7.4,4.3l0,0c1-0.5,2-1,3.1-1.4   c0.4-0.9,0.5-1.7,1.4-2.3c-4.9-2.1-6.7-6.9-10.8-9.5c0.3,1.4,0.7,2.4,1.8,3c0.1,0.2,0.1,0.4,0.2,0.6c-5.2,1.9-7.5-4.2-12.2-4.2   c2.2,4.8,5.6,7.5,9,11.4C643.8,222.7,641.3,218.1,638.2,216.4z M643.3,206.3c3.1,0.8,6.7,1.6,10,2c-7.4-3.2-17.8-6.1-25.3-3.6   c0,0.9,0.7,0.8,1.3,0.8C633.9,205.5,638.6,205.6,643.3,206.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st88" d="M603.7,204c1.3-0.1,2.4-1.1,3.8-0.7c0.9,1.1,2.3,1.1,3.6,1.3c0.7,0.2,1.2,0.7,1.9,1c0.1,0.2,0.1,0.4,0.1,0.6   c-2.6,0.8-5.6-3.5-7.1-0.1c0.7,0.7,1.4,1.5,2.1,2.2c-1,0.2-2.2-0.3-3.1,0.7c-0.4,0-0.9,0.1-1.3,0.1c-0.5-0.8-1-1.5-1.4-2.2   C602.7,205.8,603.1,205,603.7,204z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st89" d="M614,201.7c0.6,0.6,1.1,1.2,1.7,1.7c0.5-0.2,0.8-0.3,1.2-0.4c-0.6,1.3-1.8,1.2-3.1,1.6   c-0.7-0.8-0.8-1.7-1.1-2.9C613.1,201.7,613.5,201.7,614,201.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st89" d="M611,204.6c-1.3-0.2-2.6-0.1-3.6-1.3c1.8-0.1,3.6-0.7,5.2,0.5C612.1,204.1,611.6,204.3,611,204.6z" />
+	<path class="class-3d3f58ad64-st4" d="M631.6,202.5c-1.7,0.1-3.4,0.1-5.1-0.2c0-0.1,0-0.3,0-0.4C628,201.8,630.4,201.1,631.6,202.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st13" d="M626.4,202.3c0.8,0.1,1.5,0.2,2.3,0.3c-1.2,0.8-2.5,0.7-3.8,0.6C625.4,202.9,625.9,202.6,626.4,202.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st86" d="M615.3,207.6c-0.6,0-1.2,0-1.4-0.7c0.2,0,0.5,0,0.7-0.1C614.9,207.1,615.1,207.4,615.3,207.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st13" d="M622.8,203.4c-0.3,0.2-0.5,0.4-0.8,0.6c-0.3-0.1-0.5-0.1-0.8-0.2c0.3-0.3,0.5-0.5,0.8-0.8   c0.2,0,0.5,0,0.7-0.1C622.8,203.1,622.8,203.3,622.8,203.4z" />
+	<path class="class-3d3f58ad64-st4" d="M622.7,203c-0.2,0.1-0.5,0.1-0.7,0.1C622.2,202.7,622.4,202.6,622.7,203z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st89" d="M614.7,206.9c-0.2,0.1-0.5,0.1-0.7,0.1c-0.1-0.2-0.2-0.4-0.2-0.6C614.1,206.5,614.4,206.7,614.7,206.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st89" d="M613.1,206.2c0-0.2-0.1-0.4-0.1-0.6c0.6-0.1,0.9,0.2,0.9,0.8C613.6,206.3,613.3,206.2,613.1,206.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st89" d="M612.5,205.3c-0.3-0.2-0.6-0.4-0.8-0.5C611.9,204.9,612.2,205.1,612.5,205.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st90" d="M181.4,303c-1.5-0.4-3.2-0.3-4.5-1.4c0.2-0.3,0.5-0.7,0.8-1.1c-1.4-0.8-2.6-1.5-4.2-0.9   c0.5,0.5,0.8,0.9,1.2,1.3c-2.4,0-4.5-1.2-6.6-2.2c-1.1-1.8-1.6-1.9-2.9-0.7c-1.5,0.2-1.6-1.3-2.3-2c-0.8-0.8-0.8-1.7-0.4-2.9   c1.6-0.6,3.2-0.4,4.8,0.4c10.9,5.6,23.2,5.7,33.8,12.3c-1.4,0.3-2.5,0.6-3.7,0.9c0.2-0.4,0.4-0.7,0.6-1.3c-1.7,0-2.6,0-4-0.1   c-0.9-0.7-2-0.7-3.1-0.6C189.5,304.2,181.9,301.2,181.4,303z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st91" d="M226.1,339.9c-1.1,1.3-6.9,0.9-8.4,0.2C218.8,337.5,223.7,339.7,226.1,339.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st92" d="M181.4,303c1.3-1.9,4.1,0.5,5.9,0.6c-0.3,0.3-0.5,0.5-0.8,0.8C184.8,304,183.1,303.5,181.4,303z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st93" d="M232.7,341.3c-1.1,1.4-2.8,0.1-4.2-0.1c0-0.6,0-1,0-1.3C229.9,340.1,231.3,340.5,232.7,341.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st94" d="M174.7,300.9c-0.4-0.4-0.8-0.8-1.2-1.3c1.6-0.6,2.8,0.2,4.2,0.9c-0.3,0.4-0.5,0.7-0.8,1.1   C176.2,301.4,175.4,301.1,174.7,300.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st95" d="M227.6,309c-1.5,0.1-2.9,0-4.1-1.1c1.5-1,2.7,0.5,4.1,0.5C227.6,308.5,227.6,308.8,227.6,309z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st96" d="M186.6,304.5c0.3-0.3,0.5-0.5,0.8-0.8c1,0.2,2.1-0.1,2.9,0.8c-0.3,0.3-0.6,0.5-0.8,0.8v0.3   C188.5,305.1,187.5,304.8,186.6,304.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st97" d="M227.6,309c0-0.2,0-0.4,0.1-0.7c1.3-0.3,2.3,0.3,3.6,0.8C229.7,310.5,228.7,309.4,227.6,309z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st98" d="M238.6,309.7c0,0.2,0.1,0.4,0.2,0.6c-0.5,0.2-1.1,0.5-1.6,0.7c-0.9-0.2-1.8-0.3-2.7-1.3   C236,309.7,237.3,309.7,238.6,309.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st99" d="M195.3,305.3c0.8,0,1.6,0,2.7,0c-0.3,0.6-0.5,1-0.6,1.3c-0.7-0.2-1.4-0.4-2.1-0.6   C195.3,305.8,195.3,305.6,195.3,305.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st100" d="M165.2,297.9c1.3-1.1,1.8-1,2.9,0.7C167.1,298.4,166.2,298.2,165.2,297.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st101" d="M195.3,305.3c0,0.2,0,0.5,0,0.7c-1.2,0-2.4-0.1-3.6-0.1c-0.1-0.2-0.2-0.4-0.3-0.6   C192.7,305.3,194,305.2,195.3,305.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st90" d="M191.4,305.4c0.1,0.2,0.2,0.4,0.3,0.6c-0.8,0.1-1.7,0.4-2.3-0.5v-0.3c0.6,0.1,1.2,0,1.7,0.3L191.4,305.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st102" d="M731.2,342.7c0.3,0.2,0.5,0.4,1,0.7c-4.1,4.3-9.4,5.1-14.8,6.1c-0.8-0.8-1.4-1.4-2-2c1.6-4.3,8.1-3,11.7-4.7   C727,345.5,730,343.3,731.2,342.7z M725.4,344.3c-2.6,1.3-5.2,1.1-6.6,3.4C722.1,348.5,723.9,347.1,725.4,344.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st103" d="M853.4,340.7c2.4-0.1,4-0.4,5.7,0.3C857.7,342.3,857.6,342.3,853.4,340.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st104" d="M731.2,342.7c-1.2,0.6-4.3,2.8-4.2,0.1C728.5,342.5,730.1,341.3,731.2,342.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st105" d="M845.2,340.3c1.6-0.7,2.3-0.5,2.7,0.7C846.9,341.5,846,341.4,845.2,340.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st106" d="M736,340.3c-0.7,0.7-1.9,1.6-2.2,0.4C734.2,339.8,734.9,339.7,736,340.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st107" d="M676.4,346.4c-0.6,0.2-1.1,0.5-2.1,0.9c0.3-0.8,0.5-1.2,0.6-1.6C675.5,345.7,676.1,345.7,676.4,346.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st108" d="M842.1,340.3c-0.4,0.2-0.7,0.3-0.9-0.2C841.6,339.9,841.8,339.8,842.1,340.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st18" d="M397.4,321.5c7.6-1.6,12.6,4.5,17.4,9.1c0,1.4,0,2.8,0,4.3c-2.2,3-6,1-8.8,2.5c-7.2-0.3-16.1,1-21.9-4.2   c0-0.8,0-1.6,0-2.8C387.6,326.4,392.7,324.1,397.4,321.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st109" d="M365.8,343c-3.3-4.9-5.2-9.8-5-12.8C363.1,334.2,364.3,338,365.8,343z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st110" d="M361.3,326.6c0.3,0,0.5,0,0.8,0c0.4,0.6,0.8,1.1,1.2,1.7C361.9,329.3,361.9,327.3,361.3,326.6z" />
+	<path class="class-3d3f58ad64-st1" d="M426.6,309.7c0.1,0.1,0.2,0.3,0.4,0.4c-0.1,0.1-0.1,0.1-0.2,0.2C426.9,310,426.8,309.8,426.6,309.7z" />
+	<path class="class-3d3f58ad64-st1" d="M425.9,308.9c0.3,0.3,0.5,0.5,0.8,0.8C426.4,309.5,426.1,309.2,425.9,308.9z" />
+	<path class="class-3d3f58ad64-st1" d="M425.1,308.3c0.3,0.2,0.5,0.5,0.8,0.7c-0.3,0-0.5,0-0.8,0C425.2,308.7,425.2,308.5,425.1,308.3L425.1,308.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st74" d="M357.6,320.7c0.2,0.3,0.4,0.5,0.6,0.8C358,321.2,357.8,321,357.6,320.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st34" d="M518.7,358.8c-1,0-1.8,0-3.1,0c-0.6-0.7-1.3-1.6-2.3-2.9C512.6,348.3,521.5,354.3,518.7,358.8z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st111" d="M474.4,320.8c4.4-0.1,18.5-6,20.6-3.3c-6.6,2-13.6,4.6-20.6,3.9C474.4,321.2,474.4,321,474.4,320.8z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st112" d="M456.3,321.1c-1.4,0.5-2.7,0.8-3.8-0.9C454.2,319.6,455.2,320.7,456.3,321.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st113" d="M461.9,320.8c1.1,0,1.8,0,3.1,0C463.8,321.8,463,321.6,461.9,320.8z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st114" d="M474.4,320.8c0,0.2,0,0.4-0.1,0.6c-0.4,0-0.8,0-1.2-0.1c0-0.1,0-0.3,0-0.4   C473.6,320.9,474,320.9,474.4,320.8z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st115" d="M627.9,235.6c1.4-0.5,2.9-0.9,4.8-1.6c0.4,0.6,1.1,1.7,1.6,2.3c0,4.1,3.2,4.3,6.1,5.9   c-1.1,0.9-1.5,1-2.8,1.6c-2.9-2.2-3.5-5.4-5.7-8.1c-5.2,2-9.5,6-5.7,11.6c0,1.4,0,2.7,0,4.1c-0.7,0.6-0.9,1.3-0.3,2.4   c1.1-1.2,1.6-1.6,3.4-2.2c0.2,2.8-1.7,4.4-4.3,4.4c-3.1-3.3,1.3-7.3-2.3-11.7c-0.2,0-0.5,0-0.7,0c-1-1-1-1,0-2.2   c0.1,0.1,0.3,0.3,0.4,0.5C622.7,239,624.9,237.4,627.9,235.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st85" d="M677.9,220c-2.3-4.9-6.3-8.9-10.4-12.3c0.3-0.3,0.7-0.6,1-0.9c3.2,1.8,5.9,4.3,8,7.3c0.8,1.8,0.9,1.8,2.7,1   c0.7,2.9,4.4,6.8,2.4,9.5c-0.4-0.9-1.3-0.2-2-0.1C678.9,223,679.1,221.2,677.9,220z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st116" d="M672.8,249c-3.3,1-5,1.7-5.4,4.9c-1.6,0.1-2.4-1-3.3-2.1c0.2-0.4,0.3-0.8,0.5-1.3c-1.2-1.3-3.1-0.5-4-2.5   C665.1,247,668.5,246.3,672.8,249z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st117" d="M630.2,270.6c-0.9-2.3-1.5-4.7-1.6-7.2c0.9-1.6,0.6-3.8,2.6-5c-1.4,7.4,0.4,13.4,6.8,17.5   c0,0.4,0.1,0.7,0.1,1.1C636.7,277.8,632.5,274.2,630.2,270.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st118" d="M622,244.3c0.2,0,0.5,0,0.7,0c3.6,4.4-0.8,8.4,2.3,11.7c-5.4,1.2-2.7-4.5-4.4-7.1   C621,247.4,621.4,245.8,622,244.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st119" d="M675.6,247.5c-3.8,2.5-4.2-6.8-15.5-5.4C665.8,237.6,673.1,241.9,675.6,247.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st120" d="M634.4,243c0.2,0.6-0.3,1-0.5,1.4c-1.2,0.1-2.6-0.1-3.8-0.1c0.9-0.4,1.9-0.7,3-1.1c-0.3-0.6-0.5-1.1-0.8-1.6   c-1-0.1-1.8-0.2-2.7-0.3c0.1-1.1,2.3-0.2,1.8-2c-2.4,0.1-4.7,1.7-4.3,4.3c-0.3,0.3-0.5,0.6-0.8,0.8c-1-1.6,0-3.1,0.6-4.7   c1.6-0.9,3.1-1.8,4.8-2.8C632.8,239.1,633.5,240.9,634.4,243z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st121" d="M636.6,274.7c-3.9-2.7-6.2-6.3-5.8-11.2C634,266.2,635.5,270.7,636.6,274.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st122" d="M634.4,243c-0.8-2.1-1.6-3.9-2.6-6c-4.4,1.8-7.5,5-4.7,9.6c-0.3,0.3-0.6,0.5-0.8,0.8   c-3.8-5.6,0.4-9.6,5.7-11.6c1.7,1.6,2,3.9,3.3,5.6C634.3,241.6,634.6,242.4,634.4,243z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st123" d="M656.5,226.7c-0.4,0.6-0.7,1.2-1.2,1.9c0.9,0.2,1.6,0.3,2.5,0.5c-1.1,1.9-3.1,0.8-4.3,1.9   c0.1-0.5,0.2-1.1,0.4-2.3c-1.8,1.8-3.3,2.7-5.3,2.4c0-0.5,0.8-1-0.1-1.4c0-0.3,0-0.6,0-0.9c2.1-0.9,4.9,0.2,6.5-1.6   C655.3,226.6,655.9,226.6,656.5,226.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st124" d="M627.1,246.6c-0.3-0.7-0.5-1.4-0.8-2.1c0.3-0.3,0.5-0.6,0.8-0.8c0.6,0.9,1.1,1.8,1.7,2.7   c0.4-0.8,0.8-1.4,1.1-2c1.1,0,2.2,0.1,3.3,0.1c-0.5,0.4-1.1,0.9-1.7,1.4c1.2,3.1-1.5,2.9-3.3,3.9   C627.8,248.6,627.5,247.6,627.1,246.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st125" d="M644,236.2c-2.9-0.2-6.2,1.2-8.4-1.3c3.7,0.5,7-1,10.5-0.7C645.4,234.9,644.7,235.6,644,236.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st126" d="M670.5,216.5c0.5,0.4,1,0.9,1.5,1.3c0.3,1.1,0.8,2.2,1.4,3.2c-0.4,0.6-0.8,1.3-1.4,2.1   c-0.6-0.8-1.1-1.5-1.5-2.2c0.1-1.8-2-3.1-1.8-4.8C669.3,216.2,669.9,216.4,670.5,216.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st127" d="M636.7,237.7c2.5,1.4,5.2,0.7,8,0.9c0,0.5,0,0.9,0,1.3C642.4,241.5,636.3,240.6,636.7,237.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st128" d="M658.8,214.9c2.7,1.9,5.2,4.2,7.5,6.6c0,0.4-0.1,0.8-0.1,1.6c-3.2-2.4-5.5-4.7-8.2-7.5   C658.2,215.5,658.5,215.2,658.8,214.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st129" d="M673.4,220.9c-0.6-1-1.1-2.1-1.4-3.2c1.9,1,3.5,2.5,5.3,3.7c0.2,0.7,0.3,1.5,0.5,2.2   C675.8,223.5,674.2,222.8,673.4,220.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st130" d="M656.5,226.7c-0.6-0.1-1.2-0.2-1.6,0.4c-0.7,1.1-1.7,1.1-2.8,1c1.1-1.4-0.5-2.1-1.5-2.9   c1.5-0.2,2.9-0.5,4.4-0.7l0,0c0.1,1.6,0.4,1.7,1.7,0.8c0.4,0,0.8,0,1.1,0c-0.2,0.4-0.5,0.8-0.7,1.3   C657,226.6,656.7,226.6,656.5,226.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st131" d="M636.7,237.7c-1.1,1.4,2,2.1,2.9,3c-0.2,0.2-0.4,0.4-0.7,0.7c-2.9-0.4-4.4-2.1-4.6-5   C635.2,236.8,636,237.2,636.7,237.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st132" d="M648.5,231.1c2,0.4,3.5-0.6,5.3-2.4c-0.2,1.3-0.3,1.8-0.4,2.3c-1.4,0.6-2.9,1.1-4.3,1.7v-0.3   C648.7,232.1,647.3,231.5,648.5,231.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st133" d="M677.7,223.7c-0.2-0.7-0.3-1.5-0.5-2.2c0.2-0.5,0.4-1,0.7-1.5c1.2,1.2,0.9,3,1.6,4.4   C678.9,224.2,678.3,223.9,677.7,223.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st134" d="M627.3,252.5c-0.4,0.4-0.9,0.9-1.4,1.3c-0.5-1.1-0.4-1.8,0.3-2.4C626.6,251.8,627,252.2,627.3,252.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st86" d="M657.1,226.6c0.2-0.4,0.5-0.8,0.7-1.3c0.3,0,0.6-0.1,0.9-0.1C658.8,226.4,658.3,226.9,657.1,226.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st122" d="M633.8,244.4c0.2-0.3,0.4-0.6,0.6-0.9C634.2,243.8,634,244.1,633.8,244.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st135" d="M666.6,313.5c-1.7,0-3.3-0.4-4.8-1.3c0.5-3.2,5-0.7,5.9,1.1C667.4,313.4,667,313.4,666.6,313.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st136" d="M671.8,318.7c0.2,1.3-0.7,0.8-1.3,0.7c-0.5-0.4-1.1-0.9-1.6-1.3c0-0.3,0.1-0.5,0.1-0.8   c0.9-0.8,1.5,0.1,2.2,0.4C671.4,318.1,671.6,318.4,671.8,318.7L671.8,318.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st137" d="M757.8,308.3c-0.3,1.4-1.3,0.8-2.1,0.7c0-0.2,0-0.5,0-0.7C756.4,308.2,757.1,308.3,757.8,308.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st138" d="M666.6,313.5c0.4,0,0.7-0.1,1.1-0.1c0.1,0.1,0.3,0.3,0.4,0.4C667.7,314.5,667.2,313.7,666.6,313.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st17" d="M760.1,309.7c-0.2-0.3-0.5-0.5-0.7-0.8C759.6,309.2,759.8,309.5,760.1,309.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st17" d="M671.8,318.7c-0.2-0.3-0.4-0.6-0.7-0.9C671.4,318.1,671.6,318.4,671.8,318.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st139" d="M652.6,350.2c2.5-1.1,3.2-1,6.7,0.2C656.2,351.9,656.1,351.9,652.6,350.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st140" d="M721.4,362.9c0.4-3,4.5-1.9,5.5,0.3C725,363.2,723.2,364,721.4,362.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st141" d="M824,347.9c2.7,2.7-7.5,1-9.5,1.5C816.6,345.6,821.8,350.6,824,347.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st142" d="M665.9,348.8c-1,1.3-2,1.7-3.5,0.7C663.4,348.2,664.5,348.4,665.9,348.8z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st143" d="M824,347.9c-1.2,1.4-3.6,0.9-5.7,0.1C820.2,348,822.1,347.9,824,347.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st144" d="M668.2,347.7c1.1-0.7,1.9-1.2,3.4-0.5C670.3,347.9,669.5,348.1,668.2,347.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st145" d="M804.6,348.1c0.9,0,1.8,0,3.2,0C806.4,349,805.5,348.7,804.6,348.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st146" d="M586.9,346.5c0.6-0.3,1.1-0.6,1.8-1C588.5,347,588.5,347,586.9,346.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st147" d="M234.3,341.4c1.5,0.6,3.4,0.6,4.3,2.6c-1.7,0.1-3-0.8-4.3-1.5C234.3,342.1,234.3,341.8,234.3,341.4   L234.3,341.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st148" d="M243.5,346.6c0.3,0.4,1,0.8,0.3,1.2C243.3,347.4,242.9,347.3,243.5,346.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st149" d="M462.8,370.3c-0.6,1.9-1,2.6-2.7,2.1C461,371.7,461.6,371.2,462.8,370.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st150" d="M252.7,305.9c2.3,0.6,4.7,0.5,7.4,2c-3.3,0.8-5.6-0.6-8.1-1.2C252.2,306.4,252.4,306.1,252.7,305.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st151" d="M252.7,305.9c-0.2,0.3-0.5,0.5-0.7,0.8c-1.4-0.5-3.1-0.6-4.4-1.9C249.6,304.2,251.1,305.1,252.7,305.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st152" d="M547.1,374.3c0.5,1.2,1.2,2.4,0.3,3.9c-1.8-1-1-2.5-1-3.9C546.5,374.3,546.9,374.3,547.1,374.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st153" d="M547.1,374.3c-0.2,0-0.5,0-0.7,0c0.1-0.7,0.1-1.3,0.2-2c0.1,0,0.3,0,0.4,0C547,373,547,373.7,547.1,374.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st154" d="M630.2,270.6c0.4,0.6,0.8,1.2,1.2,1.7c-1.1,2.5-0.4,5.4-0.6,8c-0.2,0-0.4,0-0.6,0.1   c-0.3-1.3-0.6-2.5-0.8-3.8c1.1-1.4,1.1-2.8,0-4.4C629.6,271.7,629.9,271.2,630.2,270.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st155" d="M629.3,272.2c1.1,1.6,1.1,3,0,4.4C629.1,275.2,629.3,273.7,629.3,272.2L629.3,272.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st154" d="M629.3,272.2c0,1-0.1,2-0.1,3C628.4,273.7,628.4,273.4,629.3,272.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st156" d="M630.7,285.7c0,0.5,0.1,1.1,0.2,1.9C629.7,286.8,630.2,286.2,630.7,285.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st157" d="M630.2,280.4c0.2,0,0.4-0.1,0.6-0.1c0,0.7,0,1.3,0,2c-0.2,0-0.4,0-0.5,0   C630.2,281.7,630.2,281.1,630.2,280.4z" />
+	<path class="class-3d3f58ad64-st1" d="M425.2,308.2c-0.2-0.1-0.4-0.2-0.6-0.3C425.2,307.4,425.1,308,425.2,308.2L425.2,308.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st158" d="M603.7,209.1c1.2-0.1,2.4,0,3.7,0c0,0.2,0,0.4,0,0.6c-10.8,3.6-11.4,16.9-11,26.5c-0.3,0.3-0.5,0.5-0.8,0.8   C591.3,227.2,595,215.1,603.7,209.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st159" d="M602.9,209.6c-2.3,1.7-4,3.9-5.7,6.1c-0.3-0.2-0.5-0.4-0.8-0.7c0.6-1.4,1.3-2.7,1.9-4.1   c-0.5-0.2-1-0.5-1.6-0.7c0.9-2.3,2.6-4,4.6-5.6c0.6,0.3,1.1,0.5,1.6,0.8c-0.2,0.4-0.4,0.8-0.7,1.4c0.4,0.7,0.9,1.4,1.4,2.2   C603.4,209.3,603.1,209.5,602.9,209.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st160" d="M589.6,215c0.7-0.9,0.8-1.9,0.8-3c1.4-2.3,2.8-4.9,3.6-7.4c0.7-0.5,1.4-1,2.2-1.5c0.2,0.2,0.5,0.5,0.7,0.7   c-6.5,6-6.8,15.6-7.5,23.8C588.5,223.5,589,219.2,589.6,215z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st161" d="M607.2,256.9c0.8,2.4,1.2,4.8,0.1,7.3C606.3,262.8,606.4,258.3,607.2,256.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st162" d="M597.8,245.1c-0.3,0.3-0.6,0.6-0.8,0.9c-1.5-1.5-3-3-4.5-4.5c0.3-0.3,0.6-0.6,0.9-0.9   C594.9,242,596.3,243.6,597.8,245.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st163" d="M597,203.9c-0.2-0.2-0.5-0.5-0.7-0.7c0.9-0.6,1.8-1.4,3-1.4c1,0.5,1.9,1,2.9,1.5c0,0.2,0,0.4,0,0.6   C600.4,203.3,598.7,202.9,597,203.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st158" d="M624.1,230.5c-1.9-1.6-3.7-3.2-5.8-5c0.4,1.8,0.9,3.2,1.6,4.7c-0.3,0.3-0.6,0.6-0.8,0.9l0,0   c-3.6-4.9-6.6-13.3-2.2-18.4c0.3,0.5,0.5,0.9,0.8,1.4c0,0.7-0.1,1.3,0.8,1.5l0,0c-0.4,0.4-0.8,0.8-1.3,1.3c1.9,4.9,5,9.2,8,13.4   C624.8,230.5,624.5,230.5,624.1,230.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st164" d="M618.3,249.5c-2.9-6.9-6.9-15.4-7-22.9c1.7,2.6,1.9,5,3.1,8.1c0.3-1,0.5-1.6,0.8-2.6   C615.4,238.3,617.6,243.6,618.3,249.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st165" d="M622,244.3c-0.2,0.7-0.5,1.4-0.7,2.2c-0.4,0-0.7,0-1.1-0.1c1.3-4-1.6-8,0.4-11.6c0.5,2.4,1,4.9,1.5,7.3   C621,243.3,621,243.3,622,244.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st166" d="M620.5,234.8c-1.6,2.2-0.3,4.9,0,7.3c-0.7-1-1.4-2-2.1-3c1.3-0.6,0.3-2,0-3c1-1.2,0.6-2.9,0.7-4.3   c0.8,1,1.5,1.9,2.3,2.9C621.1,234.8,620.8,234.8,620.5,234.8z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st167" d="M621.3,234.8c-0.7-1.2-2.3-2.2-2.3-3.6c0.3-0.3,0.6-0.6,0.8-0.9c1.5,2.6,3.8,4,4,7.2   C622.7,236.2,622,235.5,621.3,234.8z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st168" d="M618.4,236.2c0.3,0.9,1.3,2.4,0,3c-0.5-1.5-1-3.1-1.5-4.7c0.5-0.3,0.8-0.6,1.4-1   C618.3,234.6,618.4,235.4,618.4,236.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st167" d="M618.5,230.4c0.2,0.3,0.4,0.5,0.6,0.8C618.8,230.9,618.7,230.6,618.5,230.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st169" d="M597.3,251c-0.6-1.2-1.2-2.4-1.8-3.6c0.2-0.8,0.8-0.8,1.5-0.8c1,1.7,2,3.4,3,5.1c-0.1,0.6,0,1.2,0.6,1.5   c0.1,0.2,0.2,0.4,0.1,0.7C599.3,254.8,598.5,251.7,597.3,251z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st55" d="M594.8,253.1c-0.2,0-0.5,0-0.7,0.1c0.3-0.2,0.6-0.4,0.8-0.6C594.9,252.7,594.8,252.9,594.8,253.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st170" d="M596.3,236.3c0.1-0.6,0.1-1.1,0.2-1.7c0.3,0,0.6,0,1.2,0.1c-1.4-5.8,1-11.9,3-17.4l0,0   c0.2-0.5,0.7-0.8,0.8-1.3c2-1.8,3.5-4.9,6.5-5.2c0,0.2,0,0.4,0,0.7c-7.8,6.2-9.8,16.3-9.6,25.8C598,236.1,597.4,236.2,596.3,236.3z   " />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st171" d="M608.1,211.3c0-0.5,0-0.9-0.1-1.4c1.4-1.3,2.5-2.6,4.7-2.3C611.3,209.5,609.2,209.9,608.1,211.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st172" d="M598.5,237.1c0-0.6,0.1-1.1,0.1-1.7c0.5,0.8,1,1.5,1.5,2.3c0,0.3,0,0.5-0.1,0.8   C599.1,238.5,598.4,238.2,598.5,237.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st171" d="M607.3,209.1c-0.8,0-1.6-0.1-2.3-0.1c0.9-1,2-0.5,3.1-0.7c0.3,0.2,0.5,0.5,0.8,0.7l-0.2,0.2   C608.2,209.2,607.8,209.1,607.3,209.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st173" d="M598.5,237.1c-0.1,1.1,0.6,1.3,1.5,1.4l0,0c1.6,1.3,3,2.7,3.6,4.7c-0.3,0.3-0.6,0.6-1.1,1   c-2.1-2.4-5-4.2-5.5-7.8C597.8,235.8,598,236.6,598.5,237.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st174" d="M611.7,266.3c-2.5-1.7-2.4-5.8-1-8.3C612,260.5,612,263.7,611.7,266.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st44" d="M611.8,263.4c0-1.9-0.1-3.7-1.1-5.4c-0.3,0.8-0.7,1.7-1,2.5c0-1.5,0-3,0-4.8c0.4,0.3,0.7,0.5,1.2,0.9   c0.1-0.4,0.2-0.8,0.3-1.2c1.3,1.7,0.8,4,2,5.8c-0.2,0.8-0.4,1.5-0.6,2.3C612.2,263.4,612,263.4,611.8,263.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st24" d="M602.1,203.3c-1-0.5-1.9-1-2.9-1.5c0.7-1.7,2-1.8,3.3-1.3C603.3,201.8,602.4,202.5,602.1,203.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st46" d="M611.8,263.4c0.2,0,0.4,0,0.6,0c0.1,0.8,0.1,1.7-0.6,2.3C611.8,265,611.8,264.2,611.8,263.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st35" d="M600.6,253.2c-0.7-0.3-0.7-0.9-0.6-1.5C600.2,252.2,600.4,252.7,600.6,253.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st172" d="M600.7,239.2c-0.3-0.3-0.5-0.5-0.8-0.8C600.2,238.7,600.5,239,600.7,239.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st13" d="M631.6,202.5c-0.7-1.3-2.5-0.5-3.7-0.8c0-0.2,0-0.4,0.1-0.6c7.1-0.6,14.1,0.3,21.2,0.8   C643.5,203.5,637.3,202.2,631.6,202.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st175" d="M663.3,205.3c-2.9-0.8-6.3-0.5-9-2c0-0.2,0-0.5,0-0.7c3.4,0.9,7.4,0,10.4,2   C664.2,204.8,663.7,205.1,663.3,205.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st176" d="M679.2,215.1c-1.8,0.8-1.9,0.8-2.7-1c1.1-1.6-1.8-3.3-2.4-4.9c0.1-0.2,0.3-0.3,0.5-0.6   C676.6,210.4,678.1,212.5,679.2,215.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st177" d="M654.3,202.6c0,0.2,0,0.5,0,0.7c-3.9-0.2-8,0.4-11.8-0.6C646.5,202.8,650.3,201.3,654.3,202.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st178" d="M663.3,205.3c0.5-0.2,0.9-0.5,1.4-0.7c1.4,0.5,2.8,0.9,3.8,2.1c-0.3,0.3-0.7,0.6-1,0.9   C666.1,206.9,664.7,206.1,663.3,205.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st179" d="M675.6,211.4c0.4,0.9,2,1.7,0.9,2.7c-0.5-0.7-1-1.4-1.5-2.1C675.2,211.8,675.4,211.6,675.6,211.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st180" d="M621.3,234.8c0.7,0.7,1.4,1.5,2.5,2.7c-0.2-1.1-0.2-1.5-0.3-2c1.5-0.6,2.9-0.3,4.3,0.1   c-2.5,1.8-5.5,2.9-5.2,6.5c-0.2,0-0.5,0-0.7,0.1l0,0c-0.5-2.4-1-4.9-1.5-7.3C620.8,234.8,621.1,234.8,621.3,234.8z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st181" d="M631.6,224.5c3,1.9,6,3.6,9.4,4.5c-0.1,0.8-0.1,1.7-0.8,2.3c-3.5-1.5-6.5-3.7-9.4-6   C631.1,225,631.4,224.7,631.6,224.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st182" d="M620.6,213.5c-0.8-0.6-1.6-1-1.9-2.1c4.3-1,8.2,4.9,7.7,8c-0.5-0.3-0.9-0.6-1.4-1   C624.1,216.6,622.7,213.8,620.6,213.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st183" d="M640.2,231.3c0.8-0.6,0.7-1.4,0.8-2.3c2.6,0.3,4.9-1,7.5-1.4c-0.1,0.7-0.1,1.4-0.1,2.1   c-0.4,0.1-0.8-0.1-1.2-0.2c0.2,0.1,0.4,0.2,0.5,0.3c-0.3,0.8-0.8,1.3-1.7,1.2c-1.3-1.4-2.8-1.8-4.2-0.5c1.1,0.9,2.3,0.9,3.7,0.7   c-0.7,1.6-2.8,0-3.6,1.4C640.9,232.7,640.4,232.3,640.2,231.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st184" d="M648.5,228.8c0-0.4,0.1-0.8,0.1-1.2c0.3-0.1,0.7-0.2,1.1-0.4c-1.4-1.6-3.3-2.7-4.8-4.2   c0.3-0.3,0.5-0.5,0.8-0.8c0.2,0.1,0.4,0.1,0.6,0.1c1.6,1.8,7.1,3,5.9,5.8C650.9,228.4,649.7,228.6,648.5,228.8z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st185" d="M618.2,219.4c-0.4-0.8-0.7-1.7-1.1-2.4c0.5-0.5,0.9-0.9,1.3-1.3c2,2.7,3.9,5.3,5.9,8   c-0.3,0.3-0.5,0.6-0.8,0.8c-1.9-1.7-2.9-4-4.8-5.8C618.5,219.1,618.3,219.2,618.2,219.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st186" d="M635.3,220.1c-2.8-0.8-5.3-3.3-7.2-5.6c0.2-1.4,1.2-0.9,2.2-1C631.8,215.6,633.7,217.9,635.3,220.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st187" d="M645.6,222.2c-0.3,0.3-0.5,0.5-0.8,0.8c-2.6-1.8-4.8-4-7.5-5.9c0.5-0.4,0.6-0.5,0.8-0.7   C640.7,218.3,643.1,220.3,645.6,222.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st188" d="M625,218.5c2.5,1.7,4.4,4,6.7,6c-0.3,0.3-0.5,0.5-0.8,0.8c-2.4-1.5-4.2-3.6-5.9-5.9   C624.9,219.1,624.9,218.8,625,218.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st189" d="M623.5,206.1c1.7,0.6,3.3,1.1,5,1.7c-0.5,0.2-0.9,0.5-1.4,0.7c-1.9-0.5-3.9-0.5-6-2   C622.2,206.3,622.9,206.2,623.5,206.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st190" d="M647.8,229.7c0.2,0.1,0.4,0,0.6,0c0.9,0.4,0.1,0.9,0.1,1.4c-1.2,0.3,0.2,0.9,0.6,1.3c-2.4,0-4.8,0.1-7.3,0.1   c0.8-1.5,2.9,0.2,3.6-1.4C646.5,230.9,647.5,230.9,647.8,229.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st191" d="M635.3,220.1c-0.5-0.7-1.1-1.5-1.6-2.2c2.5,0.8,4.9,2.4,6.7,4.4c-0.2,0.3-0.5,0.5-0.7,0.8   C638.2,222.1,637,220.4,635.3,220.1L635.3,220.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st192" d="M639.6,223c0.2-0.3,0.5-0.5,0.7-0.8c1.9,1.4,3.7,2.7,6.1,4.5C643.2,226.8,642.1,224.7,639.6,223z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st193" d="M625,218.5c0,0.3,0,0.6,0,0.9c-1.9-1.7-3.3-3.6-4.4-5.9C622.7,213.8,624.1,216.6,625,218.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st194" d="M627.1,208.4c0.5-0.2,0.9-0.5,1.4-0.7c2,0.7,3.9,1.4,5.9,2.1C632.4,211.2,629.3,209.1,627.1,208.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st195" d="M623.5,224.5c0.3-0.3,0.5-0.6,0.8-0.8c1.2,1.5,2.4,3,3.6,4.5c0,0.3,0,0.5,0,0.8   C626.1,227.8,624.6,226.3,623.5,224.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st196" d="M618.2,219.4c0.1-0.2,0.3-0.4,0.6-0.7c1.1,1,1.9,2.2,2.6,3.5c-0.8,0.2-0.8,0.9-0.8,1.5   C619.8,222.3,619,220.9,618.2,219.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st197" d="M627.9,229c0-0.3,0-0.5,0-0.8c1.5,1,2.7,2.2,3.8,4.1C629.6,231.2,629.6,231.2,627.9,229z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st198" d="M624.1,230.5c0.3,0,0.6-0.1,1-0.1c1.1,0.5,2.2,0.9,2.8,2.2C626.1,232.5,626.1,232.5,624.1,230.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st185" d="M618.4,215.7c-0.8-0.2-0.8-0.8-0.8-1.5C617.9,214.7,618.1,215.2,618.4,215.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st131" d="M634.4,236.3c-0.2-0.3-0.4-0.6-0.6-0.8C634,235.8,634.2,236.1,634.4,236.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st167" d="M619.7,229.7c-0.2-0.3-0.3-0.6-0.5-1C619.3,229,619.5,229.4,619.7,229.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st186" d="M635.2,220.1c0.2,0,0.5,0,0.7,0.1C635.6,220.9,635.4,220.6,635.2,220.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st86" d="M650.6,225.3c-1.5-1-2.9-2-4.4-3c0.3-0.1,0.7-0.1,1.3-0.3c-3.4-3.9-6.8-6.6-9-11.4c4.7,0,6.9,6.1,12.2,4.2   c0.6,0.5,1.3,1,1.9,1.6c0.1,0.2,0.1,0.5,0.2,0.7l0,0c-0.8-0.2-1.7-0.4-2.7-0.7c0.2,0.5,0.4,0.9,0.6,1.3c-0.5,0.6-1,1.3-1.6,2.1   c1.1,0.9,2.1,1.6,3,2.3c-0.6,0.1-1.2,0.3-1.8,0.4c1.1,0.3,2,1.4,3.2,0.5c1.4,0,2.9-0.1,4.3-0.1l0.2,0.2   C655.7,224.4,653.3,225,650.6,225.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st199" d="M629.3,204c5.2-0.8,10.3,0.4,15.4,1.4c-0.2,0.9-1,0.6-1.5,0.9c-4.6-0.7-9.3-0.9-14-0.8   c-0.6,0-1.2,0.1-1.3-0.8C628.4,204.5,628.9,204.3,629.3,204z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st200" d="M652.8,217.2c-0.1-0.2-0.1-0.5-0.2-0.7c0.3,0,0.7,0,1-0.1c1.9,1.7,3.7,3,5.9,4.4c-0.4,0.3-0.6,0.5-0.8,0.8   c-0.5-0.9-1.4-0.6-2.2-0.7c-1.2-0.7-2.2-2.8-3.7-1.6c-0.7-0.5-1.4-1-2.1-1.5c-0.2-0.4-0.3-0.8-0.6-1.3   C651.2,216.7,652.1,216.9,652.8,217.2c0.1,0.2,0.1,0.3,0.3,0.4C653.1,217.4,653,217.3,652.8,217.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st201" d="M670.5,216.5c-0.6-0.1-1.2-0.2-1.9-0.4c-0.2,1.5,1.5,2.5,1.7,4.1c-0.2,0-0.4,0-0.6,0   c-1.3-1.6-2.5-3.4-4.4-4.4c-0.2-0.7,0.4-1.3,0.7-1.9C667.8,214.6,669.5,214.8,670.5,216.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st202" d="M643.3,206.3c0.5-0.3,1.4,0,1.5-0.9c2.9,0.5,5.8,1.3,8.5,2.9C650,207.9,646.4,207.1,643.3,206.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st203" d="M658.8,214.9c-0.3,0.3-0.5,0.5-0.8,0.8c-1.5-1.2-2.9-2.5-4.4-3.7c0.3-0.3,0.5-0.5,0.8-0.8   C655.8,212.5,657.3,213.7,658.8,214.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st204" d="M665.3,215.8c1.9,1,3.1,2.7,4.4,4.4c0,0.2,0,0.5,0,0.7l0,0c-0.5,0-1,0.1-1.5,0.1c-0.4-1.9-2-2.9-3-4.4   C665.3,216.3,665.3,216,665.3,215.8z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st205" d="M663.2,214.9c-1.4-1-3.2-1.6-4.5-3.5c2.4,0.3,3.8,1.6,5.2,2.8C663.6,214.5,663.4,214.7,663.2,214.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st86" d="M656.6,220.9c0.8,0,1.7-0.2,2.2,0.7c-0.2,0.5-0.4,1-0.6,1.6c-1-1.1-2.4-0.9-3.8-0.9   C655.2,219.9,655.7,221.9,656.6,220.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st206" d="M654.4,211.3c-0.3,0.3-0.5,0.5-0.8,0.8c-1.2-0.8-2.5-1.3-3.5-2.6C652.4,209.8,652.4,209.8,654.4,211.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st207" d="M650.6,214.3c-1.1-0.6-1.5-1.6-1.8-3c1.5,0.3,2.1,1.1,2.5,2.3C651.1,213.8,650.8,214.1,650.6,214.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st208" d="M650.6,214.3c0.2-0.2,0.5-0.5,0.7-0.7c0.8,0.9,1.6,1.9,2.4,2.8c-0.3,0-0.7,0-1,0.1c-0.6-0.5-1.3-1-1.9-1.6   C650.7,214.7,650.6,214.5,650.6,214.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st209" d="M663.2,214.9c0.2-0.2,0.5-0.5,0.7-0.7c0.5,0.3,1,0.5,1.5,0.8c0,0.5,0,1-0.1,1.5   C664.6,216,663.9,215.5,663.2,214.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st86" d="M656.7,225.4c-1.3,0.9-1.5,0.7-1.7-0.8C655.6,224.8,656.1,225.1,656.7,225.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st12" d="M668.3,220.9c0.5,0,1-0.1,1.5-0.1C669.3,221.8,668.8,221.8,668.3,220.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st13" d="M629.3,204c-0.5,0.2-0.9,0.5-1.4,0.7C628.2,203.9,628.7,203.9,629.3,204z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st133" d="M677.1,218.6c0.2,0.3,0.4,0.6,0.5,0.8C677.5,219.1,677.3,218.9,677.1,218.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st126" d="M673.4,218.6c-0.3-0.2-0.5-0.3-0.8-0.5C672.9,218.3,673.2,218.5,673.4,218.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st12" d="M669.7,220.8c0-0.2,0-0.5,0-0.7c0.2,0,0.4,0,0.6,0c0.1,0.2,0.2,0.4,0.1,0.7   C670.2,220.9,670,220.8,669.7,220.8z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st99" d="M191.4,305.4l-0.3,0.1l-0.3-0.2c0-0.2,0-0.5,0-0.7c1.1,0,2.2-0.1,3.1,0.6   C193.2,305.3,192.3,305.3,191.4,305.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st101" d="M190.9,304.6c0,0.2,0,0.5,0,0.7c-0.5,0-1-0.1-1.4-0.1c0.3-0.3,0.6-0.5,0.8-0.8   C190.5,304.4,190.7,304.5,190.9,304.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st210" d="M725.4,344.3c-1.5,2.9-3.3,4.3-6.6,3.4C720.2,345.4,722.8,345.6,725.4,344.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st165" d="M622,242.2c0.2,0,0.5-0.1,0.7-0.1c-0.1,0.2-0.2,0.4-0.3,0.5C622.3,242.5,622.1,242.3,622,242.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st211" d="M630,244.3c-0.4,0.6-0.7,1.3-1.1,2c-0.6-0.9-1.2-1.8-1.7-2.7c0.1-1.2-0.1-2.9,1.5-3.2c0.3,0.3,0.7,0.6,1,0.8   c0.8,0.1,1.7,0.2,2.7,0.3c0.2,0.5,0.5,1,0.8,1.6C631.9,243.6,631,243.9,630,244.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st212" d="M629.6,241.3c-0.3-0.3-0.7-0.6-1-0.8c0.8-0.6,1.6-1.3,2.8-1.1C631.9,241.1,629.7,240.2,629.6,241.3z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st213" d="M600,218.7c-1,4.4-3.5,8.6-2.9,13.1c-0.2,0-0.5,0-0.7,0c0-2.2,0-4.4,0-6.6c1-0.6,0.6-1.6,0.5-2.5   c0.3-3,1.9-5.6,3.8-7.8c0.3,0.3,0.6,0.6,0.9,0.9c-0.1,0.5-0.6,0.9-0.8,1.3l0,0C599.9,217.4,600,218.1,600,218.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st214" d="M601.6,215.9c-0.3-0.3-0.6-0.6-0.9-0.9c1.9-2.2,3.9-5.7,7.3-5.1c0,0.2,0,0.5,0.1,0.7   C605.1,211,603.6,214.1,601.6,215.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st215" d="M596.4,231.9c0.2,0,0.5,0,0.7,0c0.2,0.9,0.4,1.7,0.6,2.7c-0.6,0-0.9,0-1.2-0.1   C596.4,233.6,596.4,232.8,596.4,231.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st215" d="M596.9,222.8c0,0.9,0.5,1.8-0.5,2.5C596.6,224.4,596.7,223.6,596.9,222.8z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st170" d="M608,209.9c-0.2,0-0.5,0-0.7-0.2c0-0.2,0-0.4,0-0.6c0.4,0,0.9,0.1,1.3,0.1   C608.4,209.4,608.2,209.7,608,209.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st214" d="M600,215.8c-0.2,0.2-0.4,0.4-0.5,0.7C599.6,216.2,599.8,216,600,215.8z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st214" d="M600.7,214.9c-0.2,0.3-0.4,0.5-0.6,0.8C600.3,215.5,600.5,215.2,600.7,214.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st170" d="M604.6,210.7c-0.3,0.2-0.6,0.4-0.9,0.6C604,211.1,604.3,210.9,604.6,210.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st170" d="M606,209.9c-0.3,0.2-0.6,0.3-0.9,0.5C605.4,210.3,605.7,210.1,606,209.9z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st88" d="M602.9,209.6c0.2-0.2,0.5-0.3,0.7-0.5C603.4,209.3,603.1,209.5,602.9,209.6z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st215" d="M597.1,230.5c0.1-1.3-0.6-2.7,0.5-3.8C597.6,228,597.9,229.4,597.1,230.5z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st214" d="M600,218.7c-0.1-0.6-0.1-1.3,0.7-1.5C600.5,217.7,600.3,218.2,600,218.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st214" d="M600.7,217.2c0.2-0.3,0.4-0.5,0.5-0.8C601.1,216.7,600.9,217,600.7,217.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st171" d="M606.5,211.2c0.3-0.2,0.6-0.4,0.9-0.6C607,210.9,606.8,211.1,606.5,211.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st216" d="M646,231c-1.5,0.4-3,0.4-4.2-0.5c1.2,0,2.4,0,3.6-0.1C645.7,230.6,645.8,230.8,646,231z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st217" d="M645.5,230.4c-1.2,0-2.4,0-3.6,0.1C643.2,229.4,643.9,229.4,645.5,230.4z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st12" d="M647.8,229.7c-0.2-0.1-0.4-0.2-0.5-0.3C647.4,229.5,647.6,229.6,647.8,229.7L647.8,229.7z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st218" d="M655.1,221c-0.2,0.4-0.5,0.8-0.7,1.2c-2.1,0.8-3.4-1.2-5.1-2.4c0.6-0.8,1.1-1.4,1.6-2.1   C652.2,218.8,653.7,219.9,655.1,221z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st219" d="M652.2,222.2c0.5,0.1,1,0.1,1.5,0.2c0,0.2-0.1,0.4-0.1,0.7c-1.2,0.9-2.1-0.2-3.2-0.5   C650.9,222.4,651.6,222.3,652.2,222.2z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st220" d="M653.6,223.1c0-0.2,0.1-0.4,0.1-0.7c1.4-0.3,3.1-0.5,4.2,0.5C656.4,223,655,223,653.6,223.1z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-class-3d3f58ad64-st221" d="M655.1,221c-0.7-0.6-1.4-1.1-2.2-1.7c1.5-1.2,2.5,0.9,3.7,1.6C656.1,221.8,655.5,220.7,655.1,221z" />
+	<path class="class-3d3f58ad64-class-3d3f58ad64-st86" d="M652.8,217.2c0.1,0.1,0.2,0.2,0.3,0.4C652.9,217.5,652.9,217.4,652.8,217.2L652.8,217.2z" />
+</g>
+</svg>

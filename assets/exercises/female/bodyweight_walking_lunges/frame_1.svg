@@ -1,0 +1,922 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 900 600" style="enable-background:new 0 0 900 600;" xml:space="preserve">
+<style type="text/css">
+	.class-35befcbe30-st0{display:none;}
+	.class-35befcbe30-st1{display:inline;}
+	.class-35befcbe30-st2{display:inline;fill:#010101;}
+	.class-35befcbe30-st3{display:inline;fill:#0D0B0B;}
+	.class-35befcbe30-st4{display:inline;fill:#080707;}
+	.class-35befcbe30-st5{display:inline;fill:#1B1714;}
+	.class-35befcbe30-st6{display:inline;fill:#171615;}
+	.class-35befcbe30-st7{display:inline;fill:#221917;}
+	.class-35befcbe30-st8{display:inline;fill:#1F1614;}
+	.class-35befcbe30-st9{display:inline;fill:#2E2623;}
+	.class-35befcbe30-class-35befcbe30-st10{display:inline;fill:#B9B0B0;}
+	.class-35befcbe30-class-35befcbe30-st11{display:inline;fill:#F6D9C7;}
+	.class-35befcbe30-class-35befcbe30-st12{display:inline;fill:#FFF0A7;}
+	.class-35befcbe30-class-35befcbe30-st13{display:inline;fill:#E1C7B6;}
+	.class-35befcbe30-class-35befcbe30-st14{display:inline;fill:#F7EFD0;}
+	.class-35befcbe30-class-35befcbe30-st15{display:inline;fill:#EBDA8F;}
+	.class-35befcbe30-class-35befcbe30-st16{display:inline;fill:#EBDDB8;}
+	.class-35befcbe30-class-35befcbe30-st17{display:inline;fill:#FE9977;}
+	.class-35befcbe30-class-35befcbe30-st18{display:inline;fill:#EE896A;}
+	.class-35befcbe30-class-35befcbe30-st19{display:inline;fill:#0E0A09;}
+	.class-35befcbe30-class-35befcbe30-st20{display:inline;fill:#FB9876;}
+	.class-35befcbe30-class-35befcbe30-st21{display:inline;fill:#D5BF9F;}
+	.class-35befcbe30-class-35befcbe30-st22{display:inline;fill:#EADCB7;}
+	.class-35befcbe30-class-35befcbe30-st23{display:inline;fill:#DFC5B4;}
+	.class-35befcbe30-class-35befcbe30-st24{display:inline;fill:#F5DFBE;}
+	.class-35befcbe30-class-35befcbe30-st25{display:inline;fill:#1B1613;}
+	.class-35befcbe30-class-35befcbe30-st26{display:inline;fill:#EB8869;}
+	.class-35befcbe30-class-35befcbe30-st27{display:inline;fill:#CBB698;}
+	.class-35befcbe30-class-35befcbe30-st28{display:inline;fill:#EADBB6;}
+	.class-35befcbe30-class-35befcbe30-st29{display:inline;fill:#CEBB9C;}
+	.class-35befcbe30-class-35befcbe30-st30{display:inline;fill:#CFBB9C;}
+	.class-35befcbe30-class-35befcbe30-st31{display:inline;fill:#E4D7B4;}
+	.class-35befcbe30-class-35befcbe30-st32{display:inline;fill:#15130F;}
+	.class-35befcbe30-class-35befcbe30-st33{display:inline;fill:#D7C4A7;}
+	.class-35befcbe30-class-35befcbe30-st34{display:inline;fill:#CEB89A;}
+	.class-35befcbe30-class-35befcbe30-st35{display:inline;fill:#1E1816;}
+	.class-35befcbe30-class-35befcbe30-st36{display:inline;fill:#EBEBEB;}
+	.class-35befcbe30-class-35befcbe30-st37{display:inline;fill:#1F1C17;}
+	.class-35befcbe30-class-35befcbe30-st38{display:inline;fill:#EBD9BA;}
+	.class-35befcbe30-class-35befcbe30-st39{display:inline;fill:#B09D83;}
+	.class-35befcbe30-class-35befcbe30-st40{display:inline;fill:#D0BB9C;}
+	.class-35befcbe30-class-35befcbe30-st41{display:inline;fill:#1A0B08;}
+	.class-35befcbe30-class-35befcbe30-st42{display:inline;fill:#DECBAD;}
+	.class-35befcbe30-class-35befcbe30-st43{display:inline;fill:#DEC5B4;}
+	.class-35befcbe30-class-35befcbe30-st44{display:inline;fill:#C2B093;}
+	.class-35befcbe30-class-35befcbe30-st45{display:inline;fill:#38322A;}
+	.class-35befcbe30-class-35befcbe30-st46{display:inline;fill:#635A4D;}
+	.class-35befcbe30-class-35befcbe30-st47{display:inline;fill:#3C231C;}
+	.class-35befcbe30-class-35befcbe30-st48{display:inline;fill:#1C1816;}
+	.class-35befcbe30-class-35befcbe30-st49{display:inline;fill:#E1CCAE;}
+	.class-35befcbe30-class-35befcbe30-st50{display:inline;fill:#DAC9AC;}
+	.class-35befcbe30-class-35befcbe30-st51{display:inline;fill:#C4B295;}
+	.class-35befcbe30-class-35befcbe30-st52{display:inline;fill:#584E41;}
+	.class-35befcbe30-class-35befcbe30-st53{display:inline;fill:#362C24;}
+	.class-35befcbe30-class-35befcbe30-st54{display:inline;fill:#28201A;}
+	.class-35befcbe30-class-35befcbe30-st55{display:inline;fill:#D0795D;}
+	.class-35befcbe30-class-35befcbe30-st56{display:inline;fill:#CCCBB0;}
+	.class-35befcbe30-class-35befcbe30-st57{display:inline;fill:#655245;}
+	.class-35befcbe30-class-35befcbe30-st58{display:inline;fill:#27231E;}
+	.class-35befcbe30-class-35befcbe30-st59{display:inline;fill:#3A3028;}
+	.class-35befcbe30-class-35befcbe30-st60{display:inline;fill:#CFB9AA;}
+	.class-35befcbe30-class-35befcbe30-st61{display:inline;fill:#C9D1B6;}
+	.class-35befcbe30-class-35befcbe30-st62{display:inline;fill:#1E1A18;}
+	.class-35befcbe30-class-35befcbe30-st63{display:inline;fill:#B0B1B1;}
+	.class-35befcbe30-class-35befcbe30-st64{display:inline;fill:#C8B498;}
+	.class-35befcbe30-class-35befcbe30-st65{display:inline;fill:#312620;}
+	.class-35befcbe30-class-35befcbe30-st66{display:inline;fill:#6D6058;}
+	.class-35befcbe30-class-35befcbe30-st67{display:inline;fill:#6A6456;}
+	.class-35befcbe30-class-35befcbe30-st68{display:inline;fill:#553126;}
+	.class-35befcbe30-class-35befcbe30-st69{display:inline;fill:#D3CAAD;}
+	.class-35befcbe30-class-35befcbe30-st70{display:inline;fill:#8B7D72;}
+	.class-35befcbe30-class-35befcbe30-st71{display:inline;fill:#2B1B17;}
+	.class-35befcbe30-class-35befcbe30-st72{display:inline;fill:#B4A58D;}
+	.class-35befcbe30-class-35befcbe30-st73{display:inline;fill:#8A9B85;}
+	.class-35befcbe30-class-35befcbe30-st74{display:inline;fill:#A89C84;}
+	.class-35befcbe30-class-35befcbe30-st75{display:inline;fill:#2E251F;}
+	.class-35befcbe30-class-35befcbe30-st76{display:inline;fill:#8CAA94;}
+	.class-35befcbe30-class-35befcbe30-st77{display:inline;fill:#D6C0A2;}
+	.class-35befcbe30-class-35befcbe30-st78{display:inline;fill:#CA7E61;}
+	.class-35befcbe30-class-35befcbe30-st79{display:inline;fill:#221613;}
+	.class-35befcbe30-class-35befcbe30-st80{display:inline;fill:#3F3931;}
+	.class-35befcbe30-class-35befcbe30-st81{display:inline;fill:#565347;}
+	.class-35befcbe30-class-35befcbe30-st82{display:inline;fill:#CBCEB3;}
+	.class-35befcbe30-class-35befcbe30-st83{display:inline;fill:#8A7F6A;}
+	.class-35befcbe30-class-35befcbe30-st84{display:inline;fill:#B9A489;}
+	.class-35befcbe30-class-35befcbe30-st85{display:inline;fill:#7D7262;}
+	.class-35befcbe30-class-35befcbe30-st86{display:inline;fill:#413833;}
+	.class-35befcbe30-class-35befcbe30-st87{display:inline;fill:#A99A82;}
+	.class-35befcbe30-class-35befcbe30-st88{display:inline;fill:#C3BBA0;}
+	.class-35befcbe30-class-35befcbe30-st89{display:inline;fill:#B29E91;}
+	.class-35befcbe30-class-35befcbe30-st90{display:inline;fill:#80715F;}
+	.class-35befcbe30-class-35befcbe30-st91{display:inline;fill:#65534E;}
+	.class-35befcbe30-class-35befcbe30-st92{display:inline;fill:#47423C;}
+	.class-35befcbe30-class-35befcbe30-st93{display:inline;fill:#5F685A;}
+	.class-35befcbe30-class-35befcbe30-st94{display:inline;fill:#E3E8CA;}
+	.class-35befcbe30-class-35befcbe30-st95{display:inline;fill:#585145;}
+	.class-35befcbe30-class-35befcbe30-st96{display:inline;fill:#968C75;}
+	.class-35befcbe30-class-35befcbe30-st97{display:inline;fill:#918973;}
+	.class-35befcbe30-class-35befcbe30-st98{display:inline;fill:#B4A38B;}
+	.class-35befcbe30-class-35befcbe30-st99{display:inline;fill:#B4AA91;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st100{display:inline;fill:#73564F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st101{display:inline;fill:#8E7D73;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st102{display:inline;fill:#93968D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st103{display:inline;fill:#7E7D69;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st104{display:inline;fill:#8F836F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st105{display:inline;fill:#BCAD94;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st106{display:inline;fill:#717A6E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st107{display:inline;fill:#574E47;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st108{display:inline;fill:#9EA5A5;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st109{display:inline;fill:#577F6D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st110{display:inline;fill:#B6A287;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st111{display:inline;fill:#36352D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st112{display:inline;fill:#412C26;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st113{display:inline;fill:#A6B7B7;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st114{display:inline;fill:#DBC3B3;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st115{display:inline;fill:#DCC3B2;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st116{display:inline;fill:#312C29;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st117{display:inline;fill:#433632;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st118{display:inline;fill:#C5AC9D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st119{display:inline;fill:#9F8B7F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st120{display:inline;fill:#2B251F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st121{display:inline;fill:#483A32;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st122{display:inline;fill:#2B221D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st123{display:inline;fill:#718874;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st124{display:inline;fill:#81816E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st125{display:inline;fill:#9E9E87;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st126{display:inline;fill:#D6BDAD;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st127{display:inline;fill:#797268;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st128{display:inline;fill:#82887D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st129{display:inline;fill:#A4998C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st130{display:inline;fill:#1F1A18;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st131{display:inline;fill:#D9C0AF;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st132{display:inline;fill:#1E1918;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st133{display:inline;fill:#2A2421;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st134{display:inline;fill:#0A0B0A;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st135{display:inline;fill:#6E625B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st136{display:inline;fill:#35322F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st137{display:inline;fill:#423632;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st138{display:inline;fill:#86746C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st139{display:inline;fill:#3E302C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st140{display:inline;fill:#7B6C64;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st141{display:inline;fill:#212221;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st142{display:inline;fill:#1D1917;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st143{display:inline;fill:#513A35;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st144{display:inline;fill:#2D1110;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st145{display:inline;fill:#8D7C72;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st146{display:inline;fill:#493E39;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st147{display:inline;fill:#B8AB9F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st148{display:inline;fill:#72645C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st149{display:inline;fill:#B6A193;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st150{display:inline;fill:#75645D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st151{display:inline;fill:#4F4742;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st152{display:inline;fill:#87625B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st153{display:inline;fill:#8C786E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st154{display:inline;fill:#171614;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st155{display:inline;fill:#1C1918;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st156{display:inline;fill:#504A45;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st157{display:inline;fill:#968379;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st158{display:inline;fill:#866A62;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st159{display:inline;fill:#3D3935;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st160{display:inline;fill:#7E665E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st161{display:inline;fill:#56403C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st162{display:inline;fill:#695E57;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st163{display:inline;fill:#140A09;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st164{display:inline;fill:#978077;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st165{display:inline;fill:#0B0906;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st166{display:inline;fill:#4C3E2C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st167{display:inline;fill:#110907;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st168{display:inline;fill:#040303;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st169{display:inline;fill:#74675E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st170{display:inline;fill:#6D6158;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st171{display:inline;fill:#260D0C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st172{display:inline;fill:#594741;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st173{display:inline;fill:#473732;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st174{display:inline;fill:#524640;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st175{display:inline;fill:#261A18;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st176{display:inline;fill:#312623;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st177{display:inline;fill:#837369;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st178{display:inline;fill:#080505;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st179{display:inline;fill:#4F2319;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st180{display:inline;fill:#97887D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st181{display:inline;fill:#725F57;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st182{display:inline;fill:#29211E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st183{display:inline;fill:#443E39;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st184{display:inline;fill:#62453F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st185{display:inline;fill:#3F201D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st186{display:inline;fill:#9C8A7F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st187{display:inline;fill:#8E8075;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st188{display:inline;fill:#B6A294;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st189{display:inline;fill:#2A221F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st190{display:inline;fill:#7F7168;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st191{display:inline;fill:#312825;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st192{display:inline;fill:#5D4F49;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st193{display:inline;fill:#9D8B7F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st194{display:inline;fill:#65544D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st195{display:inline;fill:#2D2824;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st196{display:inline;fill:#110806;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st197{display:inline;fill:#6F4031;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st198{display:inline;fill:#46271E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st199{display:inline;fill:#673C2E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st200{display:inline;fill:#C3755A;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st201{display:inline;fill:#5C392C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st202{display:inline;fill:#5F332A;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st203{display:inline;fill:#F69674;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st204{display:inline;fill:#411E17;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st205{display:inline;fill:#B16E55;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st206{display:inline;fill:#D3BD9E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st207{display:inline;fill:#A99F84;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st208{display:inline;fill:#EAD5B5;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st209{display:inline;fill:#2C201B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st210{display:inline;fill:#4D443C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st211{display:inline;fill:#25211E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st212{display:inline;fill:#918C75;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st213{display:inline;fill:#DFD3B5;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st214{display:inline;fill:#99806B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st215{display:inline;fill:#B3A68F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st216{display:inline;fill:#74836F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st217{display:inline;fill:#837260;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st218{display:inline;fill:#B8B194;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st219{display:inline;fill:#543027;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st220{display:inline;fill:#341F18;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st221{display:inline;fill:#F2DCBB;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st222{display:inline;fill:#D4BF9F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st223{display:inline;fill:#130F0E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st224{display:inline;fill:#CEBAA9;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st225{display:inline;fill:#B4A489;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st226{display:inline;fill:#C6B0A1;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st227{display:inline;fill:#917B71;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st228{display:inline;fill:#635446;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st229{display:inline;fill:#877965;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st230{display:inline;fill:#625749;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st231{display:inline;fill:#120B0A;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st232{display:inline;fill:#63473D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st233{display:inline;fill:#8D8A76;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st234{display:inline;fill:#CAC8AB;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st235{display:inline;fill:#7F6D5C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st236{display:inline;fill:#DED8B9;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st237{display:inline;fill:#BDAC8F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st238{display:inline;fill:#A7967D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st239{display:inline;fill:#A49084;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st240{display:inline;fill:#332E2B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st241{display:inline;fill:#4B2825;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st242{display:inline;fill:#4A3B32;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st243{display:inline;fill:#352923;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st244{display:inline;fill:#1F1A19;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st245{display:inline;fill:#211715;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st246{display:inline;fill:#C1B99E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st247{display:inline;fill:#9A927D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st248{display:inline;fill:#7A7866;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st249{display:inline;fill:#585B4E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st250{display:inline;fill:#7A6F5F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st251{display:inline;fill:#D2C9AC;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st252{display:inline;fill:#2C251F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st253{display:inline;fill:#D8C7A9;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st254{display:inline;fill:#443C33;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st255{display:inline;fill:#9D8C78;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st256{display:inline;fill:#CBB5A6;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st257{display:inline;fill:#807C6A;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st258{display:inline;fill:#B7C7AA;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st259{fill:#F6D9C7;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st260{fill:#0F0C0B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st261{fill:#070707;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st262{fill:#0E0C0A;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st263{fill:#0F0D0D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st264{fill:#231F1E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st265{fill:#232121;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st266{fill:#141411;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st267{fill:#333535;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st268{fill:#FF9A77;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st269{fill:#FFF0A7;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st270{fill:#F7EFD0;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st271{fill:#E1C7B6;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st272{fill:#EBDA8F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st273{fill:#E0C6B5;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st274{fill:#EADCB8;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st275{fill:#EF8A6A;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st276{fill:#F5D8C6;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st277{fill:#EBDCB7;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st278{fill:#D6BF9F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st279{fill:#EE8969;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st280{fill:#EC8969;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st281{fill:#EED2C1;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st282{fill:#DEC4B3;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st283{fill:#151110;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st284{fill:#EDDABA;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st285{fill:#F5DEBE;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st286{fill:#D2BD9D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st287{fill:#C9B496;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st288{fill:#191411;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st289{fill:#CBB698;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st290{fill:#AC9980;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st291{fill:#D0BB9C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st292{fill:#EEDABA;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st293{fill:#F3F3F3;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st294{fill:#C2AE92;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st295{fill:#DCC2B1;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st296{fill:#E9D4B5;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st297{fill:#211B19;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st298{fill:#201A18;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st299{fill:#181210;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st300{fill:#27221D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st301{fill:#231A18;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st302{fill:#39332B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st303{fill:#969D86;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st304{fill:#3E3129;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st305{fill:#DBC8AB;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st306{fill:#29241E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st307{fill:#C8B2A3;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st308{fill:#EDD7B8;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st309{fill:#B9A68B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st310{fill:#5D5346;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st311{fill:#DAC3B2;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st312{fill:#392C25;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st313{fill:#BABBBB;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st314{fill:#2B1E1A;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st315{fill:#9F9E87;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st316{fill:#372520;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st317{fill:#DDC9AB;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st318{fill:#1E1A18;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st319{fill:#1F1B17;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st320{fill:#AB9588;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st321{fill:#C8B497;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st322{fill:#7A6A5A;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st323{fill:#3C3129;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st324{fill:#483F35;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st325{fill:#5C5145;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st326{fill:#968479;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st327{fill:#35302D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st328{fill:#492E25;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st329{fill:#30241E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st330{fill:#BC6E54;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st331{fill:#7A6A61;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st332{fill:#45362D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st333{fill:#AEB59B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st334{fill:#493A32;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st335{fill:#383632;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st336{fill:#4E403B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st337{fill:#31302C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st338{fill:#707465;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st339{fill:#A29580;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st340{fill:#6B6050;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st341{fill:#7D6E65;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st342{fill:#A28F78;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st343{fill:#281E1A;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st344{fill:#99A38E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st345{fill:#DEC5A8;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st346{fill:#98846E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st347{fill:#94887D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st348{fill:#9E705D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st349{fill:#B4ADAD;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st350{fill:#6A655C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st351{fill:#5F4F48;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st352{fill:#C0B3A4;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st353{fill:#7C7269;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st354{fill:#6C6B5A;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st355{fill:#9B9D88;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st356{fill:#A8A093;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st357{fill:#C6B8A8;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st358{fill:#767C7C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st359{fill:#C8B3A3;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st360{fill:#BBD4B8;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st361{fill:#9F856F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st362{fill:#BAB981;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st363{fill:#C7B2A3;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st364{fill:#CDB99B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st365{fill:#D9BEAE;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st366{fill:#1E1917;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st367{fill:#312C29;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st368{fill:#36302C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st369{fill:#1D1615;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st370{fill:#413935;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st371{fill:#1F1816;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st372{fill:#332D29;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st373{fill:#3E312D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st374{fill:#86766E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st375{fill:#392B29;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st376{fill:#1E1514;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st377{fill:#4F413C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st378{fill:#504B44;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st379{fill:#6B5A53;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st380{fill:#342A28;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st381{fill:#CEB0A1;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st382{fill:#2F2621;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st383{fill:#5C584B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st384{fill:#B1AB92;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st385{fill:#585246;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st386{fill:#929B85;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st387{fill:#ECD1BF;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st388{fill:#554D41;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st389{fill:#DDC3B3;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st390{fill:#1A1715;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st391{fill:#1B1716;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st392{fill:#3C3632;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st393{fill:#221F1C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st394{fill:#2E2825;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st395{fill:#332F2B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st396{fill:#21201E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st397{fill:#332F2C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st398{fill:#534742;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st399{fill:#897A71;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st400{fill:#DDC2B2;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st401{fill:#261E1C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st402{fill:#A1897E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st403{fill:#B89F92;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st404{fill:#1E1C19;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st405{fill:#6B615A;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st406{fill:#968177;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st407{fill:#57413C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st408{fill:#99847A;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st409{fill:#BFA89B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st410{fill:#6A554F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st411{fill:#4E4943;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st412{fill:#A38B81;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st413{fill:#F08B6B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st414{fill:#F18B6B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st415{fill:#311E18;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st416{fill:#BE775F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st417{fill:#683A2F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st418{fill:#2B1A15;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st419{fill:#422720;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st420{fill:#38221C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st421{fill:#BE755D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st422{fill:#744437;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st423{fill:#A56B57;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st424{fill:#382925;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st425{fill:#0B0806;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st426{fill:#473B2C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st427{fill:#1E1412;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st428{fill:#4B403B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st429{fill:#3E3B36;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st430{fill:#433834;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st431{fill:#746D64;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st432{fill:#9F8A7E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st433{fill:#4D423C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st434{fill:#372E2A;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st435{fill:#362E2B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st436{fill:#9E8B7F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st437{fill:#4E4D46;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st438{fill:#B0988B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st439{fill:#4F433D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st440{fill:#453121;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st441{fill:#485036;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st442{fill:#7A6544;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st443{fill:#3D302C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st444{fill:#9F8B80;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st445{fill:#A19387;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st446{fill:#2B221F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st447{fill:#362B27;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st448{fill:#5F4843;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st449{fill:#927F75;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st450{fill:#59544D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st451{fill:#544943;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st452{fill:#392D25;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st453{fill:#7F4838;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st454{fill:#7F503F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st455{fill:#342B27;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st456{fill:#F0DBBB;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st457{fill:#3F372F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st458{fill:#978A74;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st459{fill:#665C4D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st460{fill:#583C37;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st461{fill:#5A3228;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st462{fill:#4E3E39;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st463{fill:#483A35;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st464{fill:#D3BD9E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st465{fill:#110C0B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st466{fill:#47352D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st467{fill:#897664;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st468{fill:#BDAD91;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st469{fill:#5F4D41;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st470{fill:#BAA78C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st471{fill:#C5B496;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st472{fill:#8F846E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st473{fill:#100D0B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st474{fill:#A1977F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st475{fill:#B6A496;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st476{fill:#BAA89A;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st477{fill:#B5A597;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st478{fill:#070605;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st479{fill:#4B4137;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st480{fill:#26231D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st481{fill:#3F3D33;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st482{fill:#D8CAAC;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st483{fill:#9C9D86;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st484{fill:#AD9B81;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st485{fill:#261F1B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st486{fill:#625145;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st487{fill:#4A4037;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st488{fill:#978773;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st489{fill:#9F937C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st490{fill:#D3C4A7;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st491{fill:#AFAE94;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st492{fill:#D9C5A8;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st493{fill:#574B40;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st494{fill:#C5B295;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st495{fill:#8C8470;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st496{fill:#56463C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st497{fill:#848A73;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st498{fill:#989F88;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st499{fill:#987E6B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st500{fill:#C8BD9D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st501{fill:#130F0E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st502{fill:#16100F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st503{fill:#2C241F;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st504{fill:#271B19;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st505{fill:#1E1814;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st506{fill:#DAC2B2;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st507{fill:#554C41;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st508{fill:#827262;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st509{fill:#938B77;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st510{fill:#B7A28B;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st511{fill:#0D0F0D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st512{fill:#C8BDA0;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st513{fill:#5A3A30;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st514{fill:#997766;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st515{fill:#CBC2A5;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st516{fill:#6F8670;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st517{fill:#828D76;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st518{fill:#736355;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st519{fill:#BFB99E;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st520{fill:#48483D;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st521{fill:#66695A;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st522{fill:#636A5A;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st523{fill:#5C4036;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st524{fill:#BEAA9C;}
+	.class-35befcbe30-class-35befcbe30-class-35befcbe30-st525{fill:#4F5144;}
+</style>
+<g id="a">
+	<path d="M342.5,416.6c2.5,34.1-11.4,65.8-16,99.1c2.2,0.8,4.1,2.3,4.6,4.6c2.7,7.1,10.3,10.6,14,17.1c16.9,9.7,32.7-2.1,31,19.3   c-14.1,15.4-36.1,8-54,6.1c0.1,17.4-50.1,17-59.4,7.6c-8.7,1.3-16.5-1.2-24.7-4c1.2-8.1,3.3-16.1,6.4-23.8c3-5.1,1.2-14.1,8-16.3   c0.6,0.2,1.3,0.5,2.1,0.8c4.4-29.9-14-61.6-2.4-91.4c25.8-58.3,3.5-50.8,0.5-104.6c-1.2-1.5-2.6-3-2.9-5.1c0.3-0.3,0.5-0.6,0.8-0.9   c1.3,0.6,2.1,1.8,3.6,2.1l0,0c1.2,1.8,4.2,5.8,5.7,2.8c0.5,0.4,1,0.9,1.4,1.3c-0.3,0.3-0.6,0.6-0.9,0.9c-1.3,0.3-2.7,0.6-4.1,1   c7.2,67,21.4,38.7-3,112.7c-7,28.7,11.2,59.1,2.3,87.4c0.3,1.4-0.4,2.5,0.8,3.5c4.9-4,1.3-2.5,2.8-5.4c0.2,0.1,0.4,0.1,0.6,0.1   c0.7,0.5,1.2,0.9,2,1.5c3.8-5,8-9,13.2-12.6c0.5-32.7,4.6-66.5,15.9-97.4c2.1-1.6,2.4-4,2.5-6.2c2.5-9.4,7.1-17.9,7.2-28   c-0.4-0.3-0.8-0.5-1.3-0.8c7.9-23.9,5.4-49,5.5-73.8c-2-1-1.9-1-3.4-0.7c-9.8,2.6-19.1-1.9-28.9-1.8c0.3,1.4,0.6,2.7,0.8,4   c-0.6,0.6-1.2,1.1-1.7,1.6c-5.4-0.7-6-6.9-9.5-4.8c-1.3-1.7-1.5-3.6-0.7-5.6c0.2,0,0.4,0,0.6,0c0.1,0.2,0.1,0.4,0.1,0.6   c0.2,0.3,0.4,0.5,0.6,0.8c0.4,0,0.8-0.1,1.3-0.1c0.6-1.8-0.2-3.3-0.6-4.8c0.3-0.3,0.5-0.5,0.8-0.8c0.2,0,0.4,0.1,0.7,0.1   c0.9,3.4,1.7,6.7,2.6,10.3c0.8,0.7,1.6,1.7,3.6,1.6c-2.3-13.8-3.6-22.2-14-32.2c0.3-0.3,0.6-0.6,0.8-0.9   c9.9,6.1,12.1,16.5,13.9,27.2c11.1-0.3,21.5,4.6,32.6,1.9c1-5.2-0.7-10.8,1.9-15.8c0.4,0,0.9,0.1,1.3,0.1c0.2,2.2-0.2,4-1.4,5.9   c0.5,3.3,1.1,6.7,1.7,10.4c13.5-3.3,27.4-5.1,40.4-9.4c-1-9.8-6.1-18.9-7.5-28.6c0.6-0.6,1-0.9,1.5-1.3c-0.3-1.8,0.3-3.6-1-5.2   c-0.8,0-1.6,0-2.4,0c0.7-0.7,1.3-1.4,2.3-1.5c0.9-1.6,0.5-3.1,0.1-4.8c-3.1-1-1.6-4.2-3-6.1c-26.9,3.6-50-12.5-76.3-14.1   c-10.4,14.5-3.9,24.6-6.7,39.2c-5.5-16-0.9-34.1,0.2-50.5c3.3-14.6,0.6-29.7,3.7-44.3c9.3-11.3,8.3-28.9,13.7-42l0,0   c2.8,4.7-2.8,11.9-1,17c10-3.6,14.8-13.7,19.3-22.6c0.4,0.1,0.8,0.3,1.3,0.4c9.4-15.6-2.8-33.9-16.5-42.1c-6.2-1.7-12.5,4-18.4,5.8   c-10.3,7.5-8.9,24.2-8.8,35.7c-4.7,13-7.4,26.5-6.9,40.4c-0.3,12.1-5.6,24.2-2,36.3c-0.2,0.7,0.3,1.7-0.7,2.1l0,0   c-0.1-0.2-0.1-0.3-0.2-0.5c-4,17.3,3.6,36.2,0.2,53.1c-3.4-25.5-4.9-51.6-2.1-77.2c3.8-9.7,2.2-21.4,3.2-31.8   c-0.9-1.9-0.2-3.4,0.4-5c2.7-7,3.7-14.4,5.2-21.7c-0.7-14.3,1.6-32.7,17.7-37.1c0.3-0.9,0.6-1.8,0.9-2.7c3.2,2.5,1,2.6,4.8,0.3   c2.2-8.3-0.6-17.8,1.5-26.2c2.1,8.5,0,17.4,0.5,25.9c1.4-0.1,1.5-1.2,1.7-2c1.4,2.5,2.4,0.4,4.1-0.7c1.1-13.6-5.8-25.5-8.5-38.6   c-0.5-1.3-0.2-3.3-1.9-3.6c-0.4-11.2-1.3-19.8,6.9-28.1l0,0c1.2-0.3,0.5-1.6,1-2.4c0.9-3.1-12-2.3-12.9,0.9c0,0.3,0,0.5,0,0.8h0.1   c-0.3,0.3-0.5,0.5-0.8,0.8l0.1-0.1c-11.2,9.6-4.5,23.7-1.4,35.5c0.7,4.9,3.7,9.4,4.2,14.4c0,0.7,0,1.5,1.3,1.1   c0.1-1.5-0.3-3.2,0.6-4.5c1.5,6.7,0.4,13.5,0,20.3c-2.2-0.5-2.3,1.1-2.8,2.8c-0.7,0.3-0.7,0.9-0.5,1.5c-0.3-0.5-0.6-1-0.8-1.6   c7.1-19.5-15.4-48.2-7.5-62c5.8-12.3,6.8-15.1,21.9-12.7c7.2-8.6,18-13.5,29.1-10.9c0.2,0.5,0.5,1,0.7,1.4   c-2.2,2.6-14-1.3-14.8,2.1c-2.7-0.1-4.6,1.2-6.3,3.5c3.3,0.7,6,0.7,9.1,1.6c-3.1,1.8-7.6,0.2-11.2,0.3c-2.3,2.2-6.1,3.9-6.4,7.3   c-0.7,0.3-0.7,0.9-0.6,1.5c-1.4,1.3-1.8,1.6-0.7,3.7c-2,1.5-1.6,4-1.9,6.3c1.4,0.9,2.7,1.8,4.1,2.7c-1.8,1.6-2.5-0.3-4.3,0.3   c0.3,0.7,0.5,1.2,0.8,1.8c-0.5,0.5-1,0.9-1.4,1.3c-0.2,4.1,1.7,8.2,4.5,11.2c-2.6,0.8,1.4,7.2,3.2,7.8c-0.1,0.7-1.4,1.4,0,2.1   c1.2,1.5,1.1,4.8,3.4,4.9c-0.1-0.7-0.2-1.3-0.3-1.9c1.6,1.3,3.4,1.4,5.3,1.3c0.3,2.1-1.9,2.7-3.4,3.5c2.6,31.1-14.3,18.2,6.2,31.8   c9.2,5.3,13.5,17,23.1,21.5c7.7,2,16.2,5.9,24,2.7c-1-3.3-2.7-6.1-4.3-8.9c0.7-0.5,1.4-1,2.1-1.4c1.8,2.4,3.9,4.5,6.4,6.4   c1.3-2.2-10.6-14.7-10.6-9.6c-3.5-2.5-5.3-6.6-9.2-8.7c-1.5-0.8-3.1-1.7-3.8-3.4c-2.2-5.8-4.9-13.1-3.1-19.2c0.5,0,1.1-1,1.5,0.2   c0,16.6,2.5,17,13.4,27.6c12.1,0.6,12.3,11,18.4,18.4c12.3,9.3,24.1,25.4,12.3,39.9c-8.1,8.3-7.6,19.3-9.2,30   c-1.3,8-8.5,14.6-7.1,23.1c1.3,11.9,1.7,24.2,6.6,35.3c1.8,8.5,8.9,23.3,6.2,30.8c-5.1-15.3-7.8-32.7-13.9-47.6   c-1.3,9.3-2,18.8,0.8,28c0.1,5.7,4.8,11.1,2.7,16.8c-0.3,0.8,0.1,1.5,0.5,2.2c0.6-0.5,0.9-0.8,1.4-1.2c0.6,4.3-0.2,9.1,2.5,12.8   c3.3,3.6,1.1,8.8,3.3,12.9c-0.3,0.3-0.5,0.5-0.8,0.8c-0.6-0.2-1.2-0.4-2-0.6c0.1,0.9,0.1,1.7,0.1,2.4c0.5,0,0.8,0.1,1.1,0.1   c0.3,0.3,0.6,0.6,0.9,0.9c-0.3,0.7-1.4,1.2-0.4,2.2c0.7-0.5,1.3-1,1.9-1.4c0.2,0.2,0.4,0.4,0.6,0.6c-6.4,7.2-0.3,17.9-2.6,26.6   c-1.3,16.6-3.8,33.4-7.3,49.7c1.9,5.5,1.2,13.7-2.1,18.5c-1.4-34,12.2-66.4,4.6-100.9c-13.5,3.7-27,6.9-40.9,8.5   c0.4,34.1-1.5,67.9,8.2,100.8c-21.8,34.6-1.2,76.1-14,112.9c1.2,1.9,2.6,3.4,4.6,4.5c4.3-2.2,8.7-4.8,12.8-7.3   c0.5-3.5,4.1-4.7,3.2-8.2c1.9-15,6.5-29.4,10.1-43.8c7.6-18,5.5-37.1,9.1-55.9C342.1,416.7,342.3,416.7,342.5,416.6z M277.9,94.4   c15,10,28,31.6,13.4,47.3c-3.8,9.4-10.4,18.7-21.2,20.4c-0.6,2.1-1.2,4-1.8,6c2.5,4.4,4.1,8.9,5.3,14c21.7-6.8,56.1-14,77.9-7   c1.1-2.1,2.1-4.2,3.1-6.3c0.8-0.5,1-1.2,0.7-2.1c0.2-0.2,0.2-0.4,0.2-0.6c19.5-18.4-0.7-33.6-15.5-45.5c-0.4,1-0.7,2-1.1,3   c-31.5,12.6-39.3-24.2-62.6-30.3c0,0.2-0.1,0.3-0.1,0.5C276.7,93.9,277.3,94.1,277.9,94.4z M276.6,60.6c0,0.8-0.3,1.6,0.5,2.1   c0.5,2-0.1,4.2,1.1,6.3c0.8-0.9,1.4-1.7,2.1-2.5c-0.6-0.3-0.9-0.5-1.4-0.7c1.3-3.1-1.6-6.3-2.6-9.3c-0.5,0.5-0.8,0.9-1.2,1.3   c-3.3-8.9-4.7-17.9-6.1-27.1c-1.2,9,0.8,18.3,3.2,26.4c2,5.7,1,11.5,4.1,16.4c0-4-0.9-6.8-2-10.1c1.5-1.1,0.9-3.4,2-4.9   C276.5,59.3,276.5,59.9,276.6,60.6z M251.3,530.4c-2,0.5-2,4-2.2,5.8c-1.2,10.1-7.6,18.4-7.9,29c5.9,2.5,11.9,3.9,18.4,2.9   c-0.5-0.7-0.9-1.2-1.4-1.7c5.7-2.6,8.2,6.5,13.9,6.3c15.3,2.2,35.3,4.6,47.3-7.1c3.5-10.5-7.4-2.6-20.4-14.6   c-3.3,1.1-8.3,4.3-11.4,1.5c2-3.3,6.4-2,9.7-3.3c-1.1-2.2-1.3-2.6-3.1-4.1c-4.3,0.5-9.3,4.1-13.4,2.1c2.2-4.6,8.2-4,12.7-5.1   c-0.9-1.9-4.2-0.4-5.7,0.3c-3.4-0.3-6.6,2-10,2c-3.5-4,8.6-4.8,10.3-6.2c-0.9-0.6-1.7-1.1-2.5-1.7c-4.3,0.7-8,2.7-11.8,4   c-2.6-3.4,7.7-5.1,9.9-6.7c-3.5-2.9-3.7-6.9-5.9-10.4c-6.6,1.3-10.3,7.1-14.3,12.2c-3.6,1.2-5.1,5.8-9.1,6.4   c-0.6-0.4-1.1-0.8-1.7-1.2c-0.2-1.4,0.7-3.2-0.8-4.1C251.4,534.7,251,532.6,251.3,530.4c0.6-0.1,1.2-0.1,2.1-0.2   c-0.4-0.5-0.7-0.9-1.1-1.6C251.9,529.4,251.6,529.9,251.3,530.4z M350.1,298.1c0.2,2.2,0.5,4.5,1.1,6.6c2.5,0.5,0-9.7-1.6-9.9   C349.4,296,349.3,297.1,350.1,298.1z M290.6,239c0.5,1.5,0.9,3,1.4,4.7c7,1.2,13.8,3.8,20.6,5.7c0.4,0.8,0.8,1.4,1.2,2.1   c8,0.2,16.4,1.2,24.3,0.1c5.5-15.6-0.7-32.7,5.6-47.8c5.4-7.5,6.9-16,7.6-25c-3.1-1.7-6.4-1.8-9.5-2.5c-0.5-0.6-1.1-1.2-1.5-1.7   c-22.3,1.2-45,2.8-66.3,10c5.5,18.6-1.1,36.6-10.4,52.9c9.2,0.6,17.5,3.9,26.5,5.3c-0.1-1.1-0.2-2-0.2-2.9   C290,239.6,290.3,239.3,290.6,239z M256.8,243.9c14.6-21.2,22-47.1,10.8-71.6c-6.9,13.8-8.5,21.9-7.9,37c-0.8,12.1-4,24.7-3.8,36.5   C256.3,245.1,256.6,244.5,256.8,243.9z M373.5,552.8c-0.1-2.1-0.6-4.1-1.3-6.1c-5.9-2.6-12.7-0.8-18.5-3.4c-3.4-1.7-7-2.6-10.8-2.8   c-0.3-0.6-0.6-1.2-1-1.9c-2.2,0.2-4.1,1.8-6.2,0.7c-1.6-2.8,2.8-2.2,3.9-3.8c-0.6-0.5-1.2-1.1-1.6-1.5c-2.6,0-7,2.9-8-0.5   c1.2-2.3,3.6-1.4,5.5-1.9c-0.8-1.7-0.8-1.7-2.2-2.7c-2.5,0.8-4.8,2.6-7.7,2.8c-2.5-3.7,3.8-4.4,6.2-5c-2.5-2.4-3.1-5.2-5.2-7.5   c-2.2,1.3-3.4,3.6-5,5.1c0,0.9-0.1,1.6-0.1,2.2c-9.9,5.6-18.1,15.2-22.6-1.5c-2.5,4.7-2.9,8.8-7.5,11.9c6.9,5,9.6,14.4,18.1,17.8   c4.1,3.1,10.6,0.6,13,5.9c16.9-0.1,37.7,7.6,51.8-5.1C373.9,554.5,374.4,553.5,373.5,552.8z M305.7,373.2c-3.7,9.5-2.5,20-5.4,29.9   c-5,11.8-8.5,24.1-12,36.6c-7.7,26.3-9,53.7-12.1,80.7c8.4-0.1,5.5,13.2,13.1,15.3c4.7-3.9,4.7-11.1,9.9-14c0.6,0.2,1.2,0.5,2,0.8   c7.3-40.7-8.7-69.5,11.8-109.1C305.6,401.6,310.8,386,305.7,373.2z M280.3,86.1c1.6-6.2,2.3-11.8,1.6-17.6c-0.6-0.2-1-0.3-1.4-0.4   C275.8,72.8,280.4,79.7,280.3,86.1z M253.2,329c-0.2,0.2-0.3,0.5-0.5,0.7c1.3,0.9,1.7,2,3.7,1.8C255.1,330.3,254.6,329.1,253.2,329   z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st259" d="M308.2,340.1c-0.4-8.8-0.4-17.6-0.5-26.4c13.9-1.7,27.4-4.9,40.9-8.5c7.6,34-6,67.1-4.6,100.9   c1,3.7-3.4,7.4-1.4,10.5c-0.2,0-0.5,0.1-0.8,0.1c-3.6,18.8-1.5,37.9-9.1,55.9c-3.6,14.3-8.2,28.8-10.1,43.8   c0.9,3.5-2.7,4.7-3.2,8.2c-2.6,1.6-5.2,3.4-8.1,4.5c-0.9-0.4-1.2-1.1-0.8-1.9c0.6-2-0.7-4.2-1.8-5.8c-1.8-1.9,1.7-5.9-0.5-7.1   c2.1-29.8-2.5-63.4,8.6-92.1c0.2,0.3,0.4,0.5,0.5,0.8c0,1.9,0.9,3.7,1.5,5.5c2.8,4.6,1.4,10.3,2.8,15.6c-0.2,0-0.3,0.1-0.3,0.3   c3.2-4.3,1.2-10.4,2.5-15.5c3.8-7.7-2.4-15.2-3.3-23C315,384.3,313.5,361,308.2,340.1z M336.8,403.2c0.5-1.7,2.5-3.3,1.8-5.1   c-1.5,0.4-2.1,1.5-2.6,2.8c-1.2,1.5-0.1,2.6-0.5,4.9C336.2,404.5,336.5,403.9,336.8,403.2z M335,396.9c3-1.3,5.2-3.8,6.1-6.7   c-3.1-0.3-3.5,3.1-5.4,4.8c-2.9-2-6.8-3.4-9.1-6.1c-0.7-1.4-1.8-2-3.3-2.4c-0.6,0.3-1.2,0.6-1.8,1c0,0.9,0,1.7,0,2.7   c2.7,3.2,5.7,10.3,10.9,6.6C333.3,396.9,334.2,396.9,335,396.9z M321.1,448.1c-2.5,2.2,0,6.4-1.8,9.4c-0.1,0.4,0.2,1,0.4,2.1   c2.2-3.1,0.8-6.7,2.3-10.1C322.2,449,322,448.4,321.1,448.1z M337.6,412.3c0-2.3,1.4-4.4-0.3-6.6c-1.2-0.1-1.9,1.4-1.4,2.4   C337.6,409.6,334.7,411.7,337.6,412.3z M311.6,497.2c2.1-0.7,1.7-1.7,0.3-2.9C311.8,495.5,311.7,496.2,311.6,497.2z M308.9,511.8   c0.4,0.1,0.7,0.2,1,0.3c0.5-0.9,0.6-1.6-0.1-3C309.4,510.2,309.2,511,308.9,511.8z M335,416.4c1-1.1,1-1.1,0-1.7   C335,415.2,335,415.7,335,416.4z M311.4,505.1c-1-0.1-1.1,1.2-0.2,1.3C311.9,506.1,311.6,505.6,311.4,505.1z M312.6,500.7   c-1.1-1-2,0.3-1,0.8C311.9,501.3,312.1,501.1,312.6,500.7z M318.7,464.9c0.2,0,0.3,0.1,0.5,0.1c0-0.5,0.5-1.1-0.3-1.1   C318.8,464.2,318.8,464.5,318.7,464.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st260" d="M316.6,77.7c-0.4-1.2-1-0.1-1.5-0.2c1.6-4.9,12.6,0.5,17.1-3.3c3-3.4-3-6.1,2-9c-0.8-0.8-1.5-1.4-2-1.8   c-1.9,0-3.5,0-5.1,0c-0.2-0.4-0.7-0.6-0.4-1.4c2.3-0.7,5.9,0.9,7.3-1.9c-0.5-1.7-0.9-3.2-1.3-4.7c-0.6,0-1.3,0-2.1,0   c0.3-1.7,1.5-2,2.8-2.2c0.4,0.3,0.8,0.5,1.3,0.8c0.7-0.4,1.5-0.8,2.5-1.4c-2.1-5.1-7.6-10.4-4.8-16.2c2.8-0.9,3.1-4.9,3.1-7.5   c1.2,3.9,0.9,5.5-1.7,9.8c0.7,0.2,1.3,0.4,2.1,0.5c-0.7,0.6-1.3,1-2,1.6c0.2,5.9,9.5,11.2,1,15.2c0.2,2.4,2,5.1-0.8,6.8   c1.5,1.9,1.8,3.6,0,5.2c4.8,10.9-9.7,10.6-16.7,8.8C317.2,77,316.9,77.3,316.6,77.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st261" d="M238.6,268.5c1.9-3.7,0.2-9.2,0.8-13.5c1.3,9.3,0.5,19.1,0.8,28.5c5.2,1.9-0.7,25.2,4.7,29.3l0.1-0.1   c-1.7-0.4-1.2,1.7-2.1,2.8c-2.5-9.3-3.6-19-2.7-28.7c-1.1-1.3-1.9-3-1.6-4.9c1.7-2.8,0.6-7.5,0.5-10.8c-0.1,0-0.3,0-0.4,0.1   c0,3.6-0.1,7.2-0.1,10.8C237.5,277.6,237.5,272.8,238.6,268.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st262" d="M335.6,28.9c0,1.5,0.2,3-0.7,4.4c-3.1-4.6-2.4-11.6-6.5-15.3c0.7-0.9,1.1-2.4-0.6-2.3   c-5.1-6.8-14.2-9.8-22.5-10.5c-0.2-0.5-0.5-1-0.7-1.4C323.6,5.1,330.1,11.1,335.6,28.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st263" d="M353.1,317.7c0-0.5,0-0.9,0-1.4c0.4,0.2,0.8,0.4,1.4,0.8c12.8-8.3,7.1-23,2.8-34.5c0.9-0.3,0.7-1.1,0.9-1.7   c4.8,10,7.6,19.5,4.8,30.6C359.8,313.5,357.4,318.4,353.1,317.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st264" d="M242.9,315.5c0.2-0.5,0.5-1,0.7-1.5c0.8,0.4,0.4,1.9,1.8,2.1c-0.1-1.2-0.3-2.3-0.4-3.4l-0.1,0.1   c0.4,0.3,0.9,0.5,1.3,0.8l0,0c1.4,3.8,1.9,7.9,4.3,11.2l0,0c0,0.2,0,0.5,0,0.7c-0.3,0.3-0.5,0.6-0.8,0.9c-2.2-2.7-2.9-6.3-5.7-8.7   C243.4,317,242.8,316.4,242.9,315.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st265" d="M342.5,416.1c-2.1-2.6,2.7-6.6,1.4-10c0.4-0.5,0.9-0.9,1.3-1.4c0.3,1.3-0.7,2.6,0.1,4.1   C345.9,411.2,343.5,413.9,342.5,416.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st266" d="M263.9,86.6c0.5,0,0.9,0,1.4,0c0.3,2.1-0.3,4.5,0.8,6.3c-0.1,0.6-0.2,1.3,0.7,1.4c-1.2,1.8-1.6-1.4-2.9-1.5   C263.8,90.8,263.8,88.7,263.9,86.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st267" d="M261,89.3c0.3,0.5,0.6,1,0.8,1.6c-0.1,0.4-0.2,0.8-0.3,1.6C260.1,91.3,260.4,90.3,261,89.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st267" d="M261.7,85c0.1,1.1,0.6,2.2-0.5,3C261,87,260.9,85.9,261.7,85z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st267" d="M261.8,90.9c-0.2-0.6-0.1-1.2,0.5-1.5C262.2,89.9,262,90.4,261.8,90.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st259" d="M263.4,312.1c3,1.9,3.5,4.5,7.9,5.4c0.5-0.5,1.1-1,1.7-1.6c-0.3-1.3-0.5-2.5-0.8-4   c9.8-0.1,19.1,4.4,28.9,1.8c1.4-0.2,1.4-0.2,3.4,0.7c-0.1,24.8,2.4,49.9-5.5,73.8c0.5,0.3,0.9,0.5,1.3,0.8   c-0.1,10.1-4.8,18.7-7.2,28c0,2.2-0.3,4.6-2.5,6.2c-11.3,30.9-15.4,64.7-15.9,97.4c-5.1,3.5-9.3,7.6-13.2,12.6   c-0.7-0.5-1.3-0.9-2-1.5c-0.2,0-0.4,0-0.6-0.1c2.7-18.3,7-38.2,1.7-56.5c-1.6,4.6-0.8,9.3-1.2,14.1c-2.9-2.6-1.5-11.4-3-15.6   c-2.2-7.9,0.2-15.7,0.9-23.6c2-6.9,5-13.5,8.5-19.8c1.1-3.7,0.7-8.1,3-11.3c3.8,5.6,1.2-11.4,2.9-14c1.7,0.6,0.7,3,2.4,3.5   c2.2-9.1-1-18.6,0.1-28.6c1.2,1.3,1,2.9,2.5,2.6c2-18.1-9.6-34.3-9.5-52.3C272.5,324.6,262.9,318,263.4,312.1z M283.5,388.5   c0.1-1.2,0.5-2.6-1-3.5c-0.5,1.3,0,2.4,0.2,3.4c-0.8,2.4-2.1,5,0.2,6.9c-1.6,6.4,1,12.8,2,18.9c7.2-1.7,2.3-9.6,4.1-14.3   c-1.1-1.5-3.1-1.2-4.8-1.9c-0.1-1.5,0.4-2.8-0.7-3.9C282.4,392.4,283.4,390.4,283.5,388.5z M268.7,431.9c-0.8,4-1.9,8.5-1.8,12.6   c3.2-2,1.2-6,2.6-9c0.9-1.9,0.2-4,1.2-6c0.2-1,0.7-2,0-3.1C268.6,427.8,268.5,429.8,268.7,431.9z M266.2,449.5   c0.8-0.4,1.2-0.8,0.7-1.8C265.8,448.1,265.7,448.7,266.2,449.5z M265.8,454c-0.1,0-0.2,0-0.3,0c0,0.3,0,0.7,0,1c0.1,0,0.2,0,0.3,0   C265.8,454.7,265.8,454.3,265.8,454z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st259" d="M261.1,307.1c-1.5,4.1,2.1,7.7,2.9,11.7c-0.2,0.3-0.4,0.5-0.6,0.8c-0.8-0.2-1.5-0.5-2.2-0.7   c-0.8,0.5-1.6,1-2.3,1.5c-2.2-4.5-2.8-8.9-5.8-13.1c0.6,5.8,3.4,10.5,5.1,15.9c-1.1,0.7-2.3,1.3-3.4,2c-3.1-4.7-3.1-11.4-6.9-16   c-0.5,0.3-1,0.7-1.6,0.6c-0.1-1.2,0.2-2.5-0.4-3.7c-0.3-0.9,1.3-2.7-0.3-3.4c0.2-0.4,0.4-0.8,0.7-1.3c-0.5-0.7-1-1.5-1.4-2.1   c-0.2-11.5,3.4-22.9,0-34c-0.5-11-4.9-22.2-3.2-33.1c0.6,0.8,0.8,1.9,2.3,1.5c-1.9-22.8-1.1-45.2,0.9-68c0.9,0.1,1.7,0.1,2.3,0.2   c5.2-4.1,1.3-18,4.2-24.1c1.4,1.5,2.5,3.6,5,3.6c-4.3-19.3-10.5-40.3,14-48.5c6-9,32.4,22.9,22.8,37.5c-0.4-0.4-0.8-0.7-1.3-1.2   c-2,3.3-2,7.5-5,10.4c-5.7-6.9-10-10.6-14.8-0.7l0,0c-1.5,0.3-1.5,0.3-1.4,2.2c-2.5,11.6-5,31.1-12.4,39.8   c-3.1,14.6-0.4,29.7-3.7,44.3c-1,16.4-5.7,34.5-0.2,50.5c11.5,13.6,13.2,17,16,35.1c-2,0.1-2.8-0.8-3.6-1.6   c-0.9-3.5-1.8-6.9-2.6-10.3c-0.3-0.2-0.5-0.5-0.8-0.7c1.9-1.9,0.3-8.2-2.6-5.5C260.6,300.2,260.8,303.6,261.1,307.1z M253.3,306.1   c-1-0.1-1-0.1-1,0.9C252.6,306.6,252.9,306.4,253.3,306.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st259" d="M289.7,239.8c0.1,0.9,0.2,1.8,0.2,2.9c-6.5-1.1-12.7-2.7-19.1-4.4c7-18.6,17.9-14.5,16.5-37.2   c1.5,0.4,2.4,1.9,4,1.4c0.7,0.2,1.5,0.4,2.5,0.7c-3.9-5.7-6.8-11.1-8.1-18.3c4,2.8,7.5,8.2,12.7,5.8c-3.2-2.7-6.8-5.3-8.6-9.3   c15.3-6,33.9-5.2,50.3-6.7c0.4,0.5,0.9,1,1.5,1.7c3.1,0.8,6.4,0.8,9.5,2.5c-0.8,9-2.2,17.5-7.6,25c-6.3,15.1,0,32.2-5.6,47.8   c-7.9,1.1-16.2,0.1-24.3-0.1c-0.4-0.7-0.7-1.3-1.2-2.1c-4.2-1.3-8.7-2.5-12.8-4.1c-4.3-5.9-7.9-14.2-14.3-17.6   C284.2,232.7,288,235.8,289.7,239.8z M333.4,215.8c0.6-1.5,0.6-1.5-0.5-2c0.2,2.6-1.9,4.6-0.6,7.3   C333.5,219.4,333.5,219.4,333.4,215.8z M334.9,202.5c0,0.6,0,1.3,0,1.9c0.1,0,0.3,0,0.4,0c0.4-1.9,1.9-10,0.3-10.7   C333.3,196.3,335.9,199.6,334.9,202.5z M330.1,228c0.5-0.7,1.1-1.3,1.8-2.1c-5.3-1-4.9,11.1-1.4,8.4   C330.9,232.3,330.3,230.1,330.1,228z M284.7,223.1c-0.9,0.2-1.4,1.6-0.3,1.7C285.1,224.3,285,223.8,284.7,223.1z M299.9,191.5   c1,0.7,1,0.7,1.9,0.5C301.4,191,300.8,190.9,299.9,191.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st268" d="M338.5,267c0.8,0,1.6,0,2.4,0c1.3,1.6,0.7,3.4,1,5.2c-0.4,0.4-0.8,0.7-1.5,1.3c1.4,9.7,6.6,18.8,7.5,28.6   c-9,3.6-19.1,4.2-28.6,6.6c0.1-3.4-1.5-6.6-2.1-10c0.2-0.2,0.4-0.5,0.6-0.8c-0.7-0.6-1.3-1.2-2.2-2.1c6.7-1.8,12.6-4.4,18.7-6.8   c-7.1-1-13.8,4.1-20.7,3.6c7.4-5.1,14.7-7.3,22-12.2c-8.9,2.3-15.6,6.3-23.4,10.5c-0.3-0.4-0.5-0.6-0.7-0.9   c0.3-2.3,1.8-3.3,2.1-5.7c-3.9,2.3-3.6,7.4-7.5,9.7c-2.7,5.3-1.3,11.2-2.2,16.7c-11.1,2.7-21.5-2.2-32.6-1.9   c-3.7-15.3-7.9-30.8-4.5-46.7c10.2,2.1,19.5,7.6,29.6,9.8c-7.7-6.2-19.6-7.3-28.9-10.8c-0.4-3.2-0.4-3.2,0.5-5.2c0.7,0,1.4,0,2.1,0   c1.5,1.1,3.7,0.2,5.5,0.7c1.2,1,2.6,0.6,4,0.1c-3.8-1.2-7.7-1.6-11.6-2.4c0.5-0.9,0.8-1.8,0.7-2.8c2.2,0.1,3.9,1.2,6.2,0.4   c-2.1-0.7-3.8-1.2-5.5-1.8c0.6-2.6,1.5-5.2,2.5-7.6c23.6,2.2,40.4,15.5,65.8,11.9c1.4,1.9-0.1,5.2,3,6.1c0.4,1.6,0.8,3.2-0.1,4.8   c-0.3,0.1-0.7,0.2-1,0.3c-1.9-0.5-3.5,0.7-5.3,0.9C335.8,267.2,337.2,267.1,338.5,267z M306.8,278.2c-0.7-1-1.5-1.9-2.8-2.2   c1.2,2.1,2,4.2,4.1,5.6C308.6,280,307.9,279,306.8,278.2z M301.7,286.1c1.5,1.9,1.5,5.8,4.4,5.9c-1.1-3.3-3.8-8.3-6.9-9.1   C300.1,283.9,300.9,285,301.7,286.1z M274.9,258.5c7,2.8,14.4,7.4,22,7.6C290.7,261.1,282.6,259.1,274.9,258.5z M279.4,254.7   c3.1,1.4,20.6,10.1,21.6,7.1C295.7,257.8,280.3,254.1,279.4,254.7z M326.6,276.3c-5.2,0.2-9.8,0.7-12.9,4.2   C318.2,281.7,322,278.4,326.6,276.3z M295.1,253.5c-3.3-0.8-5.7-2-9.2-1.8C288.9,253.4,291.5,254.1,295.1,253.5z M336.8,269.3   c1.3,0.7,2.1,0.9,3.2,0C338.9,269.3,338.2,269.3,336.8,269.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st269" d="M289.8,144.8c15-18.9,6.1-37.5-12-50.4c0-0.5,0.1-0.9,0.1-1.4c15.2,5.3,21.8,23.9,36.5,29.6   c7.9,2.3,16.8,5.5,24.4,0.8c0.3-0.9,0.7-2,1.1-3c11.5,9.9,31.3,22.7,20.2,39.9c-4.5-1.9-7.8-5.1-11.5-7.7c-4.4-3.3-4.4,4.2-6.1,6.5   c1.6,5.5,8,6.7,12.9,6.9c-1.3,2.9-2.3,6-4,9c-19.6-7.4-40.8,1.1-60.8,1.2c0.3-5.2-0.4-9.5-0.5-14.6c2.4,2.4,4.4,4.4,7.4,5   c0.9-0.5,1.8-1,2.5-1.4c7.6,4,30.7,5.6,34.8-3.3c1.5,0.8,3.4,1,4.2-0.9c-6.8-4-15.2,1.8-22.7-0.2   C310.7,159.9,291.5,149.6,289.8,144.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st270" d="M283.5,544.3c-1.1,0.6-2.4,1.1-2.7,2.8c4.1,2,9.1-1.6,13.4-2.1c1.8,1.6,2,1.9,3.1,4.1   c-3.3,1.3-7.6,0-9.7,3.3c3,2.8,8-0.4,11.4-1.5c6,5.3,12.7,7.4,20.3,9c-0.1,0.3-0.1,0.7-0.2,1c-4.7,0.9-8.6,3.1-11.8,6.7   c-12.1,1.7-24.5,4.5-36.6,0.7c-4.1-0.1-16.3-15-14.9-3.5c-4.1-0.3-8.3-0.7-11.8-2.7c4.1-8.1,5.2-16.9,7.8-25.3   c-0.2,2.4,0,4.3,2.5,5.3c4-0.6,5.5-5.3,9.1-6.4c4-5.1,7.7-10.9,14.3-12.2c2.1,3.5,2.3,7.5,5.9,10.4c-2.1,1.6-12.5,3.2-9.9,6.7   c3.8-1.3,7.5-3.3,11.8-4c0.8,0.5,1.6,1.1,2.5,1.7c-1.7,1.3-13.8,2.2-10.3,6.2c1.3-0.2,2.8-0.4,4.2-0.7   C282.5,543.8,283,544.1,283.5,544.3z M291.8,555c2,2.4,5.1,2.2,8.3-0.1C297.9,554.1,294.7,554.8,291.8,555z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st270" d="M319.1,557.2c-15.4-0.4-18.3-12.2-27.8-20.3c4.6-3.1,5.1-7.1,7.5-11.9c4.5,16.7,12.8,7.1,22.6,1.5   c0-0.6,0.1-1.3,0.1-2.2c1.6-1.5,2.8-3.7,5-5.1c2.1,2.3,2.7,5.1,5.2,7.5c-2.4,0.6-8.7,1.3-6.2,5c2.8-0.2,5.1-2,7.7-2.8   c1.4,1.1,1.4,1.1,2.2,2.7c-1.9,0.5-4.3-0.4-5.5,1.9c1.1,3.4,5.4,0.5,8,0.5c0.5,0.4,1.1,1,1.6,1.5c-1.1,1.5-5.5,0.9-3.9,3.8   c2.1,1,4-0.5,6.2-0.7c0.3,0.7,0.7,1.3,1,1.9c3.8,0.2,7.4,1.1,10.8,2.8c5.9,2.5,12.6,0.7,18.5,3.4c1,2.7,1.7,5.6,0.9,8.5   c-16.2,7.1-35.2-3.1-51.3,2.3C320.9,557.1,320,557,319.1,557.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st271" d="M270.2,420.1c-0.4-0.4-0.8-0.8-1.2-1.2c-2.3,3.2-1.9,7.6-3,11.3c-3.5,6.3-6.5,12.9-8.5,19.8   c-0.6,8-3.1,15.7-0.9,23.6c1.4,4.1,0.1,13.1,2.9,15.6c0.3-4.7-0.4-9.4,1.2-14.1c5.3,13.9,0.8,28.3,0.4,42.5   c-0.2-0.2-0.5-0.5-0.7-0.7c0-1.2,0-2.5,0-3.7c-1.5,3.2-1.2,6.6-1.5,10c-3.6-44.5-14.9-60.8,2.8-105.1c13.7-28.4-5.4-55.9-5.5-84.7   c1.4-0.3,2.8-0.7,4.1-1c0.7,0.7,1.5,1.4,2.2,2c0,0.6,0,1.2,0.6,1.4c0.5,0.9-0.6,3.6,1.1,3.1c-1.2-3.3,0.7-5.8,2.4-8.6   c0.1,0,0.4-0.1,0.8-0.2c-0.1,17.9,11.5,34.2,9.5,52.3c-1.5,0.3-1.3-1.4-2.5-2.6c-1.1,10,2.1,19.5-0.1,28.6   c-1.7-0.6-0.7-2.9-2.4-3.5c-0.3,2.3-0.7,4.5-1,6.7C267.9,412.9,270.5,417.6,270.2,420.1z M266.5,347.5c0.4-0.9,0.5-1.7-0.2-2.5   C265.2,346.2,265.2,346.2,266.5,347.5z M260.1,511.7c0.6-1.2,0.7-2.4,0-3.7C259.4,509.3,259.6,510.5,260.1,511.7z M268.7,354.2   c0-1.2,0.4-1.8-0.8-2C267.3,353.3,267.9,353.4,268.7,354.2z M260.3,502.7c-0.1,0-0.3,0-0.4,0c0,0.7,0,1.3,0,2c0.2,0,0.3,0,0.5,0   C260.3,504,260.3,503.3,260.3,502.7z M260.6,495.8c0.6-1.2,1-1.8-0.2-2.6C260.4,494,260.5,494.6,260.6,495.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st259" d="M316.7,93.6c2.8,7.9,13.7,10.1,15.7,18.4c2,3.1,4.1,6.4,5.2,10.2c-7.8,3.1-16.3-0.7-24-2.7   c-9.3-4-12.8-15.1-21.6-20.3c0.4-0.9,1.2-0.6,1.8-0.5c6.2,1.3,12.4-0.1,18.5,1.5c1.3,0.7,2.8,5,4.4,3.2c-4.3-8.5-18.5-5.6-26.3-5.4   c-2.3-1.7-4.6-3.4-7-5.1c6.9-6.7,7.4-15.9,8.3-24.4c0.6,0.3,1.3,0.7,1.9,0.9C298.4,80.2,306,89,316.7,93.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st271" d="M271.5,95.6c-6.3,5.3-19,8.6-18.2,19.1c-2.8,10.6,1.8,20.7,3.2,30.7c-2.5,0-3.6-2.1-5-3.6   c-2.9,6.2,1,19.9-4.2,24.1c-0.7,0-1.4-0.1-2.3-0.2c-2,22.8-2.8,45.2-0.9,68c-1.5,0.4-1.7-0.8-2.3-1.5c-1.7,10.9,2.7,22.1,3.2,33.1   c3.4,11.2-0.3,22.6,0,34c0.4,0.6,0.9,1.4,1.4,2.1c-0.3,1.4-2.6,2.6,0,2.8c-0.7,3,0.4,6.1-0.1,9.2c-7.7-2.5-0.4-27.8-6.1-30   c1.4-22.7-4.5-44.9-2.2-67.5c0.2,0,0.4-0.1,0.6-0.1l0,0c0.1,1.7,0.7,3.2,2.1,4.9c-4.9-15.7-1-27.7,0.6-43.3   c-0.5-13.9,2.2-27.4,6.9-40.4C247.4,116.1,247.7,100.3,271.5,95.6z M249.5,145.9c0.6-1.7,0-2.2-1-2.5   C248.8,144,249.1,144.7,249.5,145.9z M241.6,227.8c-0.8-0.6-1-0.7-1.3,0.2C240.6,228.5,241,228.2,241.6,227.8z M241.2,224.6   c-0.3-0.4-0.5-0.7-0.8-1.1C240.1,224.8,240.1,224.8,241.2,224.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st272" d="M289.8,144.8c1.7,4.8,20.8,15,26.5,16.1c7.5,2,15.9-3.8,22.7,0.2c-1.1-0.1-3-0.3-2.9,1.4   c-0.4-0.2-0.8-0.3-1.3-0.5c-0.3,0.5-0.6,1-0.9,1.4c-13.3,3.5-27.1,2.6-39.8-2.7c4.1,4,12,5.3,17.6,7.2c-4.3,0.8-7.9-1.2-11.8-2.7   c-0.8,0.4-1.7,0.9-2.5,1.4c-3-0.6-5.1-2.6-7.4-5c0.1,5.1,0.9,9.4,0.5,14.6c0.9,0.1,1.5,0.2,2.2,0.3c-6.5,1.8-12.8,2.9-19.3,5.6   c-1.2-5.1-2.8-9.6-5.3-14c0.6-2.1,1.2-3.9,1.8-6C279.2,160.5,286.4,153.3,289.8,144.8z M291.2,159.5c-1.5-1.2-1.5-1.2-2.5,0   C289.6,159.5,290.3,159.5,291.2,159.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st271" d="M291.4,202.4c-1.5,0.6-2.5-1-4-1.4c1.5,22.7-9.4,18.6-16.5,37.2c-2.4-0.3-4.8-0.5-7.5-0.8   c9.3-16.3,15.9-34.3,10.4-52.9c5.7-1.8,11.5-3.9,17.4-4.5c-0.5,0.4-1,0.9-1.5,1.3c1.4,3.7,4.8,5.4,7.1,8.4   c-0.1,0.2-0.2,0.4-0.4,0.6c0.5,0.2,0.8,0,0.9-0.5c0.2,0.2,0.5,0.4,0.9,0.7c-5.2,2.4-8.6-3-12.7-5.8c0.9,6.4,3.8,10.6,6.3,16.2   C291.2,201.2,291.2,201.8,291.4,202.4z M289.1,185.7c1.8,1.3,1.9,1.3,3.7,1.4c-2.8-1.6-4.6-5-7.9-4.8   C286.1,184.1,287.7,184.8,289.1,185.7z M288.1,198.3c-0.2-1.6-2.1-2.5-3.6-2.7C285.2,197.3,286.5,197.8,288.1,198.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st271" d="M317.4,424.5c0-0.5-0.1-1.1-0.1-1.6c1.5-1.8,0.4-4.7,0.7-6.8c-0.8-0.6-1.5-1.1-2.1-1.6   c-4.6-13.2-3.7-27.4-8-40.7c-1.9-11,0.9-22.5,0.2-33.7c5.2,19.7,6.3,41.9,11.5,62.4c2.6,15.1,7.7,16.2,3.2,32.5   c-0.6-0.5-1.1-1.1-2.1-0.8c-0.3-1.2-0.4-2.4-0.9-3.6c-0.3-0.8-1.6-1-1.2-2.2c2-0.7,0.9-3.4-0.4-4.5   C317.9,424.2,317.7,424.4,317.4,424.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st271" d="M308.7,88.8c-7.3-3.9-11.3-12.2-14.9-19.4c-0.6-0.3-1.3-0.6-1.9-0.9c-1,8.5-1.4,17.7-8.3,24.4   c-9-1.6,3.4-5,0.8-26.6c1.5-0.9,3.8-1.2,3.4-3.5c0.2,0,0.5,0,0.7,0c0.5,0.5,1,0.9,1.5,1.4c2.2-0.3,4-0.6,4.9-2.8   c1.9,0.1,1.9,0.1,2,1.5c-0.3-0.3-0.7-0.6-1.2-1.1c-2.8,7.9,9.2,10.5,14.6,10.8c6.6,1.3,13.7,1.6,20.5,2.2c-4.4,3-13.3-2.3-15.7,2.7   c-2,5.1,1,10.9,1.6,16.1c-2.2-1.2-4.3-2.3-6.5-3.5c0.3-0.8,0-1.4-0.5-2C309.4,88.3,309.1,88.5,308.7,88.8z M308.2,84.5   c-0.4-0.6-0.5-1.8-1.9-1.1c1.5,1.2,1.1,3.6,3.5,3.3C309.2,85.9,308.7,85.2,308.2,84.5z M303.9,76.9c0.8,1.9,0.8,1.9,2.4,2.3   c-2.6-2.6-3-6.5-6.7-7.7C300.5,74,302.3,75.1,303.9,76.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st273" d="M316.8,422.2c-8.6,20.9-7.7,44.7-7.4,66.8c-1,6.1,0.3,12.3-1.6,18.3c-0.4,2.2-1,5.3,0.4,7   c-1.1,2.2-0.8,4.7-2.4,6.8c-0.8,1.1-0.8,2.4-0.1,3.5c-0.4,0.7-0.7,1.3-1.1,2c1.1,1.3,2.4,2.2,4,2.9c2.3-1.6-0.3-3.2-1.6-4.5   c-0.2-1.8-0.2-3.6,1.2-5.1c0.4,1.9,1.9,3.2,2.3,5.2c1,1.4-1.3,3.3,0.8,4.1c-1.4,1.2-3,2.2-4.7,2.8c-2.1-1.1-3.4-2.6-4.6-4.5   c12.7-38.9-7.2-73.3,12.6-111.4c0.3,0,0.7,0.1,1.1,0.1C316,418.2,316.4,420.2,316.8,422.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st274" d="M251.9,536.7c-2.6,8.4-3.7,17.2-7.8,25.3c3.5,2,7.6,2.4,11.8,2.7c-1.4-11.4,10.8,3.5,14.9,3.5   c12.1,3.9,24.4,1,36.6-0.7c0.1,0.2,0.1,0.3,0,0.5c-1,1-2.5,1.4-3.6,3.3c5.7-2.3,9.3-7.1,15.7-8.5c0,1,0,1.8,0,2.6   c-11.9,11.7-32,9.4-47.3,7.1c-5.7,0.2-8.2-8.9-13.9-6.3c0.4,0.6,0.8,1,1.4,1.7c-6.6,1-12.5-0.4-18.4-2.9   c0.9-11.7,7.3-21.3,8.7-32.7c0.4,0.2,0.8,0.5,1.3,0.7C251.4,534.4,251.7,535.6,251.9,536.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st275" d="M268.1,256c-0.8,1.9-0.8,1.9-0.5,5.2c9.4,3.5,21.2,4.6,28.9,10.8c-10.1-2.2-19.4-7.7-29.6-9.8   c-2.1,9.2-0.5,18.3-0.4,27.5c-3.8-3.7-8.7-6.6-11.1-11.5c1-9.1-2.4-19.7,1.3-28c2.3,0,4.7,0,7,0.1c1.3,1.3,3.5,0,5,1.3   c0.2,1.8-0.6,2.9-2.2,3.9C267.3,255.7,267.7,255.9,268.1,256z M256.7,266.7c1.8-0.2,2.5-0.3,4-0.6C259.4,265.9,258,265,256.7,266.7   z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st276" d="M357.2,282.6c0.3,1.1,0.5,2.3,0.8,3.4c-0.5,0.3-1,0.5-1.6,0.9c0.3,0.7,0.6,1.4,0.8,2.1   c-0.6,2.1-0.9,4.2-0.1,6.3c-2.1,4,0.6,8.9-0.8,12.8c-3-1.8-3-5.3-3.1-8.4c-0.6-6-5.8-10.5-4.3-17.1c1.7-2.3-0.2-7.4-2.2-9.2   c-3.7-11.7-6.4-24.4-3.5-36.5c0.4,0.2,0.9,0.5,1.3,0.7C349,252.5,352.9,267.8,357.2,282.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st277" d="M319.1,557.2c0.9-0.2,1.8-0.1,2.7,0.3c16.1-5.4,35.1,4.8,51.3-2.3c0.1-0.8,0.3-1.6,0.4-2.4   c0.9,0.7,0.4,1.7,0.7,2.6c-14.1,12.7-34.8,5-51.8,5.1C321.3,559.4,320.8,557.7,319.1,557.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st278" d="M262.6,66.2c-3.1-13.7-13.9-29.5-5-42.8c1.3,0.3,1.8-1.2,2.8-1.3c-3.7,7.7-0.9,16,0.3,24c0.1,0,0.2,0,0.3,0   c0.1-1.3,0.1-2.5,0.2-3.8c1.3,1.6-0.2,2.9,2.1,4.4c-0.8-6.6-3.2-13.6-0.1-19.9c2.9,9.3,0,19.7,3.5,28.2c0.1,0.9,0.6,2.3-0.5,2.8   c0-0.5,0-0.9,0-1.4c-0.2-0.2-0.4-0.5-0.7-0.7c0-0.5,0-0.9,0-1.4c-0.2-0.2-0.4-0.5-0.7-0.7c0-0.9-0.4-1.4-1.4-1.4   c-0.7-1.5-0.3-3.4-2.2-5c0.2,1.6,0.4,2.8,0.6,4.1c-0.5-0.3-0.8-0.5-1.4-0.8C261.2,55.7,264.8,61.3,262.6,66.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st273" d="M275.8,138.6c3.5-5.6,8.6,2.4,11.3,5c-3.5,7-8.1,13.6-15.8,16.3c-1.8-5.1,3.8-12.3,1-17   c0.4-1,0.4-2.3,1.5-2.8c0,0.8-0.8,1.9,1,2.2c1.5-1.4,2.9-2.8,4.6-4.2c-1.2-0.4-1.8-0.2-2.4,0.4   C276.7,138.5,276.3,138.5,275.8,138.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st272" d="M355.4,166c-5-0.1-11.3-1.4-12.9-6.9c1.7-2.2,1.7-9.8,6.1-6.5c3.8,2.6,7.1,5.8,11.5,7.7   C359.3,162.9,357.3,164.4,355.4,166z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st279" d="M317.3,298.7c0.6,3.4,2.2,6.5,2.1,10c-3.8,1.7-7.7,1.8-11.8,2.7c-0.6-3.6-1.1-7-1.7-10.4   c1.2-1.9,1.6-3.7,1.4-5.9c1.5,0.5,0.1,3.1,2.2,2.8c-0.1,0.7-1.7,0.4-1.2,1.7c3-0.3,5.9-0.7,8.8-1   C317.2,298.6,317.3,298.7,317.3,298.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st275" d="M309.6,298c-2.5,0-0.3-3.4-3.6-2.9c0.3-1.5,2.1-2.1,2.8-3.4c0.1,0.4,0.3,0.7,0.6,1.5c0.9-1.2,1.6-2.1,2.2-3   c0.2,0.3,0.4,0.5,0.7,0.9c7.8-4.2,14.5-8.2,23.4-10.5c-7.4,4.9-14.6,7.1-22,12.2c7,0.5,13.6-4.6,20.7-3.6c-6.1,2.4-12,5-18.7,6.8   c0.9,0.9,1.6,1.5,2.2,2.1c-0.2,0.3-0.4,0.5-0.6,0.8C315.2,297.1,312.1,298.3,309.6,298z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st280" d="M261.1,250.2c-1.4,0-2.9,0-4.3,0c0.9-3.6,3.1-6.5,4.7-9.7c4.1-0.1,7.9,0.6,11.7,1.9   c-0.3,0.1-0.7,0.2-1.2,0.3c-1,2.4-1.9,4.9-2.5,7.6c-3.8-0.4-7.2-1.9-11.1-1.2C259.5,249.5,260.3,249.9,261.1,250.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st281" d="M357.3,288.9c-0.3-0.7-0.6-1.4-0.8-2.1c0.6-0.3,1.1-0.6,1.6-0.9c5.5,10,7.3,24-3.6,31   c-0.6-0.3-1-0.5-1.4-0.8c0.7-3.3,3.1-5.5,5.9-7.2c-0.9-1.9-1.1-3.7,0.5-5.2c-0.5-0.6-0.9-1.2-1.3-1.6c0-1.5,0-2.8,0-4.1   c0.5-0.1,0.9-0.2,1.2-0.2c0,0.2,0,0.4,0.3,0.4c-0.1-0.1-0.2-0.2-0.3-0.3c0.1-1.3-1-1.9-1.4-2.8   C357.7,293.1,358.8,290.5,357.3,288.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st282" d="M289,238.3c-0.9-1.4-1.7-2.8-2.6-4.3c0.4,0,0.8-0.1,1.6-0.1c-0.5-0.8-0.8-1.3-1.6-2.5c0,1.4,0,2,0,2.7   c-1.1-1.8-1.5-3.9-1-6.3c6.5,3.4,10.1,11.7,14.3,17.6c-2.6-0.5-5.1-1.1-7.7-1.6c-1.1-2.3-0.6-5.2-2.6-6.7   C289.2,237.5,289.1,237.9,289,238.3z M286.1,228.6c-0.7,0.5-0.3,0.7,0.1,1.2C287,229.4,286.4,229.1,286.1,228.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st283" d="M267.4,330.3c-0.3,0.1-0.7,0.1-0.8,0.2c-1.2,2.1-2.6,3.7-2.8,6.1c-0.2,0-0.4,0-0.6,0c0.2-2-1.8-2.7-3-4.1   c0.3-0.3,0.6-0.6,0.9-0.9c0.7,0.3,1.4,0.6,2.3,1c0.6-1,1.1-1.8,1.7-2.9c-7.3-5.5-10.7-13.4-12-22.3c4.5,7.4,5.2,16.5,13.5,21.1   c1.1-5.5-3.8-10.4-4.8-15.8c0.5-0.2,1.1-0.4,1.6-0.6C262.9,318,272.5,324.6,267.4,330.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st284" d="M275.9,19.1c0-2.2,2.8-3.2,4.1-4.8c0.2,0.2,0.4,0.4,0.6,0.6c-0.3,0.7-1.1,1.3,0,2.3c6.8,0,14.4,1.2,20.7,3.8   c-1.6,0.3-2.6,0.3-4.4,0.3c0.9,0.6,1.5,1,2.1,1.4c-6.8,1.3-13.8-3-20.2-4.4c-0.7,0.3-1.2,0.6-1.7,0.8   C276.8,19.2,276.3,19.2,275.9,19.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st285" d="M265.3,48c-2-6.4,0.5-14.4-2.2-21.2c0.9-2.8,3.1-4.7,5-6.7c1.2-1.4,2.9,0.4,4.2-0.7c0.2,0,0.7,0.2,0.7,0.6   l0,0C265.3,27.5,264.6,37.6,265.3,48z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st286" d="M276.5,34c-1.3-0.9-2.7-1.8-4.1-2.7c0.3-2.1,0-4.1,1.2-5.8c4.6,4.1,10.7,5.8,16.2,8.4   c-3.8,1.8-8.4-0.5-12.3-1.2C277.2,33.2,276.9,33.6,276.5,34z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st287" d="M276.1,48.6c-2-1.9-3.1-4.3-3.8-6.9c0.2-0.1,0.5-0.1,0.7-0.2c2.4,1.4,4.4,3.1,7.4,2.1   c-1.4-1.9-3.4-0.4-4.8-1.8c-0.8-0.1-1.4-1-2-1.4l0,0c0-0.5,0.1-1.1,0.1-1.6c0.5,0.2,1,0.5,1.5,0.8c1.4,0.3,2.3,1.8,3.8,1.4   c4.8,1.5,1.1,7.1,1.6,10.6C279,51.3,277.7,49.5,276.1,48.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st288" d="M280.8,50.7c-0.5-2.6,1.2-4.9,0.7-7.6c0.2-0.1,0.4-0.2,0.5-0.3c0.3,0.8-0.2,1.8,0.7,2.3   c0.1,1.4,0.2,2.8,0.3,4.2c-0.2,0.1-0.3,0.2-0.2,0.4c-1,0.9,1,2.2,1.5,3.1c2.4,2.9,3.9,7.6,7.8,8.8c0.6-0.3,1.4-2.1,2-1.2   c0.8,2.9-2,3.1-4.2,3.5c-1.2-0.8-2-2.1-2.5-3.4c-2.9-0.1-5.8-2.2-8.1-2.1c-1.4-0.7,0-1.4,0-2.1c0.2,0,0.4,0,0.6,0   c1.8,1.5,3.8,2.2,6.4,2.4C284.9,55.7,282.4,53.8,280.8,50.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st289" d="M275.1,75.4c0.2,1.2,0.4,2.3,0.6,3.5c-1.6,1.5,0.4,4-1.1,5.6c-0.1-1.3-0.2-2.5-0.2-3.8   c-1.9,3.7-0.1,9.9-3.7,12.1c-0.4-7.2,0.8-14.5,0.3-21.7c1.1,1.9,0.7,4.3,2.4,6c1-0.3,1-1.2,1.1-1.9   C274.7,75.3,274.9,75.4,275.1,75.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st290" d="M265.3,54.3c0,0.5,0,0.9,0,1.4c0.2,0.2,0.4,0.5,0.7,0.7c0,2.2,0.9,4.3,1.3,6.5c-2.1,8.8,2,19.3-1.9,27.8   c0.7-13,0.3-25.9-2.1-38.5c0.9,0,1.4,0.5,1.4,1.4C264.9,53.9,265.1,54.1,265.3,54.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st291" d="M273,36.1c-0.3-0.6-0.5-1.2-0.8-1.8c6,0.8,12.5,3,18.9,3.3c-0.6,0.4-1.3,0.8-1.9,1.3   c-2.2-1.7-4.4,0.2-6.2,1.5C279.2,40.5,275.9,38.2,273,36.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st292" d="M280.7,15c-0.2-0.2-0.4-0.4-0.6-0.6c0.5-0.8,1.3-1.3,2.1-1.8c4.8,0,9.3,1.2,14,1.1c0.5,0.8,1.2,1.3,2.1,1.4   C295.9,20.3,285.7,12.8,280.7,15z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st293" d="M280.3,86.1c0.1-6.4-4.5-13.3,0.3-18c0.4,0.1,0.8,0.3,1.4,0.4C282.7,74.3,281.9,79.9,280.3,86.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st294" d="M271.7,54.2c-2.4-7.6-3.7-15.4-2.6-23.5c1.9,6.5,0.7,13.6,4.1,19.8c0.5,1.7,1.3,3.9-0.2,5.3   C272.6,55.2,272.1,54.7,271.7,54.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st295" d="M258.2,323.3c2.4,2.1,4.7,4,6.9,6.4c-0.6,1-1.1,1.9-1.7,2.9c-3.8-1.3-5.8-4.7-8.6-7.3   C256,324.7,257.1,324,258.2,323.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st296" d="M274.5,75.3c-0.1,0.8-0.2,1.6-1.1,1.9c-3.6-5.7-2.9-12.9-4.7-19.3c0.2-0.2,0.5-0.5,0.7-0.7   C271.5,63.1,273.2,69.5,274.5,75.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st297" d="M358,295.2c0.4,1,1.6,1.6,1.4,2.8l0.1-0.1c-0.3,0.1-0.7,0.1-1.2,0.2c0,1.3,0,2.6,0,4.1   c0.4,0.5,0.8,1,1.3,1.6c-1.6,1.5-1.4,3.2-0.5,5.2c-1.1,0.8-2.1,1.4-3.1,2.2c-0.2-0.2-0.4-0.4-0.6-0.6c-0.1-0.4-0.1-0.8-0.2-1.3   c-0.5,0.3-0.9,0.4-1.3,0.6c-0.3-0.3-0.6-0.6-0.9-0.9c0.4-0.3,0.9-0.7,1.3-1c-0.2-0.3-0.3-0.6-0.5-1c0.3-0.3,0.5-0.5,0.8-0.8   c0.6,0.5,1.2,1,1.9,1.6c1.4-3.9-1.2-8.9,0.8-12.8C357.4,295.2,357.7,295.2,358,295.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st298" d="M254.9,325.3c1.6,1.6,3.2,3.3,4.8,4.9c-0.3,0.3-0.5,0.5-0.8,0.8c-1.6-1.3-2.8-3.2-4.9-3.6l0,0   c-3.4-4.5-4-11-6.5-16.2c0.1-0.7,0.2-1.3,0.4-2C251.8,314,251.7,320.7,254.9,325.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st299" d="M319.4,565.5c0-0.8,0-1.6,0-2.6c-4.5,1.3-8.3,3.7-11.9,6.4c-0.1-0.6-0.2-1.2-0.2-1.8   c3.2-3.5,7.2-5.7,11.8-6.7c0.1-0.3,0.1-0.7,0.2-1C320.3,560.5,320.3,564.7,319.4,565.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st300" d="M273,19.9c0-0.3-0.5-0.6-0.7-0.6c-1.2,1.1-3-0.7-4.2,0.7c-2.4-1.8-5.8,0.3-7.7,2c-1.1,0.2-1.6,1.6-2.8,1.3   c0.5-1.6,1.6-2.5,2.8-3.5c-0.1,0.1,0.5-0.5,0.7-0.7H261c1.4,0,2.5-0.4,2.6-2.2c3.6-0.3,6.8,0.1,10,1.5   C273.8,19.1,273.8,19.7,273,19.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st301" d="M308.6,99.4c-4.9,0.1-9.8,0.1-14.7-0.7c-0.6-0.1-1.4-0.4-1.8,0.5c-0.8-0.1-1.3-0.5-1.6-1.2   c5.8-0.8,15.9-0.7,21.7,0.7C311.2,99.5,309.9,99.3,308.6,99.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st302" d="M268.7,57.9c1.9,5.7,0.8,11,0.7,16.8c-1.6-2.4-0.2-5.9-0.7-8.8c-0.5-6.1-3.4-11.8-2.6-18   c1.7,0.3,1.4,2.3,1.9,3.6C266.8,53.4,268.1,56,268.7,57.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st303" d="M289.9,11.4c-1.9,0.3-3.5-0.6-5.7-0.7c2.2-3.1,5-3.9,8.4-3.3c-0.5,1.1-1.6,0.3-2.3,0.9   c0.6,0.4,1.1,0.8,1.7,1.2c-1,0.1-2.1-0.3-3.4,0.6c4.8,0.3,9.5-0.6,14,0.7C298.5,11.6,293.8,9.8,289.9,11.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st304" d="M289.2,37.4c-4.7-0.6-9.7-1.5-14.1-2.7c1-0.4,1.8-1.1,2.5-2c4.4,1.2,8.8,2.6,13.1,3.9   C290.2,36.9,289.7,37.2,289.2,37.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st305" d="M274.6,84.5c1.5-1.6-0.5-4.1,1.1-5.6c1.9,3.2,0.3,7.6,0.8,11.3c-0.8,0.6-1.4,1.1-2.1,1.5   C272.7,90.1,274.8,86.8,274.6,84.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st306" d="M263.1,53c1.3,5.9,2.5,11.8,1.5,17.8c-1.3,0.4-1.3-0.4-1.3-1.1C265.8,65.2,260.2,57.9,263.1,53z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st307" d="M259.7,530.4c-2.6,4,1.5,2.8-3.5,6.8c-1.2-1.1-0.5-2.1-0.8-3.5c1.6-2.1,1.8-4.8,2.3-7.4   c0.2,0.2,0.5,0.5,0.7,0.7C258.5,528.2,257.8,530.4,259.7,530.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st308" d="M289.9,11.4c3.9-1.6,8.6,0.2,12.7-0.7c0.5,0.2,0.9,0.5,1.4,0.7c-0.5,0.5-1,0.9-1.5,1.4   c-1.2,0-1.8-1.5-3.3-1.1c0.6,1.3-0.4,1.1-0.9,1.3C295.4,12.6,292.6,12.2,289.9,11.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st309" d="M279.3,58.6c2.3-0.1,5.2,2,8.1,2.1c0.3,0.7,0.7,1.4,1,2.1c-2.1,0.1-4.3,0.2-6-1.3c-0.5,0.2-1,0.3-1.5,0.5   C280.4,60.8,279.8,59.7,279.3,58.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st310" d="M268.7,71.8c0.3,0.9-0.4,2.2,0.7,2.9c-0.5,5.3,1,11.3-0.6,16.2c-0.5-2.6,0.8-6.4-0.7-8.4c0-3.6,0-7.1,0-10.7   C268.3,71.9,268.6,71.8,268.7,71.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st311" d="M335,109c2.5,2.6,6.8,5.5,6.9,9.3c-3.1-2.4-5.7-5.2-7.8-8.5C334.4,109.5,334.7,109.3,335,109z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st312" d="M273,36.1c2.5,1.9,5.2,3.5,8.3,4.2c-1.5,1.9-4.3-0.3-6.1-0.8c-1.3-0.4-1.6-1.9-3.1-1.6   c0.3,0.6,0.5,1.1,0.7,1.7c-1.2,0.7,0.1,1.2,0.1,1.9c-0.2,0.1-0.5,0.1-0.7,0.2c-1.2-1.2-0.6-2.7-0.7-4.3C272,37,272.5,36.6,273,36.1   z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st313" d="M277.9,60c0.7,1.9,2.3,3.8,1.1,5.8c0.4,0.2,0.8,0.4,1.4,0.7c-0.7,0.8-1.4,1.6-2.1,2.5   c-1.3-2.8-0.8-5.5-1.2-8.2C277.3,60.5,277.6,60.3,277.9,60z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st314" d="M273.8,23.5c-0.5-1.3,1.1-1.3,1.3-2.2c0.8-0.1,1.3,0.6,1.9,0.8c2.6,1.9,5.5,3.2,8.6,4.2   c-0.9,0.5-1.7,0.8-2.7,0.6c-0.1-0.2-0.3-0.2-0.5-0.2c-2-0.8-3.9-1.8-5.8-2.8l0,0c-0.9-0.4-1.5-2.1-2.2-0.7l0,0   C274.2,23.4,274,23.4,273.8,23.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st315" d="M270.3,17c-2.2,0-4.4,0-6.6,0c-0.2,1.8-1.3,2.2-2.6,2.2c0-0.3,0-0.5,0-0.8c2.9-3.6,8.1-3.1,12.2-2.2   C272.2,16.3,271.1,16.3,270.3,17z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st316" d="M292.6,7.4c-0.7,0-1.3-0.1-2-0.1c0.1-0.6,0-1.2,0.9-1.2c2.9,1.5,7,0.2,10.3,0.7c0,0.7,0.4,1.3,0.8,1.9   c-1.4,0-2.8,0.1-4.2,0.1C296.7,6.8,294.6,7.3,292.6,7.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st317" d="M268.8,83.9c0,3.1,0.3,6.2-0.1,9.4c-0.7,0.4-1.3,0.8-2,1.2c-0.9-0.1-0.8-0.8-0.7-1.4c1.7-2.8,1.8-6,2-9.2   C268.2,83.9,268.5,83.8,268.8,83.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st318" d="M316.8,422.2c-0.4-2-0.8-4-1.1-6c-0.4,0-0.7-0.1-1.1-0.1c0.4-0.5,0.9-1,1.3-1.6c0.6,0.5,1.3,1,2.1,1.6   c-0.3,2.2,0.8,5-0.7,6.8C317.1,422.7,316.9,422.4,316.8,422.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st319" d="M271.7,54.2c1.4,1.4,1.8,3.3,3.2,4.7c0.2-1.1,0.6-1.5,1.4-2.3c0.3,0.5,0.5,1,0.8,1.4c-2.1,1.1-1,4.2-2.8,5.5   C275.4,59.6,271,57.5,271.7,54.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st320" d="M346.8,273.4c2,1.8,3.9,6.9,2.2,9.2c-0.1-0.6-0.2-1.1-0.3-1.8c-0.4,0.4-0.8,0.7-1.4,1.2   C346,279.2,348.5,276.4,346.8,273.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st321" d="M266.1,48c-0.1,1.4-0.1,2.8-0.2,4.2c-1.6-5.4-0.2-11.8-0.6-17.5c0-0.8-0.2-1.7,0.7-2.2   C266,37.7,266.1,42.8,266.1,48z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st322" d="M281.5,24.8c-0.2-0.2-0.5-0.3-0.7-0.5c0-0.7-0.1-1.3-0.1-2.1c-1.8-0.6-3.5-1.1-4.8-2.4   c0.1-0.2,0.1-0.5,0.2-0.7c3.3,0.5,6.1,2.9,9.1,4.3c-0.4,0.4-0.9,0.8-1.3,1.2C283,24.5,281.7,23.7,281.5,24.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st323" d="M283.5,31.2c-3.6-1.3-6.9-3.1-9.8-5.6c0.4-0.3,0.8-0.8,1.3-0.6l0,0c0.3,0.2,0.5,0.4,0.8,0.7l0,0   c0.4,0.2,0.7,0.7,1.2,0.8c1.2,0.8,2.4,1.4,3.7,2.1l0,0c1.1,1.3,2.7,1.9,4.4,2.1c-0.1,0.2-0.1,0.4,0.1,0.6   C284.6,31.1,284.1,31.2,283.5,31.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st324" d="M274.6,84.5c0.2,2.2-1.9,5.6-0.1,7.2c-0.9,1.3-1.4-0.2-2.1-0.8c0.6-3.4,1-6.8,2-10.1   C274.4,82,274.5,83.3,274.6,84.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st325" d="M301.8,7.3c0-0.2,0-0.4-0.1-0.6c1.1-1.1,2.7-0.4,3.5-1.6c0.2,0,0.5,0,0.7,0c0.9,0.9,0.9,0.9,2,0.1   c1.5,0.2,3,0.3,4.4,1.2c-0.5,0.8-1.4,1.1-2.2,1.4c-0.5-1-1.4-0.5-2.1-0.6C306.2,5.7,304,7.5,301.8,7.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st326" d="M258.3,527c-0.2-0.2-0.5-0.5-0.7-0.7c0-4.2,0-8.5,0-12.7c1.2,2.5,0.4,5.5,0.7,8.2   C258.8,523.4,259.5,525.3,258.3,527z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st327" d="M334.1,109.8c0.5,0.7,0.9,1.4,1.4,2.1c-0.7,0.5-1.4,1-2.1,1.4c-1.4-1.3-0.9-3.2-2.2-4.6   c0.1-0.9,0.2-2.2,1.5-1.1C332.2,108.7,333.5,109.1,334.1,109.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st328" d="M261.1,307.1c-0.2-3.5-0.4-6.9,0.1-10.4c1.4,0.7,0.5,2.4,0.7,3.7c0.7,0.7,1.3,1.3,1.9,1.9   c0,0.2,0,0.4,0.1,0.6c-0.3,0.3-0.5,0.5-0.8,0.8c-0.4-0.1-0.7-0.3-1.1-0.4c-0.1,1.4-0.2,2.7-0.2,3.9   C261.5,307.1,261.3,307.1,261.1,307.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st329" d="M276.1,48.6c1,0.8,2.1,1.5,3.1,2.3c-0.7,1-2,1.1-2.8,2.1C276.1,51.7,273.9,49.3,276.1,48.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st330" d="M261.7,307.1c0.1-1.2,0.2-2.4,0.2-3.9c0.4,0.1,0.8,0.3,1.1,0.4c0.4,1.5,1.2,3,0.6,4.8   c-0.4,0-0.8,0.1-1.3,0.1c-0.2-0.3-0.4-0.5-0.6-0.8C261.8,307.6,261.8,307.3,261.7,307.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st331" d="M351.1,297.2c0.7,1.1,2.4,7.7,0.2,7.5c-0.3-1.7-1.1-3.4-0.9-5.3C351.4,298.9,350.8,297.9,351.1,297.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st332" d="M280,56.5c-1.1,0-1.9-0.9-2.6-1.5c0.5,0.1,1.1,0,1.6-0.1c-0.4-0.6-0.7-1.3-1-2c0.3,0,0.5-0.1,0.8-0.1   c1.5,1.2,2.9,2.5,4.9,2.8C283.2,57.8,280.5,54.6,280,56.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st333" d="M303.2,5.9c-3.2,1.2-8.6,1.1-11.7,0C295.4,6,299.3,6,303.2,5.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st334" d="M293.4,12.3c1.6,0.3,3.3,0.5,4.9,0.8c0.1,0.2,0.1,0.4,0.1,0.6l0,0c-3.1,0.1-6.3,0.4-9.2-0.6   C290.4,12.7,292.4,13.5,293.4,12.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st335" d="M275.1,65.6c0.5,2.4,1.4,4.8,1.3,8c-2.1-2.2-1.4-4.6-2-7.2C274.6,66,274.9,65.8,275.1,65.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st336" d="M290.7,137.2c0.2-1.4,0.4-2.9,1.4-4c0.5,0.4,0.9,0.8,1.3,1.2c0.1,1.3-0.7,2.3-1.5,3.3   C291.5,137.5,291.1,137.4,290.7,137.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st337" d="M239.3,213.8c1.2,1.8,0.8,4.4,1.4,7c-1.4-1.7-2.1-3.2-2.1-4.9C239.6,215.4,239.1,214.5,239.3,213.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st338" d="M287.8,542.3c1.5-0.7,4.8-2.2,5.7-0.3c-2.1,0.3-3.9,0.6-5.7,0.9C287.7,542.7,287.8,542.5,287.8,542.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st339" d="M268.7,57.9c-0.7-1.9-2-4.5-0.7-6.3c0.5,1.9,0.9,3.7,1.4,5.6C269.2,57.4,269,57.7,268.7,57.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st340" d="M272.3,57.1c1.6,1.8,2.2,3.9,2.1,6.3c-0.2,0-0.4-0.1-0.6-0.1C273.3,61.3,272.8,59.2,272.3,57.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st341" d="M254,327.5c2.1,0.3,3.3,2.3,4.9,3.6C257.9,332.7,254.8,328.6,254,327.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st342" d="M275.2,57.8c-0.1,0.3-0.2,0.6-0.3,1.1c-1-0.9-1.5-2-2-3.1c0.9-0.8,0.8-1.8,0.8-2.9   C274.3,54.5,274.7,56.2,275.2,57.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st343" d="M255.5,278.3c0.7,1.2,1.4,2.3,2.1,3.5c-0.3,0.3-0.6,0.6-0.8,0.9c-0.7-1-1.3-2-2-2.9   C255.5,279.5,255.4,278.8,255.5,278.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st344" d="M287.8,542.3c0,0.2,0,0.4,0,0.6c-1.4,0.5-2.8,0.9-4.2,1.4c-0.5-0.2-1-0.4-1.5-0.7   C283.9,542.7,285.7,542.1,287.8,542.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st345" d="M270.3,17c1.7-1.1,5.1-1.5,3.5,1.5C272.4,18.5,271.4,17.6,270.3,17z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st346" d="M263.3,64.1c0.7,1.6,1.3,4.5-0.1,5.7c-0.2-1.2-0.4-2.3-0.7-3.5C263.6,65.8,263,64.8,263.3,64.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st347" d="M353.7,307.2c0.2,0.3,0.3,0.6,0.5,1c-0.4,0.3-0.9,0.7-1.3,1c-0.3,0-0.7,0-1.1-0.1c0-0.8-0.1-1.5-0.1-2.4   C352.5,306.8,353.1,307,353.7,307.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st348" d="M338.5,267c-1.4,0.1-2.7,0.2-4.1-0.2c1.8-0.2,3.4-1.4,5.3-0.9C339.4,266.2,338.9,266.6,338.5,267z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st349" d="M256.1,241c0.1,1.1,0,2.1,0.8,2.9c-0.3,0.6-0.5,1.2-0.9,1.9C255.3,243.6,255.3,243.6,256.1,241z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st350" d="M253.2,329c1.4,0.1,1.9,1.4,3.2,2.5c-1.9,0.1-2.3-0.9-3.7-1.8C252.9,329.4,253.1,329.2,253.2,329z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st351" d="M289,238.3c0.1-0.4,0.2-0.9,0.3-1.3c0.9,0.5,1.3,1.1,1.2,2c-0.3,0.3-0.6,0.5-0.8,0.8   C289.5,239.3,289.2,238.8,289,238.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st319" d="M273.8,63.3c0.2,0,0.4,0.1,0.6,0.1c0.2,0.7,0.5,1.4,0.7,2.1c-0.2,0.2-0.5,0.5-0.7,0.7   C273.2,65.5,273.9,64.3,273.8,63.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st352" d="M353.8,309.9c0.4-0.2,0.8-0.4,1.3-0.6c0.1,0.5,0.1,0.9,0.2,1.3c-0.6,0.5-1.2,0.9-1.9,1.4   C352.4,311.1,353.5,310.6,353.8,309.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st353" d="M350.1,298.1c-0.9-1-0.7-2.1-0.5-3.3c1,0.3,1.2,1.1,1.3,1.8C350.6,297.1,350.4,297.6,350.1,298.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st354" d="M278,52.9c0.2,0.5,0.4,1,0.7,1.5c-0.2,0.2-0.4,0.4-0.6,0.6c-0.2,0-0.5,0-0.6,0c-0.3-0.7-0.6-1.3-0.9-2   c0.3-0.2,0.5-0.5,0.8-0.7l0,0C277.5,52.4,277.7,52.7,278,52.9L278,52.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st355" d="M251.1,533.2c-0.4-0.2-0.8-0.5-1.3-0.7c-0.1-1.1,0.2-1.9,1.4-2.1l-0.1-0.1   C251.2,531.3,251.2,532.3,251.1,533.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st274" d="M252.7,540.9c-1.4-0.7-0.5-2.8-0.8-4.1C253.4,537.7,252.5,539.5,252.7,540.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st356" d="M334.1,109.8c-0.6-0.7-1.9-1.1-1.4-2.2c0.8,0.4,1.5,0.9,2.3,1.3C334.7,109.3,334.4,109.5,334.1,109.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st357" d="M344.7,237.6c-0.4-0.2-0.9-0.5-1.3-0.7c0-0.6,0-1.1,0-2C344.6,235.7,344.7,236.6,344.7,237.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st358" d="M276.4,58.6c0.3-0.2,0.5-0.4,0.8-0.6c0.2,0.7,0.5,1.3,0.7,2c-0.3,0.3-0.6,0.6-0.9,0.8   c-0.2-0.1-0.3-0.1-0.5-0.2C276.5,59.9,276.5,59.3,276.4,58.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st359" d="M252.1,324.5c0.4,0.8,0.7,1.5,1.1,2.3c-0.2-0.1-0.4,0-0.6,0.1c-0.5-0.4-1-0.8-1.5-1.3   C251.4,325.2,251.7,324.8,252.1,324.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st360" d="M251.3,530.4c0.3-0.5,0.6-1.1,1-1.8c0.5,0.7,0.8,1.1,1.1,1.6C252.5,530.3,251.9,530.3,251.3,530.4   L251.3,530.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st361" d="M280.9,62c0.5-0.2,1-0.3,1.5-0.5c0.1,0.6,0.2,1.2,0.3,1.9C281.6,63.5,281.1,62.9,280.9,62z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st362" d="M278,93c0,0.5-0.1,0.9-0.1,1.4c-0.6-0.3-1.1-0.5-1.7-0.8c0-0.2,0.1-0.3,0.1-0.5C276.8,93.1,277.4,93,278,93z   " />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st363" d="M350.1,298.1c0.2-0.5,0.5-1,0.7-1.5c0.1,0.2,0.2,0.3,0.2,0.5c-0.3,0.7,0.3,1.7-0.8,2.2   C350.3,298.9,350.2,298.5,350.1,298.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st273" d="M271,145.1c-0.1-2-0.1-2,1.4-2.2C271.9,143.6,271.5,144.4,271,145.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st364" d="M275,24.9c-0.2,0-0.4,0-0.6,0.1c-0.2-0.5-0.4-1-0.6-1.5c0.2-0.1,0.4-0.1,0.6-0.1   C274.6,23.9,274.8,24.4,275,24.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st272" d="M354.5,168.8c0.1-0.8-0.3-1.7,0.7-2.1C355.5,167.6,355.3,168.3,354.5,168.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st289" d="M274.4,74.7c-1-0.6-0.6-1.5-0.5-2.4c0.2,0.5,0.5,1.1,0.7,1.6C274.5,74.2,274.5,74.5,274.4,74.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st319" d="M276.6,60.6c0.2,0,0.3,0.1,0.5,0.2c0,0.7,0,1.3,0.1,2C276.2,62.2,276.6,61.4,276.6,60.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st300" d="M272.2,21.3c0.3-0.5,0.5-0.9,0.8-1.4C273.1,20.5,273,21.1,272.2,21.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st322" d="M275.7,21.4c-0.2,0-0.4,0-0.6-0.1c-0.1-0.6,0-1.2,0.6-1.5c0.1,0.1,0.2,0.2,0.3,0.3   C275.9,20.6,275.8,21,275.7,21.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st335" d="M274.4,74.7c0.1-0.2,0.1-0.5,0.2-0.7c0.6,0.4,0.6,0.9,0.5,1.5c-0.2-0.1-0.4-0.1-0.6-0.2   C274.5,75.1,274.5,74.9,274.4,74.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st341" d="M252.6,326.9c0.6-0.5,1,0.3,1.5,0.6C253.6,327.3,253.1,327.1,252.6,326.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st362" d="M280.1,93.6c-0.3-0.2-0.5-0.3-0.8-0.5C279.6,93.3,279.8,93.4,280.1,93.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st300" d="M261.7,17.8c-0.2,0.2-0.4,0.4-0.7,0.6C261.3,18.2,261.5,18,261.7,17.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st328" d="M261.8,307.8c0.2,0.3,0.4,0.5,0.6,0.8C262.2,308.3,262,308,261.8,307.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st278" d="M260.4,19.9c-0.2,0.2-0.5,0.5-0.7,0.7C259.9,20.4,260.2,20.1,260.4,19.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st278" d="M261.1,19.2c-0.3,0.3-0.5,0.5-0.8,0.8C260.6,19.7,260.9,19.4,261.1,19.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st337" d="M238.6,215.9c-0.2,0-0.4,0-0.6,0.1c0.1-0.2,0.3-0.4,0.4-0.6C238.4,215.5,238.5,215.7,238.6,215.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st359" d="M250.5,325.4c0-0.2,0-0.5,0-0.7c0.3,0.2,0.5,0.4,0.8,0.6c-0.1,0.1-0.2,0.2-0.3,0.3   C250.9,325.5,250.7,325.5,250.5,325.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st329" d="M275.1,47.5c0.2,0.2,0.4,0.4,0.5,0.5C275.5,47.9,275.3,47.7,275.1,47.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st362" d="M277.9,94.4c0.2,0.2,0.5,0.4,0.7,0.6C278.4,94.8,278.1,94.6,277.9,94.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st307" d="M259.5,531.9c0.3,0.2,0.5,0.4,0.8,0.6C260.1,532.3,259.8,532.1,259.5,531.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st309" d="M287.7,64c0.1,0.5-0.1,0.8-0.6,0.9C287.3,64.6,287.5,64.3,287.7,64z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st327" d="M330.6,108.2c-0.2-0.2-0.4-0.4-0.7-0.6C330.2,107.9,330.4,108,330.6,108.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st365" d="M263.9,302.9c-0.1-0.2-0.1-0.4-0.1-0.6c0.2,0.2,0.5,0.5,0.7,0.7C264.3,303,264.1,302.9,263.9,302.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st273" d="M328.5,397.7c-3.3-0.5-4.7-5.3-7-7.4c0-1,0-1.8,0-2.7c0.6-0.4,1.2-0.7,1.8-1c1.4,0.4,2.6,0.9,3.3,2.4   c2.3,2.7,6.2,4,9.1,6.1c-0.2,0.6-0.5,1.3-0.7,1.9c-0.8,0-1.7,0-2.5,0c-0.9-1.2-3.1-0.9-4.3-0.2C328.3,397,328.4,397.3,328.5,397.7z   " />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st366" d="M308.1,519.8c-1.3,1.5-1.4,3.3-1.2,5.1c1.3,1.3,3.9,2.9,1.6,4.5c-1.6-0.7-2.9-1.6-4-2.9   c0.4-0.7,0.7-1.3,1.1-2c-0.7-1.1-0.6-2.4,0.1-3.5c1.6-2,1.3-4.6,2.4-6.8C310,515,308,518.2,308.1,519.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st367" d="M320.8,434.2c0.9-0.3,1.5,0.3,2.1,0.8c-0.2,3,1,6.6-1.4,9l0.1,0.1C320.9,440.8,320.4,437.5,320.8,434.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st368" d="M321.1,448.1c1,0.3,1.1,0.8,1,1.4c-1.6,3.4-0.1,7-2.3,10.1c-0.9-3.4,1-6,0.2-9.4   C319.9,449.4,320.1,448.6,321.1,448.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st369" d="M335,396.9c1-2.3,3.2-7.1,6.1-6.7C340.3,393.1,338,395.6,335,396.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st370" d="M337.6,412.3c-2.9-0.6-0.1-2.7-1.7-4.2c-0.5-0.9,0.2-2.5,1.4-2.4C339.1,407.9,337.6,410,337.6,412.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st371" d="M335.6,403.3c-0.1-0.2-0.1-0.4,0-0.7c0.7-0.4,0.6-1,0.5-1.6c0.5-1.3,1.1-2.4,2.6-2.8   c0.7,1.7-1.3,3.4-1.8,5.1C336.4,403.3,336,403.3,335.6,403.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st372" d="M317.4,424.5c0.3-0.2,0.6-0.4,1-0.6c1.3,1,2.4,3.8,0.4,4.5C318.3,427.1,317.8,425.8,317.4,424.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st373" d="M328.5,397.7c-0.1-0.3-0.2-0.6-0.3-0.9c1.1-0.7,3.4-1,4.3,0.2C331.3,397.9,330,397.9,328.5,397.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st374" d="M311.6,497.2c0.1-1,0.2-1.7,0.3-2.9C313.3,495.5,313.8,496.4,311.6,497.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st375" d="M308.9,511.8c0.3-0.8,0.5-1.5,0.9-2.7c0.7,1.3,0.5,2.1,0.1,3C309.6,512,309.3,511.9,308.9,511.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st376" d="M335,416.4c0-0.7,0-1.2,0-1.7C336,415.3,336,415.3,335,416.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st377" d="M311.4,505.1c0.5,0.6,0.1,1.8-0.7,1C310.3,505.4,310.7,505.2,311.4,505.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st378" d="M335.6,403.3c0.4,0,0.8,0,1.2,0c-0.3,0.6-0.6,1.3-1.2,2.6C335.6,404.5,335.6,403.9,335.6,403.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st379" d="M312.6,500.7c-0.4,0.4-0.7,0.7-1,0.8C310.5,500.9,311.4,499.7,312.6,500.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st380" d="M318.7,464.9c0.1-0.3,0.1-0.7,0.2-1c0.8,0,0.3,0.6,0.3,1.1C319,464.9,318.9,464.9,318.7,464.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st378" d="M336.1,401c0.2,0.6,0.2,1.2-0.5,1.6C335.4,402,335.5,401.4,336.1,401z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st367" d="M321.5,444c-0.1,0.1-0.2,0.2-0.3,0.3C321.2,444.1,321.3,444.1,321.5,444L321.5,444z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st259" d="M294.1,60.6c-0.7-0.9-1.4,0.8-2,1.2c-2.9-0.5-3.6-3.3-5.1-5.2c0.3-0.3,0.6-0.6,0.9-0.9   c2.7,0,5.9-0.5,6.4-3.6c-1-0.7-1.9-1.4-2.8-2.1c0.7-2.2,0.7-2.2,0.2-4.7c-1.7-1.3-3-3.1-5.3-3.5c-0.3-0.3-0.5-0.5-0.8-0.8   c4.4-4.7,7.5,8.2,12.7,3.5c0.9-0.3,1.3-0.8,1.1-1.8c-0.4-0.1-0.8-0.2-1.2-0.3c2.4-3.3,6.2-5.1,9.3-7.6c-1-1.4,0.4-2.4,0.3-3.5   c0.5-0.4,1.1-0.8,1.8-1.3c0-0.9,0-2,0-3c0.9-0.1,0.7-0.8,0.7-1.3c0.7-2.5,0.7-2.6,0.3-5.3c-0.3,0.1-0.6,0.2-0.9,0.4   c-0.5-0.2-1-0.5-1.5-0.7c0.7-0.5,1.4-0.9,2.1-1.4c1.3,0,2.5,0,3.6,0c0.5,0.6,0.8,0.9,1.3,1.4c1.1-0.9,1.9-1.4,2.8-2.3   c1.4,0.3,3.1,0.5,4.1,1.5c3-0.8,7.5-2.8,8.4,1.2c-0.1,4.8,7.7,13.3,2,15.9c-2.9,5.9,2.6,11.1,4.8,16.2c-1,0.5-1.8,1-2.5,1.4   c-0.5-0.3-0.9-0.6-1.3-0.8c-1.3,0.2-2.4,0.6-2.8,2.2c0.8,0,1.5,0,2.1,0c0.4,1.5,0.9,3,1.3,4.7c-1.4,2.8-5,1.1-7.3,1.9   c-0.4,3.5,4,2.9,5.4,5.1c-0.5,1.1,0.1,2,0.6,2.9c3.8,8.9-18.3,2.5-22.5,2.5c-3.7-2.9-8.9-2.9-12.6-6.1c-0.9-1.8,0.3-5.5-2.8-5.1   C294.6,61.1,294.3,60.9,294.1,60.6z M326.1,44.4c-0.8-3.4,0.5-3.1,1.7-5.4c-3.7-0.9-6,1.4-8.6,2.9c1,1.8,2.2,0.2,3.2,0.7   C322.9,44.4,324.2,44.8,326.1,44.4z M329.9,37.1c-1.8-2-2.2-2.2-7.8-2.9c-1.7,0.8-3.8,0.9-4.9,3c1.2,0.6,2.1-0.1,3-0.6   C323.3,34.3,327.3,39.2,329.9,37.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st381" d="M332.2,67.2c-1.1-2.1-4.4-1.2-5-3.8c1.6,0,3.2,0,5.1,0c0.5,0.4,1.1,1.1,2,1.8   C333.4,66,332.8,66.6,332.2,67.2z" />
+	<path d="M238.6,281.9c0-3.6,0.1-7.2,0.1-10.8c0.1,0,0.3,0,0.4-0.1C239.1,274.4,240.3,279.1,238.6,281.9L238.6,281.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st271" d="M245,312.7c0.1,1.1,0.3,2.1,0.4,3.4c-1.3-0.1-0.9-1.6-1.8-2.1C243.8,312.7,243.8,312.7,245,312.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st382" d="M328.4,18c-1,0-4.9,0.8-6.3,1.3c-0.4-0.3-0.8-0.6-1.3-0.9c0-0.3,0-0.6,0-0.9c0.6,0,1.3,0.1,2.4,0.1   c-1.4-1.4-2-1.9-2.5-3.4c0.2,0,0.4-0.1,0.4-0.3c-0.1,0.1-0.2,0.2-0.4,0.4c-1.2-0.7-2.4-1.3-3.5-2c1-2.1,3.7,0.4,5,1.1   c1,1.2,1.7,3.2,3.1,4c-0.6-0.6-1.2-1.2-1.8-1.7c0.3-0.2,0.6-0.5,0.9-0.7c1,0.8,1.7,1.5,3,2.5c0.2-0.8,0.5-1.3,1-1.7   C329.7,16.1,328.8,17.3,328.4,18z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st383" d="M317.2,8.1c2.1,0.7,4.5,1.1,5.8,3.3l-0.2,0.2c-0.9-0.5-1.9-0.8-2.5-1.5C318.7,9.1,316.9,11.4,317.2,8.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st384" d="M317.2,8.1c0,0.5,0.1,1,0.1,1.4c-1.9-0.7-3.8-1.5-5.6-2.2c0.2-0.3,0.5-0.5,0.7-0.8   C314,7,315.6,7.6,317.2,8.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st385" d="M323,11.4c2.1,0.8,3.6,2.5,4.8,4.3l-0.1,0.1c-2.2-0.5-3.3-2.8-5-4.1L323,11.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st386" d="M308,5.3c-1.1,0.8-1.1,0.8-2-0.1C306.7,5.2,307.4,5.3,308,5.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st385" d="M328.5,15.8c-0.2,0.2-0.4,0.4-0.7,0.7c-0.1-0.2-0.1-0.4,0-0.7l0.1-0.1C328,15.7,328.3,15.7,328.5,15.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st387" d="M251.3,325.3c-0.3-0.2-0.5-0.4-0.8-0.6l0,0c-1.7-2.7-2.9-5.9-3.5-9.1c-0.1-0.8,0.4-1.8-0.8-2.1l0,0   c0-1.2,0.1-2.4,0.1-3.6c0.2,0,0.4,0,0.6,0c1.8,4.8,4.1,9.6,5.1,14.6C251.8,324.7,251.6,325,251.3,325.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st271" d="M246.2,313.5c1.2,0.3,0.7,1.3,0.8,2.1C246.8,314.9,246.5,314.2,246.2,313.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st359" d="M250,323.9c0.2,0.3,0.4,0.5,0.5,0.8C250.3,324.4,250.1,324.2,250,323.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st388" d="M268,85.2c-0.3,2.7-0.4,5.4-1.9,7.8c-0.3-0.7-0.9-1.4-0.6-2.3c1.5-1.6,0.9-3.9,2-5.6   C267.5,85.2,267.8,85.2,268,85.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st389" d="M284.9,412.3c-1.5-3.3-1.7-7-2.6-10.5c-0.3-1.1-0.6-2.5,0.5-3.5c0.2,0.6-0.3,1.4,0.6,2   c0.3-1.1,0.4-1.9-0.5-2.5c0-1.3-0.2-2.6,0.6-3.7c1.1,1.1,0.6,2.4,0.7,3.9c1.8,0.6,3.7,0.4,4.8,1.9c-0.5-0.1-1.1-0.2-1.6-0.3   c-1.9,2.9-1.2,5.6,0.1,8.3C286.9,409.5,286.3,411.1,284.9,412.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st390" d="M284.9,412.3c1.4-1.2,1.9-2.8,2.6-4.3c-1.3-2.7-2-5.4-0.1-8.3c0.6,0.1,1.1,0.2,1.6,0.3   c-1.9,4.7,3.1,12.7-4.1,14.3C284,413.5,285,413,284.9,412.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st391" d="M258.3,527c1.1-1.3,0.2-2.9,0.7-4.3c1.7-1.5-0.5-4.1,1.3-5.6c0.2,0.2,0.5,0.5,0.7,0.7   c0.3,4.3-0.8,8.4-1.4,12.6C257.8,530.4,258.5,528.2,258.3,527z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st392" d="M269.5,435.6c-1.4,2.9,0.7,7-2.6,9c-0.1-4.1,1-8.6,1.8-12.6C268.7,433.2,268.6,434.5,269.5,435.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st393" d="M269.5,435.6c-1.2-2.8-1.7-7.1,1.2-9.1c1.2,2.1-0.8,4.1-0.7,6.1C270.1,433.7,270,434.6,269.5,435.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st394" d="M270.2,420.1c0.3-2.5-2.3-7.2,0.7-8.4C270.6,413.6,272.1,420.1,270.2,420.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st395" d="M283.6,394.2c-0.2,0.4-0.4,0.8-0.7,1.3c-2.4-1.9-1-4.5-0.2-6.9c0.3,0,0.6,0,0.8,0   C283.4,390.4,282.4,392.4,283.6,394.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st396" d="M283.5,388.5c-0.3,0-0.6,0-0.8,0c-0.2-1.1-0.7-2.1-0.2-3.4C284,386,283.6,387.3,283.5,388.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st397" d="M266.2,449.5c-0.5-0.8-0.4-1.4,0.7-1.8C267.5,448.6,267,449.1,266.2,449.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st398" d="M283,397.9c0.8,0.6,0.7,1.5,0.5,2.5c-0.9-0.6-0.5-1.4-0.6-2C282.9,398.2,283,398.1,283,397.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st399" d="M265.8,454c0,0.3,0,0.7,0,1c-0.1,0-0.2,0-0.3,0c0-0.3,0-0.7,0-1C265.6,454,265.7,454,265.8,454z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st400" d="M264,318.8c1.1,3.2,3.9,6.2,2.6,9.6c-2.9-2.3-6.1-4.7-7.7-8c0.7-0.5,1.5-1,2.3-1.5c0.7,0.2,1.5,0.4,2.2,0.7   C263.6,319.4,263.8,319.1,264,318.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st365" d="M263.8,302.3c-0.6-0.6-1.2-1.2-1.9-1.9c-0.2-1.3,0.6-3-0.7-3.7C264,294,265.6,300.4,263.8,302.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st401" d="M278,139.3c-1.1,1-2.1,2.1-3.1,3c-1.8-0.3-1.1-1.4-1-2.2c0.7-0.5,1.3-1,2-1.5c0.4,0,0.9,0,1.3,0   C277.4,138.8,277.7,139,278,139.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st402" d="M246.3,304.3c-1.6-0.3-1.6-0.3-0.7-1.5C246.3,303.1,246.4,303.7,246.3,304.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st403" d="M253.3,306.1c-0.4,0.3-0.6,0.6-1,0.9C252.3,306,252.3,306,253.3,306.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st271" d="M247.6,311.3c-0.2-0.5-0.4-0.9-0.6-1.4c0.3-0.2,0.7-0.4,1-0.6C247.8,310,247.7,310.6,247.6,311.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st404" d="M330.1,228c0.2,2.1,0.8,4.3,0.4,6.3c-3,2.1-3.3-5.9-1.4-7.3C329.4,227.3,329.8,227.6,330.1,228z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st398" d="M334.9,202.5c1-2.9-1.6-6.2,0.7-8.7c1.3,0.1,0.5,7.5,0.1,8.8C335.4,202.5,335.2,202.5,334.9,202.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st405" d="M333.4,215.8c0.1,3.6,0.1,3.6-1.1,5.3c-1-1.9-0.1-3.6,0.4-5.3C333,215.8,333.2,215.8,333.4,215.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st406" d="M291.4,202.4c-0.1-0.6-0.1-1.2,0.7-1.4c0.7,0.5,1.5,0.9,1.8,2.1C292.8,202.9,292.1,202.6,291.4,202.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st407" d="M330.1,228c-0.3-0.3-0.7-0.7-1-1c1.2-1,1.2-1,2.8-1.1C331.2,226.7,330.7,227.3,330.1,228z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st408" d="M333.4,215.8c-0.2,0-0.5,0-0.7,0c0.1-0.6,0.1-1.3,0.2-2C334,214.3,334,214.3,333.4,215.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st409" d="M284.7,223.1c0.5,0.7,0.1,2.2-0.8,1.5C283.6,223.8,284,223.4,284.7,223.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st410" d="M299.9,191.5c0.8-0.6,1.5-0.5,1.9,0.5C300.9,192.2,300.9,192.2,299.9,191.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st411" d="M334.9,202.5c0.3,0,0.5,0,0.8,0.1c-0.1,0.6-0.2,1.2-0.4,1.9c-0.1,0-0.3,0-0.4,0   C334.9,203.7,334.9,203.1,334.9,202.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st412" d="M297.5,189.9c-0.1,0.5-0.4,0.7-0.9,0.5c0.1-0.2,0.2-0.4,0.4-0.6C297.1,189.8,297.3,189.9,297.5,189.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st413" d="M274.9,258.5c7.8,0.6,15.8,2.7,22,7.6C289.3,265.9,281.9,261.3,274.9,258.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st414" d="M279.4,254.7c0.9-0.6,16.4,3.1,21.6,7.1C300.1,264.8,282.5,256,279.4,254.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st413" d="M326.6,276.3c-4.6,2.1-8.4,5.5-12.9,4.2C316.8,276.9,321.4,276.5,326.6,276.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st415" d="M311.6,290.1c-0.7,0.9-1.3,1.8-2.2,3c-0.3-0.7-0.4-1.1-0.6-1.5c1.6-2.6,2-5.5,4.9-7.2   C313.4,286.8,311.9,287.9,311.6,290.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st416" d="M266,249.6c3.3,0.4,5.8,1.3,9.1,2.4c-3.4,1.1-6.1-1.1-9.4-1.1c-0.7,0-1.4,0.1-1.8-0.6   C264.5,250.1,265.5,250.6,266,249.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st417" d="M268.1,256c-0.4-0.1-0.8-0.3-1.5-0.5c0.6-0.5,1-0.8,1.5-1.1c2.8,0.5,5.6,1,8.4,1.5c-0.3,0.3-0.5,0.5-0.8,0.8   c-1.1-0.1-2.2-0.1-3.3-0.2C271.2,255.4,269.5,256.3,268.1,256z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st418" d="M302.5,285.3c1.3,2.1,3.1,3.9,3.6,6.6c-2.9,0-3-4-4.4-5.9C302,285.8,302.3,285.6,302.5,285.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st419" d="M295.1,253.5c-3.6,0.6-6.1-0.1-9.2-1.8C289.3,251.5,291.8,252.7,295.1,253.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st420" d="M306.8,278.2c1.1,0.8,1.7,1.7,1.3,3.3c-1.4-0.4-1.5-1.7-2.2-2.5C306.3,278.8,306.5,278.5,306.8,278.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st421" d="M302.5,285.3c-0.3,0.2-0.5,0.5-0.8,0.7c-0.8-1.1-1.6-2.1-2.5-3.2C300.9,283.2,300.9,283.2,302.5,285.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st422" d="M306.8,278.2c-0.3,0.3-0.6,0.5-0.8,0.8c-0.9-0.9-1.5-1.9-2-3C305.4,276.3,306.1,277.2,306.8,278.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st423" d="M275.8,256.7c0.3-0.3,0.5-0.5,0.8-0.8c1.1,0.3,2.1,0.6,3.2,0.9C278.3,257.2,277,257.7,275.8,256.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st424" d="M336.8,269.3c1.4,0,2.1,0,3.2,0C338.9,270.1,338.1,270,336.8,269.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st275" d="M270.2,256c0.8-0.1,1.5-0.3,2.2,0.4C271.7,256.5,270.8,256.8,270.2,256z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st425" d="M304,163.8c10.2,3.1,20,1.6,30-0.4c-8.4,8.1-24.4,5-34.2,0.3c0.2-0.2,0.5-0.4,0.7-0.6   c0.4,0.1,0.9,0.1,1.3,0.2C302.4,164.2,303.2,163.9,304,163.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st426" d="M336.1,162.5c-0.1-1.7,1.7-1.5,2.9-1.4C338.5,162.4,337.4,162.7,336.1,162.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st427" d="M291.8,555c2.9-0.2,6.1-1,8.3-0.1C296.9,557.2,293.8,557.4,291.8,555z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st428" d="M260.4,517.1c-1.8,1.5,0.4,4.1-1.3,5.6c-0.2-3.2,0.1-6.3,1.3-9.3C260.4,514.6,260.4,515.8,260.4,517.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st429" d="M266.5,347.5c-1.3-1.3-1.3-1.3-0.2-2.5C266.9,345.8,266.9,346.7,266.5,347.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st430" d="M260.1,511.7c-0.5-1.2-0.6-2.3,0-3.7C260.8,509.3,260.7,510.5,260.1,511.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st431" d="M263.3,336.5c0.2,0,0.4,0,0.6,0c0.1,0.9,0.3,1.7,0.4,2.5C262.8,339.6,263.4,337.3,263.3,336.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st432" d="M268.7,354.2c-0.8-0.9-1.4-1-0.8-2C269.1,352.5,268.7,353,268.7,354.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st433" d="M260.3,502.7c0,0.7,0.1,1.3,0.1,2c-0.2,0-0.3,0-0.5,0c0-0.7,0-1.3,0-2C260,502.7,260.1,502.7,260.3,502.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st434" d="M260.6,495.8c-0.1-1.2-0.1-1.8-0.2-2.6C261.6,494,261.2,494.6,260.6,495.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st431" d="M262.5,334.5c0.7,0.3,0.9,0.8,0.6,1.4C262.5,335.7,262.5,335.1,262.5,334.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st435" d="M308.6,99.4c1.3-0.1,2.6,0.2,3.7-0.7c2.1,0.6,3.2,3.2,4.5,4.7C314.6,105.3,314.2,99.2,308.6,99.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st436" d="M308.7,88.8c0.3-0.2,0.7-0.4,1-0.7c0.5,0.6,0.8,1.2,0.5,2C309.7,89.7,309.2,89.2,308.7,88.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st437" d="M249.5,145.9c-0.5-1.2-0.7-1.8-1-2.5C249.5,143.7,250.2,144.1,249.5,145.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st438" d="M241.6,227.8c-0.6,0.4-1,0.8-1.3,0.2C240.5,227.1,240.8,227.2,241.6,227.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st439" d="M241.2,224.6c-1.1,0.2-1.1,0.2-0.8-1.1C240.7,223.9,240.9,224.3,241.2,224.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st440" d="M300.5,163.1c-0.2,0.2-0.5,0.4-0.7,0.6c-1.2-0.4-2.4-0.8-3.6-1.3c0.3-0.3,0.6-0.6,0.9-0.9   C298.2,162.1,299.3,162.6,300.5,163.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st441" d="M291.2,159.5c-1,0-1.7,0-2.5,0C289.7,158.3,289.7,158.3,291.2,159.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st442" d="M297,161.6c-0.3,0.3-0.6,0.6-0.9,0.9c-0.8-0.4-1.7-0.6-2-1.8C295.3,160.9,296.2,160.9,297,161.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st440" d="M304,163.8c-0.8,0.1-1.7,0.4-2.2-0.5C302.6,163.1,303.4,163.2,304,163.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st440" d="M300.4,163.9c0.2,0.1,0.5,0.3,0.7,0.4C300.9,164.2,300.6,164.1,300.4,163.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st443" d="M289.1,185.7c-1.4-0.9-3.1-1.6-4.2-3.4c2.2-0.5,3.3,1.7,5.1,2.6C289.7,185.2,289.4,185.4,289.1,185.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st444" d="M288.1,198.3c-1.5-0.5-2.8-1-3.6-2.7C286,195.7,287.8,196.7,288.1,198.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st445" d="M289.1,185.7c0.3-0.3,0.6-0.5,0.9-0.8c0.9,0.7,1.7,1.3,2.8,2.2C291,187,291,187,289.1,185.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st446" d="M296.8,62.9c0.3,1.2,0.6,2.5,0.8,3.6c3,2.5,6.5,3,9.8,4.7c0,0.3,0,0.6,0,0.9c-5.4-0.4-14.4-3.5-11.8-10.2   C296.2,62.3,296.5,62.6,296.8,62.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st447" d="M301.8,74.7c-0.9-0.9-1.7-1.8-2.2-3.3c1.8,0.1,2.3,1.5,3,2.4C302.3,74.2,302.1,74.4,301.8,74.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st448" d="M307.4,72.1c0-0.3,0-0.6,0-0.9c1.1,0.1,2.1,0.4,2.8,1.4C309.2,73,308.8,72.9,307.4,72.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st449" d="M304,76c0.7,1,1.4,1.9,2.3,3.1C304.7,79,303.9,77.9,304,76z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st436" d="M308.2,84.5c0.5,0.7,1,1.4,1.6,2.2c-1.6,0.3-1.8-0.8-2.2-1.6C307.7,84.9,307.9,84.7,308.2,84.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st450" d="M304,76c0,0.3,0,0.6-0.1,0.8c-0.7-0.7-1.4-1.4-2.1-2.2c0.3-0.3,0.5-0.5,0.8-0.8   C303.1,74.6,303.5,75.3,304,76z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st451" d="M308.2,84.5c-0.2,0.2-0.4,0.4-0.6,0.6c-0.4-0.5-0.8-1.1-1.3-1.8C307.7,82.7,307.7,83.9,308.2,84.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st446" d="M294.1,60.6c0.2,0.2,0.5,0.5,0.7,0.7c-0.2,0.3-0.4,0.6-0.6,0.9C294.2,61.7,294.1,61.2,294.1,60.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st452" d="M307.3,568.1c0.1,0.4,0.1,0.8,0.2,1.3c-0.8,1.3-2,1.5-3.8,2.1C304.8,569.4,306.3,569,307.3,568.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st453" d="M266,249.6c-2.1,1.7-5.1,0.5-7.5-0.5C261.2,248.3,263.3,249.4,266,249.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st454" d="M256.7,266.7c1.4-1.7,2.8-0.8,4-0.6C259.2,266.4,258.4,266.5,256.7,266.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st455" d="M358,295.2c-0.3,0-0.5,0-0.8,0c-0.7-2.1-0.4-4.2,0.1-6.3C358.8,290.5,357.7,293.1,358,295.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st456" d="M261.8,20.9c2-0.8,4.3-2.5,6.3-0.8c-0.4,0.4-0.8,0.8-1.2,1.3c-0.2-0.3-0.3-0.5-0.6-0.9   c-8.7,6.5-5.1,16.7-5.3,25.6c-0.1,0-0.2,0-0.3,0C259.8,38,255.6,27.7,261.8,20.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st457" d="M260.4,36.7c-0.8-6.3,0.9-12.1,5.9-16.2c0.2,0.4,0.4,0.6,0.6,0.9c-2.8,2.7-5,6.5-5.2,10.5   C260.2,33.2,262,35.5,260.4,36.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st458" d="M260.4,36.7c1.6-1.2-0.2-3.5,1.3-4.9c-0.4,5.3,0.7,9.7,1.5,14.9c-2.2-1.4-0.7-2.7-2.1-4.4   C261.3,40.4,260.3,38.6,260.4,36.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st459" d="M263.1,53c-1.2,0.9-0.4,2.9-0.7,4.2c-0.7-2.1-1.8-4.2-2.2-6.8c0.6,0.4,0.9,0.5,1.4,0.8   c-0.2-1.3-0.4-2.5-0.6-4.1c1.9,1.6,1.5,3.6,2.2,5C263.2,52.5,263.2,52.7,263.1,53z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st321" d="M266.8,56.3c1,2.2,1.4,4.6,1.5,7c-0.3,0.3-0.5,0.5-0.8,0.8c-0.3-2.1-0.9-4.2-1.4-6.3   C266.8,57.6,266.7,56.9,266.8,56.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st321" d="M266.1,53.4c0.2,0.5,0.3,1.1,0.5,1.6C265.9,54.6,266,54,266.1,53.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st321" d="M266,56.5c-0.2-0.2-0.4-0.5-0.7-0.7C265.6,56,265.8,56.2,266,56.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st321" d="M265.3,54.3c-0.2-0.2-0.4-0.5-0.7-0.7C264.9,53.9,265.1,54.1,265.3,54.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st460" d="M278,139.3c-0.3-0.3-0.6-0.5-0.9-0.8c0.6-0.7,1.2-0.8,2.4-0.4C278.9,138.6,278.4,139,278,139.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st461" d="M309.6,298c2.5,0.3,5.6-0.9,7.7,0.7c-2.9,0.3-5.9,0.7-8.8,1C307.9,298.4,309.4,298.7,309.6,298z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st297" d="M359.4,298c0.1,0.1,0.2,0.2,0.3,0.3C359.4,298.3,359.4,298.2,359.4,298C359.4,297.9,359.4,298,359.4,298z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st462" d="M286.4,234.1c0-0.6,0-1.3,0-2.7c0.7,1.2,1.1,1.7,1.6,2.5C287.2,234,286.8,234,286.4,234.1L286.4,234.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st463" d="M286.1,228.6c0.3,0.5,0.9,0.9,0.1,1.2C285.8,229.3,285.4,229.1,286.1,228.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st464" d="M308.2,20c0.5,0.2,1,0.5,1.5,0.7c0,1.5,0.4,2.6-0.5,4c-14.8,1.4-18.1,3.3-32-5.4c0.5-0.2,1-0.5,1.7-0.8   c1.3,1.1,3.2,0.3,4.7,1.3c-0.4,0.1-0.8,0.2-1.7,0.4c2.4,0.4,4.7,2.8,6.3,1.2c3.6,0.7,7.2,2.6,10.9,1.4c2.5,1.5,7,0.9,9.7-1.1   c-0.8-0.9-1.8-0.2-2.8-0.5l0,0c-0.4-1.4-2,0-2.6-1.3C305.1,20,306.6,20,308.2,20z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st465" d="M280.7,15c8.2-1.1,15.6,3.7,23.5,3.8c-1.9,0.4-3.5,0.7-5.2,1.1h-0.1c-5.4-1.3-12.4-2.8-18.2-2.6   C279.6,16.3,280.4,15.7,280.7,15z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st466" d="M299.1,19.9c1.6-0.3,3.3-0.7,5.2-1.1c-2.2-1.1-4.6,0.7-6.6-1c0.7-0.3,1.8,0.4,2.2-0.8v0.1   c2.5-0.2,5.4,1.5,7.6,0.1c1.3-0.1,2.2,0.4,3,1.4c-0.7,0.5-1.4,0.9-2.1,1.4c-1.6,0-3.1,0-4.7,0c0.6,1.3,2.2-0.1,2.6,1.3   c-1.9,0.2-4.5,0.1-5.6,2.1c-0.6,0.2-1,0-1.3-0.6c0.8-0.2,0.5-0.9,0.6-1.5c0.5-0.1,1-0.1,1.7-0.2C300.5,20.7,299.8,20.3,299.1,19.9z   " />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st467" d="M288.3,21.4c-1.7,1.5-3.9-0.9-6.3-1.2c0.9-0.2,1.3-0.3,1.7-0.4C285.2,20.3,286.7,20.9,288.3,21.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st464" d="M299.8,21.4c-0.1,0.5,0.2,1.2-0.6,1.5c-0.6-0.4-1.2-0.8-2.1-1.4C298.1,21.4,299,21.4,299.8,21.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st466" d="M296.8,19.3c0.8-0.1,1.7-0.4,2.2,0.6C298.3,19.7,297.5,19.5,296.8,19.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st468" d="M290.7,36.7c-2.8-1.2-5.8-1.4-8.6-2.7c2.6,0,5.3,1.6,7.8,0c1.1-0.3,2,1.3,3.2,0.3c-1.6-0.8-3.2-1.6-4.9-2.5   c8.6-0.9,4.1,3.3,10.2,2.9C295.8,35.3,293.4,36.9,290.7,36.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st469" d="M288.3,31.9c1.6,0.8,3.2,1.6,4.9,2.5c-1.2,1-2.1-0.6-3.2-0.3c-2.1-0.9-4.2-1.9-6.4-2.8   C285.1,30.9,286.7,31.5,288.3,31.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st470" d="M283.6,55.7c-2-0.3-3.4-1.7-4.9-2.8c0.4-0.2,0.9-0.4,1.3-0.6c0.1,0.2,0.1,0.4,0.4,0.3   c-0.1-0.1-0.2-0.3-0.4-0.4c0-0.2,0-0.5,0.1-0.7c0.4,0,0.8,0,1.2,0.1c0.1,0.1,0.2,0.3,0.2,0.5c0.8,0.9,1.4,1.9,2.1,2.8   C283.6,55.2,283.6,55.4,283.6,55.7z" />
+	<path d="M273.1,41.5c-0.1-0.6-1.3-1.1-0.1-1.9c0.3,0.2,0.5,0.5,0.8,0.7l0,0c0.9,0.9,2.1,1.7,3.2,2.2c-0.4,0.2-0.7,0.3-1.1,0.5   C274.9,42.5,274,42,273.1,41.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st471" d="M275.8,43c1.5-0.9,3.3-0.9,4.6,0.6C278.9,43.8,276.8,44.3,275.8,43z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st471" d="M279.4,41.1c0.7-0.2,1.6,0.3,2-0.7c0.6,0,1.1,0,1.7,0c-0.3,0.8-0.6,1.7-1,2.5c-0.2,0.1-0.4,0.2-0.5,0.3   C281.7,41.8,280.2,41.8,279.4,41.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st472" d="M280.1,51.5c0,0.2,0,0.5-0.1,0.7c-0.7,0.3-1.3,0.7-2.1,0.7l0,0c-0.2-0.2-0.5-0.5-0.7-0.7l0,0   c0.7-0.4,1.5-0.6,2-1.3C279.5,51.1,279.8,51.3,280.1,51.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st471" d="M273.7,40.3c-0.9-0.6-1.1-1.5-1.5-2.4c1-0.4,1.2,0.4,1.6,0.8C273.8,39.2,273.7,39.8,273.7,40.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st471" d="M277.3,40.4c0.5,0.2,1,0.4,1.5,0.5C278.2,41,277.6,41.1,277.3,40.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st471" d="M274.4,41c-0.2-0.2-0.5-0.5-0.7-0.7C273.9,40.6,274.2,40.8,274.4,41z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st471" d="M275.9,39.8c0.3,0.2,0.5,0.3,0.8,0.5C276.4,40.1,276.1,39.9,275.9,39.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st471" d="M274.5,39c0.3,0.2,0.5,0.3,0.8,0.5C275,39.4,274.7,39.2,274.5,39z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st472" d="M281.3,51.6c-0.2,0-0.4,0-0.6,0c0-0.3,0.1-0.5,0.1-0.8C281,51,281.2,51.3,281.3,51.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st471" d="M276.5,42.4c-0.3-0.2-0.6-0.4-0.9-0.6C276,42,276.2,42.2,276.5,42.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st471" d="M275.1,41.5c-0.2-0.2-0.5-0.3-0.7-0.5C274.6,41.2,274.9,41.4,275.1,41.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st473" d="M282,42.8c0.3-0.8,0.6-1.7,1-2.5c1.8-1.3,4-3.2,6.2-1.5c0.7,1.6,2.4-0.4,3.5-0.7l0,0c1.4,1.1,2.8,1.1,4.2,0   l0,0c1.8,0.5,4.5-1.8,5.7,0.1c-1.6,1.2-3.2,2.4-4.4,4.1h0.1c-1.8,0.3-3.4-0.2-5.2,0.3c1.5,2.1,4.1,0.2,5.3,1.9   c-6.6,5-9.5-13.1-15.6,0.7C281.8,44.6,282.3,43.6,282,42.8z M293.8,40.4c1.1,0.7,2.2,0.8,4,0C296,40.4,294.9,40.4,293.8,40.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st474" d="M283.6,55.7c0-0.2,0-0.5,0-0.7c1.1,1.1,2,2.3,2.7,4c-2.6-0.2-4.6-1-6.4-2.4   C280.5,54.6,283.2,57.8,283.6,55.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st475" d="M282.7,45.2c0.8-1.6,1.1-3.4,2.9-4.2c0.3,0.3,0.5,0.5,0.8,0.8c-2,2.2-3,4.7-3,7.6c-0.1,0-0.3,0-0.4,0   C282.9,48,282.8,46.6,282.7,45.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st476" d="M283,49.4c0.1,0,0.3,0,0.4,0c0.2,0.2,0.5,0.4,0.7,0.6c0.3,0,0.6,0,0.9,0l0,0c-0.6,2.4,1.6,3.8,2.9,5.6   c-0.3,0.3-0.6,0.6-0.9,0.9c-1.9-1.4-2.6-3.8-4.2-5.6C282.9,50.5,282.5,49.7,283,49.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st477" d="M282.8,49.9c0,0.4,0,0.7,0,1.1C282.3,50.6,282.2,50.3,282.8,49.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st472" d="M282.2,52.9c-0.2-0.3-0.4-0.5-0.7-0.8C281.8,52.3,282,52.6,282.2,52.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st477" d="M283.6,52.2c0.2,0.2,0.4,0.5,0.6,0.7C284,52.7,283.8,52.5,283.6,52.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st478" d="M268.2,71.8c0,4-0.1,8,0,12.1l-0.2-0.1c-0.2,0.5-0.4,0.9-0.7,1.4c-0.2,0-0.3,0-0.5,0   c1.1-4.9-0.4-10.5,1.1-15.3C268.1,70.5,268.1,71.2,268.2,71.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st479" d="M268,69.8c-0.8,1.2-0.5,2.8-0.7,4.2c-0.8-3.2-1.1-8,0-11.1C267.6,65.2,267.8,67.5,268,69.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st480" d="M267.3,77.4c-0.1,1.9,0.6,4-0.5,5.7C266.8,81.2,266.4,79.2,267.3,77.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st480" d="M266.9,85.2c0.2,0,0.3,0,0.5,0c-0.1,0.2-0.3,0.4-0.4,0.6C266.8,85.6,266.8,85.4,266.9,85.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st459" d="M263.7,55.8c-0.2-0.3-0.3-0.6-0.5-0.8C263.4,55.3,263.6,55.5,263.7,55.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st473" d="M302.6,38.3c-0.8-1.7-2.9-0.2-4.3-0.1c-0.5-0.9-0.9-0.8-1.4,0l0,0c-1.4,0-2.8,0-4.2,0l0,0   c-0.6-1.3-2.3-0.4-3.5-0.8c2-1.3,14.8-2.7,14.4-4.9c-3,0.5-5.9,0.9-8.8,1.3c0-2-2.8-1.6-4.2-2.2c2.6-1.1,5.8-1.4,8.7-2.2   c0-0.1,0-0.3-0.1-0.4c-3.4,0-6.7-1.5-10.1-2.1c-0.6-1-1.8-1-2.7-1.5c0.5-0.2,0.9-0.4,1.4-0.7c3.6,1.1,7.2,2.2,11,1.4   c1,0.3,2.2-0.4,3,0.7c-0.8,0.1-1.6,0.2-2.4,0.3c0,0.2,0,0.3-0.1,0.5c3.5,2.5,6.6,0.8,10.2-0.6l0,0c0,1,0,2,0,3   c-0.7,0.5-1.3,0.9-1.8,1.3c0.2,1.2-1.3,2.1-0.3,3.5C305.9,35.9,304.2,37.1,302.6,38.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st481" d="M291.1,37.6c0.7-0.1,1.3-0.2,1.6,0.6c-1.1,0.3-2.8,2.3-3.5,0.7C289.8,38.4,290.5,38,291.1,37.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st482" d="M299.7,17.1c-0.4,1.2-1.4,0.5-2.2,0.8c-0.5-0.2-1-0.5-1.5-0.7c1.4,0,1.7-1.2,2.2-2.1c3,0.6,6,1.8,9,2.1   C305.7,18.6,299.2,16.7,299.7,17.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st483" d="M300.5,15.6c-1.5-0.5-3.5-0.4-4.4-1.9c0.7,0,1.4-0.1,2.2-0.1c0.9,1.3,2.7,0.4,4.2,0.5c1,0.5,1.9,1.1,2.9,1.6   c-1.1,0-2.2,0.1-3.2-0.5C301.7,14.9,300.9,14.8,300.5,15.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st359" d="M251.8,322.6c-0.1-0.3-0.3-0.6-0.4-0.9C251.5,321.9,251.7,322.3,251.8,322.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st278" d="M261.1,21.5c-0.2,0.2-0.4,0.4-0.6,0.6C260.7,21.9,260.9,21.7,261.1,21.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st278" d="M261.8,20.9c-0.2,0.2-0.4,0.3-0.5,0.5C261.4,21.2,261.6,21,261.8,20.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st484" d="M268,69.8c-0.2-1.9-0.3-3.8-0.5-5.7c0.3-0.3,0.5-0.5,0.8-0.8c0.9,2.8,0.5,5.6,0.5,8.5c-0.1,0-0.4,0.1-0.5,0   C268.1,71.2,268.1,70.5,268,69.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st485" d="M304,11.4c-3.5-2.3-7.9-1-11.9-1.4c0-0.2-0.1-0.4-0.1-0.6c6.6,0.1,14.6-1.1,20.4,2.1   c-0.6,0.1-1.2,0.1-2.2,0.3c1.6,0.8,2.6,1.7,4.4,1.7c-1-0.9-1.6-1.4-2.3-2c0.6,0,1.3,0,1.9,0c1.5,1.2,3.1,2.3,4.7,3.4   c-0.9-0.2-1.8-0.4-2.9-0.6c0.3,0.6,0.4,0.9,0.5,1.3C312.3,14.5,308.3,11.7,304,11.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st486" d="M297.7,9.3c-1.9,0-3.8,0.1-5.7,0.1c-0.6-0.4-1.1-0.8-1.7-1.2c0.7-0.6,1.8,0.2,2.3-0.9c2-0.1,4.1-0.5,5.7,1.3   C298.1,8.9,297.9,9.1,297.7,9.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st486" d="M292,9.4c0,0.2,0,0.4,0.1,0.6c-1,0-2,0-3.4,0C289.9,9.1,291,9.5,292,9.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st487" d="M305.4,15.7c-1-0.5-2-1.1-2.9-1.6c-1.4-0.1-3.2,0.8-4.2-0.5l0,0c1.3,0,2.6,0.1,3.6-0.9c0.2,0,0.4,0.1,0.6,0   c1.3,0.6,2.4,1.4,3.6,2.1c0,0.2,0,0.5,0.1,0.7C305.9,15.7,305.6,15.7,305.4,15.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st488" d="M303.9,13.6c-0.5-0.3-1-0.5-1.5-0.8c0.5-0.5,1-0.9,1.5-1.4c1,0.2,2-0.3,2.9,0.5c-0.3,0.3-0.6,0.6-0.8,0.9   C305.3,13,304.4,12.7,303.9,13.6L303.9,13.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st488" d="M301.9,12.8c-1,1-2.3,0.9-3.6,0.9c0-0.2,0-0.4-0.1-0.6c0.5-0.2,1.6,0,0.9-1.3   C300.3,11.5,301.1,12.1,301.9,12.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st489" d="M268.2,83.9c0-0.5,0-0.9,0-1.4c0.7,0.2,0.7,0.8,0.6,1.4C268.6,83.9,268.3,83.9,268.2,83.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st490" d="M289.2,26.9c2.8,0.7,5.6,1.4,8.4,2.1c0,0.3,0.1,0.5,0.1,0.8c-1.6,0.4-3.3,0.8-4.9,1.2   c-2.2-0.9-4.1-1.5-6.4-1.5c-0.5-0.9-1.4-0.3-2.1-0.6c-0.5-0.8-0.9-0.8-1.4,0c-0.2,0-0.5,0-0.7,0c-0.3-0.7-0.8-0.7-1.4-0.6l0,0   c-0.2-0.8-0.8-0.7-1.4-0.7c-0.4-1.1-1.6-0.6-2.3-1.3c-0.5,0-0.8-0.5-1.2-0.8l0,0c-0.3-0.2-0.5-0.4-0.8-0.7l0,0   c-0.2-0.5-0.5-1.1-0.7-1.6l0,0c0.5,0,0.9,0.1,1.4,0.1c0.3,0.2,0.6,0.4,0.8,0.6l0,0c0.2,0.8,0.8,0.8,1.4,0.7l0,0   c0.2,0.7,0.8,0.7,1.4,0.7l0,0c0.2,0.8,0.8,0.7,1.4,0.7c0.3,0.8,0.9,0.7,1.6,0.6c0.2-0.1,0.4,0,0.5,0.2c0.5,1.1,1.9,0.3,2.8,0.8   C286.5,28.9,289.4,28.6,289.2,26.9L289.2,26.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st491" d="M286.5,25.4c0.9,0.5,2.1,0.5,2.8,1.5c-2.7-0.3-5.2-1.1-7.7-2.1C282.4,23.3,285,25.4,286.5,25.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st492" d="M278,21.3c0.8,0.3,1.7,0.6,2.6,0.9c0,0.7,0.1,1.4,0.1,2.1c-1.3-0.7-2.6-1.2-3.7-2.2c-0.2,0-0.3-0.1-0.4-0.2   C277.1,21.7,277.5,21.5,278,21.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st493" d="M285.6,26.4c1.2,0.2,2.4,0.4,3.6,0.6c0,0.9-0.4,1.5-1.4,1.4c-0.9-1-2.3-0.3-3.4-0.7   c-0.1-0.2-0.1-0.4-0.3-0.5C284.6,26.8,285.1,26.6,285.6,26.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st494" d="M278,21.3c-0.5,0.2-0.9,0.4-1.4,0.6c-0.3-0.2-0.6-0.3-0.9-0.5c0.1-0.4,0.2-0.8,0.3-1.2   C276.7,20.5,277.3,20.9,278,21.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st364" d="M275.8,23.5c-0.5,0-0.9-0.1-1.4-0.1C275,22.6,275,22.6,275.8,23.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st364" d="M278,24.8c-0.6,0-1.2,0.1-1.4-0.7C277,24.3,277.5,24.6,278,24.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st364" d="M279.4,25.5c-0.6,0-1.2,0-1.4-0.7C278.4,25.1,278.9,25.3,279.4,25.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st364" d="M280.8,26.2c-0.6,0-1.2,0.1-1.4-0.7C279.8,25.8,280.3,26,280.8,26.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st364" d="M282.3,26.9c-0.6,0.1-1.3,0.2-1.6-0.6C281.3,26.4,281.8,26.6,282.3,26.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st364" d="M284.2,27c0.1,0.2,0.2,0.3,0.3,0.5c-0.6,0.1-1.2,0.2-1.5-0.6C283.3,27,283.7,27,284.2,27z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st364" d="M276.6,24.1c-0.3-0.2-0.5-0.4-0.8-0.6C276.1,23.7,276.3,23.9,276.6,24.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st494" d="M277,22.1c0.3,0.2,0.6,0.4,0.9,0.7C277.6,22.6,277.3,22.4,277,22.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st262" d="M327.8,15.8c0,0.2,0,0.4,0,0.7c-0.1,0.3-0.2,0.6-0.4,1.1c-1.2-1-2-1.7-3-2.5c-0.3,0.2-0.6,0.5-0.9,0.7l0,0   c-0.5-2-4.9-5.8-6.3-3.3c-2.1-0.8-3.9-2.6-6.3-2.2c-2.2-1.6-5.7-1-8.4-1.6c-0.2-0.4-0.5-0.8-0.7-1.2c1.8-0.2,3.7-0.1,5.5,0   c1.3,1.2,3,0.6,4.3-0.1c1.9,0.7,3.8,1.5,5.6,2.2c0.7,1.4,2-0.5,3,0.6C323.2,11.4,324.9,14.7,327.8,15.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st495" d="M302.6,8.6c0.9,0.1,1.8,0.2,2.7,0.2c0.1,0.2,0.1,0.4,0,0.5c-2.5,0-5-0.1-7.6-0.1c0.2-0.2,0.4-0.4,0.6-0.6   C299.7,8.6,301.1,8.6,302.6,8.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st480" d="M267.4,85.2c0.2-0.5,0.4-0.9,0.7-1.4c0,0.5-0.1,0.9-0.1,1.4C267.8,85.2,267.5,85.2,267.4,85.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st496" d="M286.5,25.4c-0.9-0.3-1.9-0.5-2.8-0.8c0.4-0.4,0.9-0.8,1.3-1.2c1,0.4,1.9,0.9,2.9,1.3   C287.4,25,286.9,25.2,286.5,25.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st469" d="M284.3,29c0.9,0.2,1.8,0.6,2.8,0.8c0.1,0.2,0.1,0.4,0.1,0.7c-2,0.2-4.1,0-5.7-1.3   C282.4,29,283.3,29,284.3,29z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st497" d="M285.1,30.5c0.7,0,1.3-0.1,2-0.1c0.8,0.7,1.8,1,2.8,1.4c-1.6,0.3-3.2-0.3-4.8-0.7   C285,30.9,285,30.7,285.1,30.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st364" d="M278,26.9c0.6,0,1.1,0,1.3,0.7C278.9,27.4,278.4,27.2,278,26.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st364" d="M279.3,27.7c0.6,0,1.2-0.1,1.4,0.7C280.3,28.2,279.8,27.9,279.3,27.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st364" d="M282.2,29c-0.2,0-0.5,0-0.7,0.1c-0.2-0.2-0.5-0.5-0.7-0.7C281.3,28.3,281.9,28.3,282.2,29z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st364" d="M277,26.3c0.3,0.2,0.6,0.4,0.9,0.6C277.6,26.7,277.3,26.5,277,26.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st364" d="M275.8,25.6c0.2,0.2,0.5,0.4,0.7,0.5C276.3,25.9,276,25.7,275.8,25.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st364" d="M275,24.9c0.3,0.2,0.5,0.4,0.8,0.7C275.6,25.4,275.3,25.1,275,24.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st498" d="M307.3,7.3c-1.1-0.1-2.2-0.1-3.2-0.2c1.6-0.8,2.7-0.8,4,0.1C307.8,7.3,307.6,7.3,307.3,7.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st499" d="M307.3,7.3c1,0.1,2.2-0.6,2.9,0.6C309.2,8,308.1,8.2,307.3,7.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st500" d="M278,55c0.2-0.2,0.4-0.4,0.6-0.6c0.1,0.2,0.2,0.3,0.3,0.5C278.6,54.9,278.3,55,278,55z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st329" d="M277.2,52.2c0.2,0.2,0.5,0.5,0.7,0.7C277.7,52.7,277.5,52.4,277.2,52.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st501" d="M284.1,50c-0.2-0.2-0.5-0.4-0.7-0.6c0.1-2.9,1-5.5,3-7.6c2.3,0.5,3.6,2.3,5.3,3.5c0.5,2.5,0.5,2.5-0.2,4.7   c0.9,0.7,1.8,1.3,2.8,2.1c-0.6,1.5-0.9,3-2.9,2.9c-0.6-1.7-1.1-3.5-1.7-5.5c0.4-0.6,0.9-1.3,1.4-2.1c-0.5-0.6-0.9-1.1-1.4-1.7   c-0.9,1.2-1.7,2.2-2.4,3.1c-0.4,2.9,2.9,4.3,2.4,6.8c-0.6,0-1.2,0-1.9,0c-0.7-0.9-1.5-1.8-2.2-2.8c-0.3-0.9,0.3-2.1-0.6-2.8l0,0   C284.7,49.5,284.4,49.7,284.1,50z M285.2,48.1c1.3-0.9,2.6-1.8,3.3-3.4c-0.4-0.3-0.8-0.6-1.1-0.8C285.9,45,285.6,46.5,285.2,48.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st502" d="M326.1,44.4c-1.9,0.4-3.2,0-3.7-1.8c-1-0.4-2.3,1.2-3.2-0.7c2.6-1.5,4.9-3.8,8.6-2.9   C326.6,41.3,325.3,41,326.1,44.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st503" d="M306.1,15.6c0-0.2,0-0.5-0.1-0.7c2.1-0.1,3.7,1.3,5.6,0.1c1.8,1,3.9,1.6,5.6,2.8c0,0.2,0,0.4,0,0.6   c-0.6,0.5-1.3,1-2.1,1.6c-0.4-0.5-0.8-0.9-1.3-1.4c-1.1,0-2.4,0-3.6,0c-1-1.5-2.6-1.4-4.2-1.5c0.3-0.4,0.7-0.7,1-1.2   C306.7,15.8,306.4,15.7,306.1,15.6z M309.4,16.9c1.7,0,2.6,1.3,4.1,0.6C312.3,16.7,311.3,16,309.4,16.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st504" d="M329.9,37.1c-2.6,2.1-6.6-2.9-9.8-0.5c-0.9,0.4-1.8,1.2-3,0.5c1.1-2.1,3.2-2.2,4.9-3   C327.7,35,328.1,35.1,329.9,37.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st505" d="M301.8,26.9c-0.8-1.2-2-0.4-3-0.7c3.3-1,6.6-2.4,10.3-1.5c0.3-0.5,0.4-0.9,0.5-1.2c0.1,1.1,1.4,3-0.2,3.4   l0,0c-0.2-0.4-0.3-0.8-0.5-1.3c-2.5-0.3-4.1,1.5-7.1,2.5c1.6,0.1,2.5,0.2,3.4,0.2c-1.5,1.2-2.9,0.5-4.4-0.2   C301.3,27.8,301.5,27.3,301.8,26.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st506" d="M289.7,55.7c0.5-2.6-2.7-3.9-2.4-6.8c0.7-0.9,1.4-1.9,2.4-3.1c0.5,0.6,0.9,1.1,1.4,1.7   c-0.6,0.8-1.1,1.6-1.4,2.1c0.6,2,1.2,3.7,1.7,5.5C290.8,55.2,290.3,55.4,289.7,55.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st507" d="M316.6,15.6c-0.1-0.3-0.3-0.6-0.5-1.3c1.9,0.3,3.2,0.6,4.8,1.3c0,0.9,0,1.8,0,2.7c-1-0.2-1.9-0.4-2.9-0.6   l0,0C318.2,16.7,317.2,16.4,316.6,15.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st508" d="M298.3,44.5c-1.2-1.7-3.7,0.2-5.3-1.9c1.4-0.4,2.6-0.2,3.9-0.2c0.7,0.7,0.8,0.7,1.3-0.1h-0.1   c0.4,0.1,0.8,0.2,1.2,0.3C299.6,43.7,299.2,44.3,298.3,44.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st466" d="M310.3,25.6c-0.6-1.6-0.7-3.2-0.6-4.9c0.3-0.1,0.6-0.2,0.9-0.4C311,23,311,23.2,310.3,25.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st507" d="M317.2,18.5c0-0.2,0-0.4,0-0.6c0.2,0,0.5,0,0.7,0l0,0C317.7,18,317.5,18.2,317.2,18.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st509" d="M320.9,15.7c-2.5-0.8-4.5-2.7-6.6-4.2c2.4-0.2,4.4,1.9,6.5,2.8l0,0c0.2,0.5,0.4,1,0.6,1.5   C321.2,15.8,321,15.7,320.9,15.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st510" d="M320.9,15.7c0.2,0,0.4,0,0.5,0c0.5,0.5,1,1,1.9,1.9c-1.2-0.1-1.8-0.1-2.4-0.1   C320.8,17,320.9,16.3,320.9,15.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st262" d="M325,17.1c0.1,0.1,0.3,0.2,0.4,0.4C325.1,17.5,325.1,17.3,325,17.1L325,17.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st262" d="M324.3,16.4c0.2,0.2,0.5,0.5,0.7,0.7l0,0C324.8,16.9,324.5,16.7,324.3,16.4L324.3,16.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st262" d="M323.6,15.7c0.2,0.2,0.5,0.5,0.7,0.7l0,0C324.1,16.2,323.8,15.9,323.6,15.7L323.6,15.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st509" d="M320.8,14.3c0.1-0.1,0.2-0.2,0.4-0.4C321.2,14.2,321,14.2,320.8,14.3L320.8,14.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st511" d="M300.4,23.4c1.2-2,3.7-1.9,5.6-2.1l0,0c0.4,0.9,0.9,0.8,1.4,0.1c0.4,0,0.9-0.3,1.4,0.4   C306.3,23.9,303.3,23.6,300.4,23.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st466" d="M307.5,21.4c-0.5,0.7-1,0.8-1.4-0.1C306.5,21.3,307,21.4,307.5,21.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st512" d="M294.8,33.9c2.9-0.4,5.8-0.9,8.8-1.3C303.8,34.6,295.6,35.7,294.8,33.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st513" d="M290,31.8c-1-0.4-2-0.7-2.8-1.4l0,0c1.9-0.1,3.9-0.1,5.7,0.7c-0.7,0.3-1.6-0.2-2.2,0.6   C290.4,31.7,290.2,31.8,290,31.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st472" d="M280.1,52.2c0.1,0.1,0.2,0.3,0.4,0.4C280.2,52.6,280.1,52.5,280.1,52.2C280,52.2,280.1,52.2,280.1,52.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st514" d="M293.8,40.4c1.1,0,2.2,0,4,0C296,41.2,294.9,41.1,293.8,40.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st481" d="M292.7,38.2c1.4,0,2.8,0,4.2,0C295.5,39.2,294.1,39.3,292.7,38.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st481" d="M296.9,38.2c0.5-0.8,0.9-0.9,1.4,0C297.8,38.2,297.4,38.2,296.9,38.2z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st259" d="M298.3,42.3c-0.6,0.8-0.7,0.9-1.3,0.1C297.4,42.4,297.8,42.4,298.3,42.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st477" d="M285,50.1c1,0.8,0.3,1.9,0.6,2.8C284.4,52.2,285.2,51,285,50.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st477" d="M284.1,50c0.3-0.3,0.6-0.6,0.9,0C284.7,50.1,284.4,50.1,284.1,50z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st515" d="M305.3,28.5c-0.9-0.1-1.7-0.1-3.4-0.2c3-1,4.6-2.8,7.1-2.5c0.2,0.4,0.3,0.8,0.5,1.3   C308.2,27.5,306.8,28,305.3,28.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st516" d="M301.8,26.9c-0.3,0.5-0.6,0.9-0.9,1.4c-0.5-0.2-1.1-0.4-1.6-0.6c0-0.2,0-0.3,0.1-0.5   C300.2,27.1,301,27,301.8,26.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st517" d="M297.7,29.8c0-0.3-0.1-0.5-0.1-0.8c0.6,0,1.1,0,1.7,0c0,0.1,0,0.3,0.1,0.4C298.8,29.6,298.3,29.7,297.7,29.8   z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st518" d="M306.1,15.6c0.3,0.1,0.6,0.2,1,0.3c-0.4,0.4-0.7,0.8-1,1.2c-1.8-0.5-3.7-1-5.5-1.5c0.4-0.8,1.2-0.7,1.7-0.4   C303.4,15.9,304.8,15.8,306.1,15.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st466" d="M299.7,17.1c-0.3-0.1-0.6-0.1-0.2,0C299.2,16.9,299.4,17,299.7,17.1L299.7,17.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st519" d="M318,17.8c-3.8-0.9-7.1-4.5-11.3-4.3l0,0c-0.2-0.2-0.5-0.5-0.7-0.7c0.3-0.3,0.6-0.6,0.8-0.9   C310.2,14,316.7,13.9,318,17.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st520" d="M305.3,9.3c0-0.2,0-0.4,0-0.5c1.8,0.5,4.3-0.1,5.7,1.3c0,0.2,0,0.4,0.1,0.5C309.1,10.3,307.2,10,305.3,9.3z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st521" d="M312.3,11.5c0.7,0.6,1.3,1.1,2.3,2c-1.8-0.1-2.8-1-4.4-1.7C311.2,11.6,311.8,11.6,312.3,11.5L312.3,11.5z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st522" d="M311,10.7c0-0.2-0.1-0.4-0.1-0.5c1.6-0.2,3,0.4,4.3,1.3c-1,0.1-1.9,0.1-2.9,0l0,0   C312.2,10.7,311.6,10.8,311,10.7z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st488" d="M308.1,15c-1.6,0.1-3-0.4-4.2-1.5l0,0c1,0,1.9,0,2.9,0l0,0C306.9,14.8,308.6,13.8,308.1,15z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st523" d="M306.8,13.6c-1,0-1.9,0-2.9,0c0.5-1,1.4-0.7,2.2-0.8C306.3,13.1,306.5,13.3,306.8,13.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st364" d="M290.6,30.4c-1.1,0-2.3,0-3.4,0c0-0.2,0-0.4-0.1-0.6C288.3,29.8,289.6,29.5,290.6,30.4z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st364" d="M285.7,27.8c0.8,0,1.6-0.2,2.1,0.5C287.1,28.3,286.2,28.7,285.7,27.8z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st364" d="M284.3,29c-0.5,0-0.9,0-1.4,0C283.3,28.2,283.8,28.2,284.3,29z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st364" d="M286.4,29.6c-0.5-0.2-1-0.3-1.5-0.5C285.4,29,286,29,286.4,29.6z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st524" d="M285.2,48.1c0.3-1.6,0.6-3.2,2.1-4.3c0.4,0.3,0.7,0.5,1.1,0.8C287.9,46.4,286.6,47.3,285.2,48.1z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st523" d="M308.1,15c0.4-1.3-1.3-0.2-1.4-1.5c1.8-0.2,3.5,0.4,4.9,1.4C310.4,15.5,309.3,16.1,308.1,15z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st525" d="M309.4,16.9c1.9-0.9,2.9-0.2,4.1,0.6C312,18.2,311.1,16.9,309.4,16.9z" />
+	<path class="class-35befcbe30-class-35befcbe30-class-35befcbe30-st507" d="M316.5,17.3c0.2,0.2,0.5,0.4,0.7,0.5C317,17.6,316.8,17.4,316.5,17.3z" />
+</g>
+</svg>

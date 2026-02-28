@@ -1,0 +1,80 @@
+{
+  "name": "Beginner Shoulder & Back Home Blast",
+  "category": "Shoulder & Back",
+  "level": "Beginner",
+  "place": "Home",
+  "image_url_male": "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?w=500&q=80",
+  "image_url_female": "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?w=500&q=80",
+  "exercises": [
+    {
+      "exercise_name": "Resistance Band Chest Opener  Stretch",
+      "order_position": 1,
+      "reps": null,
+      "sets": 1,
+      "duration": 60
+    },
+    {
+      "exercise_name": "Behind Back Standing Resistance Band Chest Presses",
+      "order_position": 2,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Behind Back Standing Resistance Band Chest Presses",
+      "order_position": 3,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Diamond  Pyramid  Triceps Push-ups  Pushups",
+      "order_position": 4,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Diamond  Pyramid  Triceps Push-ups  Pushups",
+      "order_position": 5,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Push-ups  Pushups",
+      "order_position": 6,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Push-ups  Pushups",
+      "order_position": 7,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Bodyweight Shoulder Presses",
+      "order_position": 8,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Bodyweight Shoulder Presses",
+      "order_position": 9,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Resistance Band Chest Opener  Stretch",
+      "order_position": 10,
+      "reps": null,
+      "sets": 1,
+      "duration": 60
+    }
+  ]
+}

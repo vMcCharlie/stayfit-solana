@@ -1,0 +1,80 @@
+{
+  "name": "Beginner Shoulder & Back Gym Blast",
+  "category": "Shoulder & Back",
+  "level": "Beginner",
+  "place": "Gym",
+  "image_url_male": "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?w=500&q=80",
+  "image_url_female": "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?w=500&q=80",
+  "exercises": [
+    {
+      "exercise_name": "Foam Roller Upper Back Stretch",
+      "order_position": 1,
+      "reps": null,
+      "sets": 1,
+      "duration": 60
+    },
+    {
+      "exercise_name": "Hanging Knee Raises",
+      "order_position": 2,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Hanging Knee Raises",
+      "order_position": 3,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Single Arm Side  Lateral Raises to Overhead Extension",
+      "order_position": 4,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Single Arm Side  Lateral Raises to Overhead Extension",
+      "order_position": 5,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Standing Two-Armed Bent Over Dumbbell Rows",
+      "order_position": 6,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Standing Two-Armed Bent Over Dumbbell Rows",
+      "order_position": 7,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Stability  Swiss  Exercise Ball Knee Tuck to Chest",
+      "order_position": 8,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Stability  Swiss  Exercise Ball Knee Tuck to Chest",
+      "order_position": 9,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Laying Internal Shoulder Rotation",
+      "order_position": 10,
+      "reps": null,
+      "sets": 1,
+      "duration": 60
+    }
+  ]
+}

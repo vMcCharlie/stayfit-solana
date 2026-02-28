@@ -1,0 +1,80 @@
+{
+  "name": "Beginner Arms Home Blast",
+  "category": "Arms",
+  "level": "Beginner",
+  "place": "Home",
+  "image_url_male": "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=500&q=80",
+  "image_url_female": "https://images.unsplash.com/photo-1620188467120-2f9b7c06c589?w=500&q=80",
+  "exercises": [
+    {
+      "exercise_name": "Resistance Band Chest Opener  Stretch",
+      "order_position": 1,
+      "reps": null,
+      "sets": 1,
+      "duration": 60
+    },
+    {
+      "exercise_name": "Medicine Ball Throw to Chase",
+      "order_position": 2,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Medicine Ball Throw to Chase",
+      "order_position": 3,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Plank Shoulder Taps  Planks",
+      "order_position": 4,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Plank Shoulder Taps  Planks",
+      "order_position": 5,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Chair  Bench Tricep Dips",
+      "order_position": 6,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Chair  Bench Tricep Dips",
+      "order_position": 7,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Resistance Band Tricep Kickbacks",
+      "order_position": 8,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Resistance Band Tricep Kickbacks",
+      "order_position": 9,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Resistance Band Chest Opener  Stretch",
+      "order_position": 10,
+      "reps": null,
+      "sets": 1,
+      "duration": 60
+    }
+  ]
+}

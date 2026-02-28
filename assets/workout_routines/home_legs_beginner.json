@@ -1,0 +1,80 @@
+{
+  "name": "Beginner Legs Home Blast",
+  "category": "Legs",
+  "level": "Beginner",
+  "place": "Home",
+  "image_url_male": "https://images.unsplash.com/photo-1434608519344-49d77a699ded?w=500&q=80",
+  "image_url_female": "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=500&q=80",
+  "exercises": [
+    {
+      "exercise_name": "Internal Rotation  Bodyweight Calf Raises",
+      "order_position": 1,
+      "reps": null,
+      "sets": 1,
+      "duration": 60
+    },
+    {
+      "exercise_name": "Resistance Band Glute Kickbacks",
+      "order_position": 2,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Resistance Band Glute Kickbacks",
+      "order_position": 3,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Alternating Bodyweight Lunges",
+      "order_position": 4,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Alternating Bodyweight Lunges",
+      "order_position": 5,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Lunge Punches  Lunges",
+      "order_position": 6,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Lunge Punches  Lunges",
+      "order_position": 7,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Bodyweight Calf Raises",
+      "order_position": 8,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "Bodyweight Calf Raises",
+      "order_position": 9,
+      "sets": 1,
+      "reps": 10,
+      "duration": null
+    },
+    {
+      "exercise_name": "External Rotation  Bodyweight Calf Raises",
+      "order_position": 10,
+      "reps": null,
+      "sets": 1,
+      "duration": 60
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "name": "Intermediate Shoulder & Back Gym Blast",
+  "category": "Shoulder & Back",
+  "level": "Intermediate",
+  "place": "Gym",
+  "image_url_male": "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?w=500&q=80",
+  "image_url_female": "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?w=500&q=80",
+  "exercises": [
+    {
+      "exercise_name": "Shoulder Stretch",
+      "order_position": 1,
+      "reps": null,
+      "sets": 1,
+      "duration": 60
+    },
+    {
+      "exercise_name": "Decline Barbell Smith Press",
+      "order_position": 2,
+      "sets": 1,
+      "reps": 12,
+      "duration": null
+    },
+    {
+      "exercise_name": "Decline Barbell Smith Press",
+      "order_position": 3,
+      "sets": 1,
+      "reps": 12,
+      "duration": null
+    },
+    {
+      "exercise_name": "Decline Barbell Smith Press",
+      "order_position": 4,
+      "sets": 1,
+      "reps": 12,
+      "duration": null
+    },
+    {
+      "exercise_name": "Seated Tricep Press  Overhead Extensions",
+      "order_position": 5,
+      "sets": 1,
+      "reps": 12,
+      "duration": null
+    },
+    {
+      "exercise_name": "Seated Tricep Press  Overhead Extensions",
+      "order_position": 6,
+      "sets": 1,
+      "reps": 12,
+      "duration": null
+    },
+    {
+      "exercise_name": "Seated Tricep Press  Overhead Extensions",
+      "order_position": 7,
+      "sets": 1,
+      "reps": 12,
+      "duration": null
+    },
+    {
+      "exercise_name": "Seated Dual  Front Raises",
+      "order_position": 8,
+      "sets": 1,
+      "reps": 12,
+      "duration": null
+    },
+    {
+      "exercise_name": "Seated Dual  Front Raises",
+      "order_position": 9,
+      "sets": 1,
+      "reps": 12,
+      "duration": null
+    },
+    {
+      "exercise_name": "Seated Dual  Front Raises",
+      "order_position": 10,
+      "sets": 1,
+      "reps": 12,
+      "duration": null
+    },
+    {
+      "exercise_name": "Single  One Arm Medicine Ball Push-Ups  Pushups",
+      "order_position": 11,
+      "sets": 1,
+      "reps": 12,
+      "duration": null
+    },
+    {
+      "exercise_name": "Single  One Arm Medicine Ball Push-Ups  Pushups",
+      "order_position": 12,
+      "sets": 1,
+      "reps": 12,
+      "duration": null
+    },
+    {
+      "exercise_name": "Single  One Arm Medicine Ball Push-Ups  Pushups",
+      "order_position": 13,
+      "sets": 1,
+      "reps": 12,
+      "duration": null
+    },
+    {
+      "exercise_name": "Side Plank Hip Raises",
+      "order_position": 14,
+      "sets": 1,
+      "reps": 12,
+      "duration": null
+    },
+    {
+      "exercise_name": "Side Plank Hip Raises",
+      "order_position": 15,
+      "sets": 1,
+      "reps": 12,
+      "duration": null
+    },
+    {
+      "exercise_name": "Side Plank Hip Raises",
+      "order_position": 16,
+      "sets": 1,
+      "reps": 12,
+      "duration": null
+    },
+    {
+      "exercise_name": "Internal Cable Shoulder Rotation",
+      "order_position": 17,
+      "reps": null,
+      "sets": 1,
+      "duration": 60
+    }
+  ]
+}
