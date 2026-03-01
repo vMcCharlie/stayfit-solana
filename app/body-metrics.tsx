@@ -17,8 +17,8 @@ import { StatusBar } from "expo-status-bar";
 import { Ionicons } from "@expo/vector-icons";
 import Animated, { FadeInDown, FadeIn } from "react-native-reanimated";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { updateOnboardingStep } from "../../src/lib/onboarding";
-import { useTheme } from "../../src/context/theme";
+import { updateOnboardingStep } from "../src/lib/onboarding";
+import { useTheme } from "../src/context/theme";
 
 export default function BodyMetricsScreen() {
     const router = useRouter();

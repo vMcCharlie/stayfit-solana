@@ -23,8 +23,8 @@ import Animated, {
   SlideOutDown,
   Layout,
 } from "react-native-reanimated";
-import { useTheme } from "../src/context/theme";
-import { supabase } from "../src/lib/supabase";
+import { useTheme } from "../../src/context/theme";
+import { supabase } from "../../src/lib/supabase";
 
 const { width, height } = Dimensions.get("window");
 const OTP_LENGTH = 6;

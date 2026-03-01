@@ -45,7 +45,7 @@ export default function IntroScreen() {
 
   return (
     <ImageBackground
-      source={require("../src/assets/images/intro-bg.jpg")}
+      source={require("../../src/assets/images/intro-bg.jpg")}
       style={styles.container}
       resizeMode="cover"
     >

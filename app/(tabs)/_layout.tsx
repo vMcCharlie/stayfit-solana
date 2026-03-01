@@ -128,8 +128,8 @@ function CustomTabBar({ state, descriptors, navigation }: BottomTabBarProps) {
       />
 
       {state.routes.map((route, index) => {
-        // Hide ai-chat from the tab bar but keep it in the navigator
-        if (route.name === "ai-chat") return null;
+        // Hide extra screens from the tab bar
+        if (route.name === "ai-chat" || route.name === "workout" || route.name === "nutrition") return null;
 
         const { options } = descriptors[route.key];
         // const label = options.title ?? route.name;
@@ -209,41 +209,32 @@ export default function TabLayout() {
     >
       <Tabs.Screen
         name="index"
-        options={{
-          title: "Workout",
-        }}
+        options={{ title: "Home" }}
       />
       <Tabs.Screen
         name="activity"
-        options={{
-          title: "Activity",
-        }}
+        options={{ title: "Activity" }}
       />
       <Tabs.Screen
         name="more"
-        options={{
-          title: "More",
-        }}
+        options={{ title: "More" }}
       />
       <Tabs.Screen
         name="reports"
-        options={{
-          title: "Reports",
-        }}
+        options={{ title: "Reports" }}
       />
       <Tabs.Screen
         name="profile"
-        options={{
-          title: "Profile",
-        }}
+        options={{ title: "Profile" }}
       />
+      {/* Hidden screens - not shown in tab bar */}
       <Tabs.Screen
         name="ai-chat"
-        options={{
-          title: "AI Chat",
-          // Hide header since the component has its own header
-          headerShown: false,
-        }}
+        options={{ href: null, headerShown: false }}
+      />
+      <Tabs.Screen
+        name="workout"
+        options={{ href: null }}
       />
     </Tabs>
   );
