@@ -3,6 +3,9 @@ const path = require('path');
 
 const config = getDefaultConfig(__dirname);
 
+// Support .mjs files
+config.resolver.sourceExts.push('mjs');
+
 // Override resolution to alias 'ws' to the shim
 config.resolver.resolveRequest = (context, moduleName, platform) => {
     if (moduleName === 'ws') {
