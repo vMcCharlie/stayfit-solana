@@ -1,7 +1,10 @@
 
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2"
-import { corsHeaders } from "../_shared/cors.ts"
+const corsHeaders = {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
+};
 
 console.log("Workout Tracker: Function Loaded");
 
@@ -103,20 +106,6 @@ serve(async (req) => {
         if (req.method === 'POST' && action === 'complete') {
             const body: WorkoutSessionLog = await req.json()
 
-            // Fetch Routine Details (for Activity Feed)
-            let routineName = 'Workout';
-            let routineImage = null;
-            const { data: routineData } = await supabaseAdmin
-                .from('workout_routines')
-                .select('name, image_url')
-                .eq('id', body.routine_id)
-                .single();
-
-            if (routineData) {
-                routineName = routineData.name || 'Workout';
-                routineImage = routineData.image_url;
-            }
-
             // Check Duplicate Completion
             const { data: existingSession } = await supabaseAdmin
                 .from('workout_sessions')
@@ -145,7 +134,20 @@ serve(async (req) => {
 
             if (sessionError) throw sessionError
 
-            // B. Log to User Streak History (Fire)
+            // B. XP Calculation & Profile Updates
+            const { data: profile } = await supabaseAdmin.from('profiles').select('xp_multiplier, xp_balance, total_workouts_completed, total_calories_burned, total_time_taken').eq('id', user.id).single();
+            const multiplier = profile?.xp_multiplier || 1.0;
+            const xpReward = Math.round(500 * multiplier);
+
+            // C. Log XP Transaction
+            await supabaseAdmin.from('xp_transactions').insert({
+                user_id: user.id,
+                amount: xpReward,
+                type: 'workout',
+                description: `Completed workout session`
+            });
+
+            // D. Streak history & Referral Logic
             const todayDate = new Date().toISOString().split('T')[0];
             await supabaseAdmin.from('user_streak_history').upsert({
                 user_id: user.id,
@@ -153,26 +155,49 @@ serve(async (req) => {
                 streak_type: 'fire'
             }, { onConflict: 'user_id, activity_date' });
 
-            // C. (Recalculate Numeric Streak removed - using dynamic calculation on read)
-            // D. (Update Workout Streaks Table removed - deprecated)
+            // Check if user hit a 7-day streak for referral bonus
+            // Get last 7 days of activity
+            const sevenDaysAgo = new Date();
+            sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 6);
+            const sevenDaysAgoStr = sevenDaysAgo.toISOString().split('T')[0];
 
-            // E. Activity Feed & Exercises
-            // 1. Activity
-            await supabaseAdmin.from('activities').insert({
-                user_id: user.id,
-                type: 'workout_completed',
-                data: {
-                    session_id: body.session_id,
-                    routine_id: body.routine_id,
-                    routine_name: routineName,
-                    routine_image: routineImage,
-                    completed_at: body.completed_at,
-                    duration: body.total_duration,
-                    calories: body.total_calories_burned
+            const { data: streakHistory } = await supabaseAdmin
+                .from('user_streak_history')
+                .select('activity_date')
+                .eq('user_id', user.id)
+                .gte('activity_date', sevenDaysAgoStr);
+
+            if (streakHistory && streakHistory.length >= 7) {
+                // Check if this user was referred and bonus not yet paid
+                const { data: referral } = await supabaseAdmin
+                    .from('referrals')
+                    .select('id, referrer_id')
+                    .eq('referred_id', user.id)
+                    .eq('status', 'joined')
+                    .single();
+
+                if (referral) {
+                    // Update referral status
+                    await supabaseAdmin.from('referrals').update({ status: 'streak_completed' }).eq('id', referral.id);
+
+                    // Update referrer multiplier
+                    const { data: referrer } = await supabaseAdmin.from('profiles').select('xp_multiplier').eq('id', referral.referrer_id).single();
+                    if (referrer) {
+                        const newMultiplier = Number(referrer.xp_multiplier) + 0.01;
+                        await supabaseAdmin.from('profiles').update({ xp_multiplier: newMultiplier }).eq('id', referral.referrer_id);
+
+                        // Log bonus for referrer
+                        await supabaseAdmin.from('xp_transactions').insert({
+                            user_id: referral.referrer_id,
+                            amount: 5000, // Bonus XP
+                            type: 'referral_bonus',
+                            description: `Referral completed 7-day streak`
+                        });
+                    }
                 }
-            });
+            }
 
-            // 2. Exercise Completions
+            // E. Exercise Completions
             if (body.exercises && body.exercises.length > 0) {
                 const completions = body.exercises.map(ex => ({
                     session_id: body.session_id,
@@ -186,29 +211,26 @@ serve(async (req) => {
                 }));
 
                 const { data: insertedCompletions, error: exError } = await supabaseAdmin
-                    .from('exercise_completions')
-                    .insert(completions)
-                    .select('id, exercise_id');
+                    .from('exercise_completions').insert(completions).select('id, exercise_id');
 
                 if (!exError && insertedCompletions) {
-                    // Focus Area Tracking
-                    const exerciseIds = insertedCompletions.map(c => c.exercise_id);
+                    const exerciseIds = insertedCompletions.map((c: any) => c.exercise_id);
                     const { data: focusAreas } = await supabaseAdmin
-                        .from('exercise_focus_areas')
-                        .select('id, exercise_id, weightage')
+                        .from('exercise_focus_areas').select('id, exercise_id, weightage')
                         .in('exercise_id', exerciseIds);
 
                     if (focusAreas) {
                         const trackingInserts: any[] = [];
-                        insertedCompletions.forEach(c => {
-                            const relevant = focusAreas.filter(fa => fa.exercise_id === c.exercise_id);
-                            relevant.forEach(fa => {
-                                trackingInserts.push({
-                                    exercise_completion_id: c.id,
-                                    focus_area_id: fa.id,
-                                    intensity_score: Math.min(10, Math.max(1, Math.round((fa.weightage || 0) / 10)))
+                        insertedCompletions.forEach((c: any) => {
+                            focusAreas
+                                .filter((fa: any) => fa.exercise_id === c.exercise_id)
+                                .forEach((fa: any) => {
+                                    trackingInserts.push({
+                                        exercise_completion_id: c.id,
+                                        focus_area_id: fa.id,
+                                        intensity_score: Math.min(10, Math.max(1, Math.round((fa.weightage || 0) / 10)))
+                                    });
                                 });
-                            });
                         });
                         if (trackingInserts.length > 0) {
                             await supabaseAdmin.from('focus_area_tracking').insert(trackingInserts);
@@ -219,17 +241,12 @@ serve(async (req) => {
 
             // F. Daily Summary Upsert
             const { data: existingSummary } = await supabaseAdmin
-                .from('daily_workout_summary')
-                .select('*')
-                .eq('user_id', user.id)
-                .eq('date', todayDate)
-                .single();
+                .from('daily_workout_summary').select('*')
+                .eq('user_id', user.id).eq('date', todayDate).single();
 
             let mergedFocusAreas = body.focus_areas_summary || {};
             if (existingSummary?.focus_areas_summary) {
-                // Simple merge logic
-                const existing = existingSummary.focus_areas_summary;
-                mergedFocusAreas = { ...existing };
+                mergedFocusAreas = { ...existingSummary.focus_areas_summary };
                 Object.entries(body.focus_areas_summary || {}).forEach(([k, v]) => {
                     mergedFocusAreas[k] = mergedFocusAreas[k] ? (Number(mergedFocusAreas[k]) + Number(v)) / 2 : v;
                 });
@@ -245,10 +262,10 @@ serve(async (req) => {
                 focus_areas_summary: mergedFocusAreas
             });
 
-            // G. Update Profile
-            const { data: profile } = await supabaseAdmin.from('profiles').select('*').eq('id', user.id).single();
+            // G. Final Profile Updates (XP + Stats)
             if (profile) {
                 await supabaseAdmin.from('profiles').update({
+                    xp_balance: (profile.xp_balance || 0) + xpReward,
                     total_workouts_completed: (profile.total_workouts_completed || 0) + 1,
                     total_calories_burned: (profile.total_calories_burned || 0) + Math.round(body.total_calories_burned),
                     total_time_taken: (profile.total_time_taken || 0) + Math.round(body.total_duration / 60)

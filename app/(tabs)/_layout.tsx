@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Tabs } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
-import { HomeIcon, ActivityIcon, ReportsIcon, UserIcon, PlusIcon } from "../components/TabIcons";
+import { HomeIcon, GiftIcon, GiftActiveIcon, ReportsIcon, UserIcon, PlusIcon } from "../components/TabIcons";
 import { useTheme } from "../../src/context/theme";
 import WeightLogModal from "../components/WeightLogModal";
 import { api } from "../../src/services/api";
@@ -129,7 +129,7 @@ function CustomTabBar({ state, descriptors, navigation }: BottomTabBarProps) {
 
       {state.routes.map((route, index) => {
         // Hide extra screens from the tab bar
-        if (route.name === "ai-chat" || route.name === "workout" || route.name === "nutrition") return null;
+        if (route.name === "ai-chat" || route.name === "workout" || route.name === "activity") return null;
 
         const { options } = descriptors[route.key];
         // const label = options.title ?? route.name;
@@ -168,9 +168,11 @@ function CustomTabBar({ state, descriptors, navigation }: BottomTabBarProps) {
               : "rgba(0,0,0,0.5)";
 
           if (route.name === "index") {
-            icon = <HomeIcon size={iconSize} color={color} focused={isFocused} />;
-          } else if (route.name === "activity") {
-            icon = <ActivityIcon size={iconSize} color={color} focused={isFocused} />;
+            icon = <HomeIcon size={iconSize + 5} color={color} focused={isFocused} />;
+          } else if (route.name === "rewards") {
+            icon = isFocused
+              ? <GiftActiveIcon size={iconSize + 5} color={color} />
+              : <GiftIcon size={iconSize + 5} color={color} />;
           } else if (route.name === "reports") {
             icon = <ReportsIcon size={iconSize} color={color} focused={isFocused} />;
           } else if (route.name === "profile") {
@@ -212,8 +214,8 @@ export default function TabLayout() {
         options={{ title: "Home" }}
       />
       <Tabs.Screen
-        name="activity"
-        options={{ title: "Activity" }}
+        name="rewards"
+        options={{ title: "Rewards" }}
       />
       <Tabs.Screen
         name="more"
@@ -234,6 +236,10 @@ export default function TabLayout() {
       />
       <Tabs.Screen
         name="workout"
+        options={{ href: null }}
+      />
+      <Tabs.Screen
+        name="activity"
         options={{ href: null }}
       />
     </Tabs>

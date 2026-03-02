@@ -17,7 +17,7 @@ import {
 import { Image as ExpoImage } from "expo-image";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
-import { FireActiveIcon, MessageIcon, HomeSelectorIcon, GymIcon, IcicleIcon } from "../components/TabIcons";
+import { FireActiveIcon, HomeSelectorIcon, GymIcon, IcicleIcon } from "../components/TabIcons";
 import { useTheme } from "../../src/context/theme";
 import ChallengeSection from "../components/ChallengeSection";
 import PopularGoalsSection from "../components/PopularGoalsSection";
@@ -602,18 +602,7 @@ export default function Index() {
         style={[styles.container, { backgroundColor: 'transparent' }]}
         edges={['top']}
       >
-        <ScreenHeader
-          rightAction={
-            <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
-              <TouchableOpacity
-                style={styles.headerButton}
-                onPress={() => router.push('/ai-chat')}
-              >
-                <MessageIcon size={24} color={colors.text} />
-              </TouchableOpacity>
-            </View>
-          }
-        />
+        <ScreenHeader />
 
         {/* Equipment Type Tabs - Always visible below header */}
         <View style={[styles.tabSectionContainer, { backgroundColor: 'transparent' }]}>
