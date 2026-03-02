@@ -7,19 +7,26 @@ import { ThemeBackground } from './components/ThemeBackground';
 import { router } from 'expo-router';
 import * as Clipboard from 'expo-clipboard';
 import { supabase } from '../src/lib/supabase';
+import { useAuth } from '../src/context/auth';
+import { Modal, Pressable, TextInput, ActivityIndicator, Alert as RNAlert } from 'react-native';
 
 export default function ReferralDetail() {
     const { isDarkMode, selectedPalette } = useTheme();
+    const { user: authUser } = useAuth();
     const [profile, setProfile] = React.useState<any>(null);
+    const [redeemModalVisible, setRedeemModalVisible] = React.useState(false);
+    const [referralCode, setReferralCode] = React.useState("");
+    const [isRedeeming, setIsRedeeming] = React.useState(false);
+
+    const fetchProfile = async () => {
+        const { data: { user } } = await supabase.auth.getUser();
+        if (user) {
+            const { data } = await supabase.from('profiles').select('invite_code').eq('id', user.id).single();
+            setProfile(data);
+        }
+    };
 
     React.useEffect(() => {
-        const fetchProfile = async () => {
-            const { data: { user } } = await supabase.auth.getUser();
-            if (user) {
-                const { data } = await supabase.from('profiles').select('invite_code').eq('id', user.id).single();
-                setProfile(data);
-            }
-        };
         fetchProfile();
     }, []);
 
@@ -46,7 +53,62 @@ export default function ReferralDetail() {
 
     const copyToClipboard = async () => {
         await Clipboard.setStringAsync(inviteCode);
-        // Maybe show a toast
+    };
+
+    const handleRedeem = async () => {
+        if (!referralCode.trim()) {
+            RNAlert.alert("Error", "Please enter a referral code.");
+            return;
+        }
+
+        setIsRedeeming(true);
+        try {
+            // 1. Find the referrer
+            const { data: referrer, error: findError } = await supabase
+                .from('profiles')
+                .select('id')
+                .eq('invite_code', referralCode.trim().toUpperCase())
+                .single();
+
+            if (findError || !referrer) {
+                RNAlert.alert("Error", "Invalid referral code. Please check and try again.");
+                setIsRedeeming(false);
+                return;
+            }
+
+            if (referrer.id === authUser?.id) {
+                RNAlert.alert("Error", "You cannot refer yourself.");
+                setIsRedeeming(false);
+                return;
+            }
+
+            // 2. Try to insert the referral record
+            const { error: insertError } = await supabase
+                .from('referrals')
+                .insert({
+                    referrer_id: referrer.id,
+                    referred_id: authUser?.id,
+                    status: 'joined'
+                });
+
+            if (insertError) {
+                if (insertError.code === '23505') {
+                    RNAlert.alert("Error", "You have already been referred by someone else.");
+                } else {
+                    RNAlert.alert("Error", "Failed to redeem code. Please try again later.");
+                }
+                console.error("Redeem Error:", insertError);
+            } else {
+                RNAlert.alert("Success", "Referral code redeemed! Complete a 7-day streak to earn your Referral Boost.");
+                setRedeemModalVisible(false);
+                setReferralCode("");
+            }
+        } catch (err) {
+            console.error("Redeem Catch Error:", err);
+            RNAlert.alert("Error", "An unexpected error occurred.");
+        } finally {
+            setIsRedeeming(false);
+        }
     };
 
     return (
@@ -119,12 +181,63 @@ export default function ReferralDetail() {
                 {/* Bottom Actions */}
                 <View style={styles.bottomActions}>
                     <TouchableOpacity onPress={onShare} style={[styles.mainBtn, { backgroundColor: colors.primary }]}>
-                        <Text style={styles.mainBtnText}>Invite contacts</Text>
+                        <Text style={styles.mainBtnText}>Share Link</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity onPress={onShare} style={styles.shareLinkBtn}>
-                        <Text style={[styles.shareLinkText, { color: colors.primary }]}>Share link</Text>
+                    <TouchableOpacity onPress={() => setRedeemModalVisible(true)} style={styles.shareLinkBtn}>
+                        <Text style={[styles.shareLinkText, { color: colors.primary }]}>Redeem a referral code</Text>
                     </TouchableOpacity>
                 </View>
+
+                {/* Redeem Modal */}
+                <Modal
+                    visible={redeemModalVisible}
+                    transparent={true}
+                    animationType="fade"
+                    onRequestClose={() => setRedeemModalVisible(false)}
+                >
+                    <View style={styles.modalOverlay}>
+                        <Pressable style={styles.modalDismiss} onPress={() => setRedeemModalVisible(false)} />
+                        <View style={[styles.modalContent, { backgroundColor: colors.surface }]}>
+                            <View style={styles.modalHeader}>
+                                <View style={[styles.modalIconBg, { backgroundColor: `${selectedPalette.primary}20` }]}>
+                                    <Ionicons name="gift" size={32} color={selectedPalette.primary} />
+                                </View>
+                                <Text style={[styles.modalTitle, { color: colors.text }]}>Redeem Code</Text>
+                                <Text style={[styles.modalSubtitle, { color: colors.textSecondary }]}>Enter a friend's referral code</Text>
+                            </View>
+
+                            <TextInput
+                                style={[styles.codeInput, {
+                                    color: colors.text,
+                                    borderColor: colors.border,
+                                    backgroundColor: isDarkMode ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.02)'
+                                }]}
+                                placeholder="8-character code"
+                                placeholderTextColor={colors.textSecondary}
+                                value={referralCode}
+                                onChangeText={setReferralCode}
+                                autoCapitalize="characters"
+                                maxLength={8}
+                            />
+
+                            <TouchableOpacity
+                                onPress={handleRedeem}
+                                disabled={isRedeeming}
+                                style={[styles.redeemBtn, { backgroundColor: colors.primary, opacity: isRedeeming ? 0.7 : 1 }]}
+                            >
+                                {isRedeeming ? (
+                                    <ActivityIndicator color="#FFF" />
+                                ) : (
+                                    <Text style={styles.redeemBtnText}>Redeem Now</Text>
+                                )}
+                            </TouchableOpacity>
+
+                            <TouchableOpacity onPress={() => setRedeemModalVisible(false)} style={styles.cancelLink}>
+                                <Text style={[styles.cancelLinkText, { color: colors.textSecondary }]}>Maybe later</Text>
+                            </TouchableOpacity>
+                        </View>
+                    </View>
+                </Modal>
             </SafeAreaView>
         </ThemeBackground >
     );
@@ -194,4 +307,73 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     shareLinkText: { fontFamily: 'Outfit-Bold', fontSize: 16 },
+    modalOverlay: {
+        flex: 1,
+        backgroundColor: 'rgba(0,0,0,0.6)',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: 24,
+    },
+    modalDismiss: {
+        ...StyleSheet.absoluteFillObject,
+    },
+    modalContent: {
+        width: '100%',
+        borderRadius: 30,
+        padding: 24,
+        alignItems: 'center',
+    },
+    modalHeader: {
+        alignItems: 'center',
+        marginBottom: 24,
+    },
+    modalIconBg: {
+        width: 64,
+        height: 64,
+        borderRadius: 32,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: 16,
+    },
+    modalTitle: {
+        fontFamily: 'Outfit-Bold',
+        fontSize: 24,
+        marginBottom: 4,
+    },
+    modalSubtitle: {
+        fontFamily: 'Outfit-Medium',
+        fontSize: 14,
+    },
+    codeInput: {
+        width: '100%',
+        height: 60,
+        borderRadius: 16,
+        borderWidth: 1,
+        paddingHorizontal: 20,
+        fontSize: 20,
+        fontFamily: 'Outfit-Bold',
+        textAlign: 'center',
+        letterSpacing: 4,
+        marginBottom: 20,
+    },
+    redeemBtn: {
+        width: '100%',
+        height: 56,
+        borderRadius: 28,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginBottom: 16,
+    },
+    redeemBtnText: {
+        color: '#FFF',
+        fontFamily: 'Outfit-Bold',
+        fontSize: 18,
+    },
+    cancelLink: {
+        paddingVertical: 8,
+    },
+    cancelLinkText: {
+        fontFamily: 'Outfit-Bold',
+        fontSize: 14,
+    },
 });
