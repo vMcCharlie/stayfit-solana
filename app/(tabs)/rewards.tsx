@@ -7,9 +7,11 @@ import {
     TouchableOpacity,
     Platform,
     Alert,
+    Modal,
+    Pressable,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Ionicons } from "@expo/vector-icons";
+import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import { useTheme } from "../../src/context/theme";
 import { ThemeBackground } from "../components/ThemeBackground";
 import { LinearGradient } from "expo-linear-gradient";
@@ -29,6 +31,7 @@ export default function Rewards() {
     const [profile, setProfile] = React.useState<any>(null);
     const [transactions, setTransactions] = React.useState<any[]>([]);
     const [loading, setLoading] = React.useState(true);
+    const [infoModalVisible, setInfoModalVisible] = React.useState(false);
 
     const fetchData = async () => {
         try {
@@ -159,14 +162,7 @@ export default function Rewards() {
     };
 
     const handleShowInfo = () => {
-        Alert.alert(
-            "XP & SKR Boosts",
-            "• XP (Experience Points) are earned by completing workouts.\n\n" +
-            "• $GAINS Token: Your XP balance is your ticket to the future Stay Fit ($GAINS) token giveaway.\n\n" +
-            "• SKR Boost: Hold SKR in your connected wallet to unlock higher XP multipliers and premium features.\n\n" +
-            "• Referral Boost: Each friend you refer who completes a 7-day streak gives you a permanent +0.01 boost.",
-            [{ text: "Got it" }]
-        );
+        setInfoModalVisible(true);
     };
 
     return (
@@ -215,15 +211,15 @@ export default function Rewards() {
                         <TouchableOpacity
                             style={[styles.actionBtn, { backgroundColor: selectedPalette.primary }]}
                         >
-                            <Ionicons name="list-outline" size={20} color="white" style={styles.actionIcon} />
+                            <Ionicons name="list" size={20} color="white" />
                             <Text style={[styles.actionText, { color: "white" }]}>Tasks</Text>
                         </TouchableOpacity>
                         <TouchableOpacity
-                            style={[styles.actionBtn, { backgroundColor: selectedPalette.primary }]}
+                            style={[styles.actionBtn, { backgroundColor: isDarkMode ? "rgba(255,255,255,0.05)" : "rgba(0,0,0,0.05)" }]}
                             onPress={handleAddReferral}
                         >
-                            <Ionicons name="person-add-outline" size={20} color="white" style={styles.actionIcon} />
-                            <Text style={[styles.actionText, { color: "white" }]}>Add Referral Code</Text>
+                            <Ionicons name="person-add" size={20} color={selectedPalette.primary} />
+                            <Text style={[styles.actionText, { color: selectedPalette.primary }]}>Add Referral</Text>
                         </TouchableOpacity>
                     </View>
 
@@ -300,6 +296,70 @@ export default function Rewards() {
 
                 </ScrollView>
             </SafeAreaView>
+
+            {/* Info Modal */}
+            <Modal
+                visible={infoModalVisible}
+                transparent={true}
+                animationType="fade"
+                onRequestClose={() => setInfoModalVisible(false)}
+            >
+                <Pressable
+                    style={styles.modalOverlay}
+                    onPress={() => setInfoModalVisible(false)}
+                >
+                    <View style={[styles.modalContent, { backgroundColor: colors.surface }]}>
+                        <View style={styles.modalHeader}>
+                            <View style={[styles.modalIconBg, { backgroundColor: selectedPalette.primary + '20' }]}>
+                                <Ionicons name="information-circle" size={32} color={selectedPalette.primary} />
+                            </View>
+                            <Text style={[styles.modalTitle, { color: colors.text }]}>How to earn XP</Text>
+                            <Text style={[styles.modalSubtitle, { color: colors.textSecondary }]}>Maximize your rewards with StayFit</Text>
+                        </View>
+
+                        <View style={styles.infoList}>
+                            <View style={styles.infoItem}>
+                                <View style={[styles.infoBullet, { backgroundColor: selectedPalette.primary }]} />
+                                <View style={styles.infoTextWrapper}>
+                                    <Text style={[styles.infoItemTitle, { color: colors.text }]}>Complete Workouts</Text>
+                                    <Text style={[styles.infoItemDesc, { color: colors.textSecondary }]}>Earn base XP for every workout session you complete.</Text>
+                                </View>
+                            </View>
+
+                            <View style={styles.infoItem}>
+                                <View style={[styles.infoBullet, { backgroundColor: "#FFD700" }]} />
+                                <View style={styles.infoTextWrapper}>
+                                    <Text style={[styles.infoItemTitle, { color: colors.text }]}>SKR Boost (Multiplier)</Text>
+                                    <Text style={[styles.infoItemDesc, { color: colors.textSecondary }]}>Connect your wallet and hold SKR tokens to multiply your earned XP.</Text>
+                                </View>
+                            </View>
+
+                            <View style={styles.infoItem}>
+                                <View style={[styles.infoBullet, { backgroundColor: "#00E5FF" }]} />
+                                <View style={styles.infoTextWrapper}>
+                                    <Text style={[styles.infoItemTitle, { color: colors.text }]}>Referral Boost</Text>
+                                    <Text style={[styles.infoItemDesc, { color: colors.textSecondary }]}>Get a permanent +0.01 boost for every friend who joins and hits a 7-day streak.</Text>
+                                </View>
+                            </View>
+
+                            <View style={styles.infoItem}>
+                                <View style={[styles.infoBullet, { backgroundColor: selectedPalette.primary }]} />
+                                <View style={styles.infoTextWrapper}>
+                                    <Text style={[styles.infoItemTitle, { color: colors.text }]}>$GAINS Token Giveaway</Text>
+                                    <Text style={[styles.infoItemDesc, { color: colors.textSecondary }]}>Your Total XP determines your share in the upcoming $GAINS token distribution.</Text>
+                                </View>
+                            </View>
+                        </View>
+
+                        <TouchableOpacity
+                            style={[styles.closeModalBtn, { backgroundColor: selectedPalette.primary }]}
+                            onPress={() => setInfoModalVisible(false)}
+                        >
+                            <Text style={styles.closeModalBtnText}>Got it!</Text>
+                        </TouchableOpacity>
+                    </View>
+                </Pressable>
+            </Modal>
         </ThemeBackground >
     );
 }
@@ -339,13 +399,14 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "center",
-        paddingVertical: 12, // Matches profile.tsx paddingVertical
-        paddingHorizontal: 16, // Matches profile.tsx paddingHorizontal
-        borderRadius: 12, // Matches profile.tsx borderRadius
-        gap: 8, // Matches profile.tsx gap
+        paddingVertical: 14,
+        paddingHorizontal: 12,
+        borderRadius: 12,
+        gap: 8,
+        minHeight: 52,
     },
-    actionIcon: { marginRight: 0 }, // Gap handled by 'gap' property
-    actionText: { fontFamily: "Outfit-Medium", fontSize: 16 }, // Matching profile.tsx fontFamily
+    actionIcon: { marginRight: 0 },
+    actionText: { fontFamily: "Outfit-Bold", fontSize: 13, textAlign: "center" },
     actionBtnIconOnly: {
         padding: 16,
         borderRadius: 24,
@@ -425,4 +486,78 @@ const styles = StyleSheet.create({
     },
     multiplierText: { fontFamily: "Outfit-Bold", fontSize: 12 },
     emptyText: { fontFamily: "Outfit-Medium", fontSize: 16, textAlign: "center", marginTop: 40 },
+    modalOverlay: {
+        flex: 1,
+        backgroundColor: "rgba(0,0,0,0.6)",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: 20,
+    },
+    modalContent: {
+        width: "100%",
+        borderRadius: 24,
+        padding: 24,
+        alignItems: "center",
+    },
+    modalHeader: {
+        alignItems: "center",
+        marginBottom: 24,
+    },
+    modalIconBg: {
+        width: 64,
+        height: 64,
+        borderRadius: 32,
+        justifyContent: "center",
+        alignItems: "center",
+        marginBottom: 16,
+    },
+    modalTitle: {
+        fontFamily: "Outfit-Bold",
+        fontSize: 24,
+        marginBottom: 4,
+    },
+    modalSubtitle: {
+        fontFamily: "Outfit-Medium",
+        fontSize: 14,
+    },
+    infoList: {
+        width: "100%",
+        gap: 20,
+        marginBottom: 30,
+    },
+    infoItem: {
+        flexDirection: "row",
+        alignItems: "flex-start",
+        gap: 12,
+    },
+    infoBullet: {
+        width: 8,
+        height: 8,
+        borderRadius: 4,
+        marginTop: 6,
+    },
+    infoTextWrapper: {
+        flex: 1,
+    },
+    infoItemTitle: {
+        fontFamily: "Outfit-Bold",
+        fontSize: 16,
+        marginBottom: 2,
+    },
+    infoItemDesc: {
+        fontFamily: "Outfit-Regular",
+        fontSize: 13,
+        lineHeight: 18,
+    },
+    closeModalBtn: {
+        width: "100%",
+        paddingVertical: 14,
+        borderRadius: 16,
+        alignItems: "center",
+    },
+    closeModalBtnText: {
+        color: "#FFF",
+        fontFamily: "Outfit-Bold",
+        fontSize: 16,
+    },
 });
