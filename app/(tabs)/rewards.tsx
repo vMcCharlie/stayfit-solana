@@ -338,7 +338,7 @@ export default function Rewards() {
                                 <View style={[styles.infoBullet, { backgroundColor: "#00E5FF" }]} />
                                 <View style={styles.infoTextWrapper}>
                                     <Text style={[styles.infoItemTitle, { color: colors.text }]}>Referral Boost</Text>
-                                    <Text style={[styles.infoItemDesc, { color: colors.textSecondary }]}>Get a permanent +0.01 boost for every friend who joins and hits a 7-day streak.</Text>
+                                    <Text style={[styles.infoItemDesc, { color: colors.textSecondary }]}>Get a permanent +0.01 boost for every friend who joins and hits a 7-day streak. No maximum limit!</Text>
                                 </View>
                             </View>
 

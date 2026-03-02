@@ -76,9 +76,9 @@ export default function ReferralDetail() {
                     </View>
 
                     <Text style={[styles.expiryText, { color: colors.textSecondary }]}>Never expires</Text>
-                    <Text style={[styles.headline, { color: colors.text }]}>Invite a friend. Get +0.01 Referral Boost.</Text>
+                    <Text style={[styles.headline, { color: colors.text }]}>Invite a friend. Get +0.01 Referral Boost with no limit.</Text>
                     <Text style={[styles.description, { color: colors.textSecondary }]}>
-                        Invite friends to StayFit Seeker. Once they sign up and complete a 7-day streak, you'll both get a persistent +0.01 Referral Boost.
+                        Invite friends to StayFit Seeker. Once they sign up and complete a 7-day streak, you'll both get a persistent +0.01 Referral Boost. There is no maximum limit—the more you refer, the more you earn!
                     </Text>
 
                     {/* Features */}
