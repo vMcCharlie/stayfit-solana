@@ -9,6 +9,7 @@ import {
     Modal,
     Animated,
     TouchableWithoutFeedback,
+    ActivityIndicator,
 } from "react-native";
 import CustomAlert from "./CustomAlert";
 import SharePhotoModal from "./SharePhotoModal";
@@ -27,6 +28,8 @@ import {
 } from "date-fns";
 import { supabase } from "../../src/lib/supabase";
 import { useTheme } from "../../src/context/theme";
+import { useAuth } from "../../src/context/auth";
+import { mintProgressNFT } from "../../src/services/nftService";
 
 interface ProfileCalendarProps {
     userId?: string;
@@ -43,9 +46,11 @@ interface ProgressPhoto {
 
 export default function ProfileCalendar({ userId }: ProfileCalendarProps) {
     const { isDarkMode, selectedPalette } = useTheme();
+    const { user: authUser } = useAuth();
     const [currentDate, setCurrentDate] = useState(new Date());
     const [photos, setPhotos] = useState<{ [key: string]: ProgressPhoto[] }>({});
     const [loading, setLoading] = useState(false);
+    const [minting, setMinting] = useState(false);
     const [selectedDay, setSelectedDay] = useState<Date | null>(null);
     const [viewPhotos, setViewPhotos] = useState<ProgressPhoto[]>([]);
     const [viewIndex, setViewIndex] = useState(0);
@@ -176,6 +181,64 @@ export default function ProfileCalendar({ userId }: ProfileCalendarProps) {
         // We need: user_id/filename.jpg
         const parts = url.split('/progress-photos/');
         return parts.length > 1 ? parts[1] : null;
+    };
+
+    const handleMintNFT = async (photo: ProgressPhoto) => {
+        const walletAddress = authUser?.user_metadata?.wallet_address;
+        if (!walletAddress) {
+            setAlertConfig({
+                title: "Wallet Not Connected",
+                message: "Please connect your Solana wallet in the Rewards tab to mint this photo as an NFT.",
+                buttons: [{ text: "OK", onPress: () => setAlertVisible(false) }]
+            });
+            setAlertVisible(true);
+            return;
+        }
+
+        setAlertConfig({
+            title: "Mint as NFT",
+            message: "Would you like to mint this progress photo as a Solana NFT? This will create a permanent proof of your journey on-chain.",
+            buttons: [
+                { text: "Cancel", style: "cancel", onPress: () => setAlertVisible(false) },
+                {
+                    text: "Mint Now",
+                    onPress: async () => {
+                        setAlertVisible(false);
+                        try {
+                            setMinting(true);
+                            const result = await mintProgressNFT(
+                                photo.photo_url,
+                                walletAddress,
+                                {
+                                    name: `StayFit Progress - ${format(new Date(photo.created_at), 'MMM d, yyyy')}`,
+                                    description: `On-chain proof of workout progress on StayFit Seeker.`
+                                }
+                            );
+
+                            if (result.success) {
+                                setAlertConfig({
+                                    title: "Success",
+                                    message: `NFT minted successfully!\n\nMint Address: ${result.mintAddress.slice(0, 8)}...`,
+                                    buttons: [{ text: "Awesome!", onPress: () => setAlertVisible(false) }]
+                                });
+                                setAlertVisible(true);
+                            }
+                        } catch (err: any) {
+                            console.error(err);
+                            setAlertConfig({
+                                title: "Minting Failed",
+                                message: err.message || "Failed to mint NFT. Please try again.",
+                                buttons: [{ text: "OK", onPress: () => setAlertVisible(false) }]
+                            });
+                            setAlertVisible(true);
+                        } finally {
+                            setMinting(false);
+                        }
+                    }
+                }
+            ]
+        });
+        setAlertVisible(true);
     };
 
     const handleDeletePhoto = async (photo: ProgressPhoto, index: number) => {
@@ -402,6 +465,26 @@ export default function ProfileCalendar({ userId }: ProfileCalendarProps) {
 
                         {viewPhotos[viewIndex] && (
                             <TouchableOpacity
+                                style={styles.mintNFTButton}
+                                onPress={() => handleMintNFT(viewPhotos[viewIndex])}
+                                disabled={minting}
+                            >
+                                {minting ? (
+                                    <View style={styles.mintingContainer}>
+                                        <ActivityIndicator size="small" color={selectedPalette.primary} />
+                                        <Text style={styles.mintingText}>Minting...</Text>
+                                    </View>
+                                ) : (
+                                    <>
+                                        <Ionicons name="diamond-outline" size={24} color={selectedPalette.primary} />
+                                        <Text style={[styles.mintNFTText, { color: selectedPalette.primary }]}>Mint as NFT</Text>
+                                    </>
+                                )}
+                            </TouchableOpacity>
+                        )}
+
+                        {viewPhotos[viewIndex] && (
+                            <TouchableOpacity
                                 style={styles.deleteButton}
                                 onPress={() => handleDeletePhoto(viewPhotos[viewIndex], viewIndex)}
                             >
@@ -576,15 +659,9 @@ const styles = StyleSheet.create({
     fullScreenShareButton: {
         position: "absolute",
         top: 40,
-        right: 80, // Positioned to the left of close button? 
-        // Wait, close button is right: 20. 
-        // Let's put share on left? Or next to delete?
-        // Delete is left: 20.
-        // Let's put Share button top right, move close button to top left?
-        // Or keep Close top right, Share top right (offset).
         right: 70,
         zIndex: 10,
-        padding: 5, // Match padding
+        padding: 5,
     },
     deleteButton: {
         position: "absolute",
@@ -614,5 +691,34 @@ const styles = StyleSheet.create({
         fontFamily: "Outfit-Regular",
         fontSize: 16,
         textAlign: "center",
+    },
+    mintNFTButton: {
+        position: "absolute",
+        top: 100,
+        right: 20,
+        backgroundColor: "rgba(0,0,0,0.6)",
+        paddingHorizontal: 16,
+        paddingVertical: 10,
+        borderRadius: 20,
+        flexDirection: "row",
+        alignItems: "center",
+        zIndex: 10,
+        borderWidth: 1,
+        borderColor: "rgba(255,255,255,0.1)",
+    },
+    mintNFTText: {
+        fontFamily: "Outfit-Bold",
+        fontSize: 14,
+        marginLeft: 8,
+    },
+    mintingContainer: {
+        flexDirection: "row",
+        alignItems: "center",
+    },
+    mintingText: {
+        color: "#FFF",
+        fontFamily: "Outfit-Medium",
+        fontSize: 14,
+        marginLeft: 8,
     },
 });

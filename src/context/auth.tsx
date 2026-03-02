@@ -1,6 +1,13 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 import { Session, User } from "@supabase/supabase-js";
 import { supabase } from "../lib/supabase";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+
+const APP_IDENTITY = {
+  name: "StayFit",
+  uri: "https://stayfit-seeker.app",
+  icon: "favicon.ico",
+};
 
 interface AuthContextType {
   user: User | null;
@@ -12,6 +19,8 @@ interface AuthContextType {
   signInWithOtp: (email: string) => Promise<{ error: any }>;
   signOut: () => Promise<void>;
   forgotPassword: (email: string) => Promise<void>;
+  connectWallet: () => Promise<string>;
+  disconnectWallet: () => Promise<void>;
   profileUpdated: number;
   triggerProfileRefresh: () => void;
 }
@@ -89,6 +98,64 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     if (error) throw error;
   };
 
+  const connectWallet = async (): Promise<string> => {
+    try {
+      let transact: any;
+      try {
+        const mwa = require("@solana-mobile/mobile-wallet-adapter-protocol-web3js");
+        transact = mwa.transact;
+      } catch (importErr) {
+        console.warn("Solana Mobile Wallet Adapter not available (likely running in Expo Go)");
+        throw new Error("Wallet connection is not available in this environment. Please use a custom dev build to connect your wallet.");
+      }
+
+      let newWalletAddress = "";
+      await transact(async (wallet: any) => {
+        const authorizationResult = await wallet.authorize({
+          cluster: "mainnet-beta",
+          identity: APP_IDENTITY,
+        });
+        newWalletAddress = authorizationResult.accounts[0].address;
+      });
+
+      // Store wallet address in user metadata if we have a session
+      if (session?.user) {
+        // 1. Update Supabase Auth Metadata
+        await supabase.auth.updateUser({
+          data: { wallet_address: newWalletAddress }
+        });
+
+        // 2. Update Profiles table
+        await supabase
+          .from('profiles')
+          .update({ wallet_address: newWalletAddress })
+          .eq('id', session.user.id);
+
+        // 3. Save locally
+        await AsyncStorage.setItem(`wallet_address_${session.user.id}`, newWalletAddress);
+      }
+
+      return newWalletAddress;
+    } catch (err: any) {
+      console.error("Wallet connection failed", err);
+      throw err;
+    }
+  };
+
+  const disconnectWallet = async () => {
+    try {
+      setLoading(true);
+      if (session?.user) {
+        await AsyncStorage.removeItem(`wallet_address_${session.user.id}`);
+      }
+      await supabase.auth.signOut();
+      setUser(null);
+      setSession(null);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   // Function to trigger profile refresh across components
   const triggerProfileRefresh = () => {
     console.log("Triggering profile refresh");
@@ -105,6 +172,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     verifyOtp,
     signOut,
     forgotPassword,
+    connectWallet,
+    disconnectWallet,
     profileUpdated,
     triggerProfileRefresh,
   };

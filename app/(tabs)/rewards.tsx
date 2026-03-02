@@ -17,6 +17,7 @@ import { router } from 'expo-router';
 import * as Clipboard from 'expo-clipboard';
 import { supabase } from '../../src/lib/supabase';
 import { useFocusEffect } from "@react-navigation/native";
+import { useAuth } from "../../src/context/auth";
 
 // Gamification constants
 const XP_PER_WORKOUT = 500;
@@ -24,6 +25,7 @@ const REFERRAL_BONUS_MULTIPLIER = 0.01;
 
 export default function Rewards() {
     const { isDarkMode, selectedPalette } = useTheme();
+    const { connectWallet, user: authUser } = useAuth();
     const [profile, setProfile] = React.useState<any>(null);
     const [transactions, setTransactions] = React.useState<any[]>([]);
     const [loading, setLoading] = React.useState(true);
@@ -92,7 +94,7 @@ export default function Rewards() {
     const handleAddReferral = () => {
         Alert.prompt(
             "Add Referral Code",
-            "Enter your friend's referral code to get +0.01 multiplier bonus once they hit a streak!",
+            "Enter your friend's referral code to get +0.01 Referral Boost once they hit a streak!",
             [
                 { text: "Cancel", style: "cancel" },
                 {
@@ -112,7 +114,7 @@ export default function Rewards() {
                                 return;
                             }
 
-                            if (friend.id === (await supabase.auth.getUser()).data.user?.id) {
+                            if (friend.id === authUser?.id) {
                                 Alert.alert("Error", "You cannot refer yourself.");
                                 return;
                             }
@@ -122,7 +124,7 @@ export default function Rewards() {
                                 .from('referrals')
                                 .insert({
                                     referrer_id: friend.id,
-                                    referred_id: (await supabase.auth.getUser()).data.user?.id,
+                                    referred_id: authUser?.id,
                                     status: 'joined'
                                 });
 
@@ -144,6 +146,29 @@ export default function Rewards() {
         );
     };
 
+    const handleConnectWallet = async () => {
+        try {
+            const address = await connectWallet();
+            if (address) {
+                Alert.alert("Success", `Wallet connected: ${address.slice(0, 6)}...${address.slice(-4)}`);
+                fetchData();
+            }
+        } catch (err: any) {
+            Alert.alert("Connection Failed", err.message);
+        }
+    };
+
+    const handleShowInfo = () => {
+        Alert.alert(
+            "XP & SKR Boosts",
+            "• XP (Experience Points) are earned by completing workouts.\n\n" +
+            "• $GAINS Token: Your XP balance is your ticket to the future Stay Fit ($GAINS) token giveaway.\n\n" +
+            "• SKR Boost: Hold SKR in your connected wallet to unlock higher XP multipliers and premium features.\n\n" +
+            "• Referral Boost: Each friend you refer who completes a 7-day streak gives you a permanent +0.01 boost.",
+            [{ text: "Got it" }]
+        );
+    };
+
     return (
         <ThemeBackground style={styles.container}>
             <SafeAreaView style={styles.safeArea} edges={["top"]}>
@@ -154,7 +179,7 @@ export default function Rewards() {
                         <View style={{ flex: 1 }}>
                             <View style={styles.labelRow}>
                                 <Text style={[styles.balanceLabel, { color: colors.textSecondary }]}>Total XP Balance</Text>
-                                <TouchableOpacity style={styles.infoIcon}>
+                                <TouchableOpacity style={styles.infoIcon} onPress={handleShowInfo}>
                                     <Ionicons name="help-circle-outline" size={18} color={colors.textSecondary} />
                                 </TouchableOpacity>
                             </View>
@@ -169,14 +194,19 @@ export default function Rewards() {
                                 {profile?.xp_multiplier > 1.0 && (
                                     <View style={[styles.multiplierBadge, { backgroundColor: colors.primary + '20' }]}>
                                         <Ionicons name="flash" size={12} color={colors.primary} />
-                                        <Text style={[styles.multiplierText, { color: colors.primary }]}> {profile.xp_multiplier}x Multiplier</Text>
+                                        <Text style={[styles.multiplierText, { color: colors.primary }]}> {profile.xp_multiplier.toFixed(2)}x SKR Boost</Text>
                                     </View>
                                 )}
                             </View>
                         </View>
-                        <TouchableOpacity style={[styles.walletSelector, { backgroundColor: isDarkMode ? "#222" : "#F5F5F5" }]}>
-                            <Text style={[styles.walletLabel, { color: colors.text }]}>Settings</Text>
-                            <Ionicons name="chevron-down" size={16} color={colors.textSecondary} />
+                        <TouchableOpacity
+                            style={[styles.walletSelector, { backgroundColor: isDarkMode ? "#222" : "#F5F5F5" }]}
+                            onPress={handleConnectWallet}
+                        >
+                            <Ionicons name="wallet-outline" size={16} color={colors.primary} style={{ marginRight: 6 }} />
+                            <Text style={[styles.walletLabel, { color: colors.text }]}>
+                                {profile?.wallet_address ? `${profile.wallet_address.slice(0, 4)}...${profile.wallet_address.slice(-4)}` : "Connect"}
+                            </Text>
                         </TouchableOpacity>
                     </View>
 
@@ -210,7 +240,7 @@ export default function Rewards() {
                             style={styles.bannerGradient}
                         >
                             <View style={styles.bannerContent}>
-                                <Text style={styles.bannerTitle}>Invite a friend and get +0.01 Multiplier</Text>
+                                <Text style={styles.bannerTitle}>Invite a friend and get +0.01 Referral Boost</Text>
                                 <View style={styles.bannerBtn}>
                                     <Text style={styles.bannerBtnText}>share invite</Text>
                                     <Ionicons name="chevron-forward" size={14} color="#888" />
@@ -270,7 +300,7 @@ export default function Rewards() {
 
                 </ScrollView>
             </SafeAreaView>
-        </ThemeBackground>
+        </ThemeBackground >
     );
 }
 

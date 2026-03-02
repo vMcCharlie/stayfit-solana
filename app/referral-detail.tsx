@@ -78,9 +78,9 @@ export default function ReferralDetail() {
                     </View>
 
                     <Text style={[styles.expiryText, { color: colors.textSecondary }]}>Never expires</Text>
-                    <Text style={[styles.headline, { color: colors.text }]}>Invite a friend. Get +0.01 Multiplier.</Text>
+                    <Text style={[styles.headline, { color: colors.text }]}>Invite a friend. Get +0.01 Referral Boost.</Text>
                     <Text style={[styles.description, { color: colors.textSecondary }]}>
-                        Invite friends to StayFit Seeker. Once they sign up and complete a 7-day streak, you'll both get a persistent +0.01 multiplier bonus.
+                        Invite friends to StayFit Seeker. Once they sign up and complete a 7-day streak, you'll both get a persistent +0.01 Referral Boost.
                     </Text>
 
                     {/* Features */}
@@ -89,9 +89,9 @@ export default function ReferralDetail() {
                             <Ionicons name="infinite" size={20} color={colors.text} />
                         </View>
                         <View style={styles.featureContent}>
-                            <Text style={[styles.featureTitle, { color: colors.text }]}>Stackable Multipliers</Text>
+                            <Text style={[styles.featureTitle, { color: colors.text }]}>Stackable Boosts</Text>
                             <Text style={[styles.featureDesc, { color: colors.textSecondary }]}>
-                                Every friend who hits their first 7-day streak increases your earnings forever.
+                                Every friend who hits their first 7-day streak increases your Referral Boost forever.
                             </Text>
                         </View>
                     </View>
@@ -103,7 +103,7 @@ export default function ReferralDetail() {
                         <View style={styles.featureContent}>
                             <Text style={[styles.featureTitle, { color: colors.text }]}>Instant Activation</Text>
                             <Text style={[styles.featureDesc, { color: colors.textSecondary }]}>
-                                Multipliers are applied immediately to all future XP earnings.
+                                Boosts are applied immediately to all future XP earnings.
                             </Text>
                         </View>
                     </View>
