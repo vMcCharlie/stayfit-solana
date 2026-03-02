@@ -28,7 +28,7 @@ export default function ReferralDetail() {
         surface: isDarkMode ? selectedPalette.dark?.surface || '#1A1A1A' : selectedPalette.light?.surface || '#FFF',
         text: isDarkMode ? selectedPalette.dark?.text || '#FFF' : selectedPalette.light?.text || '#000',
         textSecondary: isDarkMode ? 'rgba(255, 255, 255, 0.6)' : 'rgba(0, 0, 0, 0.5)',
-        primary: "#00C853",
+        primary: selectedPalette.primary,
         border: isDarkMode ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)',
     };
 
@@ -55,12 +55,10 @@ export default function ReferralDetail() {
                 {/* Custom Header */}
                 <View style={styles.header}>
                     <TouchableOpacity onPress={() => router.back()} style={styles.backBtn}>
-                        <Ionicons name="close" size={28} color={colors.text} />
+                        <Ionicons name="chevron-back" size={28} color={colors.text} />
                     </TouchableOpacity>
-                    <Text style={[styles.headerTitle, { color: colors.text }]}>Promo</Text>
-                    <TouchableOpacity style={styles.pastBtn}>
-                        <Text style={[styles.pastText, { color: colors.primary }]}>Past</Text>
-                    </TouchableOpacity>
+                    <Text style={[styles.headerTitle, { color: colors.text }]}>Refer a friend</Text>
+                    <View style={{ width: 40 }} />
                 </View>
 
                 <ScrollView contentContainerStyle={styles.scrollContent}>
@@ -128,7 +126,7 @@ export default function ReferralDetail() {
                     </TouchableOpacity>
                 </View>
             </SafeAreaView>
-        </ThemeBackground>
+        </ThemeBackground >
     );
 }
 
