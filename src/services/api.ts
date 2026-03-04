@@ -27,7 +27,9 @@ export interface UserProfile {
     premium_status?: boolean;
     goal_weight?: number;
     equipment_access?: string;
-    // ... other fields
+    wallet_address?: string | null;
+    xp_balance?: number;
+    xp_multiplier?: number;
 }
 
 export interface SocialLink {

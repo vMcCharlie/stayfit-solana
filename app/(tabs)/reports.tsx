@@ -41,6 +41,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import Animated, { FadeInDown } from "react-native-reanimated";
 import { LinearGradient as CardGradient } from "expo-linear-gradient";
 import ScreenHeader from "../components/ScreenHeader";
+import NavWalletButton from "../components/NavWalletButton";
 import { api } from "../../src/services/api";
 
 interface FocusAreaIntensity {
@@ -1256,11 +1257,8 @@ export default function ReportsScreen() {
 
   return (
     <ThemeBackground style={styles.container}>
-      <SafeAreaView
-        style={[styles.container, { backgroundColor: 'transparent' }]}
-        edges={['top']}
-      >
-        <ScreenHeader title="Stay Fit" />
+      <SafeAreaView style={styles.container} edges={["top"]}>
+        <ScreenHeader title="Reports" rightAction={<NavWalletButton />} />
         <ScrollView
           showsVerticalScrollIndicator={false}
           contentContainerStyle={styles.contentContainer}

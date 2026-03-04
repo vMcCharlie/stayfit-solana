@@ -8,7 +8,11 @@ import { router } from 'expo-router';
 import * as Clipboard from 'expo-clipboard';
 import { supabase } from '../src/lib/supabase';
 import { useAuth } from '../src/context/auth';
-import { Modal, Pressable, TextInput, ActivityIndicator, Alert as RNAlert } from 'react-native';
+import { Modal, Pressable, TextInput, ActivityIndicator } from 'react-native';
+import CustomAlert, { AlertButton } from './components/CustomAlert';
+
+const REFERRAL_BONUS_MULTIPLIER = 0.01;
+const REFERRAL_XP_BONUS = 5000;
 
 export default function ReferralDetail() {
     const { isDarkMode, selectedPalette } = useTheme();
@@ -17,6 +21,25 @@ export default function ReferralDetail() {
     const [redeemModalVisible, setRedeemModalVisible] = React.useState(false);
     const [referralCode, setReferralCode] = React.useState("");
     const [isRedeeming, setIsRedeeming] = React.useState(false);
+    const [alertConfig, setAlertConfig] = React.useState<{
+        visible: boolean;
+        title: string;
+        message: string;
+        buttons?: AlertButton[];
+    }>({
+        visible: false,
+        title: "",
+        message: "",
+    });
+
+    const showAlert = (title: string, message: string, buttons?: AlertButton[]) => {
+        setAlertConfig({
+            visible: true,
+            title,
+            message,
+            buttons,
+        });
+    };
 
     const fetchProfile = async () => {
         const { data: { user } } = await supabase.auth.getUser();
@@ -57,55 +80,34 @@ export default function ReferralDetail() {
 
     const handleRedeem = async () => {
         if (!referralCode.trim()) {
-            RNAlert.alert("Error", "Please enter a referral code.");
+            showAlert("Error", "Please enter a referral code.");
             return;
         }
 
         setIsRedeeming(true);
         try {
-            // 1. Find the referrer
-            const { data: referrer, error: findError } = await supabase
-                .from('profiles')
-                .select('id')
-                .eq('invite_code', referralCode.trim().toUpperCase())
-                .single();
-
-            if (findError || !referrer) {
-                RNAlert.alert("Error", "Invalid referral code. Please check and try again.");
-                setIsRedeeming(false);
-                return;
-            }
-
-            if (referrer.id === authUser?.id) {
-                RNAlert.alert("Error", "You cannot refer yourself.");
-                setIsRedeeming(false);
-                return;
-            }
-
-            // 2. Try to insert the referral record
-            const { error: insertError } = await supabase
-                .from('referrals')
-                .insert({
-                    referrer_id: referrer.id,
-                    referred_id: authUser?.id,
-                    status: 'joined'
-                });
-
-            if (insertError) {
-                if (insertError.code === '23505') {
-                    RNAlert.alert("Error", "You have already been referred by someone else.");
-                } else {
-                    RNAlert.alert("Error", "Failed to redeem code. Please try again later.");
+            const { data, error } = await supabase.functions.invoke('rewards-manager', {
+                body: {
+                    action: 'redeem_referral',
+                    code: referralCode.trim()
                 }
-                console.error("Redeem Error:", insertError);
-            } else {
-                RNAlert.alert("Success", "Referral code redeemed! Complete a 7-day streak to earn your Referral Boost.");
+            });
+
+            if (error) {
+                // The edge function returns consistent error messages
+                const errorMessage = error.message || "Failed to redeem code. Please try again later.";
+                showAlert("Error", errorMessage);
+                console.error("Redeem Error:", error);
+            } else if (data?.success) {
+                showAlert("Success", `Referral code redeemed! Complete a 7-day streak to earn ${REFERRAL_XP_BONUS.toLocaleString()} XP and a +${REFERRAL_BONUS_MULTIPLIER} Referral Boost.`);
                 setRedeemModalVisible(false);
                 setReferralCode("");
+            } else {
+                showAlert("Error", data?.error || "An unexpected error occurred.");
             }
         } catch (err) {
             console.error("Redeem Catch Error:", err);
-            RNAlert.alert("Error", "An unexpected error occurred.");
+            showAlert("Error", "An unexpected error occurred.");
         } finally {
             setIsRedeeming(false);
         }
@@ -138,9 +140,9 @@ export default function ReferralDetail() {
                     </View>
 
                     <Text style={[styles.expiryText, { color: colors.textSecondary }]}>Never expires</Text>
-                    <Text style={[styles.headline, { color: colors.text }]}>Invite a friend. Get +0.01 Referral Boost with no limit.</Text>
+                    <Text style={[styles.headline, { color: colors.text }]}>Invite a friend. Get +{REFERRAL_BONUS_MULTIPLIER} Referral Boost with no limit.</Text>
                     <Text style={[styles.description, { color: colors.textSecondary }]}>
-                        Invite friends to StayFit Seeker. Once they sign up and complete a 7-day streak, you'll both get a persistent +0.01 Referral Boost. There is no maximum limit—the more you refer, the more you earn!
+                        Invite friends to StayFit Seeker. Once they sign up and complete a 7-day streak, you'll both get ${REFERRAL_XP_BONUS.toLocaleString()} XP and a persistent +{REFERRAL_BONUS_MULTIPLIER} Referral Boost. There is no maximum limit—the more you refer, the more you earn!
                     </Text>
 
                     {/* Features */}
@@ -238,6 +240,14 @@ export default function ReferralDetail() {
                         </View>
                     </View>
                 </Modal>
+
+                <CustomAlert
+                    visible={alertConfig.visible}
+                    title={alertConfig.title}
+                    message={alertConfig.message}
+                    buttons={alertConfig.buttons}
+                    onClose={() => setAlertConfig({ ...alertConfig, visible: false })}
+                />
             </SafeAreaView>
         </ThemeBackground >
     );

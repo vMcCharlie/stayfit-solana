@@ -134,21 +134,51 @@ serve(async (req) => {
 
             if (sessionError) throw sessionError
 
-            // B. XP Calculation & Profile Updates
-            const { data: profile } = await supabaseAdmin.from('profiles').select('xp_multiplier, xp_balance, total_workouts_completed, total_calories_burned, total_time_taken').eq('id', user.id).single();
-            const multiplier = profile?.xp_multiplier || 1.0;
-            const xpReward = Math.round(500 * multiplier);
+            // B. Anti-Abuse XP Calculation & Profile Updates
+            const todayDate = new Date().toISOString().split('T')[0];
+            const { data: dailySummary } = await supabaseAdmin
+                .from('daily_workout_summary')
+                .select('total_workouts')
+                .eq('user_id', user.id)
+                .eq('date', todayDate)
+                .single();
 
-            // C. Log XP Transaction
-            await supabaseAdmin.from('xp_transactions').insert({
-                user_id: user.id,
-                amount: xpReward,
-                type: 'workout',
-                description: `Completed workout session`
-            });
+            const { data: profile } = await supabaseAdmin
+                .from('profiles')
+                .select('xp_multiplier, xp_balance, total_workouts_completed, total_calories_burned, total_time_taken')
+                .eq('id', user.id)
+                .single();
+
+            const multiplier = profile?.xp_multiplier || 1.0;
+            let xpReward = 0;
+            let rewardLimitReached = false;
+
+            if ((dailySummary?.total_workouts || 0) >= 2) {
+                rewardLimitReached = true;
+                xpReward = 0;
+                console.log(`Daily reward limit reached for user ${user.id}`);
+            } else {
+                // Dynamic XP Calculation
+                const baseXp = 100;
+                const durationMinutes = Math.min(90, Math.floor(body.total_duration / 60));
+                const timeBonus = durationMinutes * 5;
+                const calorieBonus = Math.floor(body.total_calories_burned * 0.5);
+
+                xpReward = Math.round((baseXp + timeBonus + calorieBonus) * multiplier);
+                console.log(`Calculated XP: ${xpReward} (Base 100 + Time ${timeBonus} + Calorie ${calorieBonus}) * Multiplier ${multiplier}`);
+            }
+
+            // C. Log XP Transaction (only if reward > 0)
+            if (xpReward > 0) {
+                await supabaseAdmin.from('xp_transactions').insert({
+                    user_id: user.id,
+                    amount: xpReward,
+                    type: 'workout',
+                    description: `Completed workout session (${Math.round(body.total_duration / 60)}m)`
+                });
+            }
 
             // D. Streak history & Referral Logic
-            const todayDate = new Date().toISOString().split('T')[0];
             await supabaseAdmin.from('user_streak_history').upsert({
                 user_id: user.id,
                 activity_date: todayDate,
@@ -273,7 +303,11 @@ serve(async (req) => {
             }
 
             return new Response(
-                JSON.stringify({ success: true, message: 'Workout logged and streak updated' }),
+                JSON.stringify({
+                    success: true,
+                    message: rewardLimitReached ? 'Workout logged (Daily reward limit reached)' : 'Workout logged and XP earned',
+                    xp_earned: xpReward
+                }),
                 { headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
             )
         }

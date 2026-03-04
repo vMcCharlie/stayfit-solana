@@ -30,13 +30,13 @@ import Animated, {
 } from "react-native-reanimated";
 import { useCustomAlert } from "../../src/hooks/useCustomAlert";
 import CustomAlert from "../components/CustomAlert";
-import { SettingsIcon, FacebookIcon, InstagramIcon, YoutubeIcon, LinkIcon, PencilIcon, TikTokIcon, ShareIcon, ClockIcon, BadgesIcon, FireIcon, GymIcon } from "../components/TabIcons";
+import { SettingsIcon, FacebookIcon, InstagramIcon, YoutubeIcon, LinkIcon, PencilIcon, TikTokIcon, ClockIcon, BadgesIcon, FireIcon, GymIcon } from "../components/TabIcons";
 import Settings from "../components/settings";
 import { supabase } from "../../src/lib/supabase";
-import ShareProfile from "../components/shareprofile";
 import ProfileCalendar from "../components/ProfileCalendar";
 import AchievementModal from "../components/AchievementModal";
 import ScreenHeader from "../components/ScreenHeader";
+import NavWalletButton from "../components/NavWalletButton";
 import AchievementsList from "../../src/components/achievements/AchievementsList";
 import { getLocalYYYYMMDD } from "../../src/utils/date";
 
@@ -190,7 +190,6 @@ export default function ProfileScreen() {
   const { profileUpdated, user } = useAuth();
   const [showSettings, setShowSettings] = useState(false);
   const [hasUnreadOffers, setHasUnreadOffers] = useState(false);
-  const [showShareProfile, setShowShareProfile] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [profile, setProfile] = useState<Profile>({
@@ -555,26 +554,6 @@ export default function ProfileScreen() {
         >
           <PencilIcon size={20} color="white" />
           <Text style={styles.actionButtonText}>Edit Profile</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={[
-            styles.actionButton,
-            { backgroundColor: colors.surfaceSecondary },
-          ]}
-          onPress={() => setShowShareProfile(true)}
-        >
-          <ShareIcon
-            size={20}
-            color={selectedPalette.primary}
-          />
-          <Text
-            style={[
-              styles.actionButtonText,
-              { color: selectedPalette.primary },
-            ]}
-          >
-            Share Profile
-          </Text>
         </TouchableOpacity>
       </View>
     );
@@ -1079,36 +1058,36 @@ export default function ProfileScreen() {
 
   return (
     <ThemeBackground style={styles.container}>
-      <SafeAreaView
-        style={[styles.container, { backgroundColor: 'transparent' }]}
-        edges={['top']}
-      >
+      <SafeAreaView style={styles.container} edges={["top"]}>
         <ScreenHeader
           title={profile.username ? profile.username.toLowerCase() : "Stay Fit"}
           rightAction={
-            <TouchableOpacity onPress={toggleSettings}>
-              <Animated.View style={iconAnimatedStyle}>
-                <View style={styles.iconContainer}>
-                  {showSettings ? (
-                    <Ionicons name="close-outline" size={26} color={colors.text} />
-                  ) : (
-                    <SettingsIcon size={26} color={colors.text} />
-                  )}
-                  {hasUnreadOffers && (
-                    <View
-                      style={[
-                        styles.notificationDot,
-                        { backgroundColor: selectedPalette.primary },
-                      ]}
-                    />
-                  )}
-                </View>
-              </Animated.View>
-            </TouchableOpacity>
+            <View style={styles.headerActions}>
+              <NavWalletButton />
+              <TouchableOpacity onPress={toggleSettings} style={styles.settingsToggle}>
+                <Animated.View style={iconAnimatedStyle}>
+                  <View style={styles.iconContainer}>
+                    {showSettings ? (
+                      <Ionicons name="close-outline" size={26} color={colors.text} />
+                    ) : (
+                      <SettingsIcon size={26} color={colors.text} />
+                    )}
+                    {hasUnreadOffers && (
+                      <View
+                        style={[
+                          styles.notificationDot,
+                          { backgroundColor: selectedPalette.primary },
+                        ]}
+                      />
+                    )}
+                  </View>
+                </Animated.View>
+              </TouchableOpacity>
+            </View>
           }
         />
-
         <ScrollView
+          style={styles.scrollView}
           showsVerticalScrollIndicator={false}
           contentContainerStyle={{ paddingBottom: 100 }}
           refreshControl={
@@ -1120,191 +1099,186 @@ export default function ProfileScreen() {
             />
           }
         >
-          {loading ? (
-            <View style={styles.loadingContainer}>
-              <ActivityIndicator size="large" color={selectedPalette.primary} />
-            </View>
-          ) : error ? (
-            <View style={styles.errorContainer}>
-              <Text style={[styles.errorText, { color: colors.text }]}>
-                {error}
-              </Text>
-              <TouchableOpacity
-                onPress={() => fetchUserProfile(true)}
-                style={[
-                  styles.retryButton,
-                  { backgroundColor: selectedPalette.primary },
-                ]}
-              >
-                <Text style={styles.retryButtonText}>Retry</Text>
-              </TouchableOpacity>
-            </View>
-          ) : (
-            <View style={styles.profileSection}>
-              <View
-                style={[
-                  styles.profileImageContainer,
-                  { backgroundColor: selectedPalette.primary },
-                ]}
-              >
-                {profile.avatar_url ? (
-                  <Image
-                    key={`profile-image-${imageVersion}`}
-                    source={{
-                      uri: profile.avatar_url.includes("?")
-                        ? `${profile.avatar_url}&t=${imageVersion}`
-                        : `${profile.avatar_url}?t=${imageVersion}`,
-                      cache: "reload",
-                    }}
-                    style={styles.profileImage}
-                  />
-                ) : (
-                  <View style={[styles.avatarPlaceholder, { backgroundColor: selectedPalette.primary }]}>
-                    <Text style={{ color: "#FFFFFF", fontSize: 60, fontFamily: "Outfit-Bold" }}>
-                      {(profile.full_name || profile.username || "?").charAt(0).toUpperCase()}
+          {
+            loading ? (
+              <View style={styles.loadingContainer} >
+                <ActivityIndicator size="large" color={selectedPalette.primary} />
+              </View>
+            ) : error ? (
+              <View style={styles.errorContainer}>
+                <Text style={[styles.errorText, { color: colors.text }]}>
+                  {error}
+                </Text>
+                <TouchableOpacity
+                  onPress={() => fetchUserProfile(true)}
+                  style={[
+                    styles.retryButton,
+                    { backgroundColor: selectedPalette.primary },
+                  ]}
+                >
+                  <Text style={styles.retryButtonText}>Retry</Text>
+                </TouchableOpacity>
+              </View>
+            ) : (
+              <View style={styles.profileSection}>
+                <View
+                  style={[
+                    styles.profileImageContainer,
+                    { backgroundColor: selectedPalette.primary },
+                  ]}
+                >
+                  {profile.avatar_url ? (
+                    <Image
+                      key={`profile-image-${imageVersion}`}
+                      source={{
+                        uri: profile.avatar_url.includes("?")
+                          ? `${profile.avatar_url}&t=${imageVersion}`
+                          : `${profile.avatar_url}?t=${imageVersion}`,
+                        cache: "reload",
+                      }}
+                      style={styles.profileImage}
+                    />
+                  ) : (
+                    <View style={[styles.avatarPlaceholder, { backgroundColor: selectedPalette.primary }]}>
+                      <Text style={{ color: "#FFFFFF", fontSize: 60, fontFamily: "Outfit-Bold" }}>
+                        {(profile.full_name || profile.username || "?").charAt(0).toUpperCase()}
+                      </Text>
+                    </View>
+                  )}
+                </View>
+
+                <Text style={[styles.fullName, { color: colors.text }]}>
+                  {profile.full_name}
+                </Text>
+
+                <View style={styles.statsContainer}>
+                  <View style={styles.statItem}>
+                    <Text style={[styles.statValue, { color: colors.text }]}>
+                      {profile.calories_burned.toLocaleString()}
+                    </Text>
+                    <Text
+                      style={[styles.statLabel, { color: colors.textSecondary }]}
+                    >
+                      Calories Burned
                     </Text>
                   </View>
-                )}
-              </View>
-
-              <Text style={[styles.fullName, { color: colors.text }]}>
-                {profile.full_name}
-              </Text>
-
-              <View style={styles.statsContainer}>
-                <View style={styles.statItem}>
-                  <Text style={[styles.statValue, { color: colors.text }]}>
-                    {profile.calories_burned.toLocaleString()}
-                  </Text>
-                  <Text
-                    style={[styles.statLabel, { color: colors.textSecondary }]}
-                  >
-                    Calories Burned
-                  </Text>
+                  <View style={styles.statItem}>
+                    <Text style={[styles.statValue, { color: colors.text }]}>
+                      {profile.workouts_completed}
+                    </Text>
+                    <Text
+                      style={[styles.statLabel, { color: colors.textSecondary }]}
+                    >
+                      Workouts
+                    </Text>
+                  </View>
+                  <View style={styles.statItem}>
+                    <Text style={[styles.statValue, { color: colors.text }]}>
+                      {formatTotalTime(profile.total_time_taken)}
+                    </Text>
+                    <Text
+                      style={[styles.statLabel, { color: colors.textSecondary }]}
+                    >
+                      Total Time
+                    </Text>
+                  </View>
                 </View>
-                <View style={styles.statItem}>
-                  <Text style={[styles.statValue, { color: colors.text }]}>
-                    {profile.workouts_completed}
-                  </Text>
-                  <Text
-                    style={[styles.statLabel, { color: colors.textSecondary }]}
-                  >
-                    Workouts
-                  </Text>
-                </View>
-                <View style={styles.statItem}>
-                  <Text style={[styles.statValue, { color: colors.text }]}>
-                    {formatTotalTime(profile.total_time_taken)}
-                  </Text>
-                  <Text
-                    style={[styles.statLabel, { color: colors.textSecondary }]}
-                  >
-                    Total Time
-                  </Text>
-                </View>
-              </View>
 
-              <View style={styles.rankContainer}>
-                <View style={styles.rankWrapper}>
-                  <Text
-                    style={[
-                      styles.rankText,
-                      { backgroundColor: selectedPalette.primary },
-                    ]}
-                  >
-                    #1
-                  </Text>
-                  {profile.subscription && profile.subscription !== "FREE" && (
+                <View style={styles.rankContainer}>
+                  <View style={styles.rankWrapper}>
                     <Text
                       style={[
-                        styles.subscriptionBadge,
-                        {
-                          backgroundColor: selectedPalette.primary,
-                          opacity: profile.subscription === "PRO" ? 1 : 0.8,
-                        },
+                        styles.rankText,
+                        { backgroundColor: selectedPalette.primary },
                       ]}
                     >
-                      {profile.subscription}
+                      #1
                     </Text>
+                    {profile.subscription && profile.subscription !== "FREE" && (
+                      <Text
+                        style={[
+                          styles.subscriptionBadge,
+                          {
+                            backgroundColor: selectedPalette.primary,
+                            opacity: profile.subscription === "PRO" ? 1 : 0.8,
+                          },
+                        ]}
+                      >
+                        {profile.subscription}
+                      </Text>
+                    )}
+                  </View>
+                </View>
+
+                <Text style={[styles.bio, { color: colors.textSecondary }]}>
+                  {profile.bio}
+                </Text>
+
+                {renderSocialIcons()}
+                {renderActionButtons()}
+                {renderActivityGraph()}
+
+                {/* Calendar View */}
+                {/* Calendar View */}
+                <View
+                  style={[
+                    styles.calendarContainer,
+                    { padding: 0, overflow: 'hidden', backgroundColor: 'transparent' },
+                  ]}
+                >
+                  <LinearGradient
+                    colors={isDarkMode ? ['#252525', '#1A1A1A'] : ['#FFFFFF', '#F8F8F8']}
+                    start={{ x: 0, y: 0 }}
+                    end={{ x: 0, y: 1 }}
+                    style={{ padding: 16 }}
+                  >
+                    <Text style={[styles.sectionTitle, { color: colors.text }]}>
+                      Progress
+                    </Text>
+                    <ProfileCalendar userId={user?.id} />
+                  </LinearGradient>
+                </View>
+
+                {renderTabs()}
+                <View style={styles.tabContent}>
+                  {selectedTab === "history" && (
+                    <View style={styles.tabContentSection}>
+                      <View style={styles.dateNavigation}>
+                        <TouchableOpacity onPress={handlePrevWeek} style={styles.navButton}>
+                          <Ionicons name="chevron-back" size={24} color={colors.text} />
+                        </TouchableOpacity>
+                        <Text style={[styles.dateRangeText, { color: colors.text }]}>
+                          {(() => {
+                            const start = new Date(historyEndDate);
+                            start.setDate(start.getDate() - 6);
+                            return `${formatRangeDate(start)} - ${formatRangeDate(historyEndDate)}`;
+                          })()}
+                        </Text>
+                        <TouchableOpacity
+                          onPress={handleNextWeek}
+                          style={[styles.navButton, isCurrentWeek && { opacity: 0.3 }]}
+                          disabled={isCurrentWeek}
+                        >
+                          <Ionicons name="chevron-forward" size={24} color={colors.text} />
+                        </TouchableOpacity>
+                      </View>
+                      {renderWorkoutList()}
+                    </View>
+                  )}
+                  {selectedTab === "achievements" && (
+                    <View style={styles.tabContentSection}>
+                      {renderAchievements()}
+                    </View>
                   )}
                 </View>
               </View>
-
-              <Text style={[styles.bio, { color: colors.textSecondary }]}>
-                {profile.bio}
-              </Text>
-
-              {renderSocialIcons()}
-              {renderActionButtons()}
-              {renderActivityGraph()}
-
-              {/* Calendar View */}
-              {/* Calendar View */}
-              <View
-                style={[
-                  styles.calendarContainer,
-                  { padding: 0, overflow: 'hidden', backgroundColor: 'transparent' },
-                ]}
-              >
-                <LinearGradient
-                  colors={isDarkMode ? ['#252525', '#1A1A1A'] : ['#FFFFFF', '#F8F8F8']}
-                  start={{ x: 0, y: 0 }}
-                  end={{ x: 0, y: 1 }}
-                  style={{ padding: 16 }}
-                >
-                  <Text style={[styles.sectionTitle, { color: colors.text }]}>
-                    Progress
-                  </Text>
-                  <ProfileCalendar userId={user?.id} />
-                </LinearGradient>
-              </View>
-
-              {renderTabs()}
-              <View style={styles.tabContent}>
-                {selectedTab === "history" && (
-                  <View style={styles.tabContentSection}>
-                    <View style={styles.dateNavigation}>
-                      <TouchableOpacity onPress={handlePrevWeek} style={styles.navButton}>
-                        <Ionicons name="chevron-back" size={24} color={colors.text} />
-                      </TouchableOpacity>
-                      <Text style={[styles.dateRangeText, { color: colors.text }]}>
-                        {(() => {
-                          const start = new Date(historyEndDate);
-                          start.setDate(start.getDate() - 6);
-                          return `${formatRangeDate(start)} - ${formatRangeDate(historyEndDate)}`;
-                        })()}
-                      </Text>
-                      <TouchableOpacity
-                        onPress={handleNextWeek}
-                        style={[styles.navButton, isCurrentWeek && { opacity: 0.3 }]}
-                        disabled={isCurrentWeek}
-                      >
-                        <Ionicons name="chevron-forward" size={24} color={colors.text} />
-                      </TouchableOpacity>
-                    </View>
-                    {renderWorkoutList()}
-                  </View>
-                )}
-                {selectedTab === "achievements" && (
-                  <View style={styles.tabContentSection}>
-                    {renderAchievements()}
-                  </View>
-                )}
-              </View>
-            </View>
-          )}
-        </ScrollView>
+            )}
+        </ScrollView >
 
         <Settings
           visible={showSettings}
           onClose={toggleSettings}
           colors={colors}
-        />
-
-        <ShareProfile
-          visible={showShareProfile}
-          onClose={() => setShowShareProfile(false)}
-          username={profile.username}
         />
 
         <AchievementModal
@@ -1317,13 +1291,19 @@ export default function ProfileScreen() {
           formatDate={formatDate}
         />
         <CustomAlert {...alertProps} />
-      </SafeAreaView>
-    </ThemeBackground>
+      </SafeAreaView >
+    </ThemeBackground >
   );
 }
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
+  },
+  settingsToggle: {
+    padding: 4,
+  },
+  scrollView: {
     flex: 1,
   },
   header: {
@@ -1341,7 +1321,8 @@ const styles = StyleSheet.create({
   },
   headerActions: {
     flexDirection: "row",
-    gap: 16,
+    alignItems: "center",
+    gap: 12,
   },
   iconContainer: {
     position: "relative",

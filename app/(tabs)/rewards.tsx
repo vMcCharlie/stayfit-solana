@@ -6,7 +6,6 @@ import {
     ScrollView,
     TouchableOpacity,
     Platform,
-    Alert,
     Modal,
     Pressable,
 } from "react-native";
@@ -20,6 +19,9 @@ import * as Clipboard from 'expo-clipboard';
 import { supabase } from '../../src/lib/supabase';
 import { useFocusEffect } from "@react-navigation/native";
 import { useAuth } from "../../src/context/auth";
+import CustomAlert, { AlertButton } from "../components/CustomAlert";
+import ScreenHeader from "../components/ScreenHeader";
+import NavWalletButton from "../components/NavWalletButton";
 
 // Gamification constants
 const XP_PER_WORKOUT = 500;
@@ -31,7 +33,28 @@ export default function Rewards() {
     const [profile, setProfile] = React.useState<any>(null);
     const [transactions, setTransactions] = React.useState<any[]>([]);
     const [loading, setLoading] = React.useState(true);
+    const [weeklyXp, setWeeklyXp] = React.useState(0);
+    const [growthPercent, setGrowthPercent] = React.useState(0);
     const [infoModalVisible, setInfoModalVisible] = React.useState(false);
+    const [alertConfig, setAlertConfig] = React.useState<{
+        visible: boolean;
+        title: string;
+        message: string;
+        buttons?: AlertButton[];
+    }>({
+        visible: false,
+        title: "",
+        message: "",
+    });
+
+    const showAlert = (title: string, message: string, buttons?: AlertButton[]) => {
+        setAlertConfig({
+            visible: true,
+            title,
+            message,
+            buttons,
+        });
+    };
 
     const fetchData = async () => {
         try {
@@ -51,8 +74,43 @@ export default function Rewards() {
                 .from('xp_transactions')
                 .select('*')
                 .order('created_at', { ascending: false })
-                .limit(10);
+                .limit(20);
             setTransactions(txData || []);
+
+            // Calculate Weekly Stats
+            const now = new Date();
+            const startOfWeek = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay());
+            const startOfLastWeek = new Date(startOfWeek);
+            startOfLastWeek.setDate(startOfLastWeek.getDate() - 7);
+
+            const { data: weeklyData } = await supabase
+                .from('xp_transactions')
+                .select('amount, created_at')
+                .gte('created_at', startOfLastWeek.toISOString());
+
+            if (weeklyData) {
+                const thisWeekTotal = weeklyData
+                    .filter(tx => new Date(tx.created_at) >= startOfWeek)
+                    .reduce((sum, tx) => sum + tx.amount, 0);
+
+                const lastWeekTotal = weeklyData
+                    .filter(tx => {
+                        const date = new Date(tx.created_at);
+                        return date >= startOfLastWeek && date < startOfWeek;
+                    })
+                    .reduce((sum, tx) => sum + tx.amount, 0);
+
+                setWeeklyXp(thisWeekTotal);
+
+                if (lastWeekTotal > 0) {
+                    const percent = ((thisWeekTotal - lastWeekTotal) / lastWeekTotal) * 100;
+                    setGrowthPercent(Math.round(percent));
+                } else if (thisWeekTotal > 0) {
+                    setGrowthPercent(100);
+                } else {
+                    setGrowthPercent(0);
+                }
+            }
         } catch (error) {
             console.error("Error fetching rewards data:", error);
         } finally {
@@ -72,8 +130,8 @@ export default function Rewards() {
         text: isDarkMode ? selectedPalette.dark?.text || "#FFF" : selectedPalette.light?.text || "#000",
         textSecondary: isDarkMode ? "rgba(255, 255, 255, 0.6)" : "rgba(0, 0, 0, 0.5)",
         border: isDarkMode ? "rgba(255, 255, 255, 0.1)" : "rgba(0, 0, 0, 0.1)",
-        success: "#00C853",
-        primary: "#00C853",
+        success: selectedPalette.primary || "#00C853",
+        primary: selectedPalette.primary || "#00C853",
     };
 
     const formatXp = (amount: number) => {
@@ -95,69 +153,21 @@ export default function Rewards() {
     };
 
     const handleAddReferral = () => {
-        Alert.prompt(
-            "Add Referral Code",
-            "Enter your friend's referral code to get +0.01 Referral Boost once they hit a streak!",
-            [
-                { text: "Cancel", style: "cancel" },
-                {
-                    text: "Submit",
-                    onPress: async (code: string | undefined) => {
-                        if (!code) return;
-                        try {
-                            // Find user with this code
-                            const { data: friend } = await supabase
-                                .from('profiles')
-                                .select('id')
-                                .eq('invite_code', code.toUpperCase())
-                                .single();
-
-                            if (!friend) {
-                                Alert.alert("Error", "Invalid referral code.");
-                                return;
-                            }
-
-                            if (friend.id === authUser?.id) {
-                                Alert.alert("Error", "You cannot refer yourself.");
-                                return;
-                            }
-
-                            // Create referral
-                            const { error } = await supabase
-                                .from('referrals')
-                                .insert({
-                                    referrer_id: friend.id,
-                                    referred_id: authUser?.id,
-                                    status: 'joined'
-                                });
-
-                            if (error) {
-                                if (error.code === '23505') {
-                                    Alert.alert("Error", "You have already been referred.");
-                                } else {
-                                    Alert.alert("Error", "Could not add referral code.");
-                                }
-                            } else {
-                                Alert.alert("Success", "Referral code added! Complete a 7-day streak to unlock the bonus for your friend.");
-                            }
-                        } catch (e) {
-                            console.error(e);
-                        }
-                    }
-                }
-            ]
-        );
+        // Since CustomAlert doesn't have an input, we redirect to referral-detail
+        // The user requested to remove the "Add Referral" button anyway, but we keep the logic 
+        // if they ever want to trigger it from elsewhere.
+        router.push('/referral-detail');
     };
 
     const handleConnectWallet = async () => {
         try {
             const address = await connectWallet();
             if (address) {
-                Alert.alert("Success", `Wallet connected: ${address.slice(0, 6)}...${address.slice(-4)}`);
+                showAlert("Success", `Wallet connected: ${address.slice(0, 6)}...${address.slice(-4)}`);
                 fetchData();
             }
         } catch (err: any) {
-            Alert.alert("Connection Failed", err.message);
+            showAlert("Connection Failed", err.message);
         }
     };
 
@@ -168,10 +178,14 @@ export default function Rewards() {
     return (
         <ThemeBackground style={styles.container}>
             <SafeAreaView style={styles.safeArea} edges={["top"]}>
+                <ScreenHeader
+                    title="Rewards"
+                    rightAction={<NavWalletButton />}
+                />
                 <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
 
-                    {/* Header Balance Section */}
-                    <View style={styles.header}>
+                    {/* Balance Section */}
+                    <View style={styles.statsHeader}>
                         <View style={{ flex: 1 }}>
                             <View style={styles.labelRow}>
                                 <Text style={[styles.balanceLabel, { color: colors.textSecondary }]}>Total XP Balance</Text>
@@ -184,8 +198,17 @@ export default function Rewards() {
                             </Text>
                             <View style={styles.statsRow}>
                                 <View style={styles.growthContainer}>
-                                    <Ionicons name="caret-up" size={12} color={colors.success} />
-                                    <Text style={[styles.growthValue, { color: colors.success }]}> 0 (0%) THIS WEEK</Text>
+                                    <Ionicons
+                                        name={growthPercent >= 0 ? "caret-up" : "caret-down"}
+                                        size={12}
+                                        color={growthPercent >= 0 ? colors.success : "#FF5252"}
+                                    />
+                                    <Text style={[
+                                        styles.growthValue,
+                                        { color: growthPercent >= 0 ? colors.success : "#FF5252" }
+                                    ]}>
+                                        {" "}{formatXp(weeklyXp)} ({growthPercent > 0 ? "+" : ""}{growthPercent}%) THIS WEEK
+                                    </Text>
                                 </View>
                                 {profile?.xp_multiplier > 1.0 && (
                                     <View style={[styles.multiplierBadge, { backgroundColor: colors.primary + '20' }]}>
@@ -195,33 +218,9 @@ export default function Rewards() {
                                 )}
                             </View>
                         </View>
-                        <TouchableOpacity
-                            style={[styles.walletSelector, { backgroundColor: isDarkMode ? "#222" : "#F5F5F5" }]}
-                            onPress={handleConnectWallet}
-                        >
-                            <Ionicons name="wallet-outline" size={16} color={colors.primary} style={{ marginRight: 6 }} />
-                            <Text style={[styles.walletLabel, { color: colors.text }]}>
-                                {profile?.wallet_address ? `${profile.wallet_address.slice(0, 4)}...${profile.wallet_address.slice(-4)}` : "Connect"}
-                            </Text>
-                        </TouchableOpacity>
                     </View>
 
-                    {/* Action Buttons */}
-                    <View style={styles.actionsRow}>
-                        <TouchableOpacity
-                            style={[styles.actionBtn, { backgroundColor: selectedPalette.primary }]}
-                        >
-                            <Ionicons name="list" size={20} color="white" />
-                            <Text style={[styles.actionText, { color: "white" }]}>Tasks</Text>
-                        </TouchableOpacity>
-                        <TouchableOpacity
-                            style={[styles.actionBtn, { backgroundColor: isDarkMode ? "rgba(255,255,255,0.05)" : "rgba(0,0,0,0.05)" }]}
-                            onPress={handleAddReferral}
-                        >
-                            <Ionicons name="person-add" size={20} color={selectedPalette.primary} />
-                            <Text style={[styles.actionText, { color: selectedPalette.primary }]}>Add Referral</Text>
-                        </TouchableOpacity>
-                    </View>
+                    {/* Action Buttons Removed as per request */}
 
                     {/* Referral Banner */}
                     <TouchableOpacity
@@ -236,7 +235,7 @@ export default function Rewards() {
                             style={styles.bannerGradient}
                         >
                             <View style={styles.bannerContent}>
-                                <Text style={styles.bannerTitle}>Invite a friend and get +0.01 Referral Boost</Text>
+                                <Text style={styles.bannerTitle}>Invite a friend and get +{REFERRAL_BONUS_MULTIPLIER} Referral Boost</Text>
                                 <View style={styles.bannerBtn}>
                                     <Text style={styles.bannerBtnText}>share invite</Text>
                                     <Ionicons name="chevron-forward" size={14} color="#888" />
@@ -260,7 +259,10 @@ export default function Rewards() {
 
                     <View style={styles.activityList}>
                         {transactions.length === 0 && !loading && (
-                            <Text style={[styles.emptyText, { color: colors.textSecondary }]}>No history yet. Start working out to earn XP!</Text>
+                            <View style={styles.emptyContainer}>
+                                <Ionicons name="receipt-outline" size={48} color={isDarkMode ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.1)"} />
+                                <Text style={[styles.emptyText, { color: colors.textSecondary }]}>No history yet. Start working out to earn XP!</Text>
+                            </View>
                         )}
                         {transactions.map((tx) => (
                             <View key={tx.id} style={[styles.activityCard, { backgroundColor: colors.surface, borderColor: colors.border }]}>
@@ -337,8 +339,10 @@ export default function Rewards() {
                             <View style={styles.infoItem}>
                                 <View style={[styles.infoBullet, { backgroundColor: "#00E5FF" }]} />
                                 <View style={styles.infoTextWrapper}>
-                                    <Text style={[styles.infoItemTitle, { color: colors.text }]}>Referral Boost</Text>
-                                    <Text style={[styles.infoItemDesc, { color: colors.textSecondary }]}>Get a permanent +0.01 boost for every friend who joins and hits a 7-day streak. No maximum limit!</Text>
+                                    <Text style={[styles.infoItemTitle, { color: colors.text }]}>Referral Rewards</Text>
+                                    <Text style={[styles.infoItemDesc, { color: colors.textSecondary }]}>
+                                        Invite friends to join! When they hit a 7-day streak, you'll earn 5,000 XP and a permanent +{REFERRAL_BONUS_MULTIPLIER} boost.
+                                    </Text>
                                 </View>
                             </View>
 
@@ -360,6 +364,14 @@ export default function Rewards() {
                     </View>
                 </Pressable>
             </Modal>
+
+            <CustomAlert
+                visible={alertConfig.visible}
+                title={alertConfig.title}
+                message={alertConfig.message}
+                buttons={alertConfig.buttons}
+                onClose={() => setAlertConfig({ ...alertConfig, visible: false })}
+            />
         </ThemeBackground >
     );
 }
@@ -368,23 +380,24 @@ const styles = StyleSheet.create({
     container: { flex: 1 },
     safeArea: { flex: 1, backgroundColor: "transparent" },
     scrollContent: { padding: 20, paddingBottom: 100 },
-    header: {
+    statsHeader: {
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "flex-start",
-        marginBottom: 30,
-        marginTop: 10,
+        marginBottom: 20,
+        marginTop: 0,
     },
     balanceLabel: { fontFamily: "Outfit-Medium", fontSize: 16, marginBottom: 8 },
     balanceValue: { fontFamily: "Outfit-Bold", fontSize: 40, marginBottom: 8 },
     growthContainer: { flexDirection: "row", alignItems: "center" },
     growthValue: { fontFamily: "Outfit-Medium", fontSize: 14 },
-    walletSelector: {
+    walletHeaderText: { fontFamily: "Outfit-Bold", fontSize: 13, marginLeft: 6 },
+    walletHeaderBtn: {
         flexDirection: "row",
         alignItems: "center",
-        paddingHorizontal: 16,
-        paddingVertical: 10,
-        borderRadius: 20,
+        paddingHorizontal: 12,
+        paddingVertical: 8,
+        borderRadius: 12,
     },
     walletLabel: { fontFamily: "Outfit-Medium", fontSize: 14, marginRight: 8 },
     actionsRow: {
@@ -485,7 +498,13 @@ const styles = StyleSheet.create({
         borderRadius: 12,
     },
     multiplierText: { fontFamily: "Outfit-Bold", fontSize: 12 },
-    emptyText: { fontFamily: "Outfit-Medium", fontSize: 16, textAlign: "center", marginTop: 40 },
+    emptyContainer: {
+        alignItems: "center",
+        justifyContent: "center",
+        marginTop: 60,
+        gap: 12
+    },
+    emptyText: { fontFamily: "Outfit-Medium", fontSize: 16, textAlign: "center" },
     modalOverlay: {
         flex: 1,
         backgroundColor: "rgba(0,0,0,0.6)",

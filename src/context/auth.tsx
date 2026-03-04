@@ -109,30 +109,52 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         throw new Error("Wallet connection is not available in this environment. Please use a custom dev build to connect your wallet.");
       }
 
+      const { PublicKey } = require("@solana/web3.js");
+
       let newWalletAddress = "";
       await transact(async (wallet: any) => {
         const authorizationResult = await wallet.authorize({
           cluster: "mainnet-beta",
           identity: APP_IDENTITY,
         });
-        newWalletAddress = authorizationResult.accounts[0].address;
+
+        // Mobile Wallet Adapter returns address as Uint8Array/binary
+        // We must convert it to Base58 string
+        const addressUint8 = authorizationResult.accounts[0].address;
+        newWalletAddress = new PublicKey(addressUint8).toBase58();
       });
 
+      console.log("Connected wallet address (Base58):", newWalletAddress);
+
       // Store wallet address in user metadata if we have a session
-      if (session?.user) {
-        // 1. Update Supabase Auth Metadata
+      if (session?.user && newWalletAddress) {
+        // 1. Call Edge Function to safely update profile (with service role)
+        const { data, error } = await supabase.functions.invoke('rewards-manager', {
+          body: {
+            action: 'update_wallet_address',
+            wallet_address: newWalletAddress
+          }
+        });
+
+        if (error) {
+          console.error("Error updating wallet address via edge function:", error);
+          // Fallback to direct update if edge function fails (though edge function is preferred)
+          await supabase
+            .from('profiles')
+            .update({ wallet_address: newWalletAddress })
+            .eq('id', session.user.id);
+        }
+
+        // 2. Update local metadata for session consistency
         await supabase.auth.updateUser({
           data: { wallet_address: newWalletAddress }
         });
 
-        // 2. Update Profiles table
-        await supabase
-          .from('profiles')
-          .update({ wallet_address: newWalletAddress })
-          .eq('id', session.user.id);
-
         // 3. Save locally
         await AsyncStorage.setItem(`wallet_address_${session.user.id}`, newWalletAddress);
+
+        // 4. Trigger refresh
+        triggerProfileRefresh();
       }
 
       return newWalletAddress;
@@ -146,11 +168,37 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     try {
       setLoading(true);
       if (session?.user) {
+        // 1. Call Edge Function to safely remove wallet address
+        const { error } = await supabase.functions.invoke('rewards-manager', {
+          body: {
+            action: 'update_wallet_address',
+            wallet_address: null
+          }
+        });
+
+        if (error) {
+          console.error("Error unlinking wallet via edge function:", error);
+          // Fallback to direct update
+          await supabase
+            .from('profiles')
+            .update({ wallet_address: null })
+            .eq('id', session.user.id);
+        }
+
+        // 2. Remove from local user metadata
+        await supabase.auth.updateUser({
+          data: { wallet_address: null }
+        });
+
+        // 3. Remove from storage
         await AsyncStorage.removeItem(`wallet_address_${session.user.id}`);
+
+        // 4. Update local state
+        triggerProfileRefresh();
       }
-      await supabase.auth.signOut();
-      setUser(null);
-      setSession(null);
+    } catch (err: any) {
+      console.error("Wallet disconnection failed", err);
+      throw err;
     } finally {
       setLoading(false);
     }

@@ -128,9 +128,6 @@ function CustomTabBar({ state, descriptors, navigation }: BottomTabBarProps) {
       />
 
       {state.routes.map((route, index) => {
-        // Hide extra screens from the tab bar
-        if (route.name === "ai-chat" || route.name === "workout" || route.name === "activity") return null;
-
         const { options } = descriptors[route.key];
         // const label = options.title ?? route.name;
         const isFocused = state.index === index;
@@ -228,19 +225,6 @@ export default function TabLayout() {
       <Tabs.Screen
         name="profile"
         options={{ title: "Profile" }}
-      />
-      {/* Hidden screens - not shown in tab bar */}
-      <Tabs.Screen
-        name="ai-chat"
-        options={{ href: null, headerShown: false }}
-      />
-      <Tabs.Screen
-        name="workout"
-        options={{ href: null }}
-      />
-      <Tabs.Screen
-        name="activity"
-        options={{ href: null }}
       />
     </Tabs>
   );

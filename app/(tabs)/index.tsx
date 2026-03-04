@@ -40,6 +40,7 @@ import { workoutPersistenceService, SavedWorkoutState } from "../../src/services
 import { LinearGradient } from "expo-linear-gradient";
 import { ThemeBackground } from "../components/ThemeBackground";
 import ScreenHeader from "../components/ScreenHeader";
+import NavWalletButton from "../components/NavWalletButton";
 import { getLocalYYYYMMDD } from "../../src/utils/date";
 
 import { cache } from "../../src/utils/cache";
