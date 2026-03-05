@@ -23,6 +23,8 @@ interface AuthContextType {
   disconnectWallet: () => Promise<void>;
   profileUpdated: number;
   triggerProfileRefresh: () => void;
+  skrBalance: number;
+  skrTier: string;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -32,6 +34,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [session, setSession] = useState<Session | null>(null);
   const [loading, setLoading] = useState(true);
   const [profileUpdated, setProfileUpdated] = useState<number>(0);
+  const [skrBalance, setSkrBalance] = useState<number>(0);
+  const [skrTier, setSkrTier] = useState<string>("None");
 
   useEffect(() => {
     // Check active sessions and sets the user
@@ -52,6 +56,57 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
     return () => subscription.unsubscribe();
   }, []);
+
+  // SKR Token Logic
+  const SKR_TOKEN_ADDRESS = "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3";
+
+  const getTier = (balance: number): string => {
+    if (balance >= 400000) return "Platinum";
+    if (balance >= 40000) return "Gold";
+    if (balance >= 4000) return "Silver";
+    if (balance >= 1) return "Bronze";
+    return "None";
+  };
+
+  const fetchSkrBalance = async () => {
+    try {
+      const storedWallet = await AsyncStorage.getItem(`wallet_address_${user?.id}`);
+      const walletAddress = user?.user_metadata?.wallet_address || storedWallet;
+
+      if (!walletAddress) {
+        setSkrBalance(0);
+        setSkrTier("None");
+        return;
+      }
+
+      const { Connection, PublicKey } = require("@solana/web3.js");
+      const connection = new Connection("https://api.mainnet-beta.solana.com");
+      const owner = new PublicKey(walletAddress);
+      const mint = new PublicKey(SKR_TOKEN_ADDRESS);
+
+      const response = await connection.getParsedTokenAccountsByOwner(owner, { mint });
+
+      if (response.value.length > 0) {
+        const amount = response.value[0].account.data.parsed.info.tokenAmount.uiAmount || 0;
+        setSkrBalance(amount);
+        setSkrTier(getTier(amount));
+      } else {
+        setSkrBalance(0);
+        setSkrTier("None");
+      }
+    } catch (err) {
+      console.warn("[AuthContext] Failed to fetch SKR balance:", err);
+    }
+  };
+
+  useEffect(() => {
+    if (user) {
+      fetchSkrBalance();
+    } else {
+      setSkrBalance(0);
+      setSkrTier("None");
+    }
+  }, [user, profileUpdated]);
 
   const signUp = async (email: string, password: string) => {
     const { error } = await supabase.auth.signUp({
@@ -224,6 +279,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     disconnectWallet,
     profileUpdated,
     triggerProfileRefresh,
+    skrBalance,
+    skrTier,
   };
 
   return (

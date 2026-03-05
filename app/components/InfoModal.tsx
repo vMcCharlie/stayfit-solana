@@ -84,38 +84,38 @@ export default function InfoModal({ visible, onClose, title, tableName, emptyMes
             mockData = [
                 {
                     id: "1",
-                    title: "How do I track my workouts?",
-                    description: "Navigate to the home tab, select a routine, and tap 'Start Workout'. You can follow the guided exercises and log your progress.",
+                    title: "Getting Started with StayFit",
+                    description: "Welcome! To start your journey, navigate to the Workouts tab, choose a routine that matches your level, and tap 'Start'. Follow the guided instructions and animations for each exercise.",
                 },
                 {
                     id: "2",
-                    title: "Can I modify the routines?",
-                    description: "Yes! Before starting a workout, you can edit the routine to adjust reps, duration, or swap exercises to fit your needs.",
+                    title: "Tracking Progress & Stats",
+                    description: "Your dashboard shows your daily activity, calories burned, and workout streaks. Detailed history can be found in your Profile under the 'History' tab.",
                 },
                 {
                     id: "3",
-                    title: "How do I change my weight or height units?",
-                    description: "Go to Settings > Units. You can toggle between kg/lbs for weight and cm/ft for height.",
+                    title: "Managing Units & Preferences",
+                    description: "Personalize your experience in Settings > Units. You can switch between Metric (kg, cm) and Imperial (lbs, ft) units at any time.",
                 },
                 {
                     id: "4",
-                    title: "How do I log my progress photos?",
-                    description: "Go to the 'More' tab, select 'Log Progress Photo', and upload or take a new photo to track your journey.",
+                    title: "Solana Wallet & SKR Tokens",
+                    description: "Connect your Solana wallet to earn SKR tokens for your fitness achievements. Your SKR balance is displayed on your profile and provides access to premium perks.",
                 },
                 {
                     id: "5",
-                    title: "Is my profile public to everyone?",
-                    description: "By default, no. You can choose to make your profile public in Settings > Account > Public Profile.",
+                    title: "Earning XP & Multipliers",
+                    description: "Complete workouts to earn XP. You can boost your XP earnings by holding SKR tokens or maintaining a consistent workout streak.",
                 },
                 {
                     id: "6",
-                    title: "I have a subscription but I can't access Pro features.",
-                    description: "Please try restoring your purchase or contact support if the issue persists at support@stayfit.app.",
+                    title: "Subscription & Premium Features",
+                    description: "StayFit offers PLUS and PRO tiers for advanced tracking and exclusive routines. You can manage your subscription in the 'Membership' section of the 'More' tab.",
                 },
                 {
                     id: "7",
-                    title: "How do I delete my account?",
-                    description: "We're sad to see you go! You can permanently delete your account in Settings > Account > Delete Account.",
+                    title: "Technical Support",
+                    description: "Encountering issues? Try clearing your offline cache in Settings > Storage. If problems persist, contact our support team at help@gostay.fit.",
                 }
             ];
         }

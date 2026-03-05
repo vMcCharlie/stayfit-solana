@@ -11,10 +11,15 @@ import {
 } from "react-native";
 import { router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
+import LegalModal from "./components/LegalModal";
+import { useState } from "react";
 
 const { width, height } = Dimensions.get("window");
 
 export default function IntroScreen() {
+  const [showLegalModal, setShowLegalModal] = useState(false);
+  const [legalModalType, setLegalModalType] = useState<"terms" | "privacy">("terms");
+
   // Prevent going back when reaching this screen
   useEffect(() => {
     const backHandler = BackHandler.addEventListener(
@@ -63,21 +68,30 @@ export default function IntroScreen() {
             By tapping 'Create account' / 'Sign in', you agree to our{" "}
             <Text
               style={styles.link}
-              onPress={() => openLink("https://gostay.fit/terms")}
+              onPress={() => {
+                setLegalModalType("terms");
+                setShowLegalModal(true);
+              }}
             >
               Terms of Service
             </Text>
             . Learn how we process your data in our{" "}
             <Text
               style={styles.link}
-              onPress={() => openLink("https://gostay.fit/privacy")}
+              onPress={() => {
+                setLegalModalType("privacy");
+                setShowLegalModal(true);
+              }}
             >
               Privacy Policy
             </Text>{" "}
             and{" "}
             <Text
               style={styles.link}
-              onPress={() => openLink("https://gostay.fit/privacy")}
+              onPress={() => {
+                setLegalModalType("privacy");
+                setShowLegalModal(true);
+              }}
             >
               Cookies Policy
             </Text>
@@ -96,6 +110,12 @@ export default function IntroScreen() {
           </TouchableOpacity>
         </View>
       </View>
+
+      <LegalModal
+        visible={showLegalModal}
+        onClose={() => setShowLegalModal(false)}
+        type={legalModalType}
+      />
     </ImageBackground>
   );
 }

@@ -12,9 +12,11 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useTheme } from "../../src/context/theme";
 import { useRouter } from "expo-router";
-import { Ionicons } from "@expo/vector-icons";
-import { FontAwesome } from "@expo/vector-icons";
+import { FontAwesome, Ionicons } from "@expo/vector-icons";
+import { useCustomAlert } from "../../src/hooks/useCustomAlert";
+import CustomAlert from "../components/CustomAlert";
 import { api, UserProfile } from "../../src/services/api";
+import { useAuth } from "../../src/context/auth";
 import { format } from "date-fns";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import WeightLogModal from "../components/WeightLogModal";
@@ -28,6 +30,7 @@ const WEIGHT_UNIT_KEY = "weight_unit";
 
 export default function More() {
   const { isDarkMode, selectedPalette } = useTheme();
+  const { alertProps, showAlert } = useCustomAlert();
 
   const [isLoading, setIsLoading] = useState(false);
   const [isKg, setIsKg] = useState(true);
@@ -40,6 +43,7 @@ export default function More() {
   const [showWeightModal, setShowWeightModal] = useState(false);
   const [showPhotoModal, setShowPhotoModal] = useState(false);
   const [createRoutineVisible, setCreateRoutineVisible] = useState(false);
+  const { skrTier, skrBalance } = useAuth();
 
   const fadeAnim = useRef(new Animated.Value(0)).current;
   const scaleAnim = useRef(new Animated.Value(0)).current;
@@ -304,7 +308,17 @@ export default function More() {
 
                 <TouchableOpacity
                   style={styles.option}
-                  onPress={() => setCreateRoutineVisible(true)}
+                  onPress={() => {
+                    if (skrTier === "None") {
+                      showAlert(
+                        "Bronze Tier Required",
+                        `You need at least 1 SKR to create custom routines. Your balance: ${skrBalance.toLocaleString()} SKR`,
+                        [{ text: "OK" }]
+                      );
+                      return;
+                    }
+                    setCreateRoutineVisible(true);
+                  }}
                 >
                   <View
                     style={[
@@ -416,6 +430,7 @@ export default function More() {
           </Animated.View>
         </Animated.View>
       )}
+      <CustomAlert {...alertProps} />
     </>
   );
 }

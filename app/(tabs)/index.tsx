@@ -84,7 +84,7 @@ export default function Index() {
   const { isDarkMode, selectedPalette } = useTheme();
   // ... rest of component
   const router = useRouter();
-  const { user } = useAuth();
+  const { user, skrTier, skrBalance } = useAuth();
   const [activeSession, setActiveSession] = useState<SavedWorkoutState | null>(null);
   const [currentStreak, setCurrentStreak] = useState(0);
   const [weeklyActivity, setWeeklyActivity] = useState<{ date: string; type: 'fire' | 'ice' }[]>([]);
@@ -232,8 +232,26 @@ export default function Index() {
 
   const { alertProps, showAlert } = useCustomAlert();
 
+
   const handleLogRest = async () => {
     try {
+      // Check rest days in last 7 days
+      const last7Days = weeklyActivity.filter(a => {
+        const activityDate = new Date(a.date);
+        const sevenDaysAgo = new Date();
+        sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+        return a.type === 'ice' && activityDate >= sevenDaysAgo;
+      });
+
+      if (last7Days.length >= 2 && (skrTier === "None" || skrTier === "Bronze")) {
+        showAlert(
+          "Silver Tier Required",
+          `You have used your 2 free rest days this week. Silver tier is required for additional rest days. Your balance: ${skrBalance.toLocaleString()} SKR`,
+          [{ text: "OK" }]
+        );
+        return;
+      }
+
       setLoading(true);
       await api.logRestDay();
       await loadData(true); // Refresh to show the ice icon

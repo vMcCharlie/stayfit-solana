@@ -32,6 +32,7 @@ import { useRouter } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import ThemeModal from "./theme";
 import InfoModal from "./InfoModal";
+import LegalModal from "./LegalModal";
 import CustomAlert from "./CustomAlert";
 import EditProfileModal from "./EditProfileModal";
 import { supabase } from "../../src/lib/supabase";
@@ -66,11 +67,6 @@ const settingOptions: SettingOption[] = [
         onPress: () => {
           // Handled in renderSettingOption wrapped logic
         },
-      },
-      {
-        id: "privacy",
-        title: "Public Profile",
-        icon: "globe-outline",
       },
       {
         id: "logout",
@@ -746,6 +742,8 @@ export default function Settings({
   const [heightUnit, setHeightUnit] = useState<"cm" | "ft">("cm");
   const [showClearDataModal, setShowClearDataModal] = useState(false);
   const [isClearingData, setIsClearingData] = useState(false);
+  const [showLegalModal, setShowLegalModal] = useState(false);
+  const [legalModalType, setLegalModalType] = useState<"terms" | "privacy">("terms");
 
   // Reminder states
   const [showReminderModal, setShowReminderModal] = useState(false);
@@ -1163,25 +1161,51 @@ export default function Settings({
           } else if (option.id === "edit_profile") {
             setShowProfileModal(true);
           } else if (option.id === "logout") {
-            handleLogout();
-          } else if (option.id === "refer") {
-            setShowReferModal(true);
-          } else if (option.id === "help") {
-            setShowFAQModal(true);
-          } else if (option.id === "terms") {
-            openExternalLink("https://gostay.fit/terms", "Terms of Use");
-          } else if (option.id === "privacy_policy") {
-            openExternalLink("https://gostay.fit/privacy", "Privacy Policy");
-          } else if (option.id === "privacy") {
-            handlePrivacyToggle(!isPublic);
-          } else if (option.id === "delete_account") {
-            handleDeleteAccountConfirm();
-          } else if (option.id === "clear_offline_data") {
-            refreshSyncStatus();
-            setShowClearDataModal(true);
-          } else if (option.id === "reminder") {
-            setShowTimePicker(Platform.OS === "ios");
-            setShowReminderModal(true);
+            return;
+          }
+
+          switch (option.id) {
+            case "theme":
+              setShowThemeModal(true);
+              break;
+            case "edit_profile":
+              setShowProfileModal(true);
+              break;
+            case "logout":
+              handleLogout();
+              break;
+            case "refer":
+              setShowReferModal(true);
+              break;
+            case "help":
+              setShowFAQModal(true);
+              break;
+            case "terms":
+              setLegalModalType("terms");
+              setShowLegalModal(true);
+              break;
+            case "privacy_policy":
+              setLegalModalType("privacy");
+              setShowLegalModal(true);
+              break;
+            case "account_details":
+              // This case might be for a sub-option or a new feature,
+              // assuming it's a placeholder for now or handled elsewhere.
+              break;
+            case "delete_account":
+              handleDeleteAccountConfirm();
+              break;
+            case "clear_offline_data":
+              refreshSyncStatus();
+              setShowClearDataModal(true);
+              break;
+            case "reminder":
+              setShowTimePicker(Platform.OS === "ios");
+              setShowReminderModal(true);
+              break;
+            default:
+              // Handle other options or do nothing
+              break;
           }
         }}
         disabled={
@@ -1477,6 +1501,12 @@ export default function Settings({
           title="FAQ / Help Center"
           tableName="faqs"
           emptyMessage="No FAQs available."
+        />
+
+        <LegalModal
+          visible={showLegalModal}
+          onClose={() => setShowLegalModal(false)}
+          type={legalModalType}
         />
 
         <LogoutModal

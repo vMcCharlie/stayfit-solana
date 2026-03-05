@@ -13,8 +13,9 @@ import {
   NativeScrollEvent,
   Modal,
   Pressable,
-  Linking, // Add Linking
+  Linking,
 } from "react-native";
+import { Connection, PublicKey } from "@solana/web3.js";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { BlurView } from "expo-blur";
@@ -37,6 +38,7 @@ import ProfileCalendar from "../components/ProfileCalendar";
 import AchievementModal from "../components/AchievementModal";
 import ScreenHeader from "../components/ScreenHeader";
 import NavWalletButton from "../components/NavWalletButton";
+import SkrTiersModal from "../components/SkrTiersModal";
 import AchievementsList from "../../src/components/achievements/AchievementsList";
 import { getLocalYYYYMMDD } from "../../src/utils/date";
 
@@ -51,6 +53,7 @@ type Achievement = Database['public']['Tables']['achievements']['Row'];
 
 const PROFILE_SIZE = 200;
 const SOCIAL_ICON_SIZE = 40;
+const SKR_MINT = "SKRbvo6Gf7GondiT3BbTfuRDPqLWei4j2Qy2NPGZhW3";
 
 type SocialLinkType =
   | "facebook"
@@ -208,6 +211,10 @@ export default function ProfileScreen() {
   const [showAchievementModal, setShowAchievementModal] = useState(false);
   const rotation = useSharedValue(0);
   const [refreshing, setRefreshing] = useState(false);
+  const [skrBalanceLocal, setSkrBalanceLocal] = useState<number | null>(null); // Keep for local animation if needed, but primary is from auth
+  const { skrBalance, skrTier } = useAuth();
+  const [showSkrModal, setShowSkrModal] = useState(false);
+  const scrollY = useSharedValue(0);
   const [lastFetchTime, setLastFetchTime] = useState<number>(0);
   const [selectedTab, setSelectedTab] = useState("achievements");
   const [recentWorkouts, setRecentWorkouts] = useState<WorkoutSession[]>([]);
@@ -354,7 +361,9 @@ export default function ProfileScreen() {
         avatar_url: avatarUrl,
         total_time_taken: profileData.profile.total_time_taken || 0,
         focus_areas: profileData.focus_areas || [],
+        wallet_address: profileData.profile.wallet_address || null,
       }));
+
 
       if (profileData.has_unread_offers !== undefined) {
         setHasUnreadOffers(profileData.has_unread_offers);
@@ -1186,14 +1195,18 @@ export default function ProfileScreen() {
 
                 <View style={styles.rankContainer}>
                   <View style={styles.rankWrapper}>
-                    <Text
-                      style={[
-                        styles.rankText,
-                        { backgroundColor: selectedPalette.primary },
-                      ]}
-                    >
-                      #1
-                    </Text>
+                    {skrBalance !== null && (
+                      <TouchableOpacity
+                        activeOpacity={0.7}
+                        onPress={() => setShowSkrModal(true)}
+                        style={[styles.subscriptionBadge, { backgroundColor: selectedPalette.primary, flexDirection: 'row', alignItems: 'center', gap: 6 }]}
+                      >
+                        <Ionicons name="wallet-outline" size={16} color="white" />
+                        <Text style={{ color: 'white', fontFamily: 'Outfit-Bold' }}>
+                          {skrBalance.toLocaleString()} SKR
+                        </Text>
+                      </TouchableOpacity>
+                    )}
                     {profile.subscription && profile.subscription !== "FREE" && (
                       <Text
                         style={[
@@ -1290,6 +1303,13 @@ export default function ProfileScreen() {
           selectedPalette={selectedPalette}
           formatDate={formatDate}
         />
+
+        <SkrTiersModal
+          visible={showSkrModal}
+          onClose={() => setShowSkrModal(false)}
+          balance={skrBalance || 0}
+        />
+
         <CustomAlert {...alertProps} />
       </SafeAreaView >
     </ThemeBackground >
@@ -1383,14 +1403,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     gap: 8,
-  },
-  rankText: {
-    color: "white",
-    fontSize: 16,
-    fontFamily: "Outfit-Bold",
-    paddingHorizontal: 12,
-    paddingVertical: 4,
-    borderRadius: 16,
   },
   subscriptionBadge: {
     color: "white",
