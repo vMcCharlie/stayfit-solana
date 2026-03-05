@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import * as Clipboard from 'expo-clipboard';
 import {
     View,
     Text,
@@ -39,6 +40,12 @@ export default function WalletManagementModal({
         textSecondary: isDarkMode ? "rgba(255,255,255,0.6)" : "rgba(0,0,0,0.6)",
         border: isDarkMode ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.1)",
         error: "#FF5252",
+    };
+
+    const handleCopyAddress = async () => {
+        if (walletAddress) {
+            await Clipboard.setStringAsync(walletAddress);
+        }
     };
 
     const handleDisconnect = () => {
@@ -89,12 +96,19 @@ export default function WalletManagementModal({
                             </Text>
                         </View>
 
-                        <View style={[styles.addressCard, { backgroundColor: isDarkMode ? "rgba(255,255,255,0.05)" : "rgba(0,0,0,0.03)" }]}>
-                            <Text style={[styles.addressLabel, { color: colors.textSecondary }]}>Wallet Address</Text>
+                        <TouchableOpacity
+                            style={[styles.addressCard, { backgroundColor: isDarkMode ? "rgba(255,255,255,0.05)" : "rgba(0,0,0,0.03)" }]}
+                            onPress={handleCopyAddress}
+                            activeOpacity={0.7}
+                        >
+                            <View style={styles.addressHeader}>
+                                <Text style={[styles.addressLabel, { color: colors.textSecondary }]}>Wallet Address</Text>
+                                <Ionicons name="copy-outline" size={12} color={colors.textSecondary} />
+                            </View>
                             <Text style={[styles.addressText, { color: colors.text }]} numberOfLines={1} ellipsizeMode="middle">
                                 {walletAddress || "Not Connected"}
                             </Text>
-                        </View>
+                        </TouchableOpacity>
 
                         <ScrollView style={styles.infoList} showsVerticalScrollIndicator={false}>
                             <View style={styles.infoItem}>
@@ -133,7 +147,7 @@ export default function WalletManagementModal({
                                 style={[styles.disconnectBtn, { borderColor: colors.error }]}
                                 onPress={handleDisconnect}
                             >
-                                <Ionicons name="log-out-outline" size={20} color={colors.error} />
+                                <Ionicons name="wallet-outline" size={20} color={colors.error} />
                                 <Text style={[styles.disconnectBtnText, { color: colors.error }]}>Disconnect Wallet</Text>
                             </TouchableOpacity>
 
@@ -201,10 +215,15 @@ const styles = StyleSheet.create({
         marginBottom: 24,
         alignItems: "center",
     },
+    addressHeader: {
+        flexDirection: "row",
+        alignItems: "center",
+        gap: 6,
+        marginBottom: 4,
+    },
     addressLabel: {
         fontFamily: "Outfit-Medium",
         fontSize: 12,
-        marginBottom: 4,
         textTransform: "uppercase",
         letterSpacing: 1,
     },

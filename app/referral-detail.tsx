@@ -140,9 +140,9 @@ export default function ReferralDetail() {
                     </View>
 
                     <Text style={[styles.expiryText, { color: colors.textSecondary }]}>Never expires</Text>
-                    <Text style={[styles.headline, { color: colors.text }]}>Invite a friend. Get +{REFERRAL_BONUS_MULTIPLIER} Referral Boost with no limit.</Text>
+                    <Text style={[styles.headline, { color: colors.text }]}>Invite a friend. Get 5000 XP plus 0.01 Referral boost to your XP earnings.</Text>
                     <Text style={[styles.description, { color: colors.textSecondary }]}>
-                        Invite friends to StayFit Seeker. Once they sign up and complete a 7-day streak, you'll both get ${REFERRAL_XP_BONUS.toLocaleString()} XP and a persistent +{REFERRAL_BONUS_MULTIPLIER} Referral Boost. There is no maximum limit—the more you refer, the more you earn!
+                        Invite friends to StayFit Seeker. Once they sign up and complete a 7-day streak, you'll both get {REFERRAL_XP_BONUS.toLocaleString()} XP and a persistent +{REFERRAL_BONUS_MULTIPLIER} Referral Boost. There is no maximum limit—the more you refer, the more you earn!
                     </Text>
 
                     {/* Features */}

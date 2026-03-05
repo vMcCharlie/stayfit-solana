@@ -30,6 +30,7 @@ import Animated, {
 } from "react-native-reanimated";
 import { useRouter } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useAuth } from "../../src/context/auth";
 import ThemeModal from "./theme";
 import InfoModal from "./InfoModal";
 import LegalModal from "./LegalModal";
@@ -72,14 +73,6 @@ const settingOptions: SettingOption[] = [
         id: "logout",
         title: "Logout",
         icon: "log-out-outline",
-        onPress: () => {
-          // Implementation needed
-        },
-      },
-      {
-        id: "delete_account",
-        title: "Delete Account",
-        icon: "trash-outline",
         onPress: () => {
           // Implementation needed
         },
@@ -724,6 +717,7 @@ export default function Settings({
 }: SettingsProps) {
   const router = useRouter();
   const { isDarkMode, selectedPalette } = useTheme();
+  const { signOut } = useAuth();
   const { syncStatus, clearCache, refreshSyncStatus } = useDatabase();
   const [expandedOption, setExpandedOption] = useState<string | null>(null);
   const [showThemeModal, setShowThemeModal] = useState(false);
@@ -943,7 +937,7 @@ export default function Settings({
       } catch (e) {
         console.error("Error clearing cache during delete account:", e);
       }
-      await supabase.auth.signOut();
+      await signOut();
       setShowDeleteModal(false);
       router.replace("/intro");
     } catch (error) {
@@ -961,8 +955,7 @@ export default function Settings({
         console.error("Error clearing cache during logout:", e);
       }
 
-      const { error } = await supabase.auth.signOut();
-      if (error) throw error;
+      await signOut();
 
       setShowLogoutModal(false);
       router.replace("/intro");

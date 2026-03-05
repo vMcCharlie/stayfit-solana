@@ -2,6 +2,7 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 import { Session, User } from "@supabase/supabase-js";
 import { supabase } from "../lib/supabase";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { api } from "../services/api";
 
 const APP_IDENTITY = {
   name: "StayFit",
@@ -144,6 +145,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   };
 
   const signOut = async () => {
+    try {
+      await api.clearApiCache();
+    } catch (err) {
+      console.warn("[AuthContext] Failed to clear API cache during signOut:", err);
+    }
     const { error } = await supabase.auth.signOut();
     if (error) throw error;
   };
@@ -167,27 +173,73 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       const { PublicKey } = require("@solana/web3.js");
 
       let newWalletAddress = "";
-      await transact(async (wallet: any) => {
-        const authorizationResult = await wallet.authorize({
-          cluster: "mainnet-beta",
-          identity: APP_IDENTITY,
-        });
+      let signature = "";
+      let message = "";
 
-        // Mobile Wallet Adapter returns address as Uint8Array/binary
-        // We must convert it to Base58 string
+      await transact(async (wallet: any) => {
+        const storedAuthToken = session?.user
+          ? await AsyncStorage.getItem(`wallet_auth_token_${session.user.id}`)
+          : null;
+
+        let authorizationResult: any;
+
+        if (storedAuthToken) {
+          try {
+            authorizationResult = await wallet.reauthorize({
+              auth_token: storedAuthToken,
+              identity: APP_IDENTITY,
+            });
+          } catch (reauthErr) {
+            console.log("Reauthorization failed, falling back to authorize", reauthErr);
+            authorizationResult = await wallet.authorize({
+              cluster: "mainnet-beta",
+              identity: APP_IDENTITY,
+            });
+          }
+        } else {
+          authorizationResult = await wallet.authorize({
+            cluster: "mainnet-beta",
+            identity: APP_IDENTITY,
+          });
+        }
+
         const addressUint8 = authorizationResult.accounts[0].address;
         newWalletAddress = new PublicKey(addressUint8).toBase58();
+        const authToken = authorizationResult.auth_token;
+
+        // Save authToken for future sessions
+        if (authToken && session?.user) {
+          await AsyncStorage.setItem(`wallet_auth_token_${session.user.id}`, authToken);
+        }
+
+        // 2. Sign Message to verify ownership
+        // We always sign a message during "connection" to confirm the user is actively proving ownership
+        const timestamp = Date.now();
+        message = `Sign-in to StayFit Seeker: ${session?.user?.id} at ${timestamp}`;
+        const messageUint8 = new TextEncoder().encode(message);
+
+        const signResult = await wallet.signMessages({
+          addresses: [addressUint8],
+          payloads: [messageUint8],
+        });
+
+        // Convert signature to base64 for transport
+        const signatureUint8 = signResult.signatures[0];
+        const { Buffer } = require("buffer");
+        signature = Buffer.from(signatureUint8).toString("base64");
       });
 
       console.log("Connected wallet address (Base58):", newWalletAddress);
 
       // Store wallet address in user metadata if we have a session
       if (session?.user && newWalletAddress) {
-        // 1. Call Edge Function to safely update profile (with service role)
+        // 1. Call Edge Function to safely update profile (with signature verification)
         const { data, error } = await supabase.functions.invoke('rewards-manager', {
           body: {
             action: 'update_wallet_address',
-            wallet_address: newWalletAddress
+            wallet_address: newWalletAddress,
+            message: message,
+            signature: signature
           }
         });
 

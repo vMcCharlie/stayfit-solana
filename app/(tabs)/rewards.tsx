@@ -235,7 +235,7 @@ export default function Rewards() {
                             style={styles.bannerGradient}
                         >
                             <View style={styles.bannerContent}>
-                                <Text style={styles.bannerTitle}>Invite a friend and get +{REFERRAL_BONUS_MULTIPLIER} Referral Boost</Text>
+                                <Text style={styles.bannerTitle}>Invite a friend and get 5000 XP plus 0.01 Referral boost to your XP earnings.</Text>
                                 <View style={styles.bannerBtn}>
                                     <Text style={styles.bannerBtnText}>share invite</Text>
                                     <Ionicons name="chevron-forward" size={14} color="#888" />
