@@ -36,6 +36,7 @@ export default function Rewards() {
     const [weeklyXp, setWeeklyXp] = React.useState(0);
     const [growthPercent, setGrowthPercent] = React.useState(0);
     const [infoModalVisible, setInfoModalVisible] = React.useState(false);
+    const [referralCount, setReferralCount] = React.useState(0);
     const [alertConfig, setAlertConfig] = React.useState<{
         visible: boolean;
         title: string;
@@ -76,6 +77,14 @@ export default function Rewards() {
                 .order('created_at', { ascending: false })
                 .limit(20);
             setTransactions(txData || []);
+
+            // Fetch completed referral count for multiplier breakdown
+            const { count: refCount } = await supabase
+                .from('referrals')
+                .select('*', { count: 'exact', head: true })
+                .eq('referrer_id', user.id)
+                .eq('status', 'streak_completed');
+            setReferralCount(refCount || 0);
 
             // Calculate Weekly Stats
             const now = new Date();
@@ -184,9 +193,9 @@ export default function Rewards() {
                 />
                 <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
 
-                    {/* Balance Section */}
-                    <View style={styles.statsHeader}>
-                        <View style={{ flex: 1 }}>
+                    {/* Balance + Multiplier Row */}
+                    <View style={styles.balanceRow}>
+                        <View style={styles.balanceBlock}>
                             <View style={styles.labelRow}>
                                 <Text style={[styles.balanceLabel, { color: colors.textSecondary }]}>Total XP Balance</Text>
                                 <TouchableOpacity style={styles.infoIcon} onPress={handleShowInfo}>
@@ -196,31 +205,44 @@ export default function Rewards() {
                             <Text style={[styles.balanceValue, { color: colors.text }]}>
                                 {profile ? formatXp(profile.xp_balance || 0) : "0"}
                             </Text>
-                            <View style={styles.statsRow}>
-                                <View style={styles.growthContainer}>
-                                    <Ionicons
-                                        name={growthPercent >= 0 ? "caret-up" : "caret-down"}
-                                        size={12}
-                                        color={growthPercent >= 0 ? colors.success : "#FF5252"}
-                                    />
-                                    <Text style={[
-                                        styles.growthValue,
-                                        { color: growthPercent >= 0 ? colors.success : "#FF5252" }
-                                    ]}>
-                                        {" "}{formatXp(weeklyXp)} ({growthPercent > 0 ? "+" : ""}{growthPercent}%) THIS WEEK
+                            <View style={styles.growthContainer}>
+                                <Ionicons
+                                    name={growthPercent >= 0 ? "caret-up" : "caret-down"}
+                                    size={12}
+                                    color={growthPercent >= 0 ? colors.success : "#FF5252"}
+                                />
+                                <Text style={[
+                                    styles.growthValue,
+                                    { color: growthPercent >= 0 ? colors.success : "#FF5252" }
+                                ]}>
+                                    {" "}{formatXp(weeklyXp)} ({growthPercent > 0 ? "+" : ""}{growthPercent}%) THIS WEEK
+                                </Text>
+                            </View>
+                        </View>
+
+                        <View style={[styles.multiplierCard, { backgroundColor: colors.surface, borderColor: colors.border }]}>
+                            <Text style={[styles.multiplierCardLabel, { color: colors.textSecondary }]}>Multiplier</Text>
+                            <Text style={[styles.multiplierCardValue, { color: colors.text }]}>
+                                {profile ? (profile.xp_multiplier || 1.0).toFixed(2) : "1.00"}x
+                            </Text>
+                            <View style={styles.multiplierBreakdown}>
+                                <View style={styles.boostRow}>
+                                    <View style={[styles.boostDot, { backgroundColor: "#00E5FF" }]} />
+                                    <Text style={[styles.boostLabel, { color: colors.textSecondary }]}>Referral</Text>
+                                    <Text style={[styles.boostValue, { color: colors.text }]}>
+                                        +{(referralCount * REFERRAL_BONUS_MULTIPLIER).toFixed(2)}
                                     </Text>
                                 </View>
-                                {profile?.xp_multiplier > 1.0 && (
-                                    <View style={[styles.multiplierBadge, { backgroundColor: colors.primary + '20' }]}>
-                                        <Ionicons name="flash" size={12} color={colors.primary} />
-                                        <Text style={[styles.multiplierText, { color: colors.primary }]}> {profile.xp_multiplier.toFixed(2)}x SKR Boost</Text>
-                                    </View>
-                                )}
+                                <View style={styles.boostRow}>
+                                    <View style={[styles.boostDot, { backgroundColor: "#FFD700" }]} />
+                                    <Text style={[styles.boostLabel, { color: colors.textSecondary }]}>SKR</Text>
+                                    <Text style={[styles.boostValue, { color: colors.text }]}>
+                                        +{profile ? Math.max(0, ((profile.xp_multiplier || 1.0) - 1.0 - referralCount * REFERRAL_BONUS_MULTIPLIER)).toFixed(2) : "0.00"}
+                                    </Text>
+                                </View>
                             </View>
                         </View>
                     </View>
-
-                    {/* Action Buttons Removed as per request */}
 
                     {/* Referral Banner */}
                     <TouchableOpacity
@@ -251,10 +273,6 @@ export default function Rewards() {
                     {/* Activity Section -> History */}
                     <View style={styles.activityHeader}>
                         <Text style={[styles.activityTitle, { color: colors.text }]}>History</Text>
-                        <TouchableOpacity style={styles.seeAllBtn}>
-                            <Text style={[styles.seeAllText, { color: colors.textSecondary }]}>See all</Text>
-                            <Ionicons name="chevron-forward" size={16} color={colors.textSecondary} />
-                        </TouchableOpacity>
                     </View>
 
                     <View style={styles.activityList}>
@@ -380,17 +398,37 @@ const styles = StyleSheet.create({
     container: { flex: 1 },
     safeArea: { flex: 1, backgroundColor: "transparent" },
     scrollContent: { padding: 20, paddingBottom: 100 },
-    statsHeader: {
+    balanceRow: {
         flexDirection: "row",
-        justifyContent: "space-between",
         alignItems: "flex-start",
         marginBottom: 20,
-        marginTop: 0,
+        gap: 12,
+    },
+    balanceBlock: {
+        flex: 1,
     },
     balanceLabel: { fontFamily: "Outfit-Medium", fontSize: 16, marginBottom: 8 },
-    balanceValue: { fontFamily: "Outfit-Bold", fontSize: 40, marginBottom: 8 },
+    balanceValue: { fontFamily: "Outfit-Bold", fontSize: 36, marginBottom: 6 },
     growthContainer: { flexDirection: "row", alignItems: "center" },
-    growthValue: { fontFamily: "Outfit-Medium", fontSize: 14 },
+    growthValue: { fontFamily: "Outfit-Medium", fontSize: 12 },
+    multiplierCard: {
+        width: 120,
+        borderRadius: 16,
+        borderWidth: 1,
+        padding: 12,
+        alignItems: "center",
+        ...Platform.select({
+            ios: { shadowColor: "#000", shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.08, shadowRadius: 4 },
+            android: { elevation: 2 },
+        }),
+    },
+    multiplierCardLabel: { fontFamily: "Outfit-Medium", fontSize: 12, marginBottom: 4 },
+    multiplierCardValue: { fontFamily: "Outfit-Bold", fontSize: 28, marginBottom: 8 },
+    multiplierBreakdown: { width: "100%", gap: 6 },
+    boostRow: { flexDirection: "row", alignItems: "center", gap: 4 },
+    boostDot: { width: 6, height: 6, borderRadius: 3 },
+    boostLabel: { fontFamily: "Outfit-Regular", fontSize: 11, flex: 1 },
+    boostValue: { fontFamily: "Outfit-Bold", fontSize: 11 },
     walletHeaderText: { fontFamily: "Outfit-Bold", fontSize: 13, marginLeft: 6 },
     walletHeaderBtn: {
         flexDirection: "row",
@@ -458,8 +496,6 @@ const styles = StyleSheet.create({
         marginBottom: 16,
     },
     activityTitle: { fontFamily: "Outfit-SemiBold", fontSize: 20 },
-    seeAllBtn: { flexDirection: "row", alignItems: "center" },
-    seeAllText: { fontFamily: "Outfit-Medium", fontSize: 14, marginRight: 4 },
     activityList: { gap: 12 },
     activityCard: {
         flexDirection: "row",
@@ -489,15 +525,6 @@ const styles = StyleSheet.create({
     activitySecondaryAmount: { fontFamily: "Outfit-Regular", fontSize: 14 },
     labelRow: { flexDirection: "row", alignItems: "center" },
     infoIcon: { marginLeft: 6, marginBottom: 8 },
-    statsRow: { flexDirection: "row", alignItems: "center", gap: 12 },
-    multiplierBadge: {
-        flexDirection: "row",
-        alignItems: "center",
-        paddingHorizontal: 10,
-        paddingVertical: 4,
-        borderRadius: 12,
-    },
-    multiplierText: { fontFamily: "Outfit-Bold", fontSize: 12 },
     emptyContainer: {
         alignItems: "center",
         justifyContent: "center",

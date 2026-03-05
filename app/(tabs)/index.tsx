@@ -621,7 +621,7 @@ export default function Index() {
         style={[styles.container, { backgroundColor: 'transparent' }]}
         edges={['top']}
       >
-        <ScreenHeader />
+        <ScreenHeader rightAction={<NavWalletButton />} />
 
         {/* Equipment Type Tabs - Always visible below header */}
         <View style={[styles.tabSectionContainer, { backgroundColor: 'transparent' }]}>

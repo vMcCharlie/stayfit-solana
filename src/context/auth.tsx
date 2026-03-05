@@ -6,7 +6,7 @@ import { api } from "../services/api";
 
 const APP_IDENTITY = {
   name: "StayFit",
-  uri: "https://stayfit-seeker.app",
+  uri: "https://gostay.fit",
   icon: "favicon.ico",
 };
 

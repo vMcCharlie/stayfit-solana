@@ -67,7 +67,7 @@ export default function ReferralDetail() {
     const onShare = async () => {
         try {
             const result = await Share.share({
-                message: `Join me on StayFit Seeker! Use my invite code: ${inviteCode} to get a head start on your fitness journey. https://stayfitseeker.app/download`,
+                message: `Join me on StayFit! Use my invite code: ${inviteCode} to get a head start on your fitness journey. https://gostay.fit/download`,
             });
         } catch (error) {
             console.error(error);

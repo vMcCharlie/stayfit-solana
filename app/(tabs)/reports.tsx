@@ -1235,15 +1235,8 @@ export default function ReportsScreen() {
       // Updating `loadWeightUnitPreference` is cleaner if we keep it.
 
       await Promise.all([
-        fetchUserProfile(true), // Force refresh profile stats
-        fetchWeightHistory(selectedPeriod.days, unit), // History usually doesn't need force refresh flag in our simple impl unless we add it, but api.getWeightHistory uses cache.
-        // We didn't add forceRefresh to getWeightHistory or getFocusStats in api.ts yet. 
-        // We probably should to make pull-to-refresh work properly! 
-        // FAILURE: I missed adding forceRefresh to other api methods. 
-        // I will fix this in a separate tool call if needed or just accept it's "mostly" offline first.
-        // Actually, for "offline optimized", pull to refresh SHOULD fetch fresh data.
-        // I'll update api.ts in next step to support forceRefresh on all methods or just let them expire.
-        // For now, let's just trigger them.
+        fetchUserProfile(true),
+        fetchWeightHistory(selectedPeriod.days, unit, true),
         fetchFocusAreaIntensity(selectedPeriod.days, true),
         fetchMostFrequentExercises(),
       ]);

@@ -51,14 +51,8 @@ serve(async (req) => {
 
         if (profError) throw profError
 
-        // Fetch current streak (from separate table or logic? client passed it in original code)
-        // Ideally we fetch it from source of truth.
-        // Assuming there is a 'user_streaks' table or similar? 
-        // In `achievementSync.ts` client logic, it got streak from `api.getProfile()` which calls `profile-manager`.
-        // Let's call `profile-manager` logic here or just query the streaks table.
-        // Let's assume there is a `user_streaks` table.
         const { data: streakData } = await supabaseAdmin
-            .from('user_streaks')
+            .from('workout_streaks')
             .select('current_streak')
             .eq('user_id', userId)
             .single()

@@ -1154,19 +1154,11 @@ export default function Settings({
           } else if (option.id === "edit_profile") {
             setShowProfileModal(true);
           } else if (option.id === "logout") {
+            handleLogout();
             return;
           }
 
           switch (option.id) {
-            case "theme":
-              setShowThemeModal(true);
-              break;
-            case "edit_profile":
-              setShowProfileModal(true);
-              break;
-            case "logout":
-              handleLogout();
-              break;
             case "refer":
               setShowReferModal(true);
               break;

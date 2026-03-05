@@ -23,6 +23,7 @@ import WeightLogModal from "../components/WeightLogModal";
 import PhotoLogModal from "../components/PhotoLogModal";
 import CreateRoutineModal from "../components/CreateRoutineModal";
 import ScreenHeader from "../components/ScreenHeader";
+import NavWalletButton from "../components/NavWalletButton";
 import { ScaleIcon, CameraIcon, AddIcon } from "../components/TabIcons";
 import { ThemeBackground } from "../components/ThemeBackground";
 
@@ -217,7 +218,7 @@ export default function More() {
           style={[styles.container, { backgroundColor: 'transparent' }]}
           edges={['top']}
         >
-          <ScreenHeader title="Stay Fit" />
+          <ScreenHeader title="Stay Fit" rightAction={<NavWalletButton />} />
 
           <ScrollView
             style={styles.content}
