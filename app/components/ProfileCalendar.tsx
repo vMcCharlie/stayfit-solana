@@ -26,6 +26,7 @@ import {
     isToday,
     getDay,
 } from "date-fns";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { supabase } from "../../src/lib/supabase";
 import { useTheme } from "../../src/context/theme";
 import { useAuth } from "../../src/context/auth";
@@ -56,6 +57,7 @@ export default function ProfileCalendar({ userId }: ProfileCalendarProps) {
     const [viewIndex, setViewIndex] = useState(0);
     const [controlsVisible, setControlsVisible] = useState(true);
     const fadeAnim = React.useRef(new Animated.Value(1)).current;
+    const insets = useSafeAreaInsets();
 
     // Custom Alert State
     const [alertVisible, setAlertVisible] = useState(false);
@@ -449,49 +451,35 @@ export default function ProfileCalendar({ userId }: ProfileCalendarProps) {
                             { pointerEvents: controlsVisible ? 'auto' : 'none' }
                         ]}
                     >
-                        <TouchableOpacity
-                            style={styles.fullScreenCloseButton}
-                            onPress={() => setViewPhotos([])}
-                        >
-                            <Ionicons name="close-circle" size={40} color="#FFFFFF" />
-                        </TouchableOpacity>
-
-                        <TouchableOpacity
-                            style={styles.fullScreenShareButton}
-                            onPress={() => setShareModalVisible(true)}
-                        >
-                            <Ionicons name="share-outline" size={32} color="#FFFFFF" />
-                        </TouchableOpacity>
-
-                        {viewPhotos[viewIndex] && (
-                            <TouchableOpacity
-                                style={styles.mintNFTButton}
-                                onPress={() => handleMintNFT(viewPhotos[viewIndex])}
-                                disabled={minting}
-                            >
-                                {minting ? (
-                                    <View style={styles.mintingContainer}>
-                                        <ActivityIndicator size="small" color={selectedPalette.primary} />
-                                        <Text style={styles.mintingText}>Minting...</Text>
-                                    </View>
-                                ) : (
-                                    <>
-                                        <Ionicons name="diamond-outline" size={24} color={selectedPalette.primary} />
-                                        <Text style={[styles.mintNFTText, { color: selectedPalette.primary }]}>Mint as NFT</Text>
-                                    </>
+                        {/* Top Bar for Actions */}
+                        <View style={[styles.topBarContainer, { top: Math.max(insets.top, 20) }]}>
+                            <View style={styles.topBarLeft}>
+                                {viewPhotos[viewIndex] && (
+                                    <TouchableOpacity
+                                        style={styles.iconButton}
+                                        onPress={() => handleDeletePhoto(viewPhotos[viewIndex], viewIndex)}
+                                    >
+                                        <Ionicons name="trash-outline" size={24} color="#FF4444" />
+                                    </TouchableOpacity>
                                 )}
-                            </TouchableOpacity>
-                        )}
+                            </View>
+                            <View style={styles.topBarRight}>
+                                <TouchableOpacity
+                                    style={styles.iconButton}
+                                    onPress={() => setShareModalVisible(true)}
+                                >
+                                    <Ionicons name="share-outline" size={24} color="#FFFFFF" />
+                                </TouchableOpacity>
+                                <TouchableOpacity
+                                    style={styles.iconButton}
+                                    onPress={() => setViewPhotos([])}
+                                >
+                                    <Ionicons name="close" size={28} color="#FFFFFF" />
+                                </TouchableOpacity>
+                            </View>
+                        </View>
 
-                        {viewPhotos[viewIndex] && (
-                            <TouchableOpacity
-                                style={styles.deleteButton}
-                                onPress={() => handleDeletePhoto(viewPhotos[viewIndex], viewIndex)}
-                            >
-                                <Ionicons name="trash-outline" size={28} color="#FF4444" />
-                            </TouchableOpacity>
-                        )}
-
+                        {/* Navigation Arrows */}
                         {viewPhotos.length > 1 && (
                             <>
                                 {viewIndex > 0 && (
@@ -513,30 +501,51 @@ export default function ProfileCalendar({ userId }: ProfileCalendarProps) {
                             </>
                         )}
 
-                        {viewPhotos[viewIndex] && (
-                            <View style={styles.photoInfoOverlay}>
-                                <Text style={styles.photoInfoText}>
-                                    {format(new Date(viewPhotos[viewIndex].created_at), "PPP")}
-                                    {(() => {
-                                        const photo = viewPhotos[viewIndex];
-                                        const dateKey = format(new Date(photo.created_at), "yyyy-MM-dd");
-                                        const dayPhotos = photos[dateKey] || [];
-                                        // Sort by time just to be safe, though usage should generally match insertion order
-                                        // Note: photos[id] is already sorted by time in fetch
-                                        const currentIndex = dayPhotos.findIndex(p => p.id === photo.id);
-                                        const totalForDay = dayPhotos.length;
+                        {/* Bottom Bar for Info & Minting */}
+                        <View style={[styles.bottomBarContainer, { bottom: Math.max(insets.bottom, 40) }]}>
+                            {viewPhotos[viewIndex] && (
+                                <TouchableOpacity
+                                    style={[styles.mintNFTButton, { borderColor: selectedPalette.primary }]}
+                                    onPress={() => handleMintNFT(viewPhotos[viewIndex])}
+                                    disabled={minting}
+                                >
+                                    {minting ? (
+                                        <View style={styles.mintingContainer}>
+                                            <ActivityIndicator size="small" color={selectedPalette.primary} />
+                                            <Text style={[styles.mintingText, { color: selectedPalette.primary }]}>Minting...</Text>
+                                        </View>
+                                    ) : (
+                                        <>
+                                            <Ionicons name="diamond-outline" size={20} color={selectedPalette.primary} />
+                                            <Text style={[styles.mintNFTText, { color: selectedPalette.primary }]}>Mint as NFT</Text>
+                                        </>
+                                    )}
+                                </TouchableOpacity>
+                            )}
 
-                                        if (totalForDay > 1) {
-                                            return ` (${currentIndex + 1}/${totalForDay})`;
-                                        }
-                                        return "";
-                                    })()}
-                                </Text>
-                                {viewPhotos[viewIndex].notes ? (
-                                    <Text style={styles.photoNotesText}>{viewPhotos[viewIndex].notes}</Text>
-                                ) : null}
-                            </View>
-                        )}
+                            {viewPhotos[viewIndex] && (
+                                <View style={styles.photoInfoOverlay}>
+                                    <Text style={styles.photoInfoText}>
+                                        {format(new Date(viewPhotos[viewIndex].created_at), "PPP")}
+                                        {(() => {
+                                            const photo = viewPhotos[viewIndex];
+                                            const dateKey = format(new Date(photo.created_at), "yyyy-MM-dd");
+                                            const dayPhotos = photos[dateKey] || [];
+                                            const currentIndex = dayPhotos.findIndex(p => p.id === photo.id);
+                                            const totalForDay = dayPhotos.length;
+
+                                            if (totalForDay > 1) {
+                                                return ` (${currentIndex + 1}/${totalForDay})`;
+                                            }
+                                            return "";
+                                        })()}
+                                    </Text>
+                                    {viewPhotos[viewIndex].notes ? (
+                                        <Text style={styles.photoNotesText}>{viewPhotos[viewIndex].notes}</Text>
+                                    ) : null}
+                                </View>
+                            )}
+                        </View>
                     </Animated.View>
                 </View>
             </Modal>
@@ -650,35 +659,42 @@ const styles = StyleSheet.create({
     navButtonRight: {
         right: 20,
     },
-    fullScreenCloseButton: {
+    topBarContainer: {
         position: "absolute",
-        top: 40,
-        right: 20,
+        left: 0,
+        right: 0,
+        flexDirection: "row",
+        justifyContent: "space-between",
+        paddingHorizontal: 20,
         zIndex: 10,
     },
-    fullScreenShareButton: {
-        position: "absolute",
-        top: 40,
-        right: 70,
-        zIndex: 10,
-        padding: 5,
+    topBarLeft: {
+        flexDirection: "row",
+        alignItems: "center",
     },
-    deleteButton: {
-        position: "absolute",
-        top: 40,
-        left: 20,
-        zIndex: 10,
-        padding: 5,
-        backgroundColor: "rgba(0,0,0,0.3)",
-        borderRadius: 20,
+    topBarRight: {
+        flexDirection: "row",
+        alignItems: "center",
+        gap: 16,
     },
-    photoInfoOverlay: {
+    iconButton: {
+        padding: 8,
+        backgroundColor: "rgba(0,0,0,0.5)",
+        borderRadius: 24,
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    bottomBarContainer: {
         position: "absolute",
-        bottom: 40,
         left: 0,
         right: 0,
         alignItems: "center",
         paddingHorizontal: 20,
+        zIndex: 10,
+    },
+    photoInfoOverlay: {
+        alignItems: "center",
+        marginTop: 16,
     },
     photoInfoText: {
         color: "#FFFFFF",
@@ -693,18 +709,13 @@ const styles = StyleSheet.create({
         textAlign: "center",
     },
     mintNFTButton: {
-        position: "absolute",
-        top: 100,
-        right: 20,
-        backgroundColor: "rgba(0,0,0,0.6)",
-        paddingHorizontal: 16,
-        paddingVertical: 10,
-        borderRadius: 20,
+        backgroundColor: "rgba(0,0,0,0.8)",
+        paddingHorizontal: 20,
+        paddingVertical: 12,
+        borderRadius: 24,
         flexDirection: "row",
         alignItems: "center",
-        zIndex: 10,
         borderWidth: 1,
-        borderColor: "rgba(255,255,255,0.1)",
     },
     mintNFTText: {
         fontFamily: "Outfit-Bold",

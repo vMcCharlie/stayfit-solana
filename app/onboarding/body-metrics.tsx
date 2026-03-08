@@ -91,7 +91,7 @@ export default function BodyMetricsScreen() {
                 goal_weight_unit: weightUnit,
             });
 
-            router.push("/onboarding/account");
+            router.push("/onboarding/wallet");
         } catch (error) {
             console.error("Error saving body metrics:", error);
         } finally {

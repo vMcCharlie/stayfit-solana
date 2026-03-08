@@ -10,45 +10,98 @@ import {
     createNoopSigner,
     publicKey
 } from '@metaplex-foundation/umi';
+import { toWeb3JsTransaction } from '@metaplex-foundation/umi-web3js-adapters';
+import { transact } from '@solana-mobile/mobile-wallet-adapter-protocol-web3js';
+import { Connection, PublicKey } from '@solana/web3.js';
 import { supabase } from '../lib/supabase';
-
-// This is a placeholder for the actual minting logic on the client side
-// In a real mobile app with MWA, we need to pass the transaction to the wallet for signing.
-// For the hackathon, we can simulate the process or use a backend-assisted minting if needed,
-// but the requirement is "Utilize Solana Mobile Wallet Adapter".
 
 export const mintProgressNFT = async (
     photoUrl: string,
-    walletAddress: string,
+    walletAddressStr: string,
     metadata: { name: string, description: string }
 ) => {
+    let signature = '';
+    let mintAddress = '';
+
     try {
-        console.log(`Minting NFT for ${walletAddress} with photo ${photoUrl}`);
+        console.log(`Minting NFT process started for: ${walletAddressStr}`);
 
-        // 1. In a production app, we would:
-        // a. Upload metadata to Arweave/IPFS (or use a server-side helper)
-        // b. Create a transaction on the mobile side
-        // c. Use MWA to sign and send.
+        await transact(async (wallet) => {
+            // 1. Authorize the dApp connection
+            const authResult = await wallet.authorize({
+                cluster: 'devnet',
+                identity: {
+                    name: 'StayFit',
+                    uri: 'https://stayfit.app',
+                    icon: 'favicon.ico',
+                },
+            });
 
-        // For this demonstration/hackathon, we'll simulate the successful minting
-        // and log the 'on-chain' proof in our database.
+            const account = authResult.accounts[0];
+            const userPubkeyStr = new PublicKey(account.address).toBase58();
 
-        // Simulate delay
-        await new Promise(resolve => setTimeout(resolve, 2000));
+            // 2. Setup Umi & connection
+            const rpcEndpoint = 'https://api.devnet.solana.com';
+            const umi = createUmi(rpcEndpoint).use(mplTokenMetadata());
+            const connection = new Connection(rpcEndpoint, 'confirmed');
 
-        const mockMintAddress = generateSigner(createUmi('https://api.devnet.solana.com')).publicKey.toString();
+            // Set user dummy signer so Umi knows fee payer/creator
+            const userNoopSigner = createNoopSigner(publicKey(userPubkeyStr));
+            umi.use(signerIdentity(userNoopSigner));
 
-        // Update the database to mark this photo as minted
-        // We'll need a column for this, or just a log.
-        // The user didn't explicitly ask for a 'is_minted' column but it's a good idea.
+            // Generate Mint keypair representing the NFT
+            const mint = generateSigner(umi);
+            mintAddress = mint.publicKey.toString();
+
+            // We'll use a placeholder generic metadata URI for the Hackathon prototype
+            const metadataUri = 'https://raw.githubusercontent.com/stayfit-app/metadata/main/progress-nft.json';
+
+            // 3. Build the Umi Transaction Builder
+            const builder = createNft(umi, {
+                mint,
+                name: metadata.name,
+                symbol: 'STFPROG',
+                uri: metadataUri,
+                sellerFeeBasisPoints: percentAmount(0),
+            });
+
+            // 4. Fetch the Blockhash and assemble the Transaction without Payer Signature
+            const latestBlockhash = await connection.getLatestBlockhash();
+            const tx = builder.setBlockhash(latestBlockhash.blockhash).build(umi);
+
+            // 5. Sign the Transaction with the newly generated `mint` keypair
+            const signedByMint = await mint.signTransaction(tx);
+
+            // 6. Convert the Umi Transaction to a Web3.js VersionedTransaction
+            const web3Tx = toWeb3JsTransaction(signedByMint);
+
+            // 7. Request the user to sign the transaction natively inside their Wallet
+            const [signedWeb3Tx] = await wallet.signTransactions({
+                transactions: [web3Tx]
+            });
+
+            // 8. Send & Confirm Transaction on-chain
+            signature = await connection.sendRawTransaction(signedWeb3Tx.serialize(), {
+                skipPreflight: false,
+                preflightCommitment: 'confirmed'
+            });
+
+            await connection.confirmTransaction({
+                signature,
+                blockhash: latestBlockhash.blockhash,
+                lastValidBlockHeight: latestBlockhash.lastValidBlockHeight
+            }, 'confirmed');
+
+            console.log("Successfully minted! Tx Signature: ", signature);
+        });
 
         return {
             success: true,
-            mintAddress: mockMintAddress,
-            signature: '5H...mock...signature'
+            mintAddress,
+            signature
         };
-    } catch (error) {
+    } catch (error: any) {
         console.error('Error minting NFT:', error);
-        throw error;
+        throw new Error(error.message || 'Minting failed. User might have rejected the transaction.');
     }
 };

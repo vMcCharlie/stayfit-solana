@@ -265,12 +265,32 @@ export default function VerifyOTPScreen() {
           height_unit: data.height_unit || "cm",
           weight_unit: data.weight_unit || "kg",
           bio: randomBio,
+          wallet_address: data.wallet_address || null,
           onboarding_completed: true,
           onboarding_step: "personalize",
           total_workouts_completed: 0,
           total_calories_burned: 0,
         })
         .select();
+
+      // Transfer temporary wallet auth token and local storage
+      const tempAddress = await AsyncStorage.getItem('temp_wallet_address');
+      const tempToken = await AsyncStorage.getItem('temp_wallet_auth_token');
+      const tempSignature = await AsyncStorage.getItem('temp_wallet_signature');
+
+      if (tempAddress) {
+        await AsyncStorage.setItem(`wallet_address_${userId}`, tempAddress);
+        await AsyncStorage.removeItem('temp_wallet_address');
+      }
+      if (tempToken) {
+        await AsyncStorage.setItem(`wallet_auth_token_${userId}`, tempToken);
+        await AsyncStorage.removeItem('temp_wallet_auth_token');
+      }
+      if (tempSignature) {
+        await AsyncStorage.setItem(`wallet_signature_${userId}`, tempSignature);
+        await AsyncStorage.removeItem('temp_wallet_signature');
+      }
+
 
       if (error) throw error;
 
@@ -525,21 +545,8 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     fontSize: 24,
     textAlign: "center",
-    borderWidth: 1, // Changed from 2 to 1 to match login? login uses 1? 
-    // login.tsx: borderWidth: 1 for input, but otpInput styles.otpInput in login.tsx says: borderWidth: 2.
-    // Wait, let me check login.tsx again in previous turn.
-    // login.tsx: styles.otpInput: borderWidth: 2.
-    // I will use 2 to match exactly.
-    // ...
-    // Actually, looking at login.tsx from step 10:
-    // 505:     borderWidth: 2,
-    // So I use 2.
     borderWidth: 2,
-    fontFamily: "Outfit-Medium", // login.tsx used SemiBold. Let's use Medium or Bold if SemiBold not avail.
-    // login.tsx used "Outfit-SemiBold" in otpInput style 506.
-    // But _layout.tsx only loads Regular, Medium, Bold.
-    // So SemiBold probably falls back to default or Medium. I'll use Bold or Medium to be safe.
-    // "Outfit-Bold" is available.
+    fontFamily: "Outfit-Bold",
   },
   loginButton: {
     height: 50,

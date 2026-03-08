@@ -96,7 +96,7 @@ export default function SkrTiersModal({ visible, onClose, balance }: SkrTiersMod
             >
                 <TouchableOpacity style={styles.dismissArea} activeOpacity={1} onPress={onClose} />
                 <Animated.View
-                    entering={SlideInUp.springify().damping(20)}
+                    entering={SlideInUp.duration(200)}
                     exiting={SlideOutDown.duration(200)}
                     style={[styles.container, { backgroundColor: colors.background }]}
                 >

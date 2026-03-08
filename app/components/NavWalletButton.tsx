@@ -13,8 +13,7 @@ import WalletManagementModal from "./WalletManagementModal";
 
 export default function NavWalletButton() {
     const { isDarkMode, selectedPalette } = useTheme();
-    const { connectWallet, user, profileUpdated } = useAuth();
-    const [walletAddress, setWalletAddress] = useState<string | null>(null);
+    const { connectWallet, user, walletAddress } = useAuth();
     const [isConnecting, setIsConnecting] = useState(false);
     const [modalVisible, setModalVisible] = useState(false);
 
@@ -23,25 +22,6 @@ export default function NavWalletButton() {
         primary: selectedPalette.primary,
         bg: isDarkMode ? "rgba(255,255,255,0.05)" : "rgba(0,0,0,0.05)",
     };
-
-    const fetchWalletAddress = async () => {
-        try {
-            const { profile } = await api.getProfile();
-            if (profile?.wallet_address) {
-                setWalletAddress(profile.wallet_address);
-            } else {
-                setWalletAddress(null);
-            }
-        } catch (err) {
-            console.error("Failed to fetch wallet address:", err);
-        }
-    };
-
-    useEffect(() => {
-        if (user) {
-            fetchWalletAddress();
-        }
-    }, [user, profileUpdated]);
 
     const handlePress = async () => {
         if (walletAddress) {

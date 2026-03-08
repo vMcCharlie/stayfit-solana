@@ -24,6 +24,7 @@ interface AuthContextType {
   disconnectWallet: () => Promise<void>;
   profileUpdated: number;
   triggerProfileRefresh: () => void;
+  walletAddress: string | null;
   skrBalance: number;
   skrTier: string;
 }
@@ -35,6 +36,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [session, setSession] = useState<Session | null>(null);
   const [loading, setLoading] = useState(true);
   const [profileUpdated, setProfileUpdated] = useState<number>(0);
+  const [walletAddress, setWalletAddress] = useState<string | null>(null);
   const [skrBalance, setSkrBalance] = useState<number>(0);
   const [skrTier, setSkrTier] = useState<string>("None");
 
@@ -42,7 +44,14 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     // Check active sessions and sets the user
     supabase.auth.getSession().then(({ data: { session } }) => {
       setSession(session);
-      setUser(session?.user ?? null);
+      const u = session?.user ?? null;
+      setUser(u);
+
+      // Initialize wallet address from metadata
+      if (u?.user_metadata?.wallet_address) {
+        setWalletAddress(u.user_metadata.wallet_address);
+      }
+
       setLoading(false);
     });
 
@@ -51,7 +60,15 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((_event, session) => {
       setSession(session);
-      setUser(session?.user ?? null);
+      const u = session?.user ?? null;
+      setUser(u);
+
+      if (u?.user_metadata?.wallet_address) {
+        setWalletAddress(u.user_metadata.wallet_address);
+      } else if (!u) {
+        setWalletAddress(null);
+      }
+
       setLoading(false);
     });
 
@@ -71,10 +88,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   const fetchSkrBalance = async () => {
     try {
-      const storedWallet = await AsyncStorage.getItem(`wallet_address_${user?.id}`);
-      const walletAddress = user?.user_metadata?.wallet_address || storedWallet;
+      const currentWallet = walletAddress || user?.user_metadata?.wallet_address;
 
-      if (!walletAddress) {
+      if (!currentWallet) {
         setSkrBalance(0);
         setSkrTier("None");
         return;
@@ -107,7 +123,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       setSkrBalance(0);
       setSkrTier("None");
     }
-  }, [user, profileUpdated]);
+  }, [user, profileUpdated, walletAddress]);
 
   const signUp = async (email: string, password: string) => {
     const { error } = await supabase.auth.signUp({
@@ -204,7 +220,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         }
 
         const addressUint8 = authorizationResult.accounts[0].address;
-        newWalletAddress = new PublicKey(addressUint8).toBase58();
+        const { Buffer } = require("buffer");
+        newWalletAddress = new PublicKey(Buffer.from(addressUint8, 'base64')).toBase58();
         const authToken = authorizationResult.auth_token;
 
         // Save authToken for future sessions
@@ -225,11 +242,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
         // Convert signature to base64 for transport
         const signatureUint8 = signResult.signatures[0];
-        const { Buffer } = require("buffer");
         signature = Buffer.from(signatureUint8).toString("base64");
       });
 
       console.log("Connected wallet address (Base58):", newWalletAddress);
+      setWalletAddress(newWalletAddress);
 
       // Store wallet address in user metadata if we have a session
       if (session?.user && newWalletAddress) {
@@ -301,6 +318,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         await AsyncStorage.removeItem(`wallet_address_${session.user.id}`);
 
         // 4. Update local state
+        setWalletAddress(null);
         triggerProfileRefresh();
       }
     } catch (err: any) {
@@ -331,6 +349,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     disconnectWallet,
     profileUpdated,
     triggerProfileRefresh,
+    walletAddress,
     skrBalance,
     skrTier,
   };
