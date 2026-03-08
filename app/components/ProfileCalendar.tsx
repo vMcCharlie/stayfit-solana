@@ -47,7 +47,7 @@ interface ProgressPhoto {
 
 export default function ProfileCalendar({ userId }: ProfileCalendarProps) {
     const { isDarkMode, selectedPalette } = useTheme();
-    const { user: authUser } = useAuth();
+    const { user: authUser, skrTier } = useAuth();
     const [currentDate, setCurrentDate] = useState(new Date());
     const [photos, setPhotos] = useState<{ [key: string]: ProgressPhoto[] }>({});
     const [loading, setLoading] = useState(false);
@@ -186,6 +186,17 @@ export default function ProfileCalendar({ userId }: ProfileCalendarProps) {
     };
 
     const handleMintNFT = async (photo: ProgressPhoto) => {
+        // Restriction: Only Gold Tier (40k SKR) and above can mint NFTs
+        if (skrTier !== 'Gold' && skrTier !== 'Platinum') {
+            setAlertConfig({
+                title: "Gold Tier Required",
+                message: "You must be in the Gold Tier (40,000+ SKR) or higher to mint progress photos as NFTs on the blockchain.",
+                buttons: [{ text: "Got it", onPress: () => setAlertVisible(false) }]
+            });
+            setAlertVisible(true);
+            return;
+        }
+
         const walletAddress = authUser?.user_metadata?.wallet_address;
         if (!walletAddress) {
             setAlertConfig({
@@ -214,7 +225,8 @@ export default function ProfileCalendar({ userId }: ProfileCalendarProps) {
                                 {
                                     name: `StayFit Progress - ${format(new Date(photo.created_at), 'MMM d, yyyy')}`,
                                     description: `On-chain proof of workout progress on StayFit Seeker.`
-                                }
+                                },
+                                authUser?.id
                             );
 
                             if (result.success) {

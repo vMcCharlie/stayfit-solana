@@ -8,6 +8,7 @@ import {
     Platform,
     Modal,
     Pressable,
+    RefreshControl,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
@@ -29,10 +30,11 @@ const REFERRAL_BONUS_MULTIPLIER = 0.01;
 
 export default function Rewards() {
     const { isDarkMode, selectedPalette } = useTheme();
-    const { connectWallet, user: authUser } = useAuth();
+    const { connectWallet, user: authUser, skrTier, skrBalance, triggerProfileRefresh } = useAuth();
     const [profile, setProfile] = React.useState<any>(null);
     const [transactions, setTransactions] = React.useState<any[]>([]);
     const [loading, setLoading] = React.useState(true);
+    const [refreshing, setRefreshing] = React.useState(false);
     const [weeklyXp, setWeeklyXp] = React.useState(0);
     const [growthPercent, setGrowthPercent] = React.useState(0);
     const [infoModalVisible, setInfoModalVisible] = React.useState(false);
@@ -124,8 +126,15 @@ export default function Rewards() {
             console.error("Error fetching rewards data:", error);
         } finally {
             setLoading(false);
+            setRefreshing(false);
         }
     };
+
+    const onRefresh = React.useCallback(async () => {
+        setRefreshing(true);
+        triggerProfileRefresh();
+        await fetchData();
+    }, [triggerProfileRefresh]);
 
     useFocusEffect(
         React.useCallback(() => {
@@ -146,6 +155,20 @@ export default function Rewards() {
     const formatXp = (amount: number) => {
         return new Intl.NumberFormat().format(amount);
     };
+
+    const getTierMultiplier = (tier: string): number => {
+        switch (tier) {
+            case 'Platinum': return 5.0;
+            case 'Gold': return 2.5;
+            case 'Silver': return 1.5;
+            case 'Bronze': return 1.2;
+            default: return 1.0;
+        }
+    };
+
+    const tierMultiplier = getTierMultiplier(skrTier);
+    const referralBoost = referralCount * REFERRAL_BONUS_MULTIPLIER;
+    const liveMultiplier = tierMultiplier + referralBoost;
 
     const getTimeAgo = (dateStr: string) => {
         const date = new Date(dateStr);
@@ -191,7 +214,18 @@ export default function Rewards() {
                     title="Rewards"
                     rightAction={<NavWalletButton />}
                 />
-                <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
+                <ScrollView
+                    contentContainerStyle={styles.scrollContent}
+                    showsVerticalScrollIndicator={false}
+                    refreshControl={
+                        <RefreshControl
+                            refreshing={refreshing}
+                            onRefresh={onRefresh}
+                            tintColor={selectedPalette.primary}
+                            colors={[selectedPalette.primary]}
+                        />
+                    }
+                >
 
                     {/* Balance + Multiplier Row */}
                     <View style={styles.balanceRow}>
@@ -223,21 +257,21 @@ export default function Rewards() {
                         <View style={[styles.multiplierCard, { backgroundColor: colors.surface, borderColor: colors.border }]}>
                             <Text style={[styles.multiplierCardLabel, { color: colors.textSecondary }]}>Multiplier</Text>
                             <Text style={[styles.multiplierCardValue, { color: colors.text }]}>
-                                {profile ? (profile.xp_multiplier || 1.0).toFixed(2) : "1.00"}x
+                                {liveMultiplier.toFixed(2)}x
                             </Text>
                             <View style={styles.multiplierBreakdown}>
                                 <View style={styles.boostRow}>
                                     <View style={[styles.boostDot, { backgroundColor: "#00E5FF" }]} />
                                     <Text style={[styles.boostLabel, { color: colors.textSecondary }]}>Referral</Text>
                                     <Text style={[styles.boostValue, { color: colors.text }]}>
-                                        +{(referralCount * REFERRAL_BONUS_MULTIPLIER).toFixed(2)}
+                                        +{referralBoost.toFixed(2)}
                                     </Text>
                                 </View>
                                 <View style={styles.boostRow}>
                                     <View style={[styles.boostDot, { backgroundColor: "#FFD700" }]} />
-                                    <Text style={[styles.boostLabel, { color: colors.textSecondary }]}>SKR</Text>
+                                    <Text style={[styles.boostLabel, { color: colors.textSecondary }]}>SKR ({skrTier})</Text>
                                     <Text style={[styles.boostValue, { color: colors.text }]}>
-                                        +{profile ? Math.max(0, ((profile.xp_multiplier || 1.0) - 1.0 - referralCount * REFERRAL_BONUS_MULTIPLIER)).toFixed(2) : "0.00"}
+                                        +{(tierMultiplier - 1.0).toFixed(2)}
                                     </Text>
                                 </View>
                             </View>

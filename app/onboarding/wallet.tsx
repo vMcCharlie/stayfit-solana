@@ -123,8 +123,10 @@ export default function WalletScreen() {
                 wallet_address: newWalletAddress,
             } as any);
 
-            // Successfully connected - proceed!
-            router.push("/onboarding/account");
+            // Successfully connected - proceed with a slight delay so user sees "Connected!"
+            setTimeout(() => {
+                router.push("/onboarding/account");
+            }, 1000);
 
         } catch (err: any) {
             console.error("Wallet connection failed during onboarding", err);
@@ -168,7 +170,7 @@ export default function WalletScreen() {
                 >
                     <Animated.View entering={FadeInDown.duration(400).delay(150)} style={styles.mainBox}>
 
-                        <View style={styles.iconContainer}>
+                        <View style={[styles.iconContainer, { backgroundColor: `${selectedPalette.primary}20` }]}>
                             <Ionicons name="wallet-outline" size={60} color={selectedPalette.primary} />
                         </View>
 
@@ -298,7 +300,6 @@ const styles = StyleSheet.create({
         width: 100,
         height: 100,
         borderRadius: 50,
-        backgroundColor: 'rgba(76, 175, 80, 0.1)', // General fallback, matches standard primary tint
         justifyContent: 'center',
         alignItems: 'center',
         marginBottom: 24,

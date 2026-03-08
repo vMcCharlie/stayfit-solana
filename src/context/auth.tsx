@@ -96,15 +96,28 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         return;
       }
 
-      const { Connection, PublicKey } = require("@solana/web3.js");
-      const connection = new Connection("https://api.mainnet-beta.solana.com");
-      const owner = new PublicKey(walletAddress);
-      const mint = new PublicKey(SKR_TOKEN_ADDRESS);
+      // Use direct HTTP fetch for reliability on mobile (avoids web3.js Connection issues)
+      const response = await fetch("https://api.mainnet-beta.solana.com", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          jsonrpc: "2.0",
+          id: 1,
+          method: "getTokenAccountsByOwner",
+          params: [
+            currentWallet,
+            { mint: SKR_TOKEN_ADDRESS },
+            { encoding: "jsonParsed" },
+          ],
+        }),
+      });
 
-      const response = await connection.getParsedTokenAccountsByOwner(owner, { mint });
+      const json = await response.json();
+      const accounts = json?.result?.value ?? [];
 
-      if (response.value.length > 0) {
-        const amount = response.value[0].account.data.parsed.info.tokenAmount.uiAmount || 0;
+      if (accounts.length > 0) {
+        const amount =
+          accounts[0]?.account?.data?.parsed?.info?.tokenAmount?.uiAmount ?? 0;
         setSkrBalance(amount);
         setSkrTier(getTier(amount));
       } else {
@@ -162,9 +175,15 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   const signOut = async () => {
     try {
+      if (session?.user) {
+        await AsyncStorage.removeItem(`wallet_auth_token_${session.user.id}`);
+        await AsyncStorage.removeItem(`wallet_address_${session.user.id}`);
+        await AsyncStorage.removeItem(`wallet_signature_${session.user.id}`);
+      }
+      setWalletAddress(null);
       await api.clearApiCache();
     } catch (err) {
-      console.warn("[AuthContext] Failed to clear API cache during signOut:", err);
+      console.warn("[AuthContext] Failed to clear local data during signOut:", err);
     }
     const { error } = await supabase.auth.signOut();
     if (error) throw error;
@@ -187,12 +206,12 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       }
 
       const { PublicKey } = require("@solana/web3.js");
+      const { Buffer } = require("buffer");
 
       let newWalletAddress = "";
-      let signature = "";
-      let message = "";
 
       await transact(async (wallet: any) => {
+        // Try to reauthorize with stored token first (silent reconnect)
         const storedAuthToken = session?.user
           ? await AsyncStorage.getItem(`wallet_auth_token_${session.user.id}`)
           : null;
@@ -219,65 +238,42 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           });
         }
 
+        // Decode the raw base64 address bytes to a proper base58 public key
         const addressUint8 = authorizationResult.accounts[0].address;
-        const { Buffer } = require("buffer");
-        newWalletAddress = new PublicKey(Buffer.from(addressUint8, 'base64')).toBase58();
+        newWalletAddress = new PublicKey(Buffer.from(addressUint8, "base64")).toBase58();
         const authToken = authorizationResult.auth_token;
 
-        // Save authToken for future sessions
+        // Persist auth token for future reauthorize calls
         if (authToken && session?.user) {
           await AsyncStorage.setItem(`wallet_auth_token_${session.user.id}`, authToken);
         }
-
-        // 2. Sign Message to verify ownership
-        // We always sign a message during "connection" to confirm the user is actively proving ownership
-        const timestamp = Date.now();
-        message = `Sign-in to StayFit Seeker: ${session?.user?.id} at ${timestamp}`;
-        const messageUint8 = new TextEncoder().encode(message);
-
-        const signResult = await wallet.signMessages({
-          addresses: [addressUint8],
-          payloads: [messageUint8],
-        });
-
-        // Convert signature to base64 for transport
-        const signatureUint8 = signResult.signatures[0];
-        signature = Buffer.from(signatureUint8).toString("base64");
       });
 
       console.log("Connected wallet address (Base58):", newWalletAddress);
+
+      // Update React state immediately
       setWalletAddress(newWalletAddress);
 
-      // Store wallet address in user metadata if we have a session
       if (session?.user && newWalletAddress) {
-        // 1. Call Edge Function to safely update profile (with signature verification)
-        const { data, error } = await supabase.functions.invoke('rewards-manager', {
-          body: {
-            action: 'update_wallet_address',
-            wallet_address: newWalletAddress,
-            message: message,
-            signature: signature
-          }
-        });
+        // 1. Write directly to DB (same approach as onboarding - RLS allows user to update own profile)
+        const { error: dbError } = await supabase
+          .from("profiles")
+          .update({ wallet_address: newWalletAddress })
+          .eq("id", session.user.id);
 
-        if (error) {
-          console.error("Error updating wallet address via edge function:", error);
-          // Fallback to direct update if edge function fails (though edge function is preferred)
-          await supabase
-            .from('profiles')
-            .update({ wallet_address: newWalletAddress })
-            .eq('id', session.user.id);
+        if (dbError) {
+          console.error("Error updating wallet address in profiles:", dbError);
         }
 
-        // 2. Update local metadata for session consistency
+        // 2. Update Supabase Auth user_metadata so AuthContext reflects this on all listeners/refreshes
         await supabase.auth.updateUser({
-          data: { wallet_address: newWalletAddress }
+          data: { wallet_address: newWalletAddress },
         });
 
-        // 3. Save locally
+        // 3. Save locally for quick startup reads
         await AsyncStorage.setItem(`wallet_address_${session.user.id}`, newWalletAddress);
 
-        // 4. Trigger refresh
+        // 4. Trigger a profile refresh so the UI updates everywhere
         triggerProfileRefresh();
       }
 
@@ -287,6 +283,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       throw err;
     }
   };
+
 
   const disconnectWallet = async () => {
     try {

@@ -192,7 +192,8 @@ const ExerciseImage = memo(({
   // Store all frame contents for smooth animation
   const [frameContents, setFrameContents] = useState<{ [key: number]: string }>({});
   const [singleSvgContent, setSingleSvgContent] = useState<string | null>(null);
-  const animationInterval = useRef<NodeJS.Timeout | null>(null);
+  const animationInterval = useRef<any>(null);
+  const loadedIndicesRef = useRef<number[]>([]);
   const isMounted = useRef(true);
 
   const bgColor = backgroundColor ?? (isDarkMode ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.03)');
@@ -232,7 +233,7 @@ const ExerciseImage = memo(({
       if (!firstContent) {
         firstContent = await fetchAndCacheSvg(firstUrl);
       }
-      
+
       if (firstContent && isMounted.current) {
         contents[0] = firstContent;
         setFrameContents({ ...contents });
@@ -242,15 +243,15 @@ const ExerciseImage = memo(({
       // PRIORITY 2: Load remaining frames in background after interactions complete
       InteractionManager.runAfterInteractions(() => {
         if (!isMounted.current) return;
-        
+
         const loadRemainingFrames = async () => {
           const remainingUrls = frameUrls.slice(1);
-          
+
           // Load in smaller batches to avoid blocking
           const BATCH_SIZE = 4;
           for (let i = 0; i < remainingUrls.length; i += BATCH_SIZE) {
             if (!isMounted.current) return;
-            
+
             const batch = remainingUrls.slice(i, i + BATCH_SIZE);
             const batchResults = await Promise.all(
               batch.map(async (url, batchIndex) => {
@@ -273,7 +274,7 @@ const ExerciseImage = memo(({
             }
           }
         };
-        
+
         loadRemainingFrames();
       });
     };
@@ -283,26 +284,58 @@ const ExerciseImage = memo(({
 
   // Animation loop for frame-based animations - optimized to only cycle through loaded frames
   useEffect(() => {
-    if (!hasFrames || frameCount <= 1) {
+    if (!hasFrames || frameCount <= 1 || (animate as any) === false) {
+      if (animationInterval.current) {
+        clearInterval(animationInterval.current);
+      }
       return;
     }
+
+    // Get the indices of loaded frames
+    const loadedIndices = Object.keys(frameContents)
+      .map(Number)
+      .sort((a, b) => a - b);
+
+    // Store loaded indices in ref for use in the interval callback (avoids stale closures)
+    loadedIndicesRef.current = loadedIndices;
+
+    // Check if we are fully loaded or at least have enough frames to start
+    // We only create/restart the interval when the loaded frame count changes
+    // or when we first reach the minimum viable count (2 frames)
+    const canAnimate = loadedIndices.length >= 2;
+
+    if (!canAnimate) {
+      if (animationInterval.current) {
+        clearInterval(animationInterval.current);
+      }
+      return;
+    }
+
+    // If interval already exists and we're just adding more frames, 
+    // we don't necessarily need to restart it every single time if we use functional updates.
+    // However, to be safe and consistent, we restart it when loading is completely finished
+    // or when we hit the first viable threshold.
+    const isFullyLoaded = loadedIndices.length === frameCount;
 
     // Clear any existing interval
     if (animationInterval.current) {
       clearInterval(animationInterval.current);
     }
 
-    // Get the indices of loaded frames
-    const loadedIndices = Object.keys(frameContents).map(Number).sort((a, b) => a - b);
-    if (loadedIndices.length <= 1) {
-      return; // Need at least 2 frames to animate
-    }
-
-    // Start new animation loop - only cycle through frames we actually have
-    let currentLoadedIndex = 0;
+    // Start new animation loop
     animationInterval.current = setInterval(() => {
-      currentLoadedIndex = (currentLoadedIndex + 1) % loadedIndices.length;
-      setCurrentFrame(loadedIndices[currentLoadedIndex]);
+      // Access current loaded indices from ref to always have the latest set
+      const currentIndices = loadedIndicesRef.current;
+      if (currentIndices.length < 2) return;
+
+      setCurrentFrame((prev) => {
+        // Find the index of the previously displayed frame among currently loaded ones
+        const currentPos = currentIndices.indexOf(prev);
+        // If the frame is no longer available, start from the beginning
+        // Otherwise move to the next index in the loop
+        const nextPos = currentPos === -1 ? 0 : (currentPos + 1) % currentIndices.length;
+        return currentIndices[nextPos];
+      });
     }, animationSpeed);
 
     return () => {
@@ -310,7 +343,7 @@ const ExerciseImage = memo(({
         clearInterval(animationInterval.current);
       }
     };
-  }, [frameCount, animationSpeed, hasFrames, Object.keys(frameContents).length]); // Only re-run when frame count changes
+  }, [frameCount, animationSpeed, hasFrames, animate, Object.keys(frameContents).length === frameCount]);
 
   // Load single SVG content when not using frame animation
   useEffect(() => {
@@ -371,8 +404,8 @@ const ExerciseImage = memo(({
           style={[
             styles.container,
             {
-              width,
-              height,
+              width: width as any,
+              height: height as any,
               borderRadius,
               backgroundColor: bgColor,
               overflow: 'hidden',
@@ -394,8 +427,8 @@ const ExerciseImage = memo(({
           style={[
             styles.container,
             {
-              width,
-              height,
+              width: width as any,
+              height: height as any,
               borderRadius,
               backgroundColor: bgColor,
               overflow: 'hidden',
@@ -421,8 +454,8 @@ const ExerciseImage = memo(({
         style={[
           styles.container,
           {
-            width,
-            height,
+            width: width as any,
+            height: height as any,
             borderRadius,
             backgroundColor: bgColor,
           },
@@ -443,8 +476,8 @@ const ExerciseImage = memo(({
         style={[
           styles.container,
           {
-            width,
-            height,
+            width: width as any,
+            height: height as any,
             borderRadius,
             backgroundColor: bgColor,
             overflow: 'hidden',
@@ -469,8 +502,8 @@ const ExerciseImage = memo(({
         style={[
           styles.container,
           {
-            width,
-            height,
+            width: width as any,
+            height: height as any,
             borderRadius,
             backgroundColor: bgColor,
             overflow: 'hidden',
@@ -493,8 +526,8 @@ const ExerciseImage = memo(({
       style={[
         styles.container,
         {
-          width,
-          height,
+          width: width as any,
+          height: height as any,
           borderRadius,
           backgroundColor: bgColor,
           overflow: 'hidden',

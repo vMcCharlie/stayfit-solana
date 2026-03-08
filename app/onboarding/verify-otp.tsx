@@ -281,6 +281,11 @@ export default function VerifyOTPScreen() {
       if (tempAddress) {
         await AsyncStorage.setItem(`wallet_address_${userId}`, tempAddress);
         await AsyncStorage.removeItem('temp_wallet_address');
+
+        // Push to Auth user_metadata so AuthContext picks it up immediately upon login
+        await supabase.auth.updateUser({
+          data: { wallet_address: tempAddress }
+        });
       }
       if (tempToken) {
         await AsyncStorage.setItem(`wallet_auth_token_${userId}`, tempToken);

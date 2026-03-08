@@ -212,7 +212,7 @@ export default function ProfileScreen() {
   const rotation = useSharedValue(0);
   const [refreshing, setRefreshing] = useState(false);
   const [skrBalanceLocal, setSkrBalanceLocal] = useState<number | null>(null); // Keep for local animation if needed, but primary is from auth
-  const { skrBalance, skrTier } = useAuth();
+  const { skrBalance, skrTier, triggerProfileRefresh } = useAuth();
   const [showSkrModal, setShowSkrModal] = useState(false);
   const scrollY = useSharedValue(0);
   const [lastFetchTime, setLastFetchTime] = useState<number>(0);
@@ -378,24 +378,6 @@ export default function ProfileScreen() {
     }
   };
 
-  const onRefresh = useCallback(async () => {
-    setRefreshing(true);
-    // Update image version to force reload of image
-    setImageVersion(Date.now());
-    await Promise.all([
-      fetchUserProfile(true),
-      fetchMonthlyCalorieBurn(true)
-    ]);
-    setRefreshing(false);
-  }, []);
-
-  // Use useFocusEffect to check for updates whenever the screen gains focus
-  useFocusEffect(
-    useCallback(() => {
-      fetchUserProfile();
-      fetchMonthlyCalorieBurn();
-    }, [profileUpdated, lastFetchTime])
-  );
 
   useEffect(() => {
     const checkUnreadOffers = async () => {
@@ -525,6 +507,26 @@ export default function ProfileScreen() {
   useEffect(() => {
     fetchMonthlyCalorieBurn();
   }, []);
+
+  const onRefresh = useCallback(async () => {
+    setRefreshing(true);
+    // Update image version to force reload of image
+    setImageVersion(Date.now());
+    await Promise.all([
+      fetchUserProfile(true),
+      fetchMonthlyCalorieBurn(true),
+      triggerProfileRefresh()
+    ]);
+    setRefreshing(false);
+  }, [fetchUserProfile, fetchMonthlyCalorieBurn, triggerProfileRefresh]);
+
+  // Use useFocusEffect to check for updates whenever the screen gains focus
+  useFocusEffect(
+    useCallback(() => {
+      fetchUserProfile();
+      fetchMonthlyCalorieBurn();
+    }, [profileUpdated, lastFetchTime])
+  );
 
   const renderSocialIcons = () => {
     return (
@@ -1207,7 +1209,7 @@ export default function ProfileScreen() {
                         </Text>
                       </TouchableOpacity>
                     )}
-                    {profile.subscription && profile.subscription !== "FREE" && (
+                    {profile.subscription && (profile.subscription === "PRO" || profile.subscription === "PLUS") && (
                       <Text
                         style={[
                           styles.subscriptionBadge,

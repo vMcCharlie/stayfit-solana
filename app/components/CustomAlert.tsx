@@ -172,20 +172,17 @@ const styles = StyleSheet.create({
         lineHeight: 22,
     },
     actions: {
-        flexDirection: "row",
-        justifyContent: "center",
-        flexWrap: "wrap",
-        gap: 12,
+        flexDirection: "column",
+        gap: 10,
         width: "100%",
     },
     button: {
-        paddingVertical: 12,
-        paddingHorizontal: 24,
-        borderRadius: 12,
-        minWidth: 100,
+        paddingVertical: 14,
+        paddingHorizontal: 16,
+        borderRadius: 14,
+        width: "100%",
         alignItems: "center",
         justifyContent: "center",
-        flex: 1,
     },
     defaultButton: {
         // Background color handled dynamically
@@ -195,6 +192,6 @@ const styles = StyleSheet.create({
     },
     buttonText: {
         fontSize: 16,
-        fontFamily: "Outfit-SemiBold",
+        fontFamily: "Outfit-Bold",
     },
 });
