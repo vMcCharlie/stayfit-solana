@@ -1,10 +1,11 @@
-# StayFit — Move-to-Earn Fitness for the Seeker Community
+# StayFit - Move-to-Earn Fitness for the Seeker Community
 
 ![StayFit Cover](./cover.png)
 
-StayFit is a native Android fitness application engineered specifically for the Solana Seeker. It transforms physical performance into on-chain rewards by tracking sets, building streaks, and earning XP—all powered by the Solana Mobile Stack and Mobile Wallet Adapter.
+StayFit is a native Android fitness application engineered specifically for the Solana Seeker. It transforms physical performance into on-chain rewards by tracking sets, building streaks, and earning XP - all powered by the Solana Mobile Stack and Mobile Wallet Adapter.
 
 ## Project Links
+- **Direct Download**: [Stay.Fit.Installer.apk](https://github.com/vMcCharlie/stayfit-solana/releases/download/v1.0.0/Stay.Fit.Installer.apk)
 - **Pitch Deck**: [View on Google Drive](https://drive.google.com/file/d/1Faf6Q_v5rIvXcT4LyF4ad18zWjW4Xfz1/view?usp=sharing)
 - **Demo Video**: [Watch on YouTube](https://youtu.be/bXomG7mu8LU)
 
@@ -98,7 +99,7 @@ StayFit is built using a modern, scalable stack designed for high performance an
 ---
 
 ## Team and Submission
-Developed for the Solana Monolith Hackathon—a focus on shippable, mobile-first decentralized applications for the Seeker dApp Store.
+Developed for the Solana Monolith Hackathon - a focus on shippable, mobile-first decentralized applications for the Seeker dApp Store.
 
 ---
 
