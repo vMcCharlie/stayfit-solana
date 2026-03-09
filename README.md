@@ -6,7 +6,7 @@ StayFit is a native Android fitness application engineered specifically for the 
 
 ## Project Links
 - **Direct Download**: [Stay.Fit.Installer.apk](https://github.com/vMcCharlie/stayfit-solana/releases/download/v1.0.0/Stay.Fit.Installer.apk)
-- **Pitch Deck**: [View on Google Drive](https://drive.google.com/file/d/1wt14qhjdFde35FFVqR32titDM0uZUdUU/view?usp=drivesdk)
+- **Pitch Deck**: [View on Google Drive](https://drive.google.com/file/d/10Cv1bccLpFEtc9Lo6ZriH-HR60PlKOqK/view?usp=sharing)
 - **Demo Video**: [Watch on YouTube](https://youtu.be/bXomG7mu8LU)
 
 ## Short Description
