@@ -95,13 +95,3 @@ StayFit is built using a modern, scalable stack designed for high performance an
 ### Execution
 - **Development**: `npx expo run:android` (Requires a physical device for MWA testing).
 - **Production Build**: Refer to `APK_BUILD_GUIDE.md` for Gradle assembly instructions.
-
----
-
-## Team and Submission
-Developed for the Solana Monolith Hackathon - a focus on shippable, mobile-first decentralized applications for the Seeker dApp Store.
-
----
-
-## License
-Submitted as original work for the 2026 Solana Monolith Hackathon.
